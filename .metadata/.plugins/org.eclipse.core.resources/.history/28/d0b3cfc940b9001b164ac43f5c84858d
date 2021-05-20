@@ -1,0 +1,77 @@
+package com.curso.modelo.negocio;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Stream;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.MethodSource;
+import org.junit.jupiter.params.provider.ValueSource;
+
+public class TestParametrizado {
+
+	private CalculadoraImpuestos calculadoraImpuestos;
+	
+	@BeforeEach
+	public void inicializar() {
+		calculadoraImpuestos = new CalculadoraImpuestos();
+	}
+
+	public TestParametrizado() {
+		super();
+		System.out.println("Instanciando TestParametrizado");
+	}
+
+	/*
+	<dependency>
+		<groupId>org.junit.jupiter</groupId>
+		<artifactId>junit-jupiter-params</artifactId>
+		<version>5.5.2</version>
+		<scope>test</scope>
+	</dependency>	
+	*/
+	@ParameterizedTest
+	@ValueSource(strings = { "uno", "dos", "tres" })
+	public void ejemplo(String str) {
+		System.out.println("Parámetro:"+str);
+	}
+		
+	@ParameterizedTest
+	@MethodSource("stringIntAndListProvider")
+	void testWithMultiArgMethodSource(Double ingreso, Double impuesto) throws InvalidIngresoException {
+		System.out.println(ingreso+","+impuesto);
+	    assertEquals(impuesto, calculadoraImpuestos.calcularImpuestosSobreIngreso(ingreso));
+	}
+
+	static Stream<Arguments> stringIntAndListProvider() {
+		return Stream.of(
+	        Arguments.arguments(5000d,0d),
+	        Arguments.arguments(10000d,800d),
+	        Arguments.arguments(17000d,1700d),
+	        Arguments.arguments(22000d,3300d),
+	        Arguments.arguments(35000d,6825d));	 
+	}	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

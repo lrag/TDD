@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="GestorClientesTest" project="Ej05_Mockito_JUnit5" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.curso.modelo.negocio.GestorClientesTest" time="0.0" displayname="GestorClientesTest" uniqueid="[engine:junit-jupiter]/[class:com.curso.modelo.negocio.GestorClientesTest]">
+    <testcase name="pruebaAltaCliente" classname="com.curso.modelo.negocio.GestorClientesTest" time="0.0" displayname="pruebaAltaCliente()" uniqueid="[engine:junit-jupiter]/[class:com.curso.modelo.negocio.GestorClientesTest]/[method:pruebaAltaCliente()]"/>
+  </testsuite>
+</testrun>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="_04_Ciclo_de_vida_2" project="Ej01_JUnit5" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="ejemplos._04_Ciclo_de_vida_2" time="0.0" displayname="_04_Ciclo_de_vida_2" uniqueid="[engine:junit-jupiter]/[class:ejemplos._04_Ciclo_de_vida_2]">
+    <testcase name="laSumaDebeSerCorrecta" classname="ejemplos._04_Ciclo_de_vida_2" time="0.0" displayname="laSumaDebeSerCorrecta()" uniqueid="[engine:junit-jupiter]/[class:ejemplos._04_Ciclo_de_vida_2]/[method:laSumaDebeSerCorrecta()]"/>
+    <testcase name="dividirFuncionaCorrectamente" classname="ejemplos._04_Ciclo_de_vida_2" time="0.0" displayname="dividirFuncionaCorrectamente()" uniqueid="[engine:junit-jupiter]/[class:ejemplos._04_Ciclo_de_vida_2]/[method:dividirFuncionaCorrectamente()]"/>
+  </testsuite>
+</testrun>

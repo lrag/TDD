@@ -1,0 +1,15 @@
+127.0.0.1 - - [28/Jan/2021:18:31:30 +0100] "GET / HTTP/1.1" 404 1002
+127.0.0.1 - - [28/Jan/2021:18:32:50 +0100] "GET /Ej09_Geb/index.html HTTP/1.1" 200 4584
+127.0.0.1 - - [28/Jan/2021:18:32:50 +0100] "GET /favicon.ico HTTP/1.1" 404 1013
+127.0.0.1 - - [28/Jan/2021:18:32:51 +0100] "GET /Ej09_Geb/imagenes/imagen2.png HTTP/1.1" 500 11193
+127.0.0.1 - - [28/Jan/2021:18:32:51 +0100] "GET /Ej09_Geb/imagenes/imagen1.png HTTP/1.1" 200 39686
+127.0.0.1 - - [28/Jan/2021:18:32:54 +0100] "GET /Ej09_Geb/formulario.html HTTP/1.1" 200 1433
+127.0.0.1 - - [28/Jan/2021:18:32:56 +0100] "GET /Ej09_Geb/login.html HTTP/1.1" 200 1464
+127.0.0.1 - - [28/Jan/2021:18:32:56 +0100] "GET /Ej09_Geb/css/bootstrap.min.css HTTP/1.1" 200 121200
+127.0.0.1 - - [28/Jan/2021:18:32:58 +0100] "GET /Ej09_Geb/DoubleClickDemo.html HTTP/1.1" 200 688
+127.0.0.1 - - [28/Jan/2021:18:32:58 +0100] "GET /Ej09_Geb/jquery/jquery.js HTTP/1.1" 200 293072
+127.0.0.1 - - [28/Jan/2021:18:33:00 +0100] "GET /Ej09_Geb/DragAndDropDemo.html HTTP/1.1" 200 1481
+127.0.0.1 - - [28/Jan/2021:18:33:00 +0100] "GET /Ej09_Geb/jquery/jquery-ui.theme.css HTTP/1.1" 200 18671
+127.0.0.1 - - [28/Jan/2021:18:33:00 +0100] "GET /Ej09_Geb/jquery/jquery-ui.css HTTP/1.1" 200 37326
+127.0.0.1 - - [28/Jan/2021:18:33:00 +0100] "GET /Ej09_Geb/jquery/jquery-ui.structure.css HTTP/1.1" 200 18705
+127.0.0.1 - - [28/Jan/2021:18:33:00 +0100] "GET /Ej09_Geb/jquery/jquery-ui.js HTTP/1.1" 200 520714

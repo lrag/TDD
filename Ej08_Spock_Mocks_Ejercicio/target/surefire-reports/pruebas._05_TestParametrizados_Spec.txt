@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: pruebas._05_TestParametrizados_Spec
+-------------------------------------------------------------------------------
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in pruebas._05_TestParametrizados_Spec

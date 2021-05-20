@@ -1,0 +1,81 @@
+package ejemplos;
+
+import static org.junit.jupiter.api.Assertions.assertAll;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTimeout;
+import static org.junit.jupiter.api.Assertions.assertTimeoutPreemptively;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assumptions.assumeTrue;
+import static org.junit.jupiter.api.Assumptions.assumingThat;
+
+import java.time.Duration;
+
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+
+import com.curso.modelo.negocio.CalculadoraPrueba;
+
+public class _04_Ciclo_de_vida_2 {
+
+	private static CalculadoraPrueba calculadora;
+
+	//CalculadoraTest se instanciará por cada método marcado con @Test
+	public _04_Ciclo_de_vida_2() {
+		super();
+		System.out.println("Instanciando 04_Ciclo_de_vida_2");
+	}
+
+	@BeforeAll
+	public static void beforeAll() {
+		System.out.println("Before all");
+		//Si calculadora es estático se utilizará la misma instancia para todas las pruebas
+		//No es recomendable puesto que debemos asegurarnos de que ningún test está acoplado a otro
+		calculadora = new CalculadoraPrueba();
+	}
+
+	@AfterAll
+	public static void afterAll() {
+		System.out.println("After all");
+	}
+
+	@BeforeEach
+	public void beforeEach() {
+		System.out.println("Before each");
+		//Es más ortodoxo inicializar todo antes de cada test
+		//si hicieramos esto 'calculadora' no sería estática
+		//calculadora = new Calculadora();
+	}
+
+	@AfterEach
+	public void afterEach() {
+		System.out.println("After each");
+	}
+
+	@Test
+	public void laSumaDebeSerCorrecta() {	
+		
+		System.out.println("Test 1");
+		
+		//DADO
+		double s1 = 2d;
+		double s2 = 2d;
+		//CUANDO
+		double res = calculadora.sumar(s1, s2);
+		//ENTONCES		
+		assertEquals(new Double(4), res);
+	}
+	
+	@Test
+	public void dividirFuncionaCorrectamente() throws Exception {
+		System.out.println("Test 2");
+		assertEquals(5d, calculadora.dividir(10d, 2d));
+	}
+	
+}
+

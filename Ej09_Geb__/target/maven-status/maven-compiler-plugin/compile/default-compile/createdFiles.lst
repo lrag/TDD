@@ -1,0 +1,5 @@
+com\curso\modelo\negocio\Calculadora.class
+com\curso\modelo\negocio\GestorPersonas.class
+com\curso\modelo\entidad\Persona.class
+com\curso\modelo\negocio\CalculadoraImpuestos.class
+com\curso\modelo\negocio\InvalidIngresoException.class

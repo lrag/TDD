@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 15 resources" deleteContents="false" description="Delete 15 resources" element1="/Ej01_JUnit4" element10="/Ej07_Jasmine" element11="/Ej08_Spock" element12="/Ej08_Spock_Mocks" element13="/Ej08_Spock_Mocks_Ejercicio" element14="/Ej09_Geb" element15="/Ej09_Geb__" element2="/Ej01_JUnit5" element3="/Ej02_Hamcrest" element4="/Ej03_DBUtil" element5="/Ej04_HTTPUnit" element6="/Ej05_Mockito" element7="/Ej05_Mockito_JUnit5" element8="/Ej05_Mockito_JUnit5_Ejercicio" element9="/Ej06_Selenium" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="15" stamp="1576577150713"/>
+</session>
