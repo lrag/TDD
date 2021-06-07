@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="_02_Asertos" project="Ej01_JUnit5" tests="4" started="4" failures="0" errors="0" ignored="0">
-  <testsuite name="ejemplos._02_Asertos" time="0.0" displayname="_02_Asertos" uniqueid="[engine:junit-jupiter]/[class:ejemplos._02_Asertos]">
-    <testcase name="test1" classname="ejemplos._02_Asertos" time="0.0" displayname="test1()" uniqueid="[engine:junit-jupiter]/[class:ejemplos._02_Asertos]/[method:test1()]"/>
-    <testcase name="test2" classname="ejemplos._02_Asertos" time="0.0" displayname="test2()" uniqueid="[engine:junit-jupiter]/[class:ejemplos._02_Asertos]/[method:test2()]"/>
-    <testcase name="test3" classname="ejemplos._02_Asertos" time="0.0" displayname="test3()" uniqueid="[engine:junit-jupiter]/[class:ejemplos._02_Asertos]/[method:test3()]"/>
-    <testcase name="test4" classname="ejemplos._02_Asertos" time="0.0" displayname="test4()" uniqueid="[engine:junit-jupiter]/[class:ejemplos._02_Asertos]/[method:test4()]"/>
-  </testsuite>
-</testrun>

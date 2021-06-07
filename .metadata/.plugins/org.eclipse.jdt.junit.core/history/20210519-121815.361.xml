@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="_01_Ejemplo_Test" project="Ej01_JUnit5" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="ejemplos._01_Ejemplo_Test" time="0.036" displayname="_01_Ejemplo_Test" uniqueid="[engine:junit-jupiter]/[class:ejemplos._01_Ejemplo_Test]">
-    <testcase name="primerTest" classname="ejemplos._01_Ejemplo_Test" time="0.036" displayname="primerTest()" uniqueid="[engine:junit-jupiter]/[class:ejemplos._01_Ejemplo_Test]/[method:primerTest()]"/>
-  </testsuite>
-</testrun>

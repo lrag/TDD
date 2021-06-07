@@ -6,6 +6,7 @@ import java.util.Set;
 import com.curso.modelo.entidad.Cliente;
 import com.curso.modelo.entidad.Comercial;
 import com.curso.modelo.entidad.Sucursal;
+import com.curso.modelo.negocio.excepcion.DireccionException;
 import com.curso.modelo.persistencia.ClienteDao;
 
 public class GestorClientes {
@@ -55,8 +56,7 @@ public class GestorClientes {
 	}
 	
 	//
-	public void altaClientes(List<Cliente> clientes){
-	
+	public void altaClientes(List<Cliente> clientes){	
 		for(Cliente c: clientes) {
 			try {
 				altaCliente(c);
@@ -64,8 +64,7 @@ public class GestorClientes {
 				//e.printStackTrace();
 				System.out.println(e.getMessage());
 			}
-		}
-		
+		}		
 	}
 
 }

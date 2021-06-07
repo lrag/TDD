@@ -50,7 +50,7 @@ public class _12_TestAplicacion {
 		//Comprobamos que nos envían un redirect y la cookie JSESSIONID (no formaría parte de este test) 
 		Cookie token = driver.manage().getCookieNamed("JSESSIONID");
 		System.out.println("JSESSIONID:"+token.getValue());
-		assertNotNull(token);		
+		assertNotNull(token);	
 		
 	}
 	
@@ -96,7 +96,12 @@ public class _12_TestAplicacion {
 		Thread.sleep(1500);
 		
 		//Pulsamos el botón
+		//Al pulsarlo se hace un submit del promilario y el navegador pide otra página
 		btnInsertar.click();
+		
+		//No hace falta colocar ningun retardo ni espera para estar seguros de que se
+		//ha cargado la siguiente página. Lo hace selenium de manera automática
+		
 		
 		//Esperamos el listado como respuesta
 		h1 = driver.findElement(By.xpath("//h1[@class='titulo']"));

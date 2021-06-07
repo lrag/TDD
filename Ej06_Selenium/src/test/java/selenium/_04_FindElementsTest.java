@@ -71,7 +71,6 @@ public class _04_FindElementsTest {
 		WebElement password = driver
 			.findElement(By.id("loginForm"))
 			.findElement(By.className("in-pass"));
-
 	}
 	
 	@Test

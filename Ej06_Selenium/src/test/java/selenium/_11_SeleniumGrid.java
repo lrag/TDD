@@ -18,6 +18,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 //Esto es para ejecutar los test a traves del grid hub
 //hay que levantar el grid y una instancia de navegador chrome (o el que toque)
 //
+//Arrancamos el servidor:
 //java -jar selenium-server-standalone-<version>.jar -role hub
 //
 //podemos ver que todo esta bien en http://localhost:4444/grid/console

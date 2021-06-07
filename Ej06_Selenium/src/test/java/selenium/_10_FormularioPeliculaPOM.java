@@ -15,22 +15,14 @@ public class _10_FormularioPeliculaPOM {
 
 	private WebDriver driver;
 
-	@FindBy(id = "btnInsertar")
-	private WebElement btnInsertar;
-	@FindBy(id = "btnModificar")
-	private WebElement btnModificar;
-	@FindBy(id = "btnBorrar")
-	private WebElement btnBorrar;
-	@FindBy(name = "idPelicula")
-	private WebElement idPelicula;
-	@FindBy(name = "titulo")
-	private WebElement titulo;
-	@FindBy(name = "director")
-	private WebElement director;
-	@FindBy(name = "genero")
-	private WebElement genero;
-	@FindBy(name = "fechaEstreno")
-	private WebElement fechaEstreno;
+	@FindBy(id = "btnInsertar")    private WebElement btnInsertar;
+	@FindBy(id = "btnModificar")   private WebElement btnModificar;
+	@FindBy(id = "btnBorrar")	   private WebElement btnBorrar;
+	@FindBy(name = "idPelicula")   private WebElement idPelicula;
+	@FindBy(name = "titulo")	   private WebElement titulo;
+	@FindBy(name = "director")     private WebElement director;
+	@FindBy(name = "genero")	   private WebElement genero;
+	@FindBy(name = "fechaEstreno") private WebElement fechaEstreno;
 
 	// Inicializamos los atributos
 	public _10_FormularioPeliculaPOM(WebDriver driver) {

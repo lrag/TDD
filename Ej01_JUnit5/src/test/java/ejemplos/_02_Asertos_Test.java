@@ -18,11 +18,9 @@ import static org.junit.jupiter.api.Assumptions.assumingThat;
 import java.util.Arrays;
 import java.util.List;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.function.Executable;
 
 import com.curso.modelo.negocio.Calculadora;
 
@@ -140,7 +138,7 @@ public class _02_Asertos_Test {
 		List<String> lista1 = Arrays.asList(palabras1);
 		List<String> lista2 = Arrays.asList(palabras2);
 		
-		//Para comparar Iterables. Es decir: colecciones
+		//Para comparar Iterables. 
 		assertIterableEquals(lista1, lista2);		
 	}
 	

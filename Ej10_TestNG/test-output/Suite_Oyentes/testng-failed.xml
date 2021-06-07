@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite_Oyentes]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test_parallel_uno(failed)">
+    <classes>
+      <class name="ejemplos.parallel.Asertos_Test">
+        <methods>
+          <include name="test12"/>
+          <include name="test13"/>
+        </methods>
+      </class> <!-- ejemplos.parallel.Asertos_Test -->
+    </classes>
+  </test> <!-- Test_parallel_uno(failed) -->
+</suite> <!-- Failed suite [Suite_Oyentes] -->

@@ -90,8 +90,9 @@ public class GestorPedidosTest {
 	@BeforeEach
 	public void inicializar() {
 		crearPedidos();
-		gestorPedidos = new GestorPedidos();	
+		gestorPedidos = new GestorPedidos(); //Este es el objeto que vamos a probar	
 		
+		//Le asignamos los dummies
 		gestorPedidos.setPedidoDao(pedidoDao);
 		gestorPedidos.setGestorBancos(gestorBancos);
 		gestorPedidos.setGestorOfertas(gestorOfertas);
@@ -100,7 +101,7 @@ public class GestorPedidosTest {
 		
 		//Si usaramos estos objetos REALES para la prueba
 		//entonces no sería un test unitario, sino uno de integración/funcional
-		//No es que esté mal, pero aqui queremos un test unitario y usaremos TEST DOUBLES
+		//No es que esté mal el querer un test de integración/funcional, pero aqui queremos un test unitario y usaremos TEST DOUBLES
 		/*
 		PedidoDao pedidoDao     = new PedidoDaoJPAImplementation();
 		ProductoDao productoDao = new ProductoDaoJPAImplementation();
@@ -120,7 +121,7 @@ public class GestorPedidosTest {
 		*/		
 	}
 
-	//@Test
+	@Test
 	@DisplayName("GestorPedidos.aceptar funciona cuando el pedido es correcto")
 	public void aceptarPedido() throws Exception {
 		
@@ -162,7 +163,7 @@ public class GestorPedidosTest {
 	
 	}
 		
-	//@Test
+	@Test
 	@DisplayName("GestorPedidos.aceptar lanza datosBancarios exception cuando hay un problema con los datos bancarios del cliente")
 	public void aceptarPedidoDatosBancariosMal() throws Exception {
 

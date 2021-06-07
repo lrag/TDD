@@ -1,12 +1,12 @@
 package com.curso.pruebas;
 
-import com.curso.modelo.negocio.CalculadoraPrueba;
+import com.curso.modelo.negocio.Calculadora;
 
 public class PruebaMain2 {
 
 	public static void main(String[] args) {
 		
-		CalculadoraPrueba c = new CalculadoraPrueba();
+		Calculadora c = new Calculadora();
 		
 		double resultado = c.cuadrado(5d);
 		

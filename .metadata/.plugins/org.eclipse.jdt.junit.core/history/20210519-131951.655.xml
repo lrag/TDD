@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="_03_Ciclo_de_vida" project="Ej01_JUnit5" tests="3" started="3" failures="0" errors="0" ignored="0">
-  <testsuite name="ejemplos._03_Ciclo_de_vida" time="0.0" displayname="_03_Ciclo_de_vida" uniqueid="[engine:junit-jupiter]/[class:ejemplos._03_Ciclo_de_vida]">
-    <testcase name="tercerTest" classname="ejemplos._03_Ciclo_de_vida" time="0.0" displayname="tercerTest()" uniqueid="[engine:junit-jupiter]/[class:ejemplos._03_Ciclo_de_vida]/[method:tercerTest()]"/>
-    <testcase name="primerTest" classname="ejemplos._03_Ciclo_de_vida" time="0.0" displayname="primerTest()" uniqueid="[engine:junit-jupiter]/[class:ejemplos._03_Ciclo_de_vida]/[method:primerTest()]"/>
-    <testcase name="segundoTest" classname="ejemplos._03_Ciclo_de_vida" time="0.0" displayname="segundoTest()" uniqueid="[engine:junit-jupiter]/[class:ejemplos._03_Ciclo_de_vida]/[method:segundoTest()]"/>
-  </testsuite>
-</testrun>

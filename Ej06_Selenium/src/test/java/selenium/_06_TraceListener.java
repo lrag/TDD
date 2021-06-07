@@ -75,7 +75,7 @@ public class _06_TraceListener implements WebDriverEventListener {
 	@Override
 	public void afterNavigateTo(String url, WebDriver webDriver) {
 
-		System.out.println("Navegando a:"+url);
+		System.out.println("Estamos en: "+url);
 		
 	}
 

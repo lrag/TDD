@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="_05_Excepciones" project="Ej01_JUnit5" tests="2" started="2" failures="0" errors="0" ignored="0">
-  <testsuite name="ejemplos._05_Excepciones" time="0.0" displayname="_05_Excepciones" uniqueid="[engine:junit-jupiter]/[class:ejemplos._05_Excepciones]">
-    <testcase name="divisionPorCeroDebeLanzarExcepcion" classname="ejemplos._05_Excepciones" time="0.0" displayname="divisionPorCeroDebeLanzarExcepcion()" uniqueid="[engine:junit-jupiter]/[class:ejemplos._05_Excepciones]/[method:divisionPorCeroDebeLanzarExcepcion()]"/>
-    <testcase name="dividirFuncionaCorrectamente" classname="ejemplos._05_Excepciones" time="0.0" displayname="dividirFuncionaCorrectamente()" uniqueid="[engine:junit-jupiter]/[class:ejemplos._05_Excepciones]/[method:dividirFuncionaCorrectamente()]"/>
-  </testsuite>
-</testrun>

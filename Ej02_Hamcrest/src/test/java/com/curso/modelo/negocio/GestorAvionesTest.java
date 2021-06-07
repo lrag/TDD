@@ -96,14 +96,6 @@ public class GestorAvionesTest {
 		
 		Avion a2 = gestorAviones.buscar(a1.getId());
 		
-		//JUnit 4
-		/*
-		assertEquals(a2.getId(), a1.getId());
-		assertEquals(a2.getFabricante(), FABRICANTE);
-		assertEquals(a2.getModelo(), MODELO);
-		assertEquals(a2.getYear(), YEAR);
-		*/	
-		
 		//JUnit 5
 		assertAll( () -> assertEquals(a2.getId(), a1.getId()),
 				   () -> assertEquals(a2.getFabricante(), FABRICANTE),
@@ -120,6 +112,8 @@ public class GestorAvionesTest {
 	
 		//Con un matcher personalizado
 		assertThat(a2, new esIgual(a1));
+		
+		//Hamcrest no tiene soft assertions :(
 		
 	}
 
@@ -147,7 +141,6 @@ public class GestorAvionesTest {
 	}
 
 }
-
 
 
 class esIgual extends BaseMatcher<Avion>{

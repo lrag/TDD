@@ -86,7 +86,7 @@ class GestorPedidos_Spec extends Specification {
 		
 	}
 
-	def "un pedido con datos correctos se inserta correctamente"() {
+	def "test un pedido con datos correctos se inserta correctamente"() {
 		
 		given:		
 			pedidoDao.buscar(1) >> pedidoOk

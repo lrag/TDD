@@ -54,6 +54,7 @@ public class _10_POMTest {
 		
 		_10_FormularioPeliculaPOM page = new _10_FormularioPeliculaPOM(driver);
 		
+		Thread.sleep(750);
 		page.getTitulo().sendKeys("El último grán heroe");
 		Thread.sleep(750);
 		page.getDirector().sendKeys("John McTiernan");
@@ -75,6 +76,7 @@ public class _10_POMTest {
 		
 		_10_FormularioPeliculaPOM page = new _10_FormularioPeliculaPOM(driver);
 		
+		Thread.sleep(750);
 		page.getTitulo().sendKeys("El último grán heroe");
 		Thread.sleep(750);
 		page.getDirector().sendKeys("John McTiernan");

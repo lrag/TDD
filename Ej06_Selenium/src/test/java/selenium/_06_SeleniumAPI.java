@@ -35,7 +35,7 @@ public class _06_SeleniumAPI {
 		driver = new ChromeDriver();
 	}
 	
-	@Test
+	//@Test
 	public void testDoubleClick() throws InterruptedException {
 		//driver.get("http://cookbook.seleniumacademy.com/DoubleClickDemo.html");
 		driver.get("http://localhost:8080/Ej06_Selenium/DoubleClickDemo.html");
@@ -50,7 +50,7 @@ public class _06_SeleniumAPI {
 		Thread.sleep(2000);
 	}
 	
-	@Test
+	//@Test
 	public void testDragAndDrop() throws InterruptedException {
 		//driver.get("http://cookbook.seleniumacademy.com/DragDropDemo.html");
 		driver.get("http://localhost:8080/Ej06_Selenium/DragAndDropDemo.html");
@@ -67,7 +67,7 @@ public class _06_SeleniumAPI {
 		Thread.sleep(2000);
 	}
 	
-	@Test
+	//@Test
 	public void testJavascript() throws InterruptedException {
 		driver.get(Constantes.URL);
 		
@@ -87,7 +87,7 @@ public class _06_SeleniumAPI {
 	//Este no tiene que fallar, generamos las capturas
 	//beforeDragAndDrop.png
 	//afterDragAndDrop.png
-	@Test
+	//@Test
 	public void testScreenshots() throws IOException {
 		//driver.get("http://cookbook.seleniumacademy.com/DragDropDemo.html");
 		driver.get("http://localhost:8080/Ej06_Selenium/DragAndDropDemo.html");
@@ -110,33 +110,17 @@ public class _06_SeleniumAPI {
 		FileUtils.copyFile(srcFile, new File("src/test/resources/screenshots/afterDragAndDrop.png"));
 	}
 
-	//Podemos hacer test sobre las cookies a traves del metodo manage()
-	@Test
-	public void testCookies() {
-		driver.get(Constantes.URL);
-		Cookie cookie = new Cookie("cookie_selenium", "Cookie creada por nosostros");
-		driver.manage().addCookie(cookie);
-		
-		//Comprobamos que la cookie creada por nososotros esta
-		Cookie cookie2 = driver.manage().getCookieNamed("cookie_selenium");
-		assertEquals("Cookie creada por nosostros", cookie2.getValue());
-		
-		//Borramos la cookie y comprobamos
-		driver.manage().deleteCookieNamed("cookie_selenium");
-		cookie2 = driver.manage().getCookieNamed("cookie_selenium");
-		assertNull(cookie2);
-	}
-	
 	//Eventos
 	//Este SI tiene que fallar para que cree una captura de pantalla, en la carpeta de resources
 	//onException.png
-	@Test
+	//@Test
 	public void testEventosWebDriver() {
 		
 		//Con esta clase se nos permite escuchar eventos lanzados por el driver
 		EventFiringWebDriver eventDriver = 
 			new EventFiringWebDriver(driver);
-		//Esta clase le hemos creado nosostros y será la que reciba los eventos
+		//Esta clase la hemos creado nosostros y será la que reciba los eventos
+		//Esta clase guarda el método de retro llamada o callback
 		_06_TraceListener listener = new _06_TraceListener();
 		eventDriver.register(listener);
 
@@ -161,6 +145,22 @@ public class _06_SeleniumAPI {
 		
 	}
 	
+	//Podemos hacer test sobre las cookies a traves del metodo manage()
+	//@Test
+	public void testCookies() {
+		driver.get(Constantes.URL);
+		Cookie cookie = new Cookie("cookie_selenium", "Cookie creada por nosostros");
+		driver.manage().addCookie(cookie);
+		
+		//Comprobamos que la cookie creada por nososotros está
+		Cookie cookie2 = driver.manage().getCookieNamed("cookie_selenium");
+		assertEquals("Cookie creada por nosostros", cookie2.getValue());
+		
+		//Borramos la cookie y comprobamos
+		driver.manage().deleteCookieNamed("cookie_selenium");
+		cookie2 = driver.manage().getCookieNamed("cookie_selenium");
+		assertNull(cookie2);
+	}	
 	
 	@AfterAll
 	public static void tearDown() {

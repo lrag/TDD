@@ -30,7 +30,7 @@ public class _05_Interactions {
 	}
 	
 	//Escribimos algo en google y hacemos submit
-	@Test
+	//@Test
 	public void textBoxSubmit() throws InterruptedException {
 		driver.get("http://www.google.com");
 		WebElement input = driver.findElement(By.name("q"));
@@ -44,7 +44,7 @@ public class _05_Interactions {
 	}
 	
 	//Escribimos algo en wikipedia y hacemos click en el boton
-	@Test
+	//@Test
 	public void buttonClick() {
 		driver.get("https://es.wikipedia.org");
 		WebElement input = driver.findElement(By.id("searchInput"));
@@ -57,14 +57,14 @@ public class _05_Interactions {
 	}
 	
 	//Obtener texto
-	@Test
+	//@Test
 	public void getTextFromElement() {
 		driver.get(Constantes.URL);
 		WebElement label = driver.findElement(By.id("lb-mensaje"));
 		assertEquals(label.getText(), "Mensaje:");
 	}
 	
-	@Test
+	//@Test
 	public void getCssValueAndAttribute() {
 		driver.get(Constantes.URL);
 		WebElement mensaje = driver.findElement(By.id("mensaje"));
@@ -72,7 +72,7 @@ public class _05_Interactions {
 		assertEquals(mensaje.getCssValue("width"), "200px");
 	}
 	
-	@Test
+	//@Test
 	public void testDropdown() {
 		driver.get(Constantes.URL);
 		//para trabajar con los atributos especificos de los select
@@ -84,7 +84,7 @@ public class _05_Interactions {
 		//el numero de opciones es 4
 		assertEquals(coches.getOptions().size(), 4);
 		
-		//seleccionamos por texto visible al usuario
+		//seleccionamos por texto visible al coche
 		coches.selectByVisibleText("Tesla");
 		//podemos comprobar la opcion seleccionada, por el paso anterior
 		assertEquals(coches.getFirstSelectedOption().getText(), "Tesla");
@@ -99,7 +99,7 @@ public class _05_Interactions {
 		assertEquals(coches.getFirstSelectedOption().getText(), "BMW");
 	}
 	
-	@Test
+	//@Test
 	public void testDropdownMultiple() {
 		driver.get(Constantes.URL);
 		Select colores = new Select(driver.findElement(By.id("colorOptions")));
@@ -134,7 +134,7 @@ public class _05_Interactions {
 		assertEquals(colores.getAllSelectedOptions().size(), 0);
 	}
 	
-	@Test
+	//@Test
 	public void testCorrectOptions() {
 		driver.get(Constantes.URL);
 		
@@ -155,7 +155,7 @@ public class _05_Interactions {
 		assertArrayEquals(listaMeses.toArray(), valoresSelect.toArray());
 	}
 	
-	@Test
+	//@Test
 	public void testRadioButtons() {
 		driver.get(Constantes.URL);
 		WebElement radioButton = driver.findElement(By.xpath("//input[@type='radio' and @value='Yes']"));
@@ -170,7 +170,7 @@ public class _05_Interactions {
 		assertTrue(radioButton.isSelected());
 	}
 	
-	@Test
+	//@Test
 	public void testCheckBoxes() {
 		driver.get(Constantes.URL);
 		

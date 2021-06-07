@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite_Oyentes" verbose="1" parallel="tests">
+	<test name="Test_parallel_uno">
+		<classes>
+			<class name="ejemplos.parallel.Asertos_Test" />
+		</classes>
+	</test>
+	<test name="Test_parallel_dos">
+		<classes>
+			<class name="ejemplos.parallel.TestCalculadora" />
+		</classes>
+	</test>
+</suite>

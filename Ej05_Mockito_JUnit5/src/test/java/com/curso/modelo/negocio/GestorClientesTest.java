@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.AdditionalAnswers;
+import org.mockito.InOrder;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 
@@ -27,8 +27,6 @@ import com.curso.modelo.persistencia.ClienteDaoImpl;
 //o usando anotaciones. 
 @ExtendWith(MockitoExtension.class)
 public class GestorClientesTest {
-	
-	
 	
 	//ESTO NO ES UNA PRUEBA UNITARIA
 	//@Test
@@ -73,7 +71,7 @@ public class GestorClientesTest {
 	//mocks: un objeto que recuerda las llamadas que ha recibido, el orden de las mismas y el número de veces	
 	
 	
-	@Test
+	//@Test
 	@DisplayName("GestorClientes.altaCliente: Un cliente con datos correctos se insertará correctamente")
 	public void altaClienteDatosCorrectos() throws Exception {
 		
@@ -172,8 +170,7 @@ public class GestorClientesTest {
 		//Test doubles:
 		
 		//Stub:
-		GestorDirecciones gestorDirecciones = Mockito.mock(GestorDirecciones.class);
-		
+		GestorDirecciones gestorDirecciones = Mockito.mock(GestorDirecciones.class);		
 		try {
 			Mockito
 				.doThrow(new DireccionException("Dirección nula"))
@@ -202,10 +199,8 @@ public class GestorClientesTest {
 	@DisplayName("GestorClientes.altaCliente: un cliente con la direccion falsa lanzará una DireccionException")
 	public void altaClienteTestDireccionFalsa() {
 		
-		Cliente cliente = new Cliente(null,"Paul","C/Falsa, 123","Telefono");
-
 		//Dados
-		//Cliente cliente = new Cliente(null,"Paul","C/Falsa, 123","Telefono");
+		Cliente cliente = new Cliente(null,"Paul","C/Falsa, 123","Telefono");
 		
 		//Este es el objeto real que queremos probar
 		GestorClientes gestorClientes = new GestorClientes();
@@ -214,7 +209,6 @@ public class GestorClientesTest {
 		GestorDirecciones gestorDirecciones = Mockito.mock(GestorDirecciones.class);
 		try {
 			Mockito
-				.lenient()
 				.doThrow(new DireccionException("Esta direccion es falsa"))
 				.when(gestorDirecciones)
 				.comprobarDireccion("C/Falsa, 123");
@@ -227,47 +221,12 @@ public class GestorClientesTest {
 		//Entonces:		
 		DireccionException ex = Assertions.assertThrows(DireccionException.class, 
 				                                        () -> gestorClientes.altaCliente(cliente) );	
-		Assertions.assertEquals("Esta direccion es falsa", ex.getMessage());				
-
-		
-		
+		Assertions.assertEquals("Esta direccion es falsa", ex.getMessage());			
 	}	
 	
-	//@Test
+	@Test
 	@DisplayName("Comprobamos que gestorClientes.altaCliente realiza las llamadas correctas a sus dependecias")
 	public void pruebaMOCKS() {
-		
-		
-		//Dados
-		/*
-		Cliente c1 = new Cliente(null,"Antunez","d1","t1");
-		Cliente c2 = new Cliente(null,"Harpo","d2","t2");
-		
-		GestorClientes gc = new GestorClientes();
-		
-		ClienteDao cDao = Mockito.mock(ClienteDao.class);
-		gc.setClienteDao(cDao);
-		
-		Mockito.lenient().when(cDao.insertar(c1)).thenAnswer(invocation -> {
-						System.out.println("llamada a clienteDao.insertar");
-						Cliente cli = invocation.getArgument(0, Cliente.class);
-						cli.setId(2);
-						return cli;
-					});
-		
-		Mockito.lenient().when(cDao.insertar(c2)).thenAnswer(invocation -> {
-						System.out.println("llamada a clienteDao.insertar");
-						Cliente cli = invocation.getArgument(0, Cliente.class);
-						cli.setId(22);
-						return cli;
-					});
-
-		try {
-			gc.altaCliente(c1);
-		} catch (Exception e2) {
-			e2.printStackTrace();
-		}
-		*/
 						
 		//Dados:
 		List<Cliente> clientes = new ArrayList<>();
@@ -276,12 +235,11 @@ public class GestorClientesTest {
 		clientes.add(new Cliente(null,"N3",null,"T3"));
 		clientes.add(new Cliente(null,"N4","D4","T4"));
 		clientes.add(new Cliente(null,"N5","C/Falsa, 123","T5"));
-				
+						
 		GestorClientes gestorClientes = new GestorClientes();
 		
 		//TestDoubles;
-		GestorDirecciones gestorDirecciones = Mockito.mock(GestorDirecciones.class);
-		
+		GestorDirecciones gestorDirecciones = Mockito.mock(GestorDirecciones.class);		
 		try {
 			Mockito
 				.lenient()
@@ -336,7 +294,7 @@ public class GestorClientesTest {
 		
 		//Entonces:
 		
-		//Los mocks de Mockito guardan como estado las llamadas que han 
+		//Los test doubles de Mockito guardan como estado las llamadas que han 
 		//recibido, el número y el orden de las mismas
 		//
 		//Si usamos esta característica de mockito estamos dando por sentado que el test conoce 
@@ -362,13 +320,13 @@ public class GestorClientesTest {
 			Mockito.verify(gestorSucursales, Mockito.times(1)).encontrarSucursalCercana("D4");
 			
 			//Podemos verificar el orden de las llamadas
-			/*
-			 *No funciona si en la lista de clientes tenemos más de uno
-		    InOrder ordered = Mockito.inOrder(gestorDirecciones, gestorSucursales, gestorComerciales, clienteDao);	
+			//No funciona si en la lista de clientes tenemos más de uno
+		    /*
+			InOrder ordered = Mockito.inOrder(gestorDirecciones, gestorSucursales, gestorComerciales, clienteDao);	
 		    ordered.verify(gestorDirecciones).comprobarDireccion(any(String.class));
 		    ordered.verify(gestorSucursales).encontrarSucursalCercana(any(String.class));
-		    ordered.verify(gestorComerciales).encontrarComerciales();
 		    ordered.verify(clienteDao).insertar(any(Cliente.class));
+		    ordered.verify(gestorComerciales).encontrarComerciales();
 		    */
 					
 		} catch (Exception e) {

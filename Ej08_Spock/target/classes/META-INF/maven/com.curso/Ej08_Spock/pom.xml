@@ -37,7 +37,7 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-surefire-plugin</artifactId>
-					<version>2.18.1</version>
+					<version>3.0.0-M5</version>
 					<configuration>
 						<includes>
 							<!-- By default only files ending in 'Test' will be included, so also 
@@ -46,6 +46,7 @@
 								*Spec.java does -->
 							<include>**/*_Test.java</include>
 							<include>**/*_Spec.java</include>
+							<include>**/*_Spec.groovy</include>
 						</includes>
 					</configuration>
 				</plugin>
@@ -55,15 +56,16 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>org.codehaus.groovy</groupId>
-			<artifactId>groovy-all</artifactId>
-			<version>2.4.7</version>
+		    <groupId>org.codehaus.groovy</groupId>
+		    <artifactId>groovy-all</artifactId>
+		    <version>3.0.8</version>
+		    <type>pom</type>
 		</dependency>
 		<dependency>
-			<groupId>org.spockframework</groupId>
-			<artifactId>spock-core</artifactId>
-			<version>1.0-groovy-2.4</version>
-			<scope>test</scope>
+		    <groupId>org.spockframework</groupId>
+		    <artifactId>spock-core</artifactId>
+		    <version>2.0-groovy-3.0</version>
+		    <scope>test</scope>
 		</dependency>
 	</dependencies>
 

@@ -98,6 +98,5 @@ public class _07_TestParametrizado {
 	        Arguments.arguments(new Cliente(null,"N5","D5","T5"))
 	    );	 
 	}	
-	
 		
 }

@@ -32,7 +32,7 @@ public class _07_Sincronizacion {
 	
 	//WAIT IMPLICITO
 	//Se indica al driver y este lo aplica a todas las búsquedas
-	@Test
+	//@Test
 	public void testSincroImplicita() throws InterruptedException {
 		driver.get(Constantes.URL);
 		
@@ -40,6 +40,8 @@ public class _07_Sincronizacion {
 		//Thread.sleep(8000);		
 		//WebElement button2 = driver.findElement(By.cssSelector("#btn-1"));
 		
+		//Le indicamos al driver que si le pedimos un webelement y no está que espere
+		//un tiempo antes de lanzar la excepción por si aparece
 		//podemos ir cambiando el tiempo, el boton aparece en 4000 milisegundos
 		driver.manage().timeouts().implicitlyWait(8000, TimeUnit.MILLISECONDS);
 
@@ -58,7 +60,7 @@ public class _07_Sincronizacion {
 	
 	//WAIT EXPLICITO
 	//Detiene el test hasta que esté disponible un elemento
-	@Test
+	//@Test
 	public void testWebDriverWait() {
 		System.out.println("DOS");
 		driver.get(Constantes.URL);
@@ -96,7 +98,7 @@ public class _07_Sincronizacion {
 		
 		FluentWait<WebDriver> wait = new FluentWait<WebDriver>(driver)
 				.withTimeout(Duration.ofMillis(8000))
-				.pollingEvery(Duration.ofMillis(300))
+				.pollingEvery(Duration.ofMillis(250))
 				.ignoring(Exception.class);
 		
 		/*
@@ -108,7 +110,9 @@ public class _07_Sincronizacion {
 		*/
 		
 		//Con una expresion lambda
+		System.out.println("Está ya el botón?");
 		WebElement button = wait.until(drive -> {
+				System.out.println("y ahora?");
 				return drive.findElement(By.id("btn-1"));
 			});		
 		button.click();

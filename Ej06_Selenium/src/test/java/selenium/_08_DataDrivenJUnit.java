@@ -34,23 +34,25 @@ public class _08_DataDrivenJUnit {
 	//@Test
 	public void pruebaSuma() throws InterruptedException {
 		
+		//Cargamos index.html
+		driver.get(Constantes.URL);
+
 		//Dados
 		String s1  = "20";
 		String s2  = "30";
 		String res = "50";
 		
-		//Cuando
-		
-		driver.get(Constantes.URL);
-		
 		WebElement campo1 = driver.findElement(By.id("n1"));
 		WebElement campo2 = driver.findElement(By.id("n2"));
-		WebElement boton   = driver.findElement(By.id("btn-suma"));
+		WebElement boton  = driver.findElement(By.id("btn-suma"));
 		WebElement span   = driver.findElement(By.id("res"));
 		
+		//Cuando		
+		Thread.sleep(1000);
 		campo1.sendKeys(s1);
+		Thread.sleep(1000);
 		campo2.sendKeys(s2);
-
+		Thread.sleep(1000);
 		boton.click();
 		
 		//Entonces
@@ -61,15 +63,17 @@ public class _08_DataDrivenJUnit {
 	//Juego de datos para el test
 	static Stream<Arguments> datosParaElTest() {
 	    return Stream.of(
-	        Arguments.arguments(1,2,3),
-	        Arguments.arguments(3,10,13),
-	        Arguments.arguments(4,6,10),
-	        Arguments.arguments(8,1,9));
+	        Arguments.arguments(2,2,4),
+	        Arguments.arguments(4,2,6),
+	        Arguments.arguments(6,2,8),
+	        Arguments.arguments(8,8,16));
 	}	
 
 	@ParameterizedTest
 	@MethodSource("datosParaElTest")
 	public void testSuma(Integer num1, Integer num2, Integer res) throws InterruptedException {
+
+		Thread.sleep(1000);
 		System.out.println("Prueba numero: " + ++contador);
 		WebElement campo1 = driver.findElement(By.id("n1"));
 		WebElement campo2 = driver.findElement(By.id("n2"));
@@ -88,7 +92,6 @@ public class _08_DataDrivenJUnit {
 		WebElement campoRes = driver.findElement(By.id("res"));
 		assertEquals(res.toString(), campoRes.getText());
 		
-		Thread.sleep(1000);
 		
 	}
 	

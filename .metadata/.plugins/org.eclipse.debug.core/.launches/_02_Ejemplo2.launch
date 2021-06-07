@@ -1,98 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.codehaus.groovy.eclipse.groovyScriptLaunchConfiguration">
-<stringAttribute key="org.codehaus.groovy.eclipse.launch.runType" value="pruebas._02_Ejemplo2"/>
-<listAttribute key="org.eclipse.jdt.launching.CLASSPATH">
-<listEntry value="D:\JAVA\workspaces\Herramientas_Java\ws_TDD_Mejoras\Ej09_Geb\target\classes"/>
-<listEntry value="D:\JAVA\workspaces\Herramientas_Java\ws_TDD_Mejoras\Ej09_Geb\target\classes"/>
-<listEntry value="D:\JAVA\workspaces\Herramientas_Java\ws_TDD_Mejoras\Ej09_Geb\target\test-classes"/>
-<listEntry value="D:\JAVA\workspaces\Herramientas_Java\ws_TDD_Mejoras\Ej09_Geb\target\test-classes"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\codehaus\groovy\groovy\2.5.6\groovy-2.5.6.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\codehaus\groovy\groovy-ant\2.5.6\groovy-ant-2.5.6.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\apache\ant\ant\1.9.13\ant-1.9.13.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\apache\ant\ant-junit\1.9.13\ant-junit-1.9.13.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\apache\ant\ant-launcher\1.9.13\ant-launcher-1.9.13.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\apache\ant\ant-antlr\1.9.13\ant-antlr-1.9.13.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\codehaus\groovy\groovy-cli-commons\2.5.6\groovy-cli-commons-2.5.6.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\commons-cli\commons-cli\1.4\commons-cli-1.4.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\codehaus\groovy\groovy-cli-picocli\2.5.6\groovy-cli-picocli-2.5.6.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\info\picocli\picocli\3.9.2\picocli-3.9.2.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\codehaus\groovy\groovy-console\2.5.6\groovy-console-2.5.6.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\codehaus\groovy\groovy-datetime\2.5.6\groovy-datetime-2.5.6.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\codehaus\groovy\groovy-docgenerator\2.5.6\groovy-docgenerator-2.5.6.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\com\thoughtworks\qdox\qdox\1.12.1\qdox-1.12.1.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\codehaus\groovy\groovy-groovydoc\2.5.6\groovy-groovydoc-2.5.6.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\codehaus\groovy\groovy-groovysh\2.5.6\groovy-groovysh-2.5.6.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\jline\jline\2.14.6\jline-2.14.6.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\codehaus\groovy\groovy-jmx\2.5.6\groovy-jmx-2.5.6.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\codehaus\groovy\groovy-json\2.5.6\groovy-json-2.5.6.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\codehaus\groovy\groovy-jsr223\2.5.6\groovy-jsr223-2.5.6.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\codehaus\groovy\groovy-macro\2.5.6\groovy-macro-2.5.6.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\codehaus\groovy\groovy-nio\2.5.6\groovy-nio-2.5.6.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\codehaus\groovy\groovy-servlet\2.5.6\groovy-servlet-2.5.6.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\codehaus\groovy\groovy-sql\2.5.6\groovy-sql-2.5.6.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\codehaus\groovy\groovy-swing\2.5.6\groovy-swing-2.5.6.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\codehaus\groovy\groovy-templates\2.5.6\groovy-templates-2.5.6.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\codehaus\groovy\groovy-test\2.5.6\groovy-test-2.5.6.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\codehaus\groovy\groovy-test-junit5\2.5.6\groovy-test-junit5-2.5.6.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\junit\platform\junit-platform-launcher\1.3.2\junit-platform-launcher-1.3.2.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\junit\platform\junit-platform-engine\1.3.2\junit-platform-engine-1.3.2.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\junit\platform\junit-platform-commons\1.3.2\junit-platform-commons-1.3.2.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\opentest4j\opentest4j\1.1.1\opentest4j-1.1.1.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.3.2\junit-jupiter-engine-5.3.2.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.3.2\junit-jupiter-api-5.3.2.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\codehaus\groovy\groovy-testng\2.5.6\groovy-testng-2.5.6.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\testng\testng\6.13.1\testng-6.13.1.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\codehaus\groovy\groovy-xml\2.5.6\groovy-xml-2.5.6.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\spockframework\spock-core\1.0-groovy-2.4\spock-core-1.0-groovy-2.4.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\codehaus\groovy\groovy-all\2.4.1\groovy-all-2.4.1.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\junit\junit\4.12\junit-4.12.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\gebish\geb-spock\3.2\geb-spock-3.2.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\gebish\geb-core\3.2\geb-core-3.2.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\gebish\geb-ast\3.2\geb-ast-3.2.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\gebish\geb-waiting\3.2\geb-waiting-3.2.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\gebish\geb-implicit-assertions\3.2\geb-implicit-assertions-3.2.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\gebish\geb-exceptions\3.2\geb-exceptions-3.2.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\jodd\jodd-lagarto\3.7.1\jodd-lagarto-3.7.1.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\jodd\jodd-core\3.7.1\jodd-core-3.7.1.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\jodd\jodd-log\3.7.1\jodd-log-3.7.1.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\threeten\threeten-extra\1.4\threeten-extra-1.4.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\javax\servlet\javax.servlet-api\3.0.1\javax.servlet-api-3.0.1.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\hibernate\hibernate-core\4.3.11.Final\hibernate-core-4.3.11.Final.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\jboss\logging\jboss-logging\3.1.3.GA\jboss-logging-3.1.3.GA.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\jboss\logging\jboss-logging-annotations\1.2.0.Beta1\jboss-logging-annotations-1.2.0.Beta1.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.0.0.Final\jboss-transaction-api_1.2_spec-1.0.0.Final.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\hibernate\common\hibernate-commons-annotations\4.0.5.Final\hibernate-commons-annotations-4.0.5.Final.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.1-api\1.0.0.Final\hibernate-jpa-2.1-api-1.0.0.Final.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\javassist\javassist\3.18.1-GA\javassist-3.18.1-GA.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\org\jboss\jandex\1.1.0.Final\jandex-1.1.0.Final.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\com\h2database\h2\1.4.191\h2-1.4.191.jar"/>
-<listEntry value="C:\Users\uno\.m2\repository\javax\servlet\jstl\1.2\jstl-1.2.jar"/>
-<listEntry value="C:\Users\uno\.groovy\greclipse\global_dsld_support"/>
-<listEntry value="D:\JAVA\ide\eclipse\plugins\org.codehaus.groovy_2.5.8.v201911031935-e1909\plugin_dsld_support\"/>
-</listAttribute>
-<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.codehaus.groovy.tools.GroovyStarter"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="--classpath &quot;${workspace_loc:Ej09_Geb}\src\main\java;${workspace_loc:Ej09_Geb}\src\main\resources;${workspace_loc:Ej09_Geb}\src\test\java;${workspace_loc:Ej09_Geb}\src\test\resources;${workspace_loc:Ej09_Geb}\target\classes;${workspace_loc:Ej09_Geb}\target\test-classes&quot; --main groovy.ui.GroovyMain --encoding Cp1252 &quot;${workspace_loc:Ej09_Geb\src\test\java\pruebas\_02_Ejemplo2.groovy}&quot;"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Ej09_Geb"/>
-<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dgroovy.home=&quot;${groovy_home}&quot; -Djava.system.class.loader=groovy.lang.GroovyClassLoader"/>
+    <stringAttribute key="org.codehaus.groovy.eclipse.launch.runType" value="pruebas._02_Ejemplo2"/>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_EXCLUDE_TEST_CODE" value="false"/>
+    <listAttribute key="org.eclipse.jdt.launching.CLASSPATH">
+        <listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;runtimeClasspathEntry externalArchive=&quot;D:/JAVA/ide/eclipse_2020/plugins/org.codehaus.groovy_3.0.7.v202103311613-e2012-RELEASE/lib/groovy-3.0.7-indy.jar&quot; path=&quot;3&quot; type=&quot;2&quot;/&gt;&#13;&#10;"/>
+        <listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;runtimeClasspathEntry externalArchive=&quot;D:/JAVA/ide/eclipse_2020/plugins/org.codehaus.groovy_3.0.7.v202103311613-e2012-RELEASE/lib/groovy-test-3.0.7-indy.jar&quot; path=&quot;3&quot; type=&quot;2&quot;/&gt;&#13;&#10;"/>
+        <listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;runtimeClasspathEntry externalArchive=&quot;D:/JAVA/ide/eclipse_2020/plugins/org.codehaus.groovy_3.0.7.v202103311613-e2012-RELEASE/lib/ivy-2.5.0.jar&quot; path=&quot;3&quot; type=&quot;2&quot;/&gt;&#13;&#10;"/>
+    </listAttribute>
+    <booleanAttribute key="org.eclipse.jdt.launching.DEFAULT_CLASSPATH" value="false"/>
+    <booleanAttribute key="org.eclipse.jdt.launching.DEFAULT_SOURCE_PATH" value="false"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.codehaus.groovy.tools.GroovyStarter"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="--classpath &quot;${workspace_loc:Ej09_Geb}\src\main\java;${workspace_loc:Ej09_Geb}\src\main\resources;${workspace_loc:Ej09_Geb}\src\test\java;${workspace_loc:Ej09_Geb}\src\test\resources;${workspace_loc:Ej09_Geb}\target\classes;${workspace_loc:Ej09_Geb}\target\test-classes&quot; --main groovy.ui.GroovyMain --encoding Cp1252 &quot;${workspace_loc:Ej09_Geb\src\test\java\pruebas\_02_Ejemplo2.groovy}&quot;"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Ej09_Geb"/>
+    <listAttribute key="org.eclipse.jdt.launching.SOURCE_PATH">
+        <listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;runtimeClasspathEntry containerPath=&quot;org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8&quot; javaProject=&quot;Ej09_Geb&quot; path=&quot;1&quot; type=&quot;4&quot;/&gt;&#13;&#10;"/>
+        <listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;runtimeClasspathEntry id=&quot;org.eclipse.jdt.launching.classpathentry.defaultClasspath&quot;&gt;&#13;&#10;    &lt;memento exportedEntriesOnly=&quot;false&quot; project=&quot;Ej09_Geb&quot;/&gt;&#13;&#10;&lt;/runtimeClasspathEntry&gt;&#13;&#10;"/>
+    </listAttribute>
+    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dgroovy.home=&quot;${groovy_home}&quot; -Djava.system.class.loader=groovy.lang.GroovyClassLoader"/>
 </launchConfiguration>

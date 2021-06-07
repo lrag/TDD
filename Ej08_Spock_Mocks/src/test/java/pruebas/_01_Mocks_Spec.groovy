@@ -35,7 +35,7 @@ class _01_Mocks_Spec extends Specification {
 	//       un fake se programa de verdad!
 	//mocks: un objeto que recuerda las llamadas que ha recibido, el orden de las mismas y el número de veces
 
-	//Este es la clase que vamos a probar:
+	//Esta es la clase que vamos a probar:
 	GestorClientes gestorClientes
 	
 	//Estos son los test doubles que necesitaremos:
@@ -45,8 +45,7 @@ class _01_Mocks_Spec extends Specification {
 	GestorComerciales gestorComerciales
 	ClienteDao clienteDao
 	
-	def setup() {
-		
+	def setup() {		
 		//Inicialmente los test doubles son dummies
 		gestorComerciales = Mock(GestorComerciales)
 		gestorSucursales = Mock(GestorSucursales)
@@ -60,7 +59,7 @@ class _01_Mocks_Spec extends Specification {
 		gestorClientes.clienteDao = clienteDao
 	}
 	
-	def "un cliente con datos correctos se inserta correctamente"() {
+	def "test un cliente con datos correctos se inserta correctamente"() {
 		
 		given:
 			def cliente = new Cliente(null,"Nombre","Direccion","Telefono");
@@ -97,11 +96,11 @@ class _01_Mocks_Spec extends Specification {
 			clienteInsertado.comerciales.size() == 2
 	}
 	
-	def "un cliente con direccion nula no se inserta"() {
+	def "test un cliente con direccion nula no se inserta"() {
 
 		given:
 		
-			def cliente = new Cliente(null,"Nombre",null,"Telefono");
+			def cliente = new Cliente(null,"Nombre",null,"Telefono")
 			
 		and :
 		
@@ -139,7 +138,7 @@ class _01_Mocks_Spec extends Specification {
 			//al estar la dirección a null
 		
 			gestorSucursales
-				.encontrarSucursalCercana("C/Falsa, 123") >>
+				.encontrarSucursalCercana(_) >>
 					//Si en el cuerpo del closure no se usan los parámetros no hace falta ponerlos:
 					//{ direccion -> throw new DireccionException("Esta direccion es falsa") }
 					{ throw new DireccionException("Esta direccion es falsa") }
