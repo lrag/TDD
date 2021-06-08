@@ -2,18 +2,18 @@ package com.curso.pruebas;
 
 import com.curso.modelo.negocio.Calculadora;
 
-public class PruebaMain3 implements Prueba{
+public class PruebaMain3 {
 
-	public void test() {
+	public static void main(String[] args) throws Exception {
 		
 		Calculadora c = new Calculadora();
 		
-		double resultado = c.sumar(10d,20d);
+		double resultado = c.dividir(20d,10d);
 		
-		if(resultado == 30d) {
-			System.out.println("calculadora.sumar OK");
+		if(resultado == 2d) {
+			System.out.println("calculadora.dividir OK");
 		} else {
-			System.out.println("calculadora.sumar ZASCA!");
+			System.out.println("calculadora.dividir ZASCA!");
 		}		
 		
 	}	

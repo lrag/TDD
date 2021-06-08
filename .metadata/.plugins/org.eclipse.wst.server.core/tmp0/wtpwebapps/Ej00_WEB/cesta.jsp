@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Cesta</title>
 </head>
 
 <%
@@ -14,13 +14,13 @@ System.out.println(session.getId()+" (cesta.jsp)");
 
 <body>
 
-	<h2>
+	<h2 align="center">
 		<font color="lightGreen">
 			Cesta de productos
 		</font>
 	</h2>
 	
-	<form action="SVCesta" method="post">
+	<form name="formulario" action="SVCesta" method="post">
 		<table align="center" border="0">
 			<tr>
 				<td>Producto</td>
@@ -35,8 +35,8 @@ System.out.println(session.getId()+" (cesta.jsp)");
 				</td>
 			</tr>
 			<tr>
-				<td align="center" colspan="2">
-					<input type="submit" value="Añadir"/>
+				<td align="right" colspan="2">
+					<input type="submit" id="btnEnviar" value="Añadir"/>
 				</td>
 			</tr>
 		</table>
@@ -44,7 +44,7 @@ System.out.println(session.getId()+" (cesta.jsp)");
 	
 	<p/>
 
-	<table align="center" border="1">
+	<table align="center" border="1" width="400px" id="tablaDetalles">
 		<tr>
 			<th>Producto</th>
 			<th>Cantidad</th>

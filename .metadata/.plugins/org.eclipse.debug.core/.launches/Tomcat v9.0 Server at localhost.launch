@@ -9,6 +9,6 @@
     <booleanAttribute key="org.eclipse.jdt.launching.DEFAULT_CLASSPATH" value="false"/>
     <stringAttribute key="org.eclipse.jdt.launching.JRE_CONTAINER" value="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_231"/>
     <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="start"/>
-    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dcatalina.base=&quot;D:\JAVA\workspaces\Herramientas_Java\ws_TDD_Mejoras\.metadata\.plugins\org.eclipse.wst.server.core\tmp0&quot; -Dcatalina.home=&quot;D:\JAVA\apache-tomcat-9.0.24&quot; -Dwtp.deploy=&quot;D:\JAVA\workspaces\Herramientas_Java\ws_TDD_Mejoras\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps&quot; -Djava.endorsed.dirs=&quot;D:\JAVA\apache-tomcat-9.0.24\endorsed&quot;"/>
+    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dcatalina.base=&quot;D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\.metadata\.plugins\org.eclipse.wst.server.core\tmp0&quot; -Dcatalina.home=&quot;D:\JAVA\apache-tomcat-9.0.24&quot; -Dwtp.deploy=&quot;D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps&quot; -Djava.endorsed.dirs=&quot;D:\JAVA\apache-tomcat-9.0.24\endorsed&quot;"/>
     <stringAttribute key="server-id" value="Tomcat v9.0 Server at localhost"/>
 </launchConfiguration>

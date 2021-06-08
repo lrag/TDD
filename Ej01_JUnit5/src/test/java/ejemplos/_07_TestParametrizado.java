@@ -23,7 +23,7 @@ public class _07_TestParametrizado {
 	private GestorClientes gestorClientes;
 	
 	@BeforeEach
-	public void inicializar() {
+	void inicializar() {
 		calculadoraImpuestos = new CalculadoraImpuestos();
 		calculadora = new Calculadora();
 		gestorClientes = new GestorClientes();
@@ -98,5 +98,13 @@ public class _07_TestParametrizado {
 	        Arguments.arguments(new Cliente(null,"N5","D5","T5"))
 	    );	 
 	}	
-		
+
 }
+
+
+
+
+
+
+
+

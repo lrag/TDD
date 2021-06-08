@@ -31,8 +31,8 @@ public class _06_Timeouts {
 	@Test
 	public void calculoExtremadamenteComplejoDebeRealizarseRapido() throws InterruptedException {
 		
-		/*
 		//Si no existiera el assertTimeout
+		/*
 		long inicio = System.currentTimeMillis();
 		calculadora.calculoExtremadamenteComplejo();
 		long fin = System.currentTimeMillis();
@@ -46,6 +46,7 @@ public class _06_Timeouts {
 		//Detiene la prueba si se excede el tiempo
 		Assertions.assertTimeoutPreemptively(Duration.ofMillis(2000), 
 				                             () -> calculadora.calculoExtremadamenteComplejo());
+		
 	}
 
 }

@@ -57,7 +57,8 @@ public class _05_Excepciones {
 			//MAL
 			Assertions.fail("Pues no ha lanzado la excepción!");
 		} catch (CalculadoraException e) {
-			//OK, DPM!
+			System.out.println("OK");
+			//OK, Esto es lo que esperabamos!
 		} catch(Exception e) {
 			Assertions.fail("Pues ha lanzado OTRA excepción!");			
 		}
@@ -71,9 +72,12 @@ public class _05_Excepciones {
 		});
 		 */
 		
+		/*
 		Assertions.assertThrows(CalculadoraException.class,  
 			                    () -> calculadora.dividir(dividendo, divisor));
+		*/
 
+		
 		//Nos entregan la excepción que se ha lanzado por si nos hace falta
 		CalculadoraException e = 
 			Assertions.assertThrows(CalculadoraException.class,  

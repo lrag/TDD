@@ -1,8 +1,8 @@
 package ejemplos;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertIterableEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
@@ -18,9 +18,11 @@ import static org.junit.jupiter.api.Assumptions.assumingThat;
 import java.util.Arrays;
 import java.util.List;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.opentest4j.TestAbortedException;
 
 import com.curso.modelo.negocio.Calculadora;
 
@@ -39,6 +41,10 @@ public class _02_Asertos_Test {
 		int n3 = n1 + n2;
 
 		//entonces		
+		//Assertions.assertEquals(300, n3);
+		//Con import estático
+		
+		//Utiliza equals, no el '=='
 		assertEquals(300, n3);
 	
 		//Lo mismo, pero sin import estático:
@@ -50,6 +56,8 @@ public class _02_Asertos_Test {
 		System.out.println("Test 2");
 		int n1 = 100;
 		int n2 = 200;
+		
+		//Utiliza equals, no el '=='
 		assertNotEquals(n1, n2, "No son iguales");	
 	}
 	
@@ -109,7 +117,11 @@ public class _02_Asertos_Test {
 		Integer i1 = 128;
 		Integer i2 = 128;
 		
+		Calculadora c1 = new Calculadora();
+		Calculadora c2 = new Calculadora();		
+		
 		assertNotSame(i1, i2);	
+		assertNotSame(c1, c2);	
 	}
 	
 	@Test
@@ -123,8 +135,8 @@ public class _02_Asertos_Test {
 			if(!palabras1[a].equals(palabras2[a])) {
 				throw new Exception("No son iguales!!!!");
 			}
-		}	
-		*/
+		}
+		*/	
 		
 		assertArrayEquals(palabras2, palabras1);	
 	}
@@ -147,10 +159,10 @@ public class _02_Asertos_Test {
 
 		System.out.println("Test 11");
 		
-		boolean condicionDificilDeExpresarConUnAserto = true;
+		boolean condicionDificilDeExpresarConUnAserto = false;
 		if(!condicionDificilDeExpresarConUnAserto) {
-			//throw new RuntimeException("La liamos parda");
-			fail("Test incompleto");
+			//throw new RuntimeException("La liamos parda"); //Ñapa
+			fail("Test fallido");
 		}
 	}
 
@@ -168,8 +180,8 @@ public class _02_Asertos_Test {
 		//Cuando
 		Double sumResult = calculadora.sumar(s1, s2);
 		
-		//Podríamos hacer esto, pero al primer aserto que falle se sale del método por la excepción que se lanza
 		/*
+		//Podríamos hacer esto, pero al primer aserto que falle se sale del método por la excepción que se lanza
 		System.out.println("I");
 		assertNotNull(sumResult);
 		System.out.println("II");
@@ -212,42 +224,20 @@ public class _02_Asertos_Test {
 				});
 		*/
 			
+		/*
 		//Con expresiones lambda
 		assertAll(() -> assertTrue(sumResult != null),
 				  () -> assertTrue(sumResult < 10),
 				  () -> assertTrue(sumResult > 10));						
-
-		/*
-		assertAll(
-			() -> { System.out.println("Uno"); assertTrue(sumResult != null); },
-			() -> { System.out.println("Dos"); assertTrue(sumResult < 10); },
-			() -> { System.out.println("Tres"); assertTrue(sumResult > 10); }
-		);	
 		*/	
+
+		assertAll(
+			() -> { System.out.println("Uno"); assertTrue(sumResult == null, "La suma es nula!"); },
+			() -> { System.out.println("Dos"); assertTrue(sumResult < 10, "La suma es mayor que 10!"); },
+			() -> { System.out.println("Tres"); assertTrue(sumResult > 10, "La suma es menor que 10!"); }
+		);	
 		
 	}		
-	
-	@Test
-	@Disabled 
-	//Si queremos deshabilitar todos los test de una clase podemos anotarla con @Disabled
-	@DisplayName("Esto solo tiene sentido en linux")
-	public void test13() {
-		
-		System.out.println("Test 13");
-		
-		//Precondición: Si no se cumple no falla el test
-		//assumeFalse(System.getProperty("os.name").contains("Linux"));
-		
-		assumeTrue(System.getProperty("os.name").contains("Linux"));
-		
-		//Si no se cumple lo que hemos asumido el test deja de ejecutarse al 
-		//lanzarse una excepción (TestAbortedException)
-		//El tes no queda marcado como fallido, sino como 'skipped'
-		assertNotNull(null);
-
-		// Idéntico al anterior
-		assumingThat(System.getProperty("os.name").contains("Linux"), () -> assertNotNull(null));
-	}	
 
 }
 

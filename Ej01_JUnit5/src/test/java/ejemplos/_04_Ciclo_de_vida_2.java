@@ -12,7 +12,7 @@ import com.curso.modelo.negocio.Calculadora;
 
 public class _04_Ciclo_de_vida_2 {
 
-	private static Calculadora calculadora;
+	private Calculadora calculadora;
 
 	//CalculadoraTest se instanciará por cada método marcado con @Test
 	public _04_Ciclo_de_vida_2() {
@@ -25,7 +25,7 @@ public class _04_Ciclo_de_vida_2 {
 		System.out.println("Before all");
 		//Si calculadora es estático se utilizará la misma instancia para todas las pruebas
 		//No es recomendable puesto que debemos asegurarnos de que ningún test está acoplado a otro
-		calculadora = new Calculadora();
+		//calculadora = new Calculadora();
 	}
 
 	@AfterAll
@@ -38,7 +38,7 @@ public class _04_Ciclo_de_vida_2 {
 		System.out.println("Before each");
 		//Es más ortodoxo inicializar todo antes de cada test
 		//si hicieramos esto 'calculadora' no sería estática
-		//calculadora = new Calculadora();
+		calculadora = new Calculadora();
 	}
 
 	@AfterEach
@@ -57,7 +57,7 @@ public class _04_Ciclo_de_vida_2 {
 		//CUANDO
 		double res = calculadora.sumar(s1, s2);
 		//ENTONCES		
-		assertEquals(new Double(4), res);
+		assertEquals(Double.valueOf(4), res);
 	}
 	
 	@Test
