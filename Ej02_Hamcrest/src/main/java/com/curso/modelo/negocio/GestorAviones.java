@@ -18,8 +18,7 @@ public class GestorAviones {
 		aviones.add(new Avion(3,"Panavia","Tornado",1979));
 		aviones.add(new Avion(4,"McDonell Douglas","F-15",1976));
 		aviones.add(new Avion(5,"McDonell Douglas","F-18",1983));
-		contador = 5;
-	
+		contador = 5;	
 	}
 	
 	public void insertar(Avion avion) throws Exception {
@@ -41,11 +40,11 @@ public class GestorAviones {
 	}
 	
 	public Avion buscar(Integer id) {
-		return aviones.
-				stream().
-					filter( a -> a.getId()==id ).
-						findFirst().
-							orElse(null);
+		return aviones
+			.stream()
+			.filter( a -> a.getId()==id )
+			.findFirst()
+			.orElse(null);
 	}
 	
 	public List<Avion> listar(){
@@ -53,7 +52,10 @@ public class GestorAviones {
 	}
 	
 	public List<Avion> listarPorFabricante(String fabricante){
-		return aviones.stream().filter( a -> a.getFabricante().equalsIgnoreCase(fabricante)).collect(Collectors.toList());
+		return aviones
+			.stream()
+			.filter( a -> a.getFabricante().equalsIgnoreCase(fabricante))
+			.collect(Collectors.toList());
 	}
 		
 }

@@ -13,14 +13,20 @@ public class GestorPeliculas {
 	
 	
 	public void insertar(Pelicula pelicula) {
+		//LN
+		//...
 		peliculaDao.insertar(pelicula);		
 	}
 
 	public void modificar(Pelicula pelicula) {
+		//LN
+		//...
 		peliculaDao.modificar(pelicula);
 	}
 
 	public void borrar(Pelicula pelicula) {
+		//LN
+		//...
 		peliculaDao.borrar(pelicula);
 	}
 

@@ -15,6 +15,7 @@ import java.util.List;
 
 import org.hamcrest.BaseMatcher;
 import org.hamcrest.Description;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -55,14 +56,15 @@ public class GestorAvionesTest {
 			e.printStackTrace();
 		}
 	
-		//JUnit
-		//assertNotNull(a.getId());
+		//JUnit                 
+		//assertNotNull(a.getId());		
 		
-		assertThat(a.getId(), is(not(nullValue())));		
+		assertThat(a.getId(), is(not(nullValue())));		                        
 	}
 
 	@Test
 	void insertarTest() {
+		
 		Integer antes = gestorAviones.listar().size();
 		Avion a = new Avion(null, "Supermarine", "Spitfire", 1938);
 		try {
@@ -71,13 +73,11 @@ public class GestorAvionesTest {
 			e.printStackTrace();
 		}
 		Integer despues = gestorAviones.listar().size();
-				
-		
+						
 		//JUnit
 		//assertEquals(despues, new Integer(antes+1));
 		
-		assertThat(despues, is(new Integer(antes+1)));
-		
+		assertThat(despues, is(new Integer(antes+1)));		
 	}
 
 	@Test
@@ -89,12 +89,12 @@ public class GestorAvionesTest {
 		
 		Avion a1 = new Avion(null, FABRICANTE, MODELO, YEAR);
 		try {
-			gestorAviones.insertar(a1);
+			gestorAviones.insertar(a1); //Este no es el método que estamos probando
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		
-		Avion a2 = gestorAviones.buscar(a1.getId());
+		Avion a2 = gestorAviones.buscar(a1.getId()); //Este si es el método que estamos probando
 		
 		//JUnit 5
 		assertAll( () -> assertEquals(a2.getId(), a1.getId()),
@@ -132,16 +132,13 @@ public class GestorAvionesTest {
 	}
 
 	@Test
-	public void listarPorFabricanteTest() {
-		
+	public void listarPorFabricanteTest() {		
 		final String FABRICANTE = "McDonell Douglas";
 		List<Avion> aviones = gestorAviones.listarPorFabricante(FABRICANTE);
 		assertThat(aviones, everyItem( hasProperty("fabricante", is(FABRICANTE) )));
-
 	}
 
 }
-
 
 class esIgual extends BaseMatcher<Avion>{
 

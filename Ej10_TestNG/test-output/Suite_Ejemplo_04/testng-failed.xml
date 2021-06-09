@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite_Ejemplo_04]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test_Ejemplo_04(failed)">
+    <classes>
+      <class name="ejemplos._02_Asertos_Test">
+        <methods>
+          <include name="test12"/>
+          <include name="test13"/>
+        </methods>
+      </class> <!-- ejemplos._02_Asertos_Test -->
+    </classes>
+  </test> <!-- Test_Ejemplo_04(failed) -->
+</suite> <!-- Failed suite [Suite_Ejemplo_04] -->

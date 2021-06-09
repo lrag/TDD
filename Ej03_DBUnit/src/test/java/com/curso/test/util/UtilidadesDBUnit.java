@@ -36,7 +36,7 @@ public class UtilidadesDBUnit {
 		Connection cx = null;
 		try {
 			cx = DriverManager.getConnection("jdbc:h2:file:c:/h2/tdd", "sa", "");
-			PreparedStatement pst = cx.prepareStatement("DROP TABLE PELICULA; CREATE TABLE IF NOT EXISTS PELICULA(ID INT AUTO_INCREMENT PRIMARY KEY, TITULO VARCHAR(255), DIRECTOR VARCHAR(255), GENERO VARCHAR(255), YEAR INT)");
+			PreparedStatement pst = cx.prepareStatement("DROP TABLE IF EXISTS PELICULA; CREATE TABLE IF NOT EXISTS PELICULA(ID INT AUTO_INCREMENT PRIMARY KEY, TITULO VARCHAR(255), DIRECTOR VARCHAR(255), GENERO VARCHAR(255), YEAR INT)");
 			int rs = pst.executeUpdate();
 			System.out.println("Resultado:"+rs);
 		} catch (SQLException e) {
@@ -52,7 +52,7 @@ public class UtilidadesDBUnit {
 	
 	public static void crearDatos() {		
 		System.out.println("=============================================");
-		System.out.println("CREANDO EL ESQUEMA");
+		System.out.println("INSERTANDO LOS DATOS");
 
 		String consultas = 
 			"delete from pelicula;"+
@@ -79,9 +79,12 @@ public class UtilidadesDBUnit {
 		}			
 	}
 		
-	public static void generateXML(String driverName, String urlDB,
-			String userDB, String passwordDB, String schemaBD, String nameXML)
-			throws SQLException {
+	public static void generateXML(String driverName, 
+			                       String urlDB,
+			                       String userDB, 
+			                       String passwordDB, 
+			                       String schemaBD, 
+			                       String nameXML) throws SQLException {
 
 		Connection conn = null;
 

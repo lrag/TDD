@@ -4,6 +4,7 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertThrows;
 
 import org.testng.Assert;
+import org.testng.Assert.ThrowingRunnable;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -26,21 +27,17 @@ public class _05_Excepciones {
 	}
 	
 	@AfterClass
-	public static void afterClass() {
+	public void afterClass() {
 		System.out.println("After class");
 	}
 
 	@Test
-	public void dividirFuncionaCorrectamente() {
+	public void dividirFuncionaCorrectamente() throws Exception {
 		double dividendo = 50;
 		double divisor = 2;
 		
-		try {
-			double rs = calculadora.dividir(dividendo, divisor);
-			assertEquals(25, rs);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		double rs = calculadora.dividir(dividendo, divisor);
+		assertEquals(25, rs);
 	}	
 	
 	//Excepciones
@@ -64,61 +61,22 @@ public class _05_Excepciones {
 		*/
 		
 		/*
-		Assertions.assertThrows(CalculadoraException.class, new Executable() {
-			public void execute() throws Throwable {
+		Assert.assertThrows(CalculadoraException.class, new ThrowingRunnable() {
+			public void run() throws Exception {
 				calculadora.dividir(dividendo, divisor);				
 			}
 		});
-		 */
+		*/		 
 		
+		//AsserThrows es void. No nos entregan la excepcion
 		assertThrows(CalculadoraException.class,  
-			                    () -> calculadora.dividir(dividendo, divisor));
-	
+			         () -> calculadora.dividir(dividendo, divisor));
 	}
 	
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-		/*
-		try {
-			calculadora.dividir(10d, 10d);
-			fail("ZASCA");
-		} catch (Exception e) {
-			//Me pongo un visto
-		}
-		*/
-		
-		//Con clase interna anónima
-		/*
-		assertThrows(Exception.class, new Executable() {
-			@Override
-			public void execute() throws Throwable {
-				calculadora.dividir(10d, 0d);
-			}
-		});
-		*/
-		
-		//Con expresiones lambda
-		//assertThrows(Exception.class, () -> calculadora.dividir(10d, 0d));	
-	
-	/*
-	}
-
-}
-*/
 
 
 

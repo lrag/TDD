@@ -33,14 +33,18 @@ public class _07_TestParametrizado {
 		System.out.println("Instanciando TestParametrizado");
 	}
 	
-	//Los data providers hn de ser métodos estáticos
+	//Los data providers han de ser métodos estáticos
+	//Pueden devolver
+	//Array de Object
+	//Array bidimensional de Object
+	//Iterador de Object
 	@DataProvider(name = "ejemplo")
-	public static Object[] primeNumbers() {
+	public static Object[] valoresParaLaPrueba() {
 		return new Object[] { 5d, 25d, 50d, 75d };
 	}	
 	
 	@Test(dataProvider = "ejemplo")
-	public void ejemplo(Double numero) {
+	public void calculadoraCuadrado(Double numero) {
 		//Dado este número
 		System.out.println("Parámetro:"+numero);
 		//Cuando 
@@ -70,6 +74,7 @@ public class _07_TestParametrizado {
 		Assert.assertNotNull(cAux.getId());		
 	}
 	
+	//Cuando el método de test recibe más de un parámetro el data provider debe devolver array bidimensional
 	@DataProvider(name = "datosParaProbarCalculadoraImpuestos")
 	static Object[][] datosParaProbarCalculadoraImpuestos() {
 		return new Object[][] {

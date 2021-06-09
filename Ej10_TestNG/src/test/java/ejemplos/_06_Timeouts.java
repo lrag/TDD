@@ -1,8 +1,5 @@
 package ejemplos;
 
-import java.time.Duration;
-
-import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -24,11 +21,11 @@ public class _06_Timeouts {
 	}
 	
 	@AfterClass
-	public static void afterClass() {
+	public void afterClass() {
 		System.out.println("After class");
 	}
 
-	@Test(timeOut = 2000)
+	@Test(timeOut = 4000) //No espera a que el test acabe. Lanza la excepción cuando se cumple el tiempo estipulado
 	public void calculoExtremadamenteComplejoDebeRealizarseRapido() throws InterruptedException {
 		
 		/*

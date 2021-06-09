@@ -24,7 +24,7 @@ public class Calculadora {
 	
 	public Integer calculoExtremadamenteComplejo() {
 		try {
-			Thread.sleep(10_000);
+			Thread.sleep(30_000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}

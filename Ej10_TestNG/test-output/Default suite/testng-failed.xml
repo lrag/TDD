@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ejemplos.parallel.Asertos_Test">
+      <class name="ejemplos.precondiciones.Test_Precondiciones">
         <methods>
-          <include name="test12"/>
-          <include name="test13"/>
+          <include name="estoSoloTieneSentidoEnLinux"/>
         </methods>
-      </class> <!-- ejemplos.parallel.Asertos_Test -->
+      </class> <!-- ejemplos.precondiciones.Test_Precondiciones -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

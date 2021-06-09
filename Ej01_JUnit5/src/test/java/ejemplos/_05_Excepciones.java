@@ -31,16 +31,12 @@ public class _05_Excepciones {
 	}
 
 	@Test
-	public void dividirFuncionaCorrectamente() {
+	public void dividirFuncionaCorrectamente() throws Exception {
 		double dividendo = 50;
 		double divisor = 2;
 		
-		try {
-			double rs = calculadora.dividir(dividendo, divisor);
-			assertEquals(25, rs);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		double rs = calculadora.dividir(dividendo, divisor);
+		assertEquals(25, rs);
 	}	
 	
 	//Excepciones

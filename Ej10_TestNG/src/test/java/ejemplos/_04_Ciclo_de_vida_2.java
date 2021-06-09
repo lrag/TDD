@@ -32,23 +32,26 @@ public class _04_Ciclo_de_vida_2 {
 		System.out.println(Thread.currentThread().getName()+"-After test");
 	}	
 	
-	@BeforeClass
+	@BeforeClass //Equivalente a @BeforeAll de JUnit
 	public void beforeClass() {
 		System.out.println(Thread.currentThread().getName()+"-Before class");
-		calculadora = new Calculadora();
+		//Si creamos aqui la calculadora se reutilizará en todos los test de esta clase (peligro!)
+		//calculadora = new Calculadora();
 	}
 
-	@AfterClass
+	@AfterClass //Equivalente a @AfterAll de JUnit
 	public void afterClass() {
 		System.out.println(Thread.currentThread().getName()+"-After class");
 	}
 
-	@BeforeMethod
+	@BeforeMethod //Equivalente a @BeforeEach de JUnit
 	public void beforeMethod() {
 		System.out.println(Thread.currentThread().getName()+"-Before method");
+		//Si creamos aqui la calculadora se cada test de esta clase utilizará una instancia distinta (correcto)
+		calculadora = new Calculadora();
 	}
 	
-	@AfterMethod
+	@AfterMethod //Equivalente a @AfterEach de JUnit
 	public void afterMethod() {
 		System.out.println(Thread.currentThread().getName()+"-After method");
 	}
@@ -56,7 +59,7 @@ public class _04_Ciclo_de_vida_2 {
 	@Test
 	public void laSumaDebeSerCorrecta() {	
 		
-		System.out.println(Thread.currentThread().getName()+"-Test 1");
+		System.out.println(Thread.currentThread().getName()+"-laSumaDebeSerCorrecta");
 		
 		//DADO
 		double s1 = 2d;
@@ -69,13 +72,13 @@ public class _04_Ciclo_de_vida_2 {
 	
 	@Test
 	public void dividirFuncionaCorrectamente() throws Exception {
-		System.out.println(Thread.currentThread().getName()+"-Test 2");
+		System.out.println(Thread.currentThread().getName()+"-dividirFuncionaCorrectamente");
 		assertEquals(Double.valueOf(5d), calculadora.dividir(10d, 2d));
 	}
 
 	@Test
 	public void cuadradoFuncionaCorrectamente() throws Exception {
-		System.out.println(Thread.currentThread().getName()+"-Test 3");
+		System.out.println(Thread.currentThread().getName()+"-cuadradoFuncionaCorrectamente");
 		assertEquals(Double.valueOf(625d), calculadora.cuadrado(25d));
 	}
 	

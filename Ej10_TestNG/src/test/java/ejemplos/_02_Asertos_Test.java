@@ -14,6 +14,7 @@ import static org.testng.Assert.fail;
 import java.util.Arrays;
 import java.util.List;
 
+import org.testng.Assert;
 import org.testng.SkipException;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -36,9 +37,9 @@ public class _02_Asertos_Test {
 
 		//entonces		
 		assertEquals(300, n3);
-	
+
 		//Lo mismo, pero sin import estático:
-		//Assertions.assertEquals(300, n3);
+		//Assert.assertEquals(300, n3);
 	}
 	
 	@Test
@@ -179,7 +180,7 @@ public class _02_Asertos_Test {
 		*/
 		
 		SoftAssert softAssert = new SoftAssert();
-		
+
 		System.out.println("I");
 		softAssert.assertNotNull(sumResult);
 		System.out.println("II");
@@ -202,7 +203,7 @@ public class _02_Asertos_Test {
 		//Precondición: Si no se cumple no falla el test
 		//La exepcion marca al método como 'skipped'
 		if (!System.getProperty("os.name").contains("Linux")) {
-			throw new SkipException("Este test no tiene sentido wn Windows");
+			throw new SkipException("Este test no tiene sentido en Windows");
 		}		
 
 		assertNotNull(null);

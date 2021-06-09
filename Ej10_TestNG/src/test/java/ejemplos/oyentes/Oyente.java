@@ -7,6 +7,7 @@ import org.testng.ITestResult;
 
 public class Oyente implements ITestListener {
 
+	@Override
 	public void onTestStart(ITestResult result) {
 		System.out.println("=================================");
 		System.out.println("OnTestStart");
@@ -16,6 +17,7 @@ public class Oyente implements ITestListener {
 		System.out.println(result.getStatus());
 	}
 
+	@Override
 	public void onTestSuccess(ITestResult result) {
 		System.out.println("=================================");
 		System.out.println("OnTestSuccess");
@@ -26,6 +28,7 @@ public class Oyente implements ITestListener {
 		System.out.println(result.getEndMillis());
 	}
 
+	@Override
 	public void onTestFailure(ITestResult result) {
 		System.out.println("=================================");
 		System.out.println("OnTestFailure");
@@ -36,6 +39,7 @@ public class Oyente implements ITestListener {
 		System.out.println(result.getEndMillis());
 	}
 
+	@Override
 	public void onTestSkipped(ITestResult result) {
 		System.out.println("=================================");
 		System.out.println("OnTestSkipped");
@@ -47,6 +51,7 @@ public class Oyente implements ITestListener {
 		System.out.println(result.getEndMillis());
 	}
 
+	@Override
 	public void onTestFailedWithTimeout(ITestResult result) {
 		System.out.println("=================================");
 		System.out.println("OnTestFailedWithTimeout");
@@ -57,6 +62,7 @@ public class Oyente implements ITestListener {
 		System.out.println(result.getEndMillis());
 	}
 
+	@Override
 	public void onStart(ITestContext context) {
 		System.out.println("=================================");
 		System.out.println("OnStart");
@@ -66,6 +72,7 @@ public class Oyente implements ITestListener {
 		}
 	}
 
+	@Override
 	public void onFinish(ITestContext context) {
 		System.out.println("=================================");
 		System.out.println("OnFinish");

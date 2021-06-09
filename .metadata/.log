@@ -7847,3 +7847,1729 @@ java.lang.InterruptedException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-08 07:38:04.170
 !MESSAGE executing callback sts4.classpath.raKGTJxp SUCCESS [done]
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 09:46:57.087
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 56523 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--1746050776\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 56523 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--1746050776\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 09:47:50.830
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 56525 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--913546101\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 56525 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--913546101\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 09:49:17.923
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 09:49:17.924
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 09:49:18.253
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 54126 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse-1474495088\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 54126 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse-1474495088\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 09:49:37.035
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 09:49:37.037
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 09:49:43.475
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 54129 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--649087333\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 54129 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--649087333\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 09:50:01.486
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 09:50:01.487
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 09:50:01.794
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 53804 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--1938365573\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 53804 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--1938365573\testng-customsuite.xml
+
+!ENTRY org.eclipse.debug.ui 4 120 2021-06-08 09:50:01.867
+!MESSAGE Error logged from Debug UI: 
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.FutureTask.awaitDone(FutureTask.java:418)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:203)
+	at org.eclipse.debug.internal.ui.stringsubstitution.SelectedResourceManager.runInUIThreadWithTimeout(SelectedResourceManager.java:262)
+	at org.eclipse.debug.internal.ui.stringsubstitution.SelectedResourceManager.getFromUI(SelectedResourceManager.java:240)
+	at org.eclipse.debug.internal.ui.stringsubstitution.SelectedResourceManager.getActiveWindow(SelectedResourceManager.java:231)
+	at org.eclipse.debug.ui.DebugUITools.getDebugContext(DebugUITools.java:247)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugHover.getFrame(JavaDebugHover.java:97)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugHover.getHoverInfo2(JavaDebugHover.java:251)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 09:50:11.604
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 53806 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse-172766966\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 53806 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse-172766966\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 09:50:20.481
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 53808 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse-856096336\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 53808 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse-856096336\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 09:50:33.538
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 53810 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse-340764317\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 53810 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse-340764317\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 09:50:42.524
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 09:50:42.526
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 09:50:47.531
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 53812 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--204040125\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 53812 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--204040125\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 09:51:08.000
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 09:51:08.002
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 09:51:08.315
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55065 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse-1338464188\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 55065 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse-1338464188\testng-customsuite.xml
+
+!ENTRY org.eclipse.debug.ui 4 120 2021-06-08 09:51:08.418
+!MESSAGE Error logged from Debug UI: 
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.FutureTask.awaitDone(FutureTask.java:418)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:203)
+	at org.eclipse.debug.internal.ui.stringsubstitution.SelectedResourceManager.runInUIThreadWithTimeout(SelectedResourceManager.java:262)
+	at org.eclipse.debug.internal.ui.stringsubstitution.SelectedResourceManager.getFromUI(SelectedResourceManager.java:240)
+	at org.eclipse.debug.internal.ui.stringsubstitution.SelectedResourceManager.getActiveWindow(SelectedResourceManager.java:231)
+	at org.eclipse.debug.ui.DebugUITools.getDebugContext(DebugUITools.java:247)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugHover.getFrame(JavaDebugHover.java:97)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugHover.getHoverInfo2(JavaDebugHover.java:251)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-06-08 09:52:12.228
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:385)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2086)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 09:52:21.024
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55426 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--1892364271\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 55426 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--1892364271\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 09:52:30.229
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 09:52:30.230
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 09:52:32.502
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55428 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--327959919\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 55428 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--327959919\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 09:52:59.730
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 09:52:59.732
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.debug.ui 4 120 2021-06-08 09:53:00.080
+!MESSAGE Error logged from Debug UI: 
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.FutureTask.awaitDone(FutureTask.java:418)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:203)
+	at org.eclipse.debug.internal.ui.stringsubstitution.SelectedResourceManager.runInUIThreadWithTimeout(SelectedResourceManager.java:262)
+	at org.eclipse.debug.internal.ui.stringsubstitution.SelectedResourceManager.getFromUI(SelectedResourceManager.java:240)
+	at org.eclipse.debug.internal.ui.stringsubstitution.SelectedResourceManager.getActiveWindow(SelectedResourceManager.java:231)
+	at org.eclipse.debug.ui.DebugUITools.getDebugContext(DebugUITools.java:247)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugHover.getFrame(JavaDebugHover.java:97)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugHover.getHoverInfo2(JavaDebugHover.java:251)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 09:53:00.112
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55430 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse-2103096525\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 55430 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse-2103096525\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 09:53:07.085
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 09:53:07.087
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 09:53:09.393
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 51031 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--1457754545\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 51031 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--1457754545\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 09:53:19.143
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 09:53:19.145
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 09:53:48.638
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 51033 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--599502342\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 51033 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--599502342\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 09:55:33.310
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 09:55:33.311
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 09:55:33.633
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55982 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse-1279950062\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 55982 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse-1279950062\testng-customsuite.xml
+
+!ENTRY org.eclipse.debug.ui 4 120 2021-06-08 09:55:34.237
+!MESSAGE Error logged from Debug UI: 
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.FutureTask.awaitDone(FutureTask.java:418)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:203)
+	at org.eclipse.debug.internal.ui.stringsubstitution.SelectedResourceManager.runInUIThreadWithTimeout(SelectedResourceManager.java:262)
+	at org.eclipse.debug.internal.ui.stringsubstitution.SelectedResourceManager.getFromUI(SelectedResourceManager.java:240)
+	at org.eclipse.debug.internal.ui.stringsubstitution.SelectedResourceManager.getActiveWindow(SelectedResourceManager.java:231)
+	at org.eclipse.debug.ui.DebugUITools.getDebugContext(DebugUITools.java:247)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugHover.getFrame(JavaDebugHover.java:97)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugHover.getHoverInfo2(JavaDebugHover.java:251)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 09:55:39.844
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 09:55:39.845
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 09:55:42.332
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55984 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--2069289113\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 55984 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--2069289113\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 09:55:49.546
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 09:55:49.547
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 09:55:49.873
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55986 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--759973282\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 55986 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--759973282\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 09:55:54.238
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55990 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--1114696444\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 55990 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--1114696444\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 09:56:02.450
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 09:56:02.452
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 09:56:04.527
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 52198 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--595069246\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 52198 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--595069246\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 09:56:19.179
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 09:56:19.181
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 09:56:22.682
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 52200 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--1609252022\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 52200 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--1609252022\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 09:58:25.813
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 09:58:25.815
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 09:58:26.122
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 60344 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse-1026617244\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 60344 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse-1026617244\testng-customsuite.xml
+
+!ENTRY org.eclipse.debug.ui 4 120 2021-06-08 09:58:26.171
+!MESSAGE Error logged from Debug UI: 
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.FutureTask.awaitDone(FutureTask.java:418)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:203)
+	at org.eclipse.debug.internal.ui.stringsubstitution.SelectedResourceManager.runInUIThreadWithTimeout(SelectedResourceManager.java:262)
+	at org.eclipse.debug.internal.ui.stringsubstitution.SelectedResourceManager.getFromUI(SelectedResourceManager.java:240)
+	at org.eclipse.debug.internal.ui.stringsubstitution.SelectedResourceManager.getActiveWindow(SelectedResourceManager.java:231)
+	at org.eclipse.debug.ui.DebugUITools.getDebugContext(DebugUITools.java:247)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugHover.getFrame(JavaDebugHover.java:97)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugHover.getHoverInfo2(JavaDebugHover.java:251)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 09:58:33.217
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 09:58:33.219
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 09:58:35.800
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 60346 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse-1077434747\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 60346 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse-1077434747\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 09:59:05.143
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 09:59:05.144
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:03:32.552
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:03:32.554
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.debug.ui 4 120 2021-06-08 10:03:32.851
+!MESSAGE Error logged from Debug UI: 
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.FutureTask.awaitDone(FutureTask.java:418)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:203)
+	at org.eclipse.debug.internal.ui.stringsubstitution.SelectedResourceManager.runInUIThreadWithTimeout(SelectedResourceManager.java:262)
+	at org.eclipse.debug.internal.ui.stringsubstitution.SelectedResourceManager.getFromUI(SelectedResourceManager.java:240)
+	at org.eclipse.debug.internal.ui.stringsubstitution.SelectedResourceManager.getActiveWindow(SelectedResourceManager.java:231)
+	at org.eclipse.debug.ui.DebugUITools.getDebugContext(DebugUITools.java:247)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugHover.getFrame(JavaDebugHover.java:97)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugHover.getHoverInfo2(JavaDebugHover.java:251)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 10:03:32.861
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 63799 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse-113652432\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 63799 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse-113652432\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 10:05:44.302
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 59922 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--1225842380\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 59922 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--1225842380\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:06:15.723
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:06:15.726
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 10:10:39.342
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 61460 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse-346422227\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 61460 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse-346422227\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:17:28.693
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:17:28.694
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 10:17:28.993
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58079 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--1050974266\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 58079 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--1050974266\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 10:17:31.943
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58083 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse-864305758\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 58083 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse-864305758\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:18:43.686
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:18:43.687
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 10:18:48.778
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 63206 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--173423322\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 63206 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--173423322\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:19:18.442
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:19:18.443
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 10:19:32.370
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 62520 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse-856762378\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 62520 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse-856762378\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:23:43.624
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:23:43.625
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 10:23:43.915
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55721 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\src\test\java\ejemplos\_04_Ciclo_de_vida_2.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 55721 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\src\test\java\ejemplos\_04_Ciclo_de_vida_2.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:24:17.797
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:24:17.799
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 10:24:21.890
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 56838 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\src\test\java\ejemplos\_04_Ciclo_de_vida_2.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 56838 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\src\test\java\ejemplos\_04_Ciclo_de_vida_2.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:25:39.804
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:25:39.806
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:26:32.496
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:26:32.497
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 10:26:36.322
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 53986 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse-428198075\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 53986 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse-428198075\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:31:13.631
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:31:13.632
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:31:51.232
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:31:51.232
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:34:24.928
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:34:24.928
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:36:04.450
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:36:04.452
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:36:55.817
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:36:55.819
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 10:36:56.147
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55350 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--1967236018\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 55350 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--1967236018\testng-customsuite.xml
+
+!ENTRY org.eclipse.debug.ui 4 120 2021-06-08 10:36:56.182
+!MESSAGE Error logged from Debug UI: 
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.FutureTask.awaitDone(FutureTask.java:418)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:203)
+	at org.eclipse.debug.internal.ui.stringsubstitution.SelectedResourceManager.runInUIThreadWithTimeout(SelectedResourceManager.java:262)
+	at org.eclipse.debug.internal.ui.stringsubstitution.SelectedResourceManager.getFromUI(SelectedResourceManager.java:240)
+	at org.eclipse.debug.internal.ui.stringsubstitution.SelectedResourceManager.getActiveWindow(SelectedResourceManager.java:231)
+	at org.eclipse.debug.ui.DebugUITools.getDebugContext(DebugUITools.java:247)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugHover.getFrame(JavaDebugHover.java:97)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugHover.getHoverInfo2(JavaDebugHover.java:251)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:37:54.281
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:37:54.283
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:38:05.117
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:38:05.119
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 10:38:07.798
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 63923 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse-2136049705\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 63923 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse-2136049705\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:38:23.772
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:38:23.773
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:38:31.881
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:38:31.882
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:38:37.821
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:38:37.822
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:39:15.847
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:39:15.848
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:39:26.635
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:39:26.636
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 10:41:41.593
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55297 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--1503984662\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 55297 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--1503984662\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:41:58.040
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:41:58.041
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:42:05.755
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:42:05.757
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 10:42:10.754
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55299 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse-1757409170\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 55299 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse-1757409170\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:43:30.956
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:43:30.957
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 4 4 2021-06-08 10:44:10.587
+!MESSAGE Error
+!STACK 0
+java.util.concurrent.CancellationException
+	at org.eclipse.jface.internal.text.codemining.CancellationExceptionMonitor.isCanceled(CancellationExceptionMonitor.java:33)
+	at org.testng.eclipse.ui.codemining.TestCodeMiningProvider.processElements(TestCodeMiningProvider.java:80)
+	at org.testng.eclipse.ui.codemining.TestCodeMiningProvider.processElements(TestCodeMiningProvider.java:89)
+	at org.testng.eclipse.ui.codemining.TestCodeMiningProvider.mineForTests(TestCodeMiningProvider.java:67)
+	at org.testng.eclipse.ui.codemining.TestCodeMiningProvider.lambda$0(TestCodeMiningProvider.java:40)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1764)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1756)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1016)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1665)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1598)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:48:53.238
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:48:53.239
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 10:48:53.537
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58225 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--912949055\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 58225 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--912949055\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 10:49:10.659
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58228 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--1528916720\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 58228 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--1528916720\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:50:15.882
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:50:15.883
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 10:50:16.191
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 56520 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse-1780764482\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 56520 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse-1780764482\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:52:23.576
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 10:52:23.578
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 10:52:23.902
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55428 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--1371667146\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 55428 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--1371667146\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 10:52:46.042
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55430 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--769519793\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 55430 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--769519793\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 11:01:16.430
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 11:01:16.431
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 11:03:07.029
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 11:03:07.030
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 11:04:55.868
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 11:04:55.869
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 11:04:56.193
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55741 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse-1762369867\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 55741 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse-1762369867\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 11:05:14.456
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 11:05:14.457
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 11:05:16.044
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55743 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--536474163\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 55743 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--536474163\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 11:07:14.313
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 56525 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--1436862686\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 56525 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--1436862686\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 11:07:50.500
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 11:07:50.501
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 11:07:53.953
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58340 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\src\test\java\ejemplos\oyentes\suite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 58340 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\src\test\java\ejemplos\oyentes\suite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 11:08:09.225
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 11:08:09.226
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 11:08:12.978
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58344 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\src\test\java\ejemplos\oyentes\suite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 58344 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\src\test\java\ejemplos\oyentes\suite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 11:12:48.598
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 11:12:48.599
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 11:12:52.383
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 11:12:52.384
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 11:16:51.681
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 11:16:51.682
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 11:17:33.400
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 11:17:33.401
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 11:18:19.803
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 50851 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\src\test\java\ejemplos\parallel\suite_none.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 50851 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\src\test\java\ejemplos\parallel\suite_none.xml
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 11:19:21.680
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 60291 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\src\test\java\ejemplos\parallel\suite_method.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 60291 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\src\test\java\ejemplos\parallel\suite_method.xml
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 11:25:26.835
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49697 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\src\test\java\ejemplos\parallel\suite_classes.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 49697 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\src\test\java\ejemplos\parallel\suite_classes.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 11:58:36.197
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 11:58:36.198
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 11:59:10.942
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49805 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--695439226\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 49805 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--695439226\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 12:00:00.179
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58177 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse-404598395\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 58177 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse-404598395\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 12:03:23.268
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 12:03:23.269
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 12:04:14.220
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 12:04:14.221
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-06-08 12:04:54.030
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:385)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2086)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-06-08 12:05:44.412
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1950)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2085)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-06-08 12:06:44.462
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1950)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2085)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 12:07:50.816
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 12:07:50.818
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2021-06-08 12:07:51.128
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 50881 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--681071056\testng-customsuite.xml
+java -ea -classpath D:\JAVA\ide\eclipse_2020\configuration\org.eclipse.osgi\1044\0\.cp\lib\testng-remote.jar:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\test-classes:D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\target\classes:C:\Users\uno\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar:C:\Users\uno\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\uno\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar org.testng.remote.RemoteTestNG -serport 50881 -protocol json -d D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej10_TestNG\test-output C:\Users\uno\AppData\Local\Temp\testng-eclipse--681071056\testng-customsuite.xml
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-06-08 12:32:14.210
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:385)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2086)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-06-08 12:32:27.312
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:385)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2086)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 12:32:37.726
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 12:32:37.728
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-06-08 12:36:15.511
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:385)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2086)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 12:36:31.586
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 12:36:31.587
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 12:49:37.858
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 12:49:37.860
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 12:50:45.862
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 12:50:45.865
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 12:51:10.859
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 12:51:10.860
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 12:54:44.852
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 12:54:44.853
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-08 12:54:45.278
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-08 12:54:45.281
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-08 12:54:45.283
+!MESSAGE buffering callback sts4.classpath.raKGTJxp Ej03_DBUnit false 49
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-08 12:54:45.284
+!MESSAGE executing callback sts4.classpath.raKGTJxp 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-08 12:54:45.297
+!MESSAGE executing callback sts4.classpath.raKGTJxp SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 12:54:46.683
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 12:54:46.684
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 13:02:57.731
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 13:02:57.733
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 4 4 2021-06-08 13:06:51.174
+!MESSAGE Error
+!STACK 0
+java.util.concurrent.CancellationException
+	at org.eclipse.jface.internal.text.codemining.CancellationExceptionMonitor.isCanceled(CancellationExceptionMonitor.java:33)
+	at org.testng.eclipse.ui.codemining.TestCodeMiningProvider.processElements(TestCodeMiningProvider.java:80)
+	at org.testng.eclipse.ui.codemining.TestCodeMiningProvider.processElements(TestCodeMiningProvider.java:89)
+	at org.testng.eclipse.ui.codemining.TestCodeMiningProvider.mineForTests(TestCodeMiningProvider.java:67)
+	at org.testng.eclipse.ui.codemining.TestCodeMiningProvider.lambda$0(TestCodeMiningProvider.java:40)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1764)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1756)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1016)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1665)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1598)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-06-08 13:11:42.991
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1950)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2085)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-06-08 13:15:18.937
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:385)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2086)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 13:17:17.553
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 13:17:17.554
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 13:17:50.338
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 13:17:50.339
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 13:18:42.716
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 13:18:42.717
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 13:32:33.937
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 13:32:33.939
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 13:34:01.984
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 13:34:01.985
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 13:34:56.053
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 13:34:56.054
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 13:37:38.294
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 13:37:38.295
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 13:38:11.529
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 13:38:11.530
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 13:38:41.774
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 13:38:41.776
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 13:42:10.550
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 13:42:10.551
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 13:43:23.946
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 13:43:23.947
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 13:43:24.959
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 13:43:24.960
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 13:43:51.242
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 13:43:51.243
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 15:06:49.310
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 15:06:49.375
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-06-08 15:08:48.412
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1950)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2085)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-06-08 15:10:07.052
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1950)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2085)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 15:12:05.957
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 15:12:05.959
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 15:13:44.541
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 15:13:44.543
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.eclemma.ui 4 4 2021-06-08 15:29:47.786
+!MESSAGE Launch shortcut 'org.testng.eclipse.shortcut' enablement expression caused exception.
+!STACK 1
+org.eclipse.core.runtime.CoreException: No property tester contributes a property org.eclipse.debug.ui.matchesPattern to type class org.eclipse.jdt.internal.junit.model.TestCaseElement
+	at org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:131)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:104)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.expressions.OrExpression.evaluate(OrExpression.java:26)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:166)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.eclemma.internal.ui.actions.ContextualLaunchableTester.test(ContextualLaunchableTester.java:53)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:280)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:457)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:243)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:145)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.expressions 4 201 2021-06-08 15:29:47.787
+!MESSAGE No property tester contributes a property org.eclipse.debug.ui.matchesPattern to type class org.eclipse.jdt.internal.junit.model.TestCaseElement
+
+!ENTRY org.eclipse.eclemma.ui 4 4 2021-06-08 15:29:47.788
+!MESSAGE Launch shortcut 'org.testng.eclipse.shortcut' enablement expression caused exception.
+!STACK 1
+org.eclipse.core.runtime.CoreException: No property tester contributes a property org.eclipse.debug.ui.matchesPattern to type class org.eclipse.jdt.internal.junit.model.TestCaseElement
+	at org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:131)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:104)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.expressions.OrExpression.evaluate(OrExpression.java:26)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:166)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.eclemma.internal.ui.actions.ContextualLaunchableTester.test(ContextualLaunchableTester.java:53)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:280)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:457)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:243)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:145)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.expressions 4 201 2021-06-08 15:29:47.788
+!MESSAGE No property tester contributes a property org.eclipse.debug.ui.matchesPattern to type class org.eclipse.jdt.internal.junit.model.TestCaseElement
+
+!ENTRY org.eclipse.eclemma.ui 4 4 2021-06-08 15:29:48.099
+!MESSAGE Launch shortcut 'org.testng.eclipse.shortcut' enablement expression caused exception.
+!STACK 1
+org.eclipse.core.runtime.CoreException: No property tester contributes a property org.eclipse.debug.ui.matchesPattern to type class org.eclipse.jdt.internal.junit.model.TestCaseElement
+	at org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:131)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:104)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.expressions.OrExpression.evaluate(OrExpression.java:26)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:166)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.eclemma.internal.ui.actions.ContextualLaunchableTester.test(ContextualLaunchableTester.java:53)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:280)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:457)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:243)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:145)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.expressions 4 201 2021-06-08 15:29:48.099
+!MESSAGE No property tester contributes a property org.eclipse.debug.ui.matchesPattern to type class org.eclipse.jdt.internal.junit.model.TestCaseElement
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 15:29:50.020
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 15:29:50.021
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-06-08 15:35:01.148
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1950)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2085)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 15:35:27.204
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 15:35:27.205
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 15:47:34.014
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 15:47:34.015
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 15:49:12.042
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 15:49:12.043
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 15:49:53.202
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 15:49:53.205
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 15:55:59.839
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 15:55:59.840
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-08 15:56:00.246
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-08 15:56:00.249
+!MESSAGE classpath=45 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-08 15:56:00.250
+!MESSAGE buffering callback sts4.classpath.raKGTJxp Ej03_DBUnit false 45
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-08 15:56:00.250
+!MESSAGE executing callback sts4.classpath.raKGTJxp 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-08 15:56:00.281
+!MESSAGE executing callback sts4.classpath.raKGTJxp SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 15:56:01.373
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 15:56:01.374
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 15:58:14.192
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 15:58:14.194
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 16:03:09.578
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 16:03:09.579
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 16:03:42.741
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 16:03:42.741
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 16:24:05.644
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 16:24:05.645
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.eclemma.ui 4 4 2021-06-08 16:24:19.931
+!MESSAGE Launch shortcut 'org.testng.eclipse.shortcut' enablement expression caused exception.
+!STACK 1
+org.eclipse.core.runtime.CoreException: No property tester contributes a property org.eclipse.debug.ui.matchesPattern to type class org.eclipse.jdt.internal.junit.model.TestCaseElement
+	at org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:131)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:104)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.expressions.OrExpression.evaluate(OrExpression.java:26)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:166)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.eclemma.internal.ui.actions.ContextualLaunchableTester.test(ContextualLaunchableTester.java:53)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:280)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:457)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:243)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:145)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.expressions 4 201 2021-06-08 16:24:19.931
+!MESSAGE No property tester contributes a property org.eclipse.debug.ui.matchesPattern to type class org.eclipse.jdt.internal.junit.model.TestCaseElement
+
+!ENTRY org.eclipse.eclemma.ui 4 4 2021-06-08 16:24:19.933
+!MESSAGE Launch shortcut 'org.testng.eclipse.shortcut' enablement expression caused exception.
+!STACK 1
+org.eclipse.core.runtime.CoreException: No property tester contributes a property org.eclipse.debug.ui.matchesPattern to type class org.eclipse.jdt.internal.junit.model.TestCaseElement
+	at org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:131)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:104)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.expressions.OrExpression.evaluate(OrExpression.java:26)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:166)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.eclemma.internal.ui.actions.ContextualLaunchableTester.test(ContextualLaunchableTester.java:53)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:280)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:457)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:243)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:145)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.expressions 4 201 2021-06-08 16:24:19.933
+!MESSAGE No property tester contributes a property org.eclipse.debug.ui.matchesPattern to type class org.eclipse.jdt.internal.junit.model.TestCaseElement
+
+!ENTRY org.eclipse.eclemma.ui 4 4 2021-06-08 16:24:19.934
+!MESSAGE Launch shortcut 'org.testng.eclipse.shortcut' enablement expression caused exception.
+!STACK 1
+org.eclipse.core.runtime.CoreException: No property tester contributes a property org.eclipse.debug.ui.matchesPattern to type class org.eclipse.jdt.internal.junit.model.TestCaseElement
+	at org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:131)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:104)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.expressions.OrExpression.evaluate(OrExpression.java:26)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:166)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.eclemma.internal.ui.actions.ContextualLaunchableTester.test(ContextualLaunchableTester.java:53)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:280)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:457)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:243)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:145)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.expressions 4 201 2021-06-08 16:24:19.934
+!MESSAGE No property tester contributes a property org.eclipse.debug.ui.matchesPattern to type class org.eclipse.jdt.internal.junit.model.TestCaseElement
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 16:25:24.911
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 16:25:24.912
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 16:33:48.402
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 16:33:48.403
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 16:48:35.918
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 16:48:35.919
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-08 16:48:36.356
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-08 16:48:36.358
+!MESSAGE classpath=52 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-08 16:48:36.360
+!MESSAGE buffering callback sts4.classpath.raKGTJxp Ej03_DBUnit false 52
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-08 16:48:36.360
+!MESSAGE executing callback sts4.classpath.raKGTJxp 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-08 16:48:36.370
+!MESSAGE executing callback sts4.classpath.raKGTJxp SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 16:48:37.406
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 16:48:37.407
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-08 16:48:37.821
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-08 16:48:37.825
+!MESSAGE classpath=52 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-08 16:48:37.827
+!MESSAGE buffering callback sts4.classpath.raKGTJxp Ej03_DBUnit false 52
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-08 16:48:37.827
+!MESSAGE executing callback sts4.classpath.raKGTJxp 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-08 16:48:37.836
+!MESSAGE executing callback sts4.classpath.raKGTJxp SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-08 16:48:39.239
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-08 16:48:39.242
+!MESSAGE classpath=52 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-08 16:48:39.245
+!MESSAGE buffering callback sts4.classpath.raKGTJxp Ej03_DBUnit false 52
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-08 16:48:39.245
+!MESSAGE executing callback sts4.classpath.raKGTJxp 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-08 16:48:39.254
+!MESSAGE executing callback sts4.classpath.raKGTJxp SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 16:48:39.380
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 16:48:39.381
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 16:50:15.765
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 16:50:15.766
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-06-08 16:55:08.478
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:385)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2086)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 17:02:39.109
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 17:02:39.111
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 17:02:47.787
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 17:02:47.788
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 17:02:58.122
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 17:02:58.123
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 17:03:18.929
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 17:03:18.930
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 17:05:03.843
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 17:05:03.844
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 17:05:53.916
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 17:05:53.917
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 18:20:13.910
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 18:20:13.912
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 18:20:18.730
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 18:20:18.732
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 18:47:01.330
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 18:47:01.331
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-06-08 18:47:29.831
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1950)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2085)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 18:48:14.736
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 18:48:14.738
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 18:48:18.334
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 18:48:18.336
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-06-08 18:49:08.018
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:385)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2086)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 18:49:19.122
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 18:49:19.124
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 18:54:55.503
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 18:54:55.504
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 18:55:06.347
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 18:55:06.348
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 18:55:27.557
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 18:55:27.558
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 19:30:50.750
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 19:30:50.751
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 19:31:16.182
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 19:31:16.184
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 19:31:46.845
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 19:31:46.847
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 19:31:54.209
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-08 19:31:54.210
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-06-08 22:14:25.086
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1950)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2085)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)

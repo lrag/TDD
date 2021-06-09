@@ -81,7 +81,7 @@ public class PeliculaDaoJDBCImplementation implements PeliculaDao {
 		Connection cx = null;
 		try {
 			cx = DriverManager.getConnection("jdbc:h2:file:c:/h2/tdd", "sa", "");
-			PreparedStatement pst = cx.prepareStatement("selet * from pelicula");
+			PreparedStatement pst = cx.prepareStatement("select * from pelicula");
 			ResultSet rs = pst.executeQuery();
 			while (rs.next()) {
 				Pelicula pAux = new Pelicula(rs.getInt("ID"), 
