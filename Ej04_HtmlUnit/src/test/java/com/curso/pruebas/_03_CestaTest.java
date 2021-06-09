@@ -12,7 +12,7 @@ import com.gargoylesoftware.htmlunit.html.HtmlTable;
 import com.gargoylesoftware.htmlunit.html.HtmlTableRow;
 import com.gargoylesoftware.htmlunit.html.HtmlTextInput;
 
-public class _02_CestaTest {
+public class _03_CestaTest {
 
 	@Test
 	public void test() throws Exception {

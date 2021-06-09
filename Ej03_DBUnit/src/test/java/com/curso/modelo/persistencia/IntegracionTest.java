@@ -21,7 +21,31 @@ import com.github.database.rider.junit5.DBUnitExtension;
         url = "jdbc:h2:file:c:/h2/tdd", 
         user = "sa", 
         password = "")
-public class PeliculaDaoTest2 {
+public class IntegracionTest {
+		
+	/*
+	Para una clase que solo tenga un @Test: 
+	 
+	crear una instancia de PeliculaDaoTest
+	invocar el método que esté marcado con @BeforeAll
+	incovar el método que esté marcado con @BeforeEach
+	invocar el método marcado que @Test 
+	incovar el método que esté marcado con @AfterEach
+	invocar el método que esté marcado con @AfterAll
+	
+	Con el @ExtendsWith(DBUnitExtension.class):
+
+	crear una instancia de PeliculaDaoTest
+	invocar el método que esté marcado con @BeforeAll
+	incovar el método que esté marcado con @BeforeEach
+	cargar en la base de datos el dataset indicado con @DataSet
+	invocar el método marcado que @Test 
+	comparar el estado de la base de datos con el dataset indicado en @ExpectedDataSet
+	incovar el método que esté marcado con @AfterEach
+	invocar el método que esté marcado con @AfterAll	
+	
+	
+	*/
 	
 	@Test
 	@DataSet("db/input.xml")
@@ -51,8 +75,7 @@ public class PeliculaDaoTest2 {
 		Pelicula p6 = new Pelicula(4,"T4","D4","G4",444);
 		peliculaDao.modificar(p6);
 		
-		//No hacen falta asertos 
-		
+		//No hacen falta asertos 		
 	}
 		
 	@Test
@@ -63,12 +86,15 @@ public class PeliculaDaoTest2 {
 		//Aqui vamos a probar GestorPeliculas
 		//Como se van a usar un gestorPelículas, un PeliculaDao de verdad y una base de datos esto no es un test
 		//unitario si no de integración		
+		//
+		//Esta prueba tiene mucho más sentido que la anterior. No hace falta que probemos los DAOs/repositorios
 		GestorPeliculas gp = new GestorPeliculas();
 		
 		System.out.println("=====================================");
 		gp.listar().forEach(p -> System.out.println(p));
 		
-		IDataSet expectedDataSet = new FlatXmlDataSet(new FlatXmlProducer(new InputSource("src/test/resources/db/expected.xml")));
+		//Podemos crear programáticamente los datasets:
+		//IDataSet expectedDataSet = new FlatXmlDataSet(new FlatXmlProducer(new InputSource("src/test/resources/db/expected.xml")));
 		
 		//Realizar las modificaciones que lleven al real al estado esperado
 		Pelicula p1 = new Pelicula();

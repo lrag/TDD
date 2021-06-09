@@ -11,7 +11,7 @@ import com.gargoylesoftware.htmlunit.html.HtmlSubmitInput;
 import com.gargoylesoftware.htmlunit.html.HtmlTableCell;
 import com.gargoylesoftware.htmlunit.html.HtmlTextInput;
 
-public class _03_FormularioTest {
+public class _02_FormularioTest {
 
 		
 	@Test

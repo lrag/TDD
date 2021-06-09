@@ -19,7 +19,7 @@ import org.xml.sax.InputSource;
 import com.curso.modelo.entidad.Pelicula;
 import com.curso.modelo.negocio.GestorPeliculas;
 
-public class PeliculaDaoTest extends DatabaseTestCase {
+public class IntegracionTest_OLD extends DatabaseTestCase {
 
 	//Este es el objeto que queremos probar
 	private PeliculaDao peliculaDao = new PeliculaDaoJDBCImplementation();
