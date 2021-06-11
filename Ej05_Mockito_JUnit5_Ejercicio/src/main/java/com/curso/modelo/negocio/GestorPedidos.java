@@ -44,12 +44,14 @@ public class GestorPedidos {
 	}
 	
 	@Transactional(propagation=Propagation.REQUIRED, rollbackFor= { Exception.class } )
+	//En esta aplicacion solo se aceptan pedidos que ya está insertados
+	//en la base de datos. Por eso solo recibimos el id
 	public Pedido aceptar(Integer idPedido) throws Exception{
 	
 		Pedido pedido = pedidoDao.buscar(idPedido);
 	
 		Integer numeroTC = pedido.getCliente().getNumeroTC();
-		
+				
 		gestorBancos.comprobarTC(numeroTC);
 		
 		for(DetallePedido dp : pedido.getDetalles()) {

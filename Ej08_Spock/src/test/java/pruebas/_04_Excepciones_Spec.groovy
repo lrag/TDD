@@ -12,7 +12,7 @@ class _04_Excepciones_Spec extends Specification {
 	def "haciendo algo malo esperamos una excepción"() {
 		
 		given:
-			def datos = [ 1, 2, 3, 4]
+			def datos = [ 1, 2, 3, 4 ]
 	 
 		when:
 			datos.remove(20)

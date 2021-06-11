@@ -16,11 +16,16 @@ class _03_CicloDeVida_I_Spec extends Specification {
 	
 	def "calculadora.sumar suma correctamente"(){
 		
+		/*
 		when:
 			def rs = calculadora.sumar(10, 20)
 		
 		then:
 			rs == 30
+		*/
+		
+		expect: 
+			calculadora.sumar(10, 20) == 30
 			
 	}	
 	

@@ -55,10 +55,10 @@ class _06_PruebaParametrizada_Spec extends Specification {
 			
 		where:
 			//A este formato se le llama 'data tables' en Spock
-			s1   | s2   | suma
-			1    | 2    | 3
-			10   | 20   | 30
-			100  | 200  | 300
+			s1  | s2  | suma
+			1   | 2   | 3
+			10  | 20  | 30
+			100 | 200 | 300
 			
 			/*Las tablas han de tener mínimo dos columnas. 
 			//Si solo necesitamos una debemos usar esta sintaxis:

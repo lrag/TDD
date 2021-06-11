@@ -27,6 +27,27 @@ import com.curso.modelo.persistencia.PedidoDao;
 @ExtendWith(MockitoExtension.class)
 public class GestorPedidosTest {
 	
+	/*
+	Que hace JUnit para una clase que solo tenga un @Test: 
+	 
+	crear una instancia de GestorPedidosTest
+	invocar el método que esté marcado con @BeforeAll
+	incovar el método que esté marcado con @BeforeEach
+	invocar el método marcado que @Test 
+	incovar el método que esté marcado con @AfterEach
+	invocar el método que esté marcado con @AfterAll
+	
+	Con el @ExtendsWith(MockitoExtension.class):
+
+	crear una instancia de PeliculaDaoTest
+	invocar el método que esté marcado con @BeforeAll
+	incovar el método que esté marcado con @BeforeEach
+	-->Inicializar las propiedades que estén marcadas con @Mock
+	invocar el método marcado que @Test 
+	incovar el método que esté marcado con @AfterEach
+	invocar el método que esté marcado con @AfterAll	
+	*/	
+	
 	//Este es el objeto REAL que se va a probar
 	private GestorPedidos gestorPedidos;
 
@@ -37,7 +58,7 @@ public class GestorPedidosTest {
 	private GestorAlmacen gestorAlmacen = Mockito.mock(GestorAlmacen.class);
 	private GestorTransportes gestorTransportes = Mockito.mock(GestorTransportes.class);
 	private GestorOfertas gestorOfertas = Mockito.mock(GestorOfertas.class);
-	*/	
+	 */	
 	
 	//MOCKS. Ya tenemos dummies aqui:
 	@Mock private PedidoDao pedidoDao; 
@@ -100,7 +121,7 @@ public class GestorPedidosTest {
 		gestorPedidos.setGestorAlmacen(gestorAlmacen);
 		
 		//Si usaramos estos objetos REALES para la prueba
-		//entonces no sería un test unitario, sino uno de integración/funcional
+		//entonces no sería un test unitario, sino uno de integración
 		//No es que esté mal el querer un test de integración/funcional, pero aqui queremos un test unitario y usaremos TEST DOUBLES
 		/*
 		PedidoDao pedidoDao     = new PedidoDaoJPAImplementation();
@@ -144,7 +165,7 @@ public class GestorPedidosTest {
 		//GestorTransportes: Stub
 		Mockito
 			.when(gestorTransportes.obtenerCamion(true))
-			.thenReturn("CAMIÓN");
+			.thenReturn("MOC MOOOOOOOC");
 
 		//GestorOfertas
 		Mockito
@@ -213,6 +234,7 @@ public class GestorPedidosTest {
 		Mockito
 			.doThrow(new ExistenciasEx())
 			.when(gestorAlmacen)
+			//.comprobarExistencias(p5, new Integer(2500) );
 			.comprobarExistencias(Mockito.any(Producto.class), Mockito.any(Integer.class));
 		
 		//GestorTransportes: dummie

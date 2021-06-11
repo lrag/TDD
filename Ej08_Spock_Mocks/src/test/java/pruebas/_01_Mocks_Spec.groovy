@@ -53,7 +53,7 @@ class _01_Mocks_Spec extends Specification {
 		
 		//Este es el de verdad 
 		gestorClientes = new GestorClientes()
-		//Proporcinamos los test doubles
+		//Proporcionamos los test doubles
 		gestorClientes.gestorComerciales = gestorComerciales
 		gestorClientes.gestorSucursales  = gestorSucursales
 		gestorClientes.clienteDao = clienteDao
@@ -104,15 +104,15 @@ class _01_Mocks_Spec extends Specification {
 			
 		and :
 		
-			//Para gestorComerciales nos basta el dummie porque no esperamos que llegue a utilizarse
-			//al estar la dirección a null
 		
 			//Stub
 			gestorSucursales
 				.encontrarSucursalCercana(null) >>
 					{ throw new DireccionException("Dirección nula") }
 					
-			//Para gestorSucursales nos basta el dummie
+			//Para gestorComerciales nos basta el dummie porque no esperamos que llegue a utilizarse
+			//al estar la dirección a null
+
 			//Para clienteDao nos basta el dummie
 		
 		when:

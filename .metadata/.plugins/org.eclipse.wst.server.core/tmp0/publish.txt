@@ -1,3 +1,2 @@
 #Tomcat publish data
-#Wed Jun 09 11:16:00 CEST 2021
-org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\uno\\.m2\\repository\\org\\springframework\\spring-web\\4.3.15.RELEASE\\spring-web-4.3.15.RELEASE.jar=WEB-INF/lib/spring-web-4.3.15.RELEASE.jar
+#Thu Jun 10 19:40:40 CEST 2021

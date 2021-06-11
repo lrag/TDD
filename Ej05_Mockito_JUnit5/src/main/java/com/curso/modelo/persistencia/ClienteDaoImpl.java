@@ -7,6 +7,7 @@ import com.curso.modelo.entidad.Cliente;
 public class ClienteDaoImpl implements ClienteDao {
 
 	@Override
+	//Tiene que devolver el MISMO objeto
 	public Cliente insertar(Cliente cliente) {		
 		System.out.println("insert into clientes...");
 		cliente.setId(1);
@@ -38,45 +39,3 @@ public class ClienteDaoImpl implements ClienteDao {
 	}
 
 }
-
-/*
-
-
-public class ClienteDao_MOCK implements ClienteDao {
-
-
-
-	public Cliente insertar(Cliente obj) {	
-		obj.setId(1);
-		return obj;
-	}
-
-	public void modificar(Cliente obj) {
-	}
-
-	public void borrar(Cliente obj) {
-	}
-
-	public Cliente buscar(Integer id) {
-		null;
-	}
-
-	public List<Cliente> listar() {
-		return null;
-	}
-
-}
-
-
-*/
-
-
-
-
-
-
-
-
-
-
-

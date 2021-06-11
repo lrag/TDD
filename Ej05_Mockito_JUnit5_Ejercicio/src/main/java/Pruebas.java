@@ -18,18 +18,16 @@ public class Pruebas {
 		
 		GestorPedidos gp = appCtx.getBean(GestorPedidos.class);
 		try {
-			gp.aceptar(2);
+			gp.aceptar(3);
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
-		
-		
 		
 		EntityManagerFactory emf = appCtx.getBean(EntityManagerFactory.class);
 		
 		EntityManager em = emf.createEntityManager();
 		System.out.println("=================================================");
-		Pedido pBis = em.find(Pedido.class, 2);
+		Pedido pBis = em.find(Pedido.class, 1);
 		System.out.println(pBis.getCodigo());
 		System.out.println(pBis.getCliente().getNombre());
 		System.out.println(pBis.getEstado());

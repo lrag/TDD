@@ -41,7 +41,6 @@ public class Pedido {
 
 	public Pedido() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public Pedido(Integer id, String codigo, LocalDate fecha, String estado, Cliente cliente,

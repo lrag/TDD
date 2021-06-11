@@ -32,8 +32,6 @@ public class GestorClientes {
 		System.out.println("====================================");
 		System.out.println(cliente.getDireccion());
 		
-		
-		
 		cliente.setSucursal(gestorSucursales.encontrarSucursalCercana(cliente.getDireccion()));
 		cliente.setComerciales(gestorComerciales.encontrarComerciales());
 		clienteDao.insertar(cliente);
