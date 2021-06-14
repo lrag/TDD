@@ -19,7 +19,11 @@ System.out.println(request.getParameter("mail"));
 		<table border="0" cellspacing="5">
 			<tr>
 				<th align="right">El nombre enviado es:</th>
-				<td align="left"><div id="nombre"><%=request.getParameter("nombre")%></div></td>
+				<td align="left">
+					<div id="nombre">
+						<%=request.getParameter("nombre")%>
+					</div>
+				</td>
 			</tr>
 			<tr>
 				<th align="right">El mail enviado es:</th>

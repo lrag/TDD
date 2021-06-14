@@ -106,11 +106,11 @@ test
     .page `http://localhost:8080/Ej00_AplicacionWeb/index.html`
     ('Test cadena de selectores', async t => {  
         
-        //html > body > form > div > label
-
+        
         //Todas las propiedades de un selector que son funciones devuelven 'this' asi que podemos 
         //concatenar las llamadas
-
+        
+        //html body form div label
         const inputUsername = Selector('html')
             .child('body') //Hijos directos    
             .child('form') //El primer hijo de body que sea form    
@@ -131,22 +131,19 @@ test
         console.log(await inputPassword.getAttribute('id'))
 
     });
-
-    
     
 test
     .page `http://localhost:8080/Ej00_AplicacionWeb/index.html`
     ('Test cadena de selectores 2', async t => {  
         
+        //#loginForm > .in-user
         const inputUsername = Selector('#loginForm')
             .find('.in-user') //descendientes       
         
         console.log(await inputUsername.count)
         console.log(await inputUsername.exists)
         console.log(await inputUsername.getAttribute("id"))
-    });
-
-   
+    });   
 
 test
     .page `http://localhost:8080/Ej00_AplicacionWeb/index.html`
@@ -154,7 +151,7 @@ test
         
         //<div id="lista-items">
         //    <ul>
-        //        <li> <input type="text" value="Item 1" autofocus>Uno</li>
+        //        <li><input type="text" value="Item 1" autofocus>Uno</li>
         //        <li><input type="text" value="Item 2" disabled>Dos</li>
         //        <li><input type="text" value="Item 3">Tres</li>
         //    </ul>
@@ -170,20 +167,23 @@ test
             .child("ul")
             .child("li")
             .nth(-1)     
-        console.log(await ultimo.innerText)
-        
+        console.log(await ultimo.innerText)        
        
     });    
 
-    /*
+    
 
     test
     .page `http://localhost:8080/Ej00_AplicacionWeb/index.html`
     ('Test custom DOM properties', async t => {  
 
+        //Tenemos que construir un objeto tal que así:
+        //nombrePropiedad : FUNCION
+        //
+        //La función recibirá el elemento/s localizado por el selector y devolverá el valor que queramos
         const properties = {
             innerHTML: el => el.innerHTML
-        };
+        }
 
         const primero = Selector('#lista-items')
             .child("ul")
@@ -199,7 +199,7 @@ test
             .addCustomDOMProperties( properties )     
         console.log(await ultimo.innerHTML)
 
-        //Las custom DOM properties se propagan
+        //Las custom DOM properties se propagan             
         const lista = Selector('#lista-items').addCustomDOMProperties( properties )     
         
         const primeroBis = lista
@@ -216,4 +216,4 @@ test
 
     });
 
-*/
+

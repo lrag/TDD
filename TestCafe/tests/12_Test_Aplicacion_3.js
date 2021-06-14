@@ -2,6 +2,10 @@
 
 import { Selector, t } from 'testcafe';
 
+/////////////
+// FIXTURE //
+/////////////
+
 fixture `test aplicación 3`
     .page `http://localhost:8080/Ej00_AplicacionWeb/login.html`
     .beforeEach( async t => {
@@ -14,6 +18,11 @@ fixture `test aplicación 3`
             .wait(1000)
     })
 
+
+///////////
+// TESTS //
+///////////
+    
 test
     .page `http://localhost:8080/Ej00_AplicacionWeb/seguro/SVClientes`
     ('Test insertar', async t => {
@@ -119,6 +128,10 @@ test
     await t.wait(2000)
 
 });
+
+///////////////////////
+// Página formulario //
+///////////////////////
 
 class FormularioCliente {
     constructor () {

@@ -1,7 +1,6 @@
 INDEX VERSION 1.131+D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\.metadata\.plugins\org.eclipse.jdt.core
 2863433855.index
 3826142308.index
-3375460254.index
 3946058474.index
 3249384355.index
 583191603.index

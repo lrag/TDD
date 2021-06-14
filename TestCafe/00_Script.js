@@ -1,5 +1,5 @@
 const createTestCafe = require('testcafe');
-let testcafe         = null;
+let testcafe = null;
 
 createTestCafe('localhost', 1337, 1338)
     .then(tc => {

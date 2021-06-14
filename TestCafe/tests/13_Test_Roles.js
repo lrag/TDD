@@ -7,17 +7,17 @@ import { Selector, t, Role } from 'testcafe';
 ///////////
 
 const loginAdministrador = Role(`http://localhost:8080/Ej00_AplicacionWeb/login.html`, async t => {
-        await t
-            .wait(3000)
-            .typeText("[name=login]","harry")
-            .typeText("[name=pw]","callahan")
-            .wait(1000)
-            .click("#btnEntrar")
-            .wait(1000)
+    await t
+        .wait(3000)
+        .typeText("[name=login]","harry")
+        .typeText("[name=pw]","callahan")
+        .wait(1000)
+        .click("#btnEntrar")
+        .wait(1000)
     }, { preserveUrl: true });
     
-    const loginUsuario = Role(`http://localhost:8080/Ej00_AplicacionWeb/login.html`, async t => {
-        await t
+const loginUsuario = Role(`http://localhost:8080/Ej00_AplicacionWeb/login.html`, async t => {
+    await t
         .wait(3000)
         .typeText("[name=login]","bud")
         .typeText("[name=pw]","spencer")

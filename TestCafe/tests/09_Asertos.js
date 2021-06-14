@@ -7,9 +7,9 @@ fixture `Asertos`
 /*
 Deep Equal
 Not Deep Equal
-Ok
+Ok : assertTrue
 Not Ok
-Contains
+Contains : para cadenas de texto
 Not Contains
 Type of
 Not Type of
@@ -19,7 +19,7 @@ Less than
 Less than or Equal to
 Within
 Not Within
-Match
+Match : expresiones regulares
 Not Match
 */
 
@@ -37,7 +37,18 @@ test
                .wait(1000)
                .click('#btnEnviar')
 
-        await t.expect(Selector("#nombre").textContent).eql(nombre)
+
+        const divNombre = Selector("#nombre") //Esto no devuelve un nodo del árbol DOM. Devuelve un objeto del prototipo 'Selector'
+        //console.log(divNombre.textContent) //No devuelve el textContent. Devuelve una promesa!!!!
+        let contenidoDivNombre = await divNombre.textContent 
+        console.log(":"+contenidoDivNombre+":")
+        contenidoDivNombre = contenidoDivNombre.trim()
+        console.log(":"+contenidoDivNombre+":")
+
+
+        await t.expect(contenidoDivNombre).eql(nombre)
         await t.expect(Selector("#mail").textContent).eql(mail)
 
     });
+
+

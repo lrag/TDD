@@ -1,4 +1,4 @@
-//testcafe chrome 08_Interacciones.js --live
+//testcafe chrome 08_Interacciones_1.js --live
 
 import { Selector } from 'testcafe';
 
@@ -10,13 +10,15 @@ test
     .page `http://localhost:8080/Ej00_AplicacionWeb/index.html`
     ('Test click', async t => { 
         await t.wait(2000)
+        //Este selector es muy malo: no funcionaría si la aplicación estuviera internacionalizada
+        //Mucho mejor buscar las cosas por id (de hecho el botón tiene id)
         //const buttonPulsame = Selector('button').withText('Púlsame');
         //await t.click(buttonPulsame);
         
         await t.click("#btnPulsame")
         await t.wait(1000)
     });
-    
+
 test
     .page `http://localhost:8080/Ej00_AplicacionWeb/index.html`
     ('Test click', async t => { 
@@ -26,10 +28,9 @@ test
         //await t.click(btn)
 
         //Este botón tarda en aparecer
-        //await t.click("#btn-1")
+        await t.click("#btn-1")
         await t.wait(1000)
     });
-
 
 test
     .page `http://www.wikipedia.es`
@@ -44,20 +45,23 @@ test
         //    </div>
         //</form>
         
-        //await t.wait(3000)
-        //await t.typeText('#searchInput', "phyton")
+        //await t.wait(2000)
+        //await t.typeText('#searchInput', "phyton")        
         //await t.wait(2000)
         //await t.selectText('#searchInput').pressKey('delete')
         //await t.typeText('#searchInput', "java")
         //await t.wait(2000)
         //await t.click('#searchButton')
 
-        await t.wait(3000)
-               .typeText('#searchInput', "phyton")
-               .wait(2000)
-               .selectText('#searchInput')
-               .pressKey('delete')
-               .typeText('#searchInput', "java")
-               .wait(2000)
-               .click('#searchButton')
+
+        await t
+            .wait(2000)
+            .typeText('#searchInput', "phyton")
+            .wait(2000)
+            .selectText('#searchInput')
+            .pressKey('delete')
+            .typeText('#searchInput', "java")
+            .wait(2000)
+            .click('#searchButton')
+ 
     });

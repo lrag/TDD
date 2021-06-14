@@ -25,13 +25,13 @@ class FormularioPelicula {
     }
 }
 
-
 fixture `Page model`
 
 test
     .page `http://localhost:8080/Ej00_AplicacionWeb/formulario.html`
     ('Test', async t => {
     
+        //Si lo declaramos fuera se comparte entre todos los test
     const fp = new FormularioPelicula()
     
     await t

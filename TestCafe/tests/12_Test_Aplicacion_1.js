@@ -5,7 +5,6 @@ import { Selector } from 'testcafe';
 fixture `test aplicación`
 
 test
-    .skip
     .page `http://localhost:8080/Ej00_AplicacionWeb/login.html`
     ('Test insertar', async t => {
 
@@ -14,7 +13,7 @@ test
     const telefono  = "123 456 789"
 
     await t
-        .wait(4000)
+        .wait(2000)
         .typeText("[name=login]","harry")
         .typeText("[name=pw]","callahan")
         .wait(1000)
@@ -33,9 +32,17 @@ test
     const properties = {
         textContentTrim: el => el.innerText.trim()
     };
+    
     const tdNombre    = ultimaFila.child("td").addCustomDOMProperties(properties)
     const tdDireccion = ultimaFila.child("td").nth(1).addCustomDOMProperties(properties)
     const tdTelefono  = ultimaFila.child("td").nth(2).addCustomDOMProperties(properties)
+
+    /*
+    const tedeses = ultimaFila.child("td").addCustomDOMProperties(properties)
+    const tdNombre    = tedeses
+    const tdDireccion = tedeses.nth(1)
+    const tdTelefono  = tedeses.nth(2)
+    */
 
     await t.expect(nombre).eql(await tdNombre.textContentTrim)
     await t.expect(direccion).eql(await tdDireccion.textContentTrim)
@@ -46,7 +53,6 @@ test
 });
 
 test
-    .skip
     .page `http://localhost:8080/Ej00_AplicacionWeb/login.html`
     ('Test modificar', async t => {
 
@@ -78,14 +84,14 @@ test
         .wait(1000)
         .click("#btnModificar")
 
-    const ultimaFila = Selector("#tablaClientes").child("tr")
+    const primeraFila = Selector("#tablaClientes").child("tr")
 
     const properties = {
         textContentTrim: el => el.innerText.trim()
     };
-    const tdNombre    = ultimaFila.child("td").addCustomDOMProperties(properties)
-    const tdDireccion = ultimaFila.child("td").nth(1).addCustomDOMProperties(properties)
-    const tdTelefono  = ultimaFila.child("td").nth(2).addCustomDOMProperties(properties)
+    const tdNombre    = primeraFila.child("td").addCustomDOMProperties(properties)
+    const tdDireccion = primeraFila.child("td").nth(1).addCustomDOMProperties(properties)
+    const tdTelefono  = primeraFila.child("td").nth(2).addCustomDOMProperties(properties)
 
     await t.expect(nombre).eql(await tdNombre.textContentTrim)
     await t.expect(direccion).eql(await tdDireccion.textContentTrim)
