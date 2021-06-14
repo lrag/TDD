@@ -20,6 +20,9 @@ class FormularioPelicula {
             .selectText(this.genero).pressKey('delete')
             .selectText(this.fechaEstreno).pressKey('delete')
     }
+    async insertar(t){
+        await t.click(this.btnInsertar)
+    }
 }
 
 
@@ -32,11 +35,15 @@ test
     const fp = new FormularioPelicula()
     
     await t
+        .wait(2000)
         .typeText(fp.titulo, "2001")
         .typeText(fp.director, 'S.K.')
         .typeText(fp.genero, "CiFi")
         .typeText(fp.fechaEstreno, "1968")
+        .wait(1000)
 
     await fp.vaciar(t)
+    await t.wait(2000)
+    await fp.insertar(t)
 
 });

@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
 </head>
 
-<script type="text/javascript" src="../js/bootstrap.min.js"></script>
-
 <body>
 
     <div class="page-header text-center">

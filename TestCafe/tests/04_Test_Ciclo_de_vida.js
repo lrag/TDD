@@ -37,8 +37,7 @@ test
         console.log("TEST 3")
         await t.wait(4000)
     });
- 
- 
+
 test
     .before( async ctx => {
         console.log("Antes del test 3")
@@ -50,5 +49,5 @@ test
         console.log("TEST 3")
         await t.wait(4000)
     });
-    
+
     

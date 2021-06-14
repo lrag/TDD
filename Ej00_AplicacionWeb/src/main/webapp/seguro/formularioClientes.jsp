@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
@@ -10,8 +11,6 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
 </head>
-
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
 
 <body>
 
@@ -28,7 +27,9 @@
 	        <div class="text-center col-xs-8">  
 				<input type="submit" id="btnInsertar"  value="Insertar"  class="btn btn-primary" onclick="document.formulario.accion.value='insertar'"/>
 				<input type="submit" id="btnModificar" value="Modificar" class="btn btn-primary" onclick="document.formulario.accion.value='modificar'"/>
-				<input type="submit" id="btnBorrar"    value="Borrar"    class="btn btn-primary" onclick="document.formulario.accion.value='borrar'"/>
+				<c:if test="${usuario.roles=='ADMIN'}">
+					<input type="submit" id="btnBorrar"    value="Borrar"    class="btn btn-primary" onclick="document.formulario.accion.value='borrar'"/>
+				</c:if>
 				<input type="submit" value="Cancelar"  class="btn btn-primary"/>
 	        </div>
 	        <div class="col-xs-2"></div>  
@@ -50,7 +51,7 @@
 	            <div class="form-group">
 	                <label class="control-label col-xs-2" for="director">Dirección</label>
 	                <div class="col-xs-8">
-	                    <input type="text" id="director" name="direccion" class="form-control" value="${clienteSel.direccion}"/>
+	                    <input type="text" id="direccion" name="direccion" class="form-control" value="${clienteSel.direccion}"/>
 	                </div>
 	            </div>  
 	            <div class="form-group">

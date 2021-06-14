@@ -6,8 +6,8 @@ import { Selector } from 'testcafe';
 
 fixture `fixture`
     .meta({ descripcion: 'bla bla bla' })
-    
-    test
+        
+test
     .meta({ 
         descripcion: 'bla bli bla',
         tipo       : 'tipo1' 
@@ -17,7 +17,7 @@ fixture `fixture`
         await t.wait(3000)
     });
     
-    test
+test
     .meta({ 
         descripcion: 'bla bli bla',
         tipo       : 'tipo2' 

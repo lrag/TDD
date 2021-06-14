@@ -6,7 +6,6 @@ fixture `Interacciones`
 
 //Los test se ejecutan en el orden en el que están declarados
 
-/*
 test
     .page `http://localhost:8080/Ej00_AplicacionWeb/index.html`
     ('Test click', async t => { 
@@ -17,7 +16,6 @@ test
         await t.click("#btnPulsame")
         await t.wait(1000)
     });
-*/
     
 test
     .page `http://localhost:8080/Ej00_AplicacionWeb/index.html`
@@ -33,7 +31,6 @@ test
     });
 
 
-/*
 test
     .page `http://www.wikipedia.es`
     ('Test interacciones', async t => {
@@ -64,4 +61,3 @@ test
                .wait(2000)
                .click('#searchButton')
     });
-*/

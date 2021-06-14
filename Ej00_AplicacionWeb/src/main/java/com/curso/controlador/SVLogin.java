@@ -28,21 +28,25 @@ public class SVLogin extends HttpServlet {
 		String login = request.getParameter("login");
 		String pw    = request.getParameter("pw");
 		
-		String redirect = "login.html";
+		String redirect = "seguro/SVClientes";
 		//Simplificando...
-		if(login.equals("aaa") && pw.equals("bbb")){
-			
-			HttpSession sesion = request.getSession(true);
-			request.changeSessionId();
-			
-			Usuario usuario = new Usuario(1, "Bud Spencer", "aaa", null, "ADMIN");
-			sesion.setAttribute("usuario", usuario);
-			
-			redirect = "seguro/SVClientes";
-		} 
+		if(login.equals("harry") && pw.equals("callahan")){
+			Usuario usuario = new Usuario(1, "Harry Callahan", "harry", null, "ADMIN");
+			iniciarSesión(usuario, request);
+		} else if(login.equals("bud") && pw.equals("spencer")){
+			Usuario usuario = new Usuario(1, "Bud Spencer", "aaa", null, "USR");
+			iniciarSesión(usuario, request);
+		} else {
+			redirect = "login.html";
+		}
 
-		response.sendRedirect(redirect);
-	
+		response.sendRedirect(redirect);	
 	}
 
+	private void iniciarSesión(Usuario usuario, HttpServletRequest request) {
+		HttpSession sesion = request.getSession(true);
+		request.changeSessionId();
+		sesion.setAttribute("usuario", usuario);
+	}
+	
 }

@@ -23,8 +23,10 @@ class GestorPedidos_Spec extends Specification {
 	Pedido pedidoOk
 	Pedido pedidoExistenciasMal
 	
+	//Este es el objeto real que vamos a probar
 	GestorPedidos gestorPedidos
 	
+	//Estos son los test doubles
 	PedidoDao pedidoDao 
 	GestorBancos gestorBancos 
 	GestorAlmacen gestorAlmacen 

@@ -9,6 +9,7 @@
 
 function setActionFormulario(accion){
 	console.log("Botón "+accion+" pulsado.")
+	document.getElementById("formulario").submit()
 }
 
 </script>
@@ -21,7 +22,7 @@ function setActionFormulario(accion){
 		</font>
 	</h1>
 
-	<form id="formulario" method="POST">
+	<form id="formulario" action="SVFormulario" method="POST">
 	
 		<p align="center">
 			<input type="button" id="btnInsertar"  value="Insertar"  onclick="setActionFormulario('insertar')"/>

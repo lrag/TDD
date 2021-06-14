@@ -10,9 +10,20 @@ fixture `Fixture variables del contexto del fixture`
     });
 
 test('Test1', async t => {
+    //Para acceder al contexto del fixture usamos
+    //testController.fixtureCtx
     console.log(t.fixtureCtx.valor); // > 123
+    t.fixtureCtx.valor = 456
 });
 
+
 test('Test2', async t => {
+    console.log(t.fixtureCtx.valor); // > 456
     t.fixtureCtx.nuevoValor = 'abc';
+});
+
+
+test('Test3', async t => {
+    console.log(t.fixtureCtx.valor); // > 456
+    console.log(t.fixtureCtx.nuevoValor); // > 456
 });

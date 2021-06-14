@@ -8,8 +8,8 @@ fixture `Segundo fixture`
 
 test
     .page `https://www.google.es`
-    ('Test 1', async t => {
-        await t.wait(5000)
+    ('Test 1', async testController => {
+        await testController.wait(5000)
     });
 
 test
