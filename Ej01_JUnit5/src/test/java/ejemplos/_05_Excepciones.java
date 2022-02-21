@@ -6,10 +6,10 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.function.Executable;
 
 import com.curso.modelo.negocio.Calculadora;
 import com.curso.modelo.negocio.CalculadoraException;
-import com.curso.modelo.negocio.CalculadoraPrueba;
 
 public class _05_Excepciones {
 
@@ -53,8 +53,8 @@ public class _05_Excepciones {
 			//MAL
 			Assertions.fail("Pues no ha lanzado la excepción!");
 		} catch (CalculadoraException e) {
-			System.out.println("OK");
 			//OK, Esto es lo que esperabamos!
+			System.out.println("OK");
 		} catch(Exception e) {
 			Assertions.fail("Pues ha lanzado OTRA excepción!");			
 		}
@@ -66,22 +66,17 @@ public class _05_Excepciones {
 				calculadora.dividir(dividendo, divisor);				
 			}
 		});
-		 */
-		
-		/*
-		Assertions.assertThrows(CalculadoraException.class,  
-			                    () -> calculadora.dividir(dividendo, divisor));
 		*/
-
 		
+		//Assertions.assertThrows(CalculadoraException.class,  
+		//	                      () -> calculadora.dividir(dividendo, divisor));
+
 		//Nos entregan la excepción que se ha lanzado por si nos hace falta
 		CalculadoraException e = 
 			Assertions.assertThrows(CalculadoraException.class,  
                                     () -> calculadora.dividir(dividendo, divisor));	
 		assertEquals("División por cero", e.getMessage());
-		
-	}
-	
+	}	
 	
 }
 

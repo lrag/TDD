@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: ejemplos._02_Asertos_Test
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.036 s <<< FAILURE! - in ejemplos._02_Asertos_Test
+test11  Time elapsed: 0.003 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Test fallido
+	at ejemplos._02_Asertos_Test.test11(_02_Asertos_Test.java:165)
+
+test12  Time elapsed: 0.005 s  <<< FAILURE!
+org.opentest4j.MultipleFailuresError: 
+Multiple Failures (2 failures)
+	org.opentest4j.AssertionFailedError: La suma es nula! ==> expected: <true> but was: <false>
+	org.opentest4j.AssertionFailedError: La suma es menor que 10! ==> expected: <true> but was: <false>
+	at ejemplos._02_Asertos_Test.test12(_02_Asertos_Test.java:234)
+

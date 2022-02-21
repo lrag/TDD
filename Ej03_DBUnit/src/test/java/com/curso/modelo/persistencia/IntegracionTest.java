@@ -75,7 +75,7 @@ public class IntegracionTest {
 		Pelicula p6 = new Pelicula(4,"T4","D4","G4",444);
 		peliculaDao.modificar(p6);
 		
-		//No hacen falta asertos 		
+		//No hacen falta asertos porque ya hemos puesto @ExpectedDataSet	
 	}
 		
 	@Test

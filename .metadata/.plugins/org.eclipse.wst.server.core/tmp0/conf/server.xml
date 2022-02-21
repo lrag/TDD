@@ -149,7 +149,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Ej00_WEB" path="/Ej00_WEB" reloadable="true" source="org.eclipse.jst.jee.server:Ej00_WEB"/><Context docBase="D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Ej00_AplicacionWeb" path="/Ej00_AplicacionWeb" reloadable="true" source="org.eclipse.jst.jee.server:Ej00_AplicacionWeb"/></Host>
+      <Context docBase="D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Ej05_Mockito" path="/Ej05_Mockito" reloadable="true" source="org.eclipse.jst.jee.server:Ej05_Mockito"/><Context docBase="D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Ej06_Selenium" path="/Ej06_Selenium" reloadable="true" source="org.eclipse.jst.jee.server:Ej06_Selenium"/></Host>
     </Engine>
   </Service>
 </Server>

@@ -13,10 +13,10 @@ public class CalculadoraImpuestos {
 			return ingreso * 0.08;
 		} else if(ingreso >= 15000 && ingreso < 20000){
 			return ingreso * 0.10;
-		} else if(ingreso >= 20000 && ingreso < 25000){
+		} else if(ingreso >= 20000 && ingreso < 30000){
 			return ingreso * 0.15;
 		} else {
-			//if(ingreso > 25000)
+			//if(ingreso > 30000)
 			return ingreso * 0.195;
 		}
 	}

@@ -27,7 +27,8 @@ import com.curso.modelo.persistencia.ClienteDaoImpl;
 //o usando anotaciones. 
 public class GestorClientesTest {
 	
-	//ESTO NO ES UNA PRUEBA UNITARIA
+	//ESTO NO ES UNA PRUEBA UNITARIA PORQUE UTILIZA LAS DEPENDENCIAS REALES DE LA CLASE GESTOR_CLIENTES
+	//Es un test de integración
 	//@Test
 	public void pruebaAltaCliente() throws Exception {
 		
@@ -45,8 +46,7 @@ public class GestorClientesTest {
 		GestorSucursales gs = new GestorSucursales();
 		gc.setGestorSucursales(gs);
 		ClienteDao cDao = new ClienteDaoImpl();
-		gc.setClienteDao(cDao);
-		
+		gc.setClienteDao(cDao);		
 		
 		//Cuando
 		Cliente cAux = gc.altaCliente(c);
@@ -59,35 +59,6 @@ public class GestorClientesTest {
 		);
 		
 	}
-	
-	/*
-	
-	public GestorDirecciones getGestorDireccionesDouble() {
-		
-		GestorDirecciones gestorDirecciones = Mockito.mock(GestorDirecciones.class); //Dummie		
-		//Stub
-		try {
-			Mockito
-				.lenient()
-				.doThrow(new DireccionException("Dirección nula"))
-				.when(gestorDirecciones)
-				.comprobarDireccion(null);
-		} catch (DireccionException e) {
-			e.printStackTrace();
-		}		
-		try {
-			Mockito
-				.lenient()
-				.doThrow(new DireccionException("Esta direccion es falsa"))
-				.when(gestorDirecciones)
-				.comprobarDireccion("C/Falsa, 123");
-		} catch (DireccionException e) {
-			e.printStackTrace();
-		}		
-		
-		return gestorDirecciones;		
-	}
-	*/
 	
 	//Test doubles:
 	//
@@ -190,7 +161,6 @@ public class GestorClientesTest {
 		Assertions.assertAll( () -> Assertions.assertEquals(2, clienteInsertado.getComerciales().size(),"El cliente no tiene comerciales!"),
 				              () -> assertNotNull(clienteInsertado.getSucursal(),"El cliente no tiene sucursal!"),
 				              () -> assertNotNull(clienteInsertado.getId(),"El cliente no tiene id!"));	
-		
 	}
 	
 	//@Test

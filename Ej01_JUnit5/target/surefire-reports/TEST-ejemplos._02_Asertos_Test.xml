@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ejemplos._02_Asertos_Test" time="0.036" tests="12" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej01_JUnit5\target\test-classes;D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej01_JUnit5\target\classes;C:\Users\uno\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.2\junit-jupiter-api-5.7.2.jar;C:\Users\uno\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\uno\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\uno\.m2\repository\org\junit\platform\junit-platform-commons\1.7.2\junit-platform-commons-1.7.2.jar;C:\Users\uno\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.2\junit-jupiter-engine-5.7.2.jar;C:\Users\uno\.m2\repository\org\junit\platform\junit-platform-engine\1.7.2\junit-platform-engine-1.7.2.jar;C:\Users\uno\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.7.2\junit-jupiter-params-5.7.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="ES"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_231\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\uno\AppData\Local\Temp\surefire76142523168046935\surefirebooter3765616301510645838.jar C:\Users\uno\AppData\Local\Temp\surefire76142523168046935 2021-06-14T20-24-19_251-jvmRun1 surefire5866707678846856287tmp surefire_01612908152442528567tmp"/>
+    <property name="surefire.test.class.path" value="D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej01_JUnit5\target\test-classes;D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej01_JUnit5\target\classes;C:\Users\uno\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.2\junit-jupiter-api-5.7.2.jar;C:\Users\uno\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\uno\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\uno\.m2\repository\org\junit\platform\junit-platform-commons\1.7.2\junit-platform-commons-1.7.2.jar;C:\Users\uno\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.2\junit-jupiter-engine-5.7.2.jar;C:\Users\uno\.m2\repository\org\junit\platform\junit-platform-engine\1.7.2\junit-platform-engine-1.7.2.jar;C:\Users\uno\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.7.2\junit-jupiter-params-5.7.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\uno"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_231\jre"/>
+    <property name="basedir" value="D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej01_JUnit5"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\uno\AppData\Local\Temp\surefire76142523168046935\surefirebooter3765616301510645838.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_231\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_231\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_231-b11"/>
+    <property name="user.name" value="uno"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_231\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\uno\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\uno\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_231"/>
+    <property name="user.dir" value="D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej01_JUnit5"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_231\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Python39\Scripts\;C:\Python39\;C:\tools\ruby27\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\JAVA\apache-maven-3.6.0\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\JAVA\workspaces\SPRING\Spring_Microservicios\protoc\bin;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_231\bin;C:\Program Files\nodejs\;D:\JAVA\grails-4.0.9\bin;C:\Users\uno\AppData\Local\Microsoft\WindowsApps;C:\Users\uno\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\uno\AppData\Local\Microsoft\WindowsApps;C:\Users\uno\AppData\Roaming\npm;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.231-b11"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_231\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="test10" classname="ejemplos._02_Asertos_Test" time="0"/>
+  <testcase name="test11" classname="ejemplos._02_Asertos_Test" time="0.003">
+    <failure message="Test fallido" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Test fallido
+	at ejemplos._02_Asertos_Test.test11(_02_Asertos_Test.java:165)
+</failure>
+    <system-out><![CDATA[Test 11
+]]></system-out>
+  </testcase>
+  <testcase name="test12" classname="ejemplos._02_Asertos_Test" time="0.005">
+    <failure message="Multiple Failures (2 failures)&#10;	org.opentest4j.AssertionFailedError: La suma es nula! ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;&#10;	org.opentest4j.AssertionFailedError: La suma es menor que 10! ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.MultipleFailuresError"><![CDATA[org.opentest4j.MultipleFailuresError: 
+Multiple Failures (2 failures)
+	org.opentest4j.AssertionFailedError: La suma es nula! ==> expected: <true> but was: <false>
+	org.opentest4j.AssertionFailedError: La suma es menor que 10! ==> expected: <true> but was: <false>
+	at ejemplos._02_Asertos_Test.test12(_02_Asertos_Test.java:234)
+]]></failure>
+    <system-out><![CDATA[Test 12
+Creando Calculadora
+Uno
+Dos
+Tres
+]]></system-out>
+  </testcase>
+  <testcase name="test1" classname="ejemplos._02_Asertos_Test" time="0.001"/>
+  <testcase name="test2" classname="ejemplos._02_Asertos_Test" time="0.001"/>
+  <testcase name="test3" classname="ejemplos._02_Asertos_Test" time="0.001"/>
+  <testcase name="test4" classname="ejemplos._02_Asertos_Test" time="0.005"/>
+  <testcase name="test5" classname="ejemplos._02_Asertos_Test" time="0.001"/>
+  <testcase name="test6" classname="ejemplos._02_Asertos_Test" time="0.001"/>
+  <testcase name="test7" classname="ejemplos._02_Asertos_Test" time="0.002"/>
+  <testcase name="test8" classname="ejemplos._02_Asertos_Test" time="0.005"/>
+  <testcase name="test9" classname="ejemplos._02_Asertos_Test" time="0.003"/>
+</testsuite>

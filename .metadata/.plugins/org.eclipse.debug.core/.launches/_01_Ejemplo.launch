@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.codehaus.groovy.eclipse.groovyScriptLaunchConfiguration">
     <stringAttribute key="org.codehaus.groovy.eclipse.launch.runType" value="pruebas._01_Ejemplo"/>
-    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_EXCLUDE_TEST_CODE" value="true"/>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_EXCLUDE_TEST_CODE" value="false"/>
     <listAttribute key="org.eclipse.jdt.launching.CLASSPATH">
         <listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;runtimeClasspathEntry externalArchive=&quot;D:/JAVA/ide/eclipse_2020/plugins/org.codehaus.groovy_3.0.7.v202103311613-e2012-RELEASE/lib/groovy-3.0.7-indy.jar&quot; path=&quot;3&quot; type=&quot;2&quot;/&gt;&#13;&#10;"/>
         <listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;runtimeClasspathEntry externalArchive=&quot;D:/JAVA/ide/eclipse_2020/plugins/org.codehaus.groovy_3.0.7.v202103311613-e2012-RELEASE/lib/groovy-test-3.0.7-indy.jar&quot; path=&quot;3&quot; type=&quot;2&quot;/&gt;&#13;&#10;"/>

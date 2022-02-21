@@ -1,8 +1,8 @@
 package ejemplos;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertIterableEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
@@ -12,22 +12,17 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertSame;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
-import static org.junit.jupiter.api.Assumptions.assumeTrue;
-import static org.junit.jupiter.api.Assumptions.assumingThat;
 
 import java.util.Arrays;
 import java.util.List;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.opentest4j.TestAbortedException;
 
 import com.curso.modelo.negocio.Calculadora;
 
 public class _02_Asertos_Test {
-
+	
 	@Test
 	public void test1() {			
 
@@ -99,6 +94,7 @@ public class _02_Asertos_Test {
 	public void test7() {
 		System.out.println("Test 7");	
 
+		//Cuidado con el autoboxing 
 		Integer i1 = 127; 
 		Integer i2 = 127;
 		
@@ -125,18 +121,16 @@ public class _02_Asertos_Test {
 	}
 	
 	@Test
-	public void test9() throws Exception {
+	public void test9() {
 		System.out.println("Test 9");
 		String[] palabras1 = new String[] {"HELLO","DOCTOR","NAME","CONTINUE","YESTERDAY","TOMORROW"};
 		String[] palabras2 = new String[] {"HELLO","DOCTOR","NAME","CONTINUE","YESTERDAY","TOMORROW"};
-
-		/*
-		for(int a=0; a<palabras1.length; a++) {
-			if(!palabras1[a].equals(palabras2[a])) {
-				throw new Exception("No son iguales!!!!");
-			}
-		}
-		*/	
+		
+		//for(int a=0; a<palabras1.length; a++) {
+		//	if(!palabras1[a].equals(palabras2[a])) {
+		//		throw new Exception("No son iguales!!!!");
+		//	}
+		//}
 		
 		assertArrayEquals(palabras2, palabras1);	
 	}
@@ -153,10 +147,9 @@ public class _02_Asertos_Test {
 		//Para comparar Iterables. 
 		assertIterableEquals(lista1, lista2);		
 	}
-	
-	@Test
-	public void test11() {		
 
+	@Test
+	public void test11() {
 		System.out.println("Test 11");
 		
 		boolean condicionDificilDeExpresarConUnAserto = false;
@@ -180,75 +173,106 @@ public class _02_Asertos_Test {
 		//Cuando
 		Double sumResult = calculadora.sumar(s1, s2);
 		
-		/*
 		//Podríamos hacer esto, pero al primer aserto que falle se sale del método por la excepción que se lanza
-		System.out.println("I");
-		assertNotNull(sumResult);
-		System.out.println("II");
-		assertTrue(sumResult > 10); //A partir de aqui no se ejecuta (se lanza una excepción)
-		System.out.println("III");
-		assertTrue(sumResult < 10);
-		*/
+		//System.out.println("I");
+		//assertNotNull(sumResult);
+		//System.out.println("II");
+		//assertTrue(sumResult > 10); //A partir de aqui no se ejecuta (se lanza una excepción)
+		//System.out.println("III");
+		//assertTrue(sumResult < 10);
 		
 		//Así lo hacía un mandril	
-		/*
-		assertAll(new Executable() {
-			public void execute() throws Throwable{
-				System.out.println("I");
-				assertTrue(sumResult != null);
-				System.out.println("II");
-				assertTrue(sumResult > 10); //A partir de aqui no se ejecuta
-				System.out.println("III");
-				assertTrue(sumResult < 10);
-			}
-		});
-		*/		
-
-		/*
+		//assertAll(new Executable() {
+		//	public void execute() throws Throwable{
+		//		System.out.println("I");
+		//		assertTrue(sumResult != null);
+		//		System.out.println("II");
+		//		assertTrue(sumResult > 10); //A partir de aqui no se ejecuta
+		//		System.out.println("III");
+		//		assertTrue(sumResult < 10);
+		//	}
+		//});
+		
+		//Esto exige un trabajo inasumible:
+		//Comprobador1 c1 = new Comprobador1();
+		//c1.sumResult = sumResult;
+		//Comprobador2 c2 = new Comprobador2();
+		//c2.sumResult = sumResult;
+		//Comprobador3 c3 = new Comprobador3();
+		//c3.sumResult = sumResult;
+		//
+		//Assertions.assertAll(c1, c2, c3);		
+		
 		//Con clases internas anónimas
+		/*
 		assertAll( 
 				new Executable() {
+					@Override
 					public void execute() throws Throwable {
+						System.out.println("I");
 						assertTrue(sumResult != null);
 					}
 				},
 				new Executable() {
 					public void execute() throws Throwable {
-						assertTrue(sumResult < 10);
+						System.out.println("II");
+						assertTrue(sumResult > 10);
 					}
 				},
 				new Executable() {
 					public void execute() throws Throwable {
-						assertTrue(sumResult > 10);
+						System.out.println("III");
+						assertTrue(sumResult < 10);
 					}
 				});
 		*/
 			
-		/*
 		//Con expresiones lambda
 		assertAll(() -> assertTrue(sumResult != null),
 				  () -> assertTrue(sumResult < 10),
 				  () -> assertTrue(sumResult > 10));						
-		*/	
-
-		assertAll(
-			() -> { System.out.println("Uno"); assertTrue(sumResult == null, "La suma es nula!"); },
-			() -> { System.out.println("Dos"); assertTrue(sumResult < 10, "La suma es mayor que 10!"); },
-			() -> { System.out.println("Tres"); assertTrue(sumResult > 10, "La suma es menor que 10!"); }
-		);	
 		
-	}		
-
+		/*
+		assertAll(
+			() -> { System.out.println("-I"); assertTrue(sumResult == null, "La suma es nula!"); },
+			() -> { System.out.println("-II"); assertTrue(sumResult < 10, "La suma es mayor que 10!"); },
+			() -> { System.out.println("-III"); assertTrue(sumResult > 10, "La suma es menor que 10!"); }
+		);
+		*/	
+	}
 }
 
+/*
+class Comprobador1 implements Executable {
+	public Double sumResult;	
+	
+	@Override
+	public void execute() throws Throwable {
+		System.out.println("I");
+		Assertions.assertNotNull(sumResult);
+	}
+}
 
+class Comprobador2 implements Executable {
+	public Double sumResult;	
+	
+	@Override
+	public void execute() throws Throwable {
+		System.out.println("II");
+		Assertions.assertTrue(sumResult > 10);
+	}
+}
 
-
-
-
-
-
-
+class Comprobador3 implements Executable {
+	public Double sumResult;	
+	
+	@Override
+	public void execute() throws Throwable {
+		System.out.println("III");
+		Assertions.assertTrue(sumResult < 10);
+	}
+}
+*/
 
 
 

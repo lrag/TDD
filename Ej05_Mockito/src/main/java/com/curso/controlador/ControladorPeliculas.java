@@ -22,17 +22,17 @@ import com.curso.servicios.ServicioPeliculasProxy;
 public class ControladorPeliculas {
 
 	//@Autowired
-	private ServicioPeliculasProxy servicioPeliculas;
+	private ServicioPeliculasProxy servicioPeliculasProxy;
 	
 	//Esto lo quitaremos cuando ya tengamos el verdadero ServicioPeliculasProxy
 	{
-		servicioPeliculas = Mockito.mock(ServicioPeliculasProxy.class);
+		servicioPeliculasProxy = Mockito.mock(ServicioPeliculasProxy.class);
 		//Métodos a simular:
 		//void insertar(Pelicula pelicula);
 		//Pelicula buscar(Integer idPelicula);
 		//List<Pelicula> listar();
 		Mockito
-			.when(servicioPeliculas.buscar(Mockito.anyInt()))
+			.when(servicioPeliculasProxy.buscar(Mockito.anyInt()))
 				.thenReturn(new Pelicula(101,"Die Hard","John McTiernan","Accion",1988));
 		
 		List<Pelicula> peliculas = new ArrayList<>();
@@ -44,7 +44,7 @@ public class ControladorPeliculas {
 		peliculas.add(new Pelicula(6,"El bueno, el feo y el malo","Sergio Leone","Western",1968));
 
 		Mockito
-			.when(servicioPeliculas.listar())
+			.when(servicioPeliculasProxy.listar())
 				.thenReturn(peliculas);
 		
 		Mockito.doAnswer(new Answer<Void>() {
@@ -52,14 +52,14 @@ public class ControladorPeliculas {
 				System.out.println("Insertando:"+invocation.getArgument(0));
 				return null;
 			}
-		}).when(servicioPeliculas).insertar(Mockito.any(Pelicula.class));
+		}).when(servicioPeliculasProxy).insertar(Mockito.any(Pelicula.class));
 		
 	}
 	
 	@PostMapping(path="insertar")
 	public ModelAndView insertar(@ModelAttribute("pelicula")Pelicula pelicula) {
 		try {
-			servicioPeliculas.insertar(pelicula);
+			servicioPeliculasProxy.insertar(pelicula);
 		} catch (Exception e) {
 			ModelAndView mav = new ModelAndView("formularioPeliculas");
 			mav.addObject("mensaje","El titulo es obligatorio");
@@ -81,7 +81,7 @@ public class ControladorPeliculas {
 	@GetMapping(path="verListado")
 	public ModelAndView verListadoPeliculas() {
 		ModelAndView mav = new ModelAndView("listadoPeliculas");
-		mav.addObject("listaPeliculas", servicioPeliculas.listar());
+		mav.addObject("listaPeliculas", servicioPeliculasProxy.listar());
 		return mav;
 	}
 
@@ -95,7 +95,7 @@ public class ControladorPeliculas {
 	@GetMapping(path="seleccionar")
 	public ModelAndView seleccionar(@RequestParam("id")Integer idPelicula) {
 		ModelAndView mav = new ModelAndView("formularioPeliculas");
-		mav.addObject("pelicula", servicioPeliculas.buscar(idPelicula));
+		mav.addObject("pelicula", servicioPeliculasProxy.buscar(idPelicula));
 		return mav;
 	}
 	

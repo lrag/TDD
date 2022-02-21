@@ -64,6 +64,7 @@ public class GestorAvionesTest {
 
 	@Test
 	void insertarTest() {
+		//Esto no es una prueba unitaria ni de lejos
 		
 		Integer antes = gestorAviones.listar().size();
 		Avion a = new Avion(null, "Supermarine", "Spitfire", 1938);

@@ -46,6 +46,7 @@ public class GestorClientesTest_Final {
 		//DADOS:
 		//Este cliente
 		Cliente cliente = new Cliente(null,"Nombre","Direccion","Telefono");
+		
 		//Este gestorClientes
 		GestorClientes gestorClientes = new GestorClientes(); //<-- ESTE ES DE VERDAD
 		

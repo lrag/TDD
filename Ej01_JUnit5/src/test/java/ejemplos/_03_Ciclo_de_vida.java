@@ -2,6 +2,7 @@ package ejemplos;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import com.curso.modelo.negocio.Calculadora;
@@ -16,7 +17,8 @@ public class _03_Ciclo_de_vida {
 
 	//Si declaramos estático el atributo que guarda el objeto a probar
 	//no se creará uno por cada test, pero hay que estar muy seguro de 
-	//que es imposible que los test se acoplen entre si
+	//que es imposible que los test se acoplen entre si al reutilizar la calculadora
+	//No es recomendable
 	//private static Calculadora calculadora = new Calculadora();
 	
 	public _03_Ciclo_de_vida() {
@@ -39,6 +41,7 @@ public class _03_Ciclo_de_vida {
 	}
 
 	@Test
+	//@Disabled("Este no")
 	public void segundoTest() {
 		double n1 = 5;
 		double n2 = calculadora.cuadrado(n1);
@@ -46,7 +49,7 @@ public class _03_Ciclo_de_vida {
 	}
 
 	@Test
-	//@Disabled("Este no")
+	//@Disabled("Este tampoco")
 	public void tercerTest() throws Exception {
 		double n1 = 30;
 		double n2 = 2;

@@ -80,8 +80,7 @@ class _01_Mocks_Spec extends Specification {
 			//Pasando al mock un valor variable del tipo adecuado
 			//Añadiendo un closure como cuerpo del método para añadir el comportamiento 'devuelve el
 			//cliente recibido pero con un valor en el id'
-			clienteDao
-				.insertar(_) >> {
+			clienteDao.insertar(_) >> {
 						Cliente cli ->
 							cli.id = 1
 							cli //return implícito, para disfrutar

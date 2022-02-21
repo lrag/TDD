@@ -52,16 +52,16 @@ public class GestorPedidosTest {
 	private GestorPedidos gestorPedidos;
 
 	/*
-	Sin la anotación @Mock: 
+	//Sin la anotación @Mock: 
 	private PedidoDao pedidoDao = Mockito.mock(PedidoDao.class);
 	private GestorBancos gestorBancos = Mockito.mock(GestorBancos.class);
 	private GestorAlmacen gestorAlmacen = Mockito.mock(GestorAlmacen.class);
 	private GestorTransportes gestorTransportes = Mockito.mock(GestorTransportes.class);
 	private GestorOfertas gestorOfertas = Mockito.mock(GestorOfertas.class);
-	 */	
+	*/ 
 	
 	//MOCKS. Ya tenemos dummies aqui:
-	@Mock private PedidoDao pedidoDao; 
+	@Mock private PedidoDao pedidoDao; //Null
 	@Mock private GestorBancos gestorBancos; 
 	@Mock private GestorAlmacen gestorAlmacen; 
 	@Mock private GestorTransportes gestorTransportes; 
@@ -103,15 +103,13 @@ public class GestorPedidosTest {
 		detalles3.add(new DetallePedido(3, pedidoExistenciasMal, p1, 25d, 25));
 		detalles3.add(new DetallePedido(4, pedidoExistenciasMal, p3, 75d, 25));
 		detalles3.add(new DetallePedido(5, pedidoExistenciasMal, p5, 125d, 2500));
-		pedidoExistenciasMal.setDetalles(detalles3);		
-		
+		pedidoExistenciasMal.setDetalles(detalles3);
 	}	
-	
 	
 	@BeforeEach
 	public void inicializar() {
 		crearPedidos();
-		gestorPedidos = new GestorPedidos(); //Este es el objeto que vamos a probar	
+		gestorPedidos = new GestorPedidos(); //Este es el objeto real que vamos a probar	
 		
 		//Le asignamos los dummies
 		gestorPedidos.setPedidoDao(pedidoDao);
@@ -149,11 +147,6 @@ public class GestorPedidosTest {
 		//DADOS
 		Integer idPedido = 1;
 		
-		//dummie
-		//stub
-		//fake
-		//mock
-		
 		//PedidoDao: Stub
 		Mockito
 			.when(pedidoDao.buscar(idPedido))
@@ -167,7 +160,7 @@ public class GestorPedidosTest {
 			.when(gestorTransportes.obtenerCamion(true))
 			.thenReturn("MOC MOOOOOOOC");
 
-		//GestorOfertas
+		//GestorOfertas: Stub
 		Mockito
 			.when(gestorOfertas.obtenerPerritoPiloto(true))
 			.thenReturn("REGALO");
@@ -179,6 +172,7 @@ public class GestorPedidosTest {
 		Assertions.assertAll(
 			() -> Assertions.assertNotNull(pedidoAceptado.getCamion(),"El pedido no tiene camión"),
 			() -> Assertions.assertNotNull(pedidoAceptado.getRegalo(),"El pedido no tiene regalo"),
+			//() -> Assertions.assertNotNull(pedidoAceptado.getFactura(),"El pedido no tiene factura"),
 			() -> Assertions.assertEquals("ACEPTADO", pedidoAceptado.getEstado(),"El pedido no tiene estado 'ACEPTADO'")
 		);
 	
@@ -205,9 +199,9 @@ public class GestorPedidosTest {
 		
 		//GestorAlmacen: dummie
 		//GestorTransportes: dummie
-		//GestorOfertas: dummie		
+		//GestorOfertas: dummie	
 		
-		//ENTONCES:		
+		//CUANDO + ENTONCES:		
 		Exception e = Assertions.assertThrows(DatosBancariosEx.class, 
 				                              () -> gestorPedidos.aceptar(idPedido), 
 				                              "No se la lanzado DatosBancariosEx");
@@ -285,7 +279,7 @@ public class GestorPedidosTest {
 			);	
 		
 		//Si comprobamos el numero de llamadas o el orden de las mismas DEJA DE SER UNA PRUEBA UNITARIA
-		Mockito.verify(gestorBancos).comprobarTC(Mockito.any()); //Una y solo una vez
+		Mockito.verify(gestorBancos).comprobarTC(Mockito.any()); //Exactamente una vez
 		Mockito.verify(gestorAlmacen, Mockito.times(3)).comprobarExistencias(any(Producto.class), any(Integer.class));
 		Mockito.verify(gestorAlmacen, Mockito.times(3)).reducirExistencias(any(Producto.class), any(Integer.class));
 		Mockito.verify(gestorTransportes).obtenerCamion(true); //Una y solo una vez

@@ -23,8 +23,7 @@ class _06_PruebaParametrizada_Spec extends Specification {
 			//Estamos infringiendo la norma 'crear un objeto a probar nuevo para cada test'
 			calculadora.sumar(1,2) == 3 
 			calculadora.sumar(3,4) == 7 
-			calculadora.sumar(5,6) == 11 
-		
+			calculadora.sumar(5,6) == 11 		
 	}
 	
 	

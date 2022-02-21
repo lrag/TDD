@@ -6,7 +6,6 @@
 	<artifactId>Ej09_Geb</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-
 	<build>
 		<pluginManagement>
 			<plugins>
@@ -19,13 +18,9 @@
 					</configuration>
 				</plugin>
 				<plugin>
-					<artifactId>maven-war-plugin</artifactId>
-					<version>3.2.1</version>
-				</plugin>
-				<plugin>
 					<groupId>org.codehaus.gmavenplus</groupId>
 					<artifactId>gmavenplus-plugin</artifactId>
-					<version>1.5</version>
+					<version>1.12.1</version>
 					<executions>
 						<execution>
 							<goals>
@@ -68,7 +63,7 @@
 		<dependency>
 		    <groupId>org.gebish</groupId>
 		    <artifactId>geb-spock</artifactId>
-		    <version>4.0</version>
+		    <version>4.1</version>
 		</dependency>
 
 		<dependency>
@@ -118,7 +113,7 @@
 		    <groupId>javax.servlet</groupId>
 		    <artifactId>jstl</artifactId>
 		    <version>1.2</version>
-		</dependency>
+		</dependency>		
 
 	</dependencies>
 

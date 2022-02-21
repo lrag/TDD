@@ -1,6 +1,5 @@
 package com.curso.modelo.negocio;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import com.curso.modelo.entidad.Cliente;
@@ -34,11 +33,11 @@ public class GestorClientes {
 	// Recibe el cliente por referencia, lo modifica y lo devuelve
 	public Cliente altaCliente(Cliente cliente) throws Exception {
 
-		// ..
+		// ...
 
 		gestorDirecciones.comprobarDireccion(cliente.getDireccion());
 
-		// ..
+		// ...
 
 		Sucursal sucursal = gestorSucursales.encontrarSucursalCercana(cliente.getDireccion());
 		if (sucursal == null) {
@@ -51,19 +50,19 @@ public class GestorClientes {
 
 		// ...
 
-		cliente = clienteDao.insertar(cliente);
-
-		// ...
-
 		List<Comercial> comerciales = gestorComerciales.encontrarComerciales();
 		cliente.setComerciales(comerciales);
+		
+		// ...
+		
+		cliente = clienteDao.insertar(cliente);
 
 		// ...
 
 		return cliente;
 	}
 
-	// REcibimos una lista de clientes e intentamos insertarlos
+	// Recibimos una lista de clientes e intentamos insertarlos
 	// Si hay algún cliente que no se puede insertar el proceso NO se detiene
 	public void altaClientes(List<Cliente> clientes) {
 		for (Cliente c : clientes) {
@@ -88,17 +87,17 @@ public class GestorClientes {
  * 
  * public class GestorClientes_Dummie extends GestorClientes {
  * 
- * public void setClienteDao(ClienteDao clienteDao) { }
+ * 	public void setClienteDao(ClienteDao clienteDao) { }
  * 
- * public void setGestorSucursales(GestorSucursales gestorSucursales) { }
+ * 	public void setGestorSucursales(GestorSucursales gestorSucursales) { }
  * 
- * public void setGestorComerciales(GestorComerciales gestorComerciales) { }
+ * 	public void setGestorComerciales(GestorComerciales gestorComerciales) { }
  * 
- * public void setGestorDirecciones(GestorDirecciones gestorDirecciones) { }
+ * 	public void setGestorDirecciones(GestorDirecciones gestorDirecciones) { }
  * 
- * public Cliente altaCliente(Cliente cliente) throws Exception { return null; }
+ * 	public Cliente altaCliente(Cliente cliente) throws Exception { return null; }
  * 
- * public void altaClientes(List<Cliente> clientes){ }
+ * 	public void altaClientes(List<Cliente> clientes){ }
  * 
  * }
  * 

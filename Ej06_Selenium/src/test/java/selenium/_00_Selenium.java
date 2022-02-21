@@ -28,8 +28,16 @@ public class _00_Selenium {
 				           "src/test/resources/drivers/chromedriver/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();		
 		*/		
-
+		
 		driver.get("http://www.google.com");
+		
+		//Para que de tiempo a quitar el popup con la aceptación de términos
+		try {
+			Thread.sleep(10000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+
 		WebElement element = driver.findElement(By.name("q"));
 
 		element.sendKeys("Spring security");

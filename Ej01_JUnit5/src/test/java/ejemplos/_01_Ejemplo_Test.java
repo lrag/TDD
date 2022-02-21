@@ -19,8 +19,10 @@ public class _01_Ejemplo_Test {
 	//El nombre del método debe ser descriptivo
 	//Si queda un nombre horrible podemos utilizar la anotacion displayName
 	@DisplayName("Primer test")
-	public void primerTest() {
-		
+	//Estos métodos no reciben parámetros
+	//Son void
+	public void primerTest() { 
+	
 		System.out.println("Ejecutando un test que no hace nada");
 		
 	}

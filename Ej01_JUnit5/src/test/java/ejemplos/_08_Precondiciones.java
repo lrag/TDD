@@ -3,6 +3,7 @@ package ejemplos;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import org.junit.jupiter.api.Assumptions;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 
@@ -21,10 +22,11 @@ public class _08_Precondiciones {
 		System.out.println("Antes");
 		Assumptions.assumeTrue(System.getProperty("os.name").contains("Linux"));
 		System.out.println("Despues");
+		
 		assertNotNull(null);
 
 		// Idéntico al anterior
-		Assumptions.assumingThat(System.getProperty("os.name").contains("Linux"), () -> assertNotNull(null));
+		//Assumptions.assumingThat(System.getProperty("os.name").contains("Linux"), () -> assertNotNull(null));
 	}
 
 }

@@ -14,7 +14,7 @@ class _05_Timeouts_Spec extends Specification {
 	
 	@Timeout(value = 200, unit = TimeUnit.MILLISECONDS)
 	def "Esta prueba debe ejecutarse en el tiempo estipulado"() {
-		
+
 		given:
 			def calculadora = new Calculadora()
 		

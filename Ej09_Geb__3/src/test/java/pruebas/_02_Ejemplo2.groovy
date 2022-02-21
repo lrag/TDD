@@ -8,11 +8,11 @@ import org.openqa.selenium.Keys
 //	"src/test/resources/drivers/geckodriver/geckodriver.exe")	
 
 
-Browser.drive {	
+Browser.drive({	
 	
 	go "http://www.google.es"
 	$("[name=q]") << "Spring security"+Keys.ENTER
 
-}//.quit()
+})//.quit()
 
 

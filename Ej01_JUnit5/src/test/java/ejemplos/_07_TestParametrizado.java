@@ -43,23 +43,25 @@ public class _07_TestParametrizado {
 	</dependency>	
 	*/
 	
-	@ParameterizedTest
+	//@ParameterizedTest
 	@ValueSource(doubles = { 5, 25, 50, 75 })
 	@DisplayName("Prueba de test parametrizado")
 	public void ejemplo(Double numero) {
 		//Dado este número
 		System.out.println("Parámetro:"+numero);
 		//Cuando 
-		double resultado = calculadora.cuadrado(2d);
+		double resultado = calculadora.cuadrado(numero);
 		//Entonces
-		Assertions.assertTrue(resultado == 2d*2d);	
+		Assertions.assertTrue(resultado == numero*numero);	
 		//Lo mismo, con equals
-		Assertions.assertEquals(resultado, 2d*2d);	
+		Assertions.assertEquals(resultado, numero*numero);	
 	}
 	
-	@ParameterizedTest
+	//@ParameterizedTest
 	@MethodSource("datosParaProbarInsertarCliente")
 	void pruebaInsertarClientes(Cliente cliente) {
+		//Dado el cliente recibido
+		System.out.println(cliente);
 		//Cuando
 		Cliente cAux = gestorClientes.insertarCliente(cliente);
 		//Entonces
@@ -68,13 +70,13 @@ public class _07_TestParametrizado {
 	
 	@ParameterizedTest(name = "CalculadoraImpuestos {index}: El impuesto de {0} debe ser {1}")
 	@MethodSource("datosParaProbarCalculadoraImpuestos")
-	void testWithMultiArgMethodSource(Double ingreso, Double impuesto) throws InvalidIngresoException {
+	void testWithMultiArgMethodSource(Double ingreso, Double impuestoEsperado) throws InvalidIngresoException {
 		//Dado
-		System.out.println(ingreso+","+impuesto);
+		System.out.println(ingreso+","+impuestoEsperado);
 		//Cuando
 		double resultado = calculadoraImpuestos.calcularImpuestosSobreIngreso(ingreso);
 	    //Entonces
-		Assertions.assertEquals(impuesto, resultado);
+		Assertions.assertEquals(impuestoEsperado, resultado);
 	}
 
 	//Es obligatorio que sea estático
