@@ -24,11 +24,6 @@ public class _05_Excepciones {
 	public void beforeEach() {
 		calculadora = new Calculadora();
 	}
-	
-	@AfterAll
-	public static void afterAll() {
-		System.out.println("After all");
-	}
 
 	@Test
 	public void dividirFuncionaCorrectamente() throws Exception {
@@ -36,6 +31,7 @@ public class _05_Excepciones {
 		double divisor = 2;
 		
 		double rs = calculadora.dividir(dividendo, divisor);
+		
 		assertEquals(25, rs);
 	}	
 	
@@ -61,21 +57,41 @@ public class _05_Excepciones {
 		*/
 		
 		/*
-		Assertions.assertThrows(CalculadoraException.class, new Executable() {
+		//Con clase interna anónima
+		Executable exe = new Executable() {
+			@Override
 			public void execute() throws Throwable {
-				calculadora.dividir(dividendo, divisor);				
+				calculadora.dividir(dividendo, divisor);
+			}
+		};	
+		Assertions.assertThrows(CalculadoraException.class, exe);
+		*/
+		
+		/*
+		//ïdem, sin declarar primero la variable 'exe'
+		Assertions.assertThrows(CalculadoraException.class, new Executable() {
+			@Override
+			public void execute() throws Throwable {
+				calculadora.dividir(dividendo, divisor);
 			}
 		});
 		*/
-		
-		//Assertions.assertThrows(CalculadoraException.class,  
-		//	                      () -> calculadora.dividir(dividendo, divisor));
 
+		/*
+		Assertions.assertThrows(
+				CalculadoraException.class,  
+				() -> calculadora.dividir(dividendo, divisor)
+			);	
+		*/	
+		
 		//Nos entregan la excepción que se ha lanzado por si nos hace falta
 		CalculadoraException e = 
-			Assertions.assertThrows(CalculadoraException.class,  
-                                    () -> calculadora.dividir(dividendo, divisor));	
+			Assertions.assertThrows(
+				CalculadoraException.class,  
+                () -> calculadora.dividir(dividendo, divisor)
+            );	
 		assertEquals("División por cero", e.getMessage());
+		
 	}	
 	
 }

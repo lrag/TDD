@@ -9,12 +9,16 @@ public class Prueba3 implements Prueba {
 		
 		Calculadora c = new Calculadora();
 		
-		double resultado = c.sumar(10d,20d);
-		
-		if(resultado == 30d) {
-			System.out.println("calculadora.sumar OK");
-		} else {
-			System.out.println("calculadora.sumar ZASCA!");
+		try {
+			double resultado = c.dividir(20d,10d);
+			
+			if(resultado == 2d) {
+				System.out.println("calculadora.dividir OK");
+			} else {
+				System.out.println("calculadora.dividir ZASCA!");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
 		}		
 		
 	}	

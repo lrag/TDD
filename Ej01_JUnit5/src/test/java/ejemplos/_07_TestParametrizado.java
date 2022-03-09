@@ -43,7 +43,7 @@ public class _07_TestParametrizado {
 	</dependency>	
 	*/
 	
-	//@ParameterizedTest
+	@ParameterizedTest
 	@ValueSource(doubles = { 5, 25, 50, 75 })
 	@DisplayName("Prueba de test parametrizado")
 	public void ejemplo(Double numero) {
@@ -57,7 +57,7 @@ public class _07_TestParametrizado {
 		Assertions.assertEquals(resultado, numero*numero);	
 	}
 	
-	//@ParameterizedTest
+	@ParameterizedTest
 	@MethodSource("datosParaProbarInsertarCliente")
 	void pruebaInsertarClientes(Cliente cliente) {
 		//Dado el cliente recibido
@@ -80,17 +80,6 @@ public class _07_TestParametrizado {
 	}
 
 	//Es obligatorio que sea estático
-	static Stream<Arguments> datosParaProbarCalculadoraImpuestos() {
-		return Stream.of(
-	        Arguments.arguments(5000d,0d),
-	        Arguments.arguments(10000d,800d),
-	        Arguments.arguments(17000d,1700d),
-	        Arguments.arguments(22000d,3300d),
-	        Arguments.arguments(35000d,6825d)
-	    );	 
-	}
-
-	//Es obligatorio que sea estático
 	static Stream<Arguments> datosParaProbarInsertarCliente() {
 		return Stream.of(
 	        Arguments.arguments(new Cliente(null,"N1","D1","T1")),
@@ -98,6 +87,17 @@ public class _07_TestParametrizado {
 	        Arguments.arguments(new Cliente(null,"N3","D3","T3")),
 	        Arguments.arguments(new Cliente(null,"N4","D4","T4")),
 	        Arguments.arguments(new Cliente(null,"N5","D5","T5"))
+	    );	 
+	}	
+
+	//Es obligatorio que sea estático
+	static Stream<Arguments> datosParaProbarCalculadoraImpuestos() {
+		return Stream.of(
+	        Arguments.arguments(5000d,0d),
+	        Arguments.arguments(10000d,800d),
+	        Arguments.arguments(17000d,1700d),
+	        Arguments.arguments(22000d,3300d),
+	        Arguments.arguments(35000d,6825d)
 	    );	 
 	}	
 

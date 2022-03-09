@@ -1,6 +1,5 @@
 package ejemplos;
 
-import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -16,8 +15,10 @@ import static org.junit.jupiter.api.Assertions.fail;
 import java.util.Arrays;
 import java.util.List;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.function.Executable;
 
 import com.curso.modelo.negocio.Calculadora;
 
@@ -36,10 +37,11 @@ public class _02_Asertos_Test {
 		int n3 = n1 + n2;
 
 		//entonces		
-		//Assertions.assertEquals(300, n3);
-		//Con import estático
-		
+
 		//Utiliza equals, no el '=='
+		//Assertions.assertEquals(301, n3);
+		
+		//Con import estático
 		assertEquals(300, n3);
 	
 		//Lo mismo, pero sin import estático:
@@ -93,10 +95,12 @@ public class _02_Asertos_Test {
 	@Test
 	public void test7() {
 		System.out.println("Test 7");	
-
+		
 		//Cuidado con el autoboxing 
 		Integer i1 = 127; 
 		Integer i2 = 127;
+		
+		Integer i3 = i1 + i2;
 		
 		Calculadora c1 = new Calculadora();
 		Calculadora c2 = c1;
@@ -118,6 +122,7 @@ public class _02_Asertos_Test {
 		
 		assertNotSame(i1, i2);	
 		assertNotSame(c1, c2);	
+		
 	}
 	
 	@Test
@@ -126,11 +131,13 @@ public class _02_Asertos_Test {
 		String[] palabras1 = new String[] {"HELLO","DOCTOR","NAME","CONTINUE","YESTERDAY","TOMORROW"};
 		String[] palabras2 = new String[] {"HELLO","DOCTOR","NAME","CONTINUE","YESTERDAY","TOMORROW"};
 		
-		//for(int a=0; a<palabras1.length; a++) {
-		//	if(!palabras1[a].equals(palabras2[a])) {
-		//		throw new Exception("No son iguales!!!!");
-		//	}
-		//}
+		/*
+		for(int a=0; a<palabras1.length; a++) {
+			if(!palabras1[a].equals(palabras2[a])) {
+				throw new RuntimeException("No son iguales!!!!");
+			}
+		}
+		*/
 		
 		assertArrayEquals(palabras2, palabras1);	
 	}
@@ -158,7 +165,7 @@ public class _02_Asertos_Test {
 			fail("Test fallido");
 		}
 	}
-
+	
 	@Test
 	@DisplayName("Prueba de assertAll")
 	void test12() {
@@ -181,18 +188,6 @@ public class _02_Asertos_Test {
 		//System.out.println("III");
 		//assertTrue(sumResult < 10);
 		
-		//Así lo hacía un mandril	
-		//assertAll(new Executable() {
-		//	public void execute() throws Throwable{
-		//		System.out.println("I");
-		//		assertTrue(sumResult != null);
-		//		System.out.println("II");
-		//		assertTrue(sumResult > 10); //A partir de aqui no se ejecuta
-		//		System.out.println("III");
-		//		assertTrue(sumResult < 10);
-		//	}
-		//});
-		
 		//Esto exige un trabajo inasumible:
 		//Comprobador1 c1 = new Comprobador1();
 		//c1.sumResult = sumResult;
@@ -205,40 +200,42 @@ public class _02_Asertos_Test {
 		
 		//Con clases internas anónimas
 		/*
-		assertAll( 
+		Assertions.assertAll( 
 				new Executable() {
-					@Override
 					public void execute() throws Throwable {
 						System.out.println("I");
-						assertTrue(sumResult != null);
+						assertNotNull(sumResult);
 					}
 				},
 				new Executable() {
 					public void execute() throws Throwable {
 						System.out.println("II");
-						assertTrue(sumResult > 10);
+						assertTrue(sumResult > 10, "No es mayor que 10");
 					}
 				},
 				new Executable() {
 					public void execute() throws Throwable {
 						System.out.println("III");
-						assertTrue(sumResult < 10);
+						assertTrue(sumResult < 10, "No es menor que 10");
 					}
-				});
+				});		
 		*/
-			
-		//Con expresiones lambda
-		assertAll(() -> assertTrue(sumResult != null),
-				  () -> assertTrue(sumResult < 10),
-				  () -> assertTrue(sumResult > 10));						
 		
+		
+		//Con expresiones lambda
 		/*
-		assertAll(
+		Assertions.assertAll(
+				() -> assertTrue(sumResult != null),
+				() -> assertTrue(sumResult < 10),
+				() -> assertTrue(sumResult > 10)
+			);	
+		*/
+		
+		Assertions.assertAll(
 			() -> { System.out.println("-I"); assertTrue(sumResult == null, "La suma es nula!"); },
 			() -> { System.out.println("-II"); assertTrue(sumResult < 10, "La suma es mayor que 10!"); },
 			() -> { System.out.println("-III"); assertTrue(sumResult > 10, "La suma es menor que 10!"); }
 		);
-		*/	
 	}
 }
 
@@ -273,6 +270,7 @@ class Comprobador3 implements Executable {
 	}
 }
 */
+
 
 
 

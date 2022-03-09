@@ -20,4 +20,5 @@ public class CalculadoraImpuestos {
 			return ingreso * 0.195;
 		}
 	}
+
 }

@@ -22,9 +22,7 @@ public class _01_Ejemplo_Test {
 	//Estos métodos no reciben parámetros
 	//Son void
 	public void primerTest() { 
-	
 		System.out.println("Ejecutando un test que no hace nada");
-		
 	}
 		
 }
