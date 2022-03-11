@@ -28,42 +28,8 @@ import com.curso.modelo.negocio.excepcion.DatosBancariosEx;
 import com.curso.modelo.negocio.excepcion.ExistenciasEx;
 import com.curso.modelo.persistencia.PedidoDao;
 
-//PARA QUE FUNCIONE LA ANOTACIÓN @Mock:
 @ExtendWith(MockitoExtension.class)
-public class GestorPedidosTest {
-	
-	/*
-	Que hace JUnit para una clase que solo tenga un @Test: 
-	 
-	invocar el método que esté marcado con @BeforeAll
-	crear una instancia de GestorPedidosTest
-	incovar el método que esté marcado con @BeforeEach
-	invocar el método marcado con @Test 
-	incovar el método que esté marcado con @AfterEach
-	invocar el método que esté marcado con @AfterAll
-	
-	Si la clase tiene la anotación @ExtendsWith(MockitoExtension.class):
-
-	invocar el método que esté marcado con @BeforeAll
-	crear una instancia de PeliculaDaoTest
-	--->
-	Le pasa la instancia a la extensión para que haga lo que tenga que hacer con ella
-	En este caso examina la clase buscando la anotación @Mock e inyecta un dummie
-	--->
-	incovar el método que esté marcado con @BeforeEach
-	invocar el método marcado con @Test 
-	incovar el método que esté marcado con @AfterEach
-	invocar el método que esté marcado con @AfterAll	
-	*/	
-
-	/*
-	//Sin la anotación @Mock: 	
-	private PedidoDao pedidoDao = Mockito.mock(PedidoDao.class);
-	private GestorBancos gestorBancos = Mockito.mock(GestorBancos.class);
-	private GestorAlmacen gestorAlmacen = Mockito.mock(GestorAlmacen.class);
-	private GestorTransportes gestorTransportes = Mockito.mock(GestorTransportes.class);
-	private GestorOfertas gestorOfertas = Mockito.mock(GestorOfertas.class);	
-	*/
+public class GestorPedidosTest_Final {
 	
 	//Este será el objeto real que vamos a probar
 	private GestorPedidos gestorPedidos;
@@ -106,27 +72,6 @@ public class GestorPedidosTest {
 		gestorPedidos.setGestorOfertas(gestorOfertas);
 		gestorPedidos.setGestorTransportes(gestorTransportes);
 		gestorPedidos.setGestorAlmacen(gestorAlmacen);
-		
-		//Si usaramos estos objetos REALES para la prueba
-		//entonces no sería un test unitario, sino uno de integración
-		//No es que esté mal el querer un test de integración/funcional, pero aqui queremos un test unitario y usaremos TEST DOUBLES
-		/*
-		PedidoDao pedidoDao     = new PedidoDaoJPAImplementation();
-		ProductoDao productoDao = new ProductoDaoJPAImplementation();
-		
-		GestorBancos      gestorBancos = new GestorBancos();
-		GestorAlmacen     gestorAlmacen = new GestorAlmacen();
-		GestorTransportes gestorTransportes = new GestorTransportes();
-		GestorOfertas     gestorOfertas = new GestorOfertas();
-		
-		gestorAlmacen.setProductoDao(productoDao);
-		
-		gestorPedidos.setPedidoDao(pedidoDao);
-		gestorPedidos.setGestorAlmacen(gestorAlmacen);
-		gestorPedidos.setGestorBancos(gestorBancos);
-		gestorPedidos.setGestorOfertas(gestorOfertas);
-		gestorPedidos.setGestorTransportes(gestorTransportes);
-		*/		
 	}
 	
 		
@@ -281,29 +226,15 @@ public class GestorPedidosTest {
 			.thenReturn("Perrito Piloto");		
 		
 		//Cuando
-		Pedido pedidoAceptado = gestorPedidos.aceptar(idPedido);
+		gestorPedidos.aceptar(idPedido);
 		
 		//Entonces
-		
-		//Esto aqui NO TIENE SENTIDO
-		//Aqui no comprobamos el resultado si no que se utilizan correctamente las dependencias
-		//Este aserto ya lo tenemos en un verdader test unitario más arriba
-		/*Assertions.assertAll(
-				() -> Assertions.assertNotNull(pedidoAceptado.getCamion(),"El pedido no tiene camión"),
-				() -> Assertions.assertNotNull(pedidoAceptado.getRegalo(),"El pedido no tiene regalo"),
-				() -> Assertions.assertEquals("ACEPTADO", pedidoAceptado.getEstado(),"El pedido no tiene estado 'ACEPTADO'")
-			);*/	
-		
-		//Si comprobamos el numero de llamadas o el orden de las mismas DEJA DE SER UNA PRUEBA UNITARIA porque
-		//estamos 'abriendo la caja negra' 
 		Mockito.verify(gestorBancos).comprobarTC(Mockito.any()); //Exactamente una vez
 		Mockito.verify(gestorAlmacen, times(3)).comprobarExistencias(any(Producto.class), any(Integer.class));
 		Mockito.verify(gestorAlmacen, times(3)).reducirExistencias(any(Producto.class), any(Integer.class));
 		Mockito.verify(gestorTransportes).obtenerCamion(true); //Una y solo una vez
-		Mockito.verify(gestorOfertas, times(1)).obtenerPerritoPiloto(true); //Así escribimos más
-		
-	}	
-	
+		Mockito.verify(gestorOfertas, times(1)).obtenerPerritoPiloto(true); //Así escribimos más		
+	}		
 	
 }
 

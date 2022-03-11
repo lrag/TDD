@@ -58,7 +58,7 @@ public class IntegracionTest {
 		System.out.println("=====================================");
 		peliculaDao.listar().forEach(p -> System.out.println(p));		
 		
-		//Realizar las modificaciones que lleven al real al estado esperado
+		//Realizar las modificaciones que lleven a la base de datos al estado esperado
 		Pelicula p1 = new Pelicula();
 		p1.setId(5);
 		peliculaDao.borrar(p1);
@@ -78,7 +78,7 @@ public class IntegracionTest {
 		//No hacen falta asertos porque ya hemos puesto @ExpectedDataSet	
 	}
 		
-	@Test
+	//@Test
 	@DataSet("db/input.xml")
 	@ExpectedDataSet(value="db/expected.xml",ignoreCols = "id")	
 	public void integeracionGestorPeliculas() throws Exception

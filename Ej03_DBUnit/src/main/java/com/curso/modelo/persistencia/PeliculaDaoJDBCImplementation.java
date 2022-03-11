@@ -10,6 +10,9 @@ import java.util.List;
 
 import com.curso.modelo.entidad.Pelicula;
 
+/////////////////////////////////////////
+//Ejemplo de como no implementar un DAO//
+/////////////////////////////////////////
 public class PeliculaDaoJDBCImplementation implements PeliculaDao {
 
 	public void insertar(Pelicula pelicula) {

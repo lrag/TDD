@@ -40,6 +40,7 @@ public class GestorPedidos {
 	}
 
 	public void insertar(Pedido pedido){
+		//Validación
 		pedidoDao.insertar(pedido);
 	}
 	
@@ -49,11 +50,15 @@ public class GestorPedidos {
 	public Pedido aceptar(Integer idPedido) throws Exception{
 	
 		Pedido pedido = pedidoDao.buscar(idPedido);
+
+		//Ciertas validaciones
+		if(pedido.getDetalles().size()==0) {
+			throw new Exception("El pedido no tiene detalles!");
+		}
 	
-		Integer numeroTC = pedido.getCliente().getNumeroTC();
-				
+		Integer numeroTC = pedido.getCliente().getNumeroTC();				
 		gestorBancos.comprobarTC(numeroTC);
-		
+				
 		for(DetallePedido dp : pedido.getDetalles()) {
 			gestorAlmacen.comprobarExistencias(dp.getProducto(), dp.getCantidad());
 			gestorAlmacen.reducirExistencias(dp.getProducto(), dp.getCantidad());
