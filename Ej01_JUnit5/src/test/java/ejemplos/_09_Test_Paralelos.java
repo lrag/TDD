@@ -1,18 +1,14 @@
 package ejemplos;
 
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-
-import org.junit.jupiter.api.Assumptions;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.parallel.Execution;
+import org.junit.jupiter.api.parallel.ExecutionMode;
 
 /*
 src/test/resources/junit-plattform.properties
-
-junit.jupiter.execution.parallel.enabled = true
-junit.jupiter.execution.parallel.mode.default = concurrent
 */
 
+//@Execution(ExecutionMode.CONCURRENT)
 public class _09_Test_Paralelos {
 
 	@Test
