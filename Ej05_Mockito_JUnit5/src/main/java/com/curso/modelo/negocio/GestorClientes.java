@@ -82,23 +82,24 @@ public class GestorClientes {
 
 }
 
+
+//UN DUMMIE DE LA CLASE GestorCLientes:
 /*
- * UN DUMMIE DE LA CLASE GestorCLientes:
- * 
- * public class GestorClientes_Dummie extends GestorClientes {
- * 
- * 	public void setClienteDao(ClienteDao clienteDao) { }
- * 
- * 	public void setGestorSucursales(GestorSucursales gestorSucursales) { }
- * 
- * 	public void setGestorComerciales(GestorComerciales gestorComerciales) { }
- * 
- * 	public void setGestorDirecciones(GestorDirecciones gestorDirecciones) { }
- * 
- * 	public Cliente altaCliente(Cliente cliente) throws Exception { return null; }
- * 
- * 	public void altaClientes(List<Cliente> clientes){ }
- * 
- * }
- * 
- */
+public class GestorClientes_Dummie extends GestorClientes {
+
+	public void setClienteDao(ClienteDao clienteDao) { }
+
+	public void setGestorSucursales(GestorSucursales gestorSucursales) { }
+
+	public void setGestorComerciales(GestorComerciales gestorComerciales) { }
+
+	public void setGestorDirecciones(GestorDirecciones gestorDirecciones) { }
+
+	public Cliente altaCliente(Cliente cliente) throws Exception { return null; }
+
+	public void altaClientes(List<Cliente> clientes){ }
+
+}
+*/
+
+

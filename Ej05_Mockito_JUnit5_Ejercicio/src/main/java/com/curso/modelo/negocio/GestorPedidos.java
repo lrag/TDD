@@ -51,7 +51,7 @@ public class GestorPedidos {
 	
 		Pedido pedido = pedidoDao.buscar(idPedido);
 
-		//Ciertas validaciones
+		//Ciertas validaciones		
 		if(pedido.getDetalles().size()==0) {
 			throw new Exception("El pedido no tiene detalles!");
 		}

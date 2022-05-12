@@ -118,9 +118,7 @@ public class GestorPedidosTest_Final {
 				() -> assertNotNull(pedidoAceptado.getRegalo(),"El pedido no tiene regalo"),
 				//() -> Assertions.assertNotNull(pedidoAceptado.getFactura(),"El pedido no tiene factura"),
 				() -> assertEquals("ACEPTADO", pedidoAceptado.getEstado(),"El pedido no tiene estado 'ACEPTADO'")
-			);		
-		
-		
+			);			
 	}
 	
 	@Test

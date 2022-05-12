@@ -48,11 +48,14 @@ public class GestorPedidosTest {
 	crear una instancia de PeliculaDaoTest
 	--->
 	Le pasa la instancia a la extensión para que haga lo que tenga que hacer con ella
-	En este caso examina la clase buscando la anotación @Mock e inyecta un dummie
+	En este caso examina la clase buscando la anotación @Mock e inyecta un dummie en cada atributo que la tenga
 	--->
 	incovar el método que esté marcado con @BeforeEach
 	invocar el método marcado con @Test 
 	incovar el método que esté marcado con @AfterEach
+	--->
+	Le pasa la instancia a la extensión para que haga lo que tenga que hacer con ella
+	--->
 	invocar el método que esté marcado con @AfterAll	
 	*/	
 
@@ -287,7 +290,7 @@ public class GestorPedidosTest {
 		
 		//Esto aqui NO TIENE SENTIDO
 		//Aqui no comprobamos el resultado si no que se utilizan correctamente las dependencias
-		//Este aserto ya lo tenemos en un verdader test unitario más arriba
+		//Este aserto ya lo tenemos en un verdadero test unitario más arriba
 		/*Assertions.assertAll(
 				() -> Assertions.assertNotNull(pedidoAceptado.getCamion(),"El pedido no tiene camión"),
 				() -> Assertions.assertNotNull(pedidoAceptado.getRegalo(),"El pedido no tiene regalo"),
