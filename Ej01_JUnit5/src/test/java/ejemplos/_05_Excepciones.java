@@ -110,48 +110,5 @@ public class _05_Excepciones {
 
 
 
-		/*
-		try {
-			calculadora.dividir(10d, 10d);
-			fail("ZASCA");
-		} catch (Exception e) {
-			//Me pongo un visto
-		}
-		*/
-		
-		//Con clase interna anónima
-		/*
-		assertThrows(Exception.class, new Executable() {
-			@Override
-			public void execute() throws Throwable {
-				calculadora.dividir(10d, 0d);
-			}
-		});
-		*/
-		
-		//Con expresiones lambda
-		//assertThrows(Exception.class, () -> calculadora.dividir(10d, 0d));	
-	
-	/*
-	}
-
-}
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

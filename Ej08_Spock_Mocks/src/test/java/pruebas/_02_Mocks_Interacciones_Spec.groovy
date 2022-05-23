@@ -67,6 +67,7 @@ class _02_Mocks_Interacciones_Spec extends Specification {
 			def clienteInsertado = gestorClientes.altaCliente(cliente)	
 		
 		then:
+			//En un test de este tipo, que no es unitario, no tienen sentido estos asertos
 			clienteInsertado.sucursal.nombre == "Sucursal1"
 			clienteInsertado.id == 1
 			clienteInsertado.comerciales.size() == 2
@@ -82,8 +83,7 @@ class _02_Mocks_Interacciones_Spec extends Specification {
 		when:
 			def clienteInsertado = gestorClientes.altaCliente(cliente)
 		
-		then:
-	
+		then:	
 			1 * gestorComerciales.encontrarComerciales() >>
 					[ new Comercial(1,"EMP-1","Comercial1"),
 					  new Comercial(2,"EMP-2","Comercial2") ]
@@ -97,10 +97,6 @@ class _02_Mocks_Interacciones_Spec extends Specification {
 							cli.id = 1
 							return cli
 					}
-	
-			clienteInsertado.sucursal.nombre == "Sucursal1"
-			clienteInsertado.id == 1
-			clienteInsertado.comerciales.size() == 2
 	}
 
 	//Para comprobar el orden
@@ -128,14 +124,9 @@ class _02_Mocks_Interacciones_Spec extends Specification {
 							cli.id = 1
 							return cli
 					}
-	
-		then: "quizas esto no quisieramos comprobarlo, puesto que este test es para comprobar el orden"
-			clienteInsertado.sucursal.nombre == "Sucursal1"
-			clienteInsertado.id == 1
-			clienteInsertado.comerciales.size() == 2
 	}
-
 	
+	/*
 	def "un cliente con datos incorrectos lanza la excepcion adecuada"() {		
 
 		when:
@@ -165,5 +156,6 @@ class _02_Mocks_Interacciones_Spec extends Specification {
 			clienteInsertado == null			
 			
 	}
+	*/
 
 }

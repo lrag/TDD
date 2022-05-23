@@ -47,9 +47,13 @@ class _01_Mocks_Spec extends Specification {
 	
 	def setup() {		
 		//Inicialmente los test doubles son dummies
-		gestorComerciales = Mock(GestorComerciales)
-		gestorSucursales = Mock(GestorSucursales)
-		clienteDao = Mock(ClienteDao.class)
+		//gestorComerciales = Mock(GestorComerciales.class)
+		//gestorSucursales = Mock(GestorSucursales) //En groovy te puedes ahorrar el .class
+		//clienteDao = Mock(ClienteDao)
+		//Inicialmente los test doubles son dummies
+		gestorComerciales = Mock()
+		gestorSucursales = Mock()
+		clienteDao = Mock()
 		
 		//Este es el de verdad 
 		gestorClientes = new GestorClientes()
@@ -69,8 +73,7 @@ class _01_Mocks_Spec extends Specification {
 			//Stub
 			gestorComerciales
 				.encontrarComerciales() >> [ new Comercial(1,"EMP-1","Comercial1"),
-											 new Comercial(2,"EMP-2","Comercial2") ]
-			
+											 new Comercial(2,"EMP-2","Comercial2") ]			
 			//Stub
 			//El '_' representa cualquier valor recibido 
 			gestorSucursales
@@ -97,13 +100,10 @@ class _01_Mocks_Spec extends Specification {
 	
 	def "test un cliente con direccion nula no se inserta"() {
 
-		given:
-		
+		given:		
 			def cliente = new Cliente(null,"Nombre",null,"Telefono")
 			
 		and :
-		
-		
 			//Stub
 			gestorSucursales
 				.encontrarSucursalCercana(null) >>
@@ -114,8 +114,7 @@ class _01_Mocks_Spec extends Specification {
 
 			//Para clienteDao nos basta el dummie
 		
-		when:
-		
+		when:		
 			def clienteInsertado = gestorClientes.altaCliente(cliente)
 		
 		then:
@@ -127,15 +126,12 @@ class _01_Mocks_Spec extends Specification {
 	
 	def "un cliente con direccion inexistente no se inserta"() {
 		
-		given:
-		
+		given:		
 			def cliente = new Cliente(null,"Nombre","C/Falsa, 123","Telefono");
 			
-		and:
-		
+		and:		
 			//Para gestorComerciales nos basta el dummie porque no esperamos que llegue a utilizarse
-			//al estar la dirección a null
-		
+			//al estar la dirección a null		
 			gestorSucursales
 				.encontrarSucursalCercana(_) >>
 					//Si en el cuerpo del closure no se usan los parámetros no hace falta ponerlos:

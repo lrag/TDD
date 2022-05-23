@@ -65,8 +65,7 @@ class _06_PruebaParametrizada_Spec extends Specification {
 			a    | _
 			b    | _
 			c    | _
-			*/			
-			
+			*/		
 	}
 	
 	@Unroll

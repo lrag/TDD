@@ -104,7 +104,6 @@ class GestorPedidos_Spec extends Specification {
 			noExceptionThrown()
 			pedidoOk.estado == "ACEPTADO"
 			pedidoOk.camion == "CAMION!!"
-			pedidoOk.camion != null
 	}
 
 	def "un pedido con un cliente de datos bancarios incorrectos lanza DatosBancariosEx"() {
@@ -126,7 +125,7 @@ class GestorPedidos_Spec extends Specification {
 			pedidoTCMal.camion == null
 	}
 
-	def "un pedido con falla si no hay existencias lanzando ExistenciasException"() {
+	def "un pedido falla si no hay existencias lanzando ExistenciasException"() {
 		
 		given:		
 			pedidoDao.buscar(3) >> pedidoExistenciasMal

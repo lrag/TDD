@@ -194,7 +194,6 @@ INDEX VERSION 1.131+D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\.metadata\.pl
 253015598.index
 1240877972.index
 1264677676.index
-2960617040.index
 3543422066.index
 951731340.index
 84219846.index
