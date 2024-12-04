@@ -1,9 +1,0 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-  
-<suite name="Suite_Ejemplo_04" verbose="1" >
-  <test name="Test_Ejemplo_04" >
-    <classes>
-       <class name="ejemplos._04_Ciclo_de_vida_2" />
-    </classes>
-  </test>
-</suite>
