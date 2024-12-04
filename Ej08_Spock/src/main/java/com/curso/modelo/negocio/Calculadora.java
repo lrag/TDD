@@ -17,7 +17,7 @@ public class Calculadora {
 
 	public Double dividir(Double dividendo, Double divisor) throws Exception {
 		if( divisor == 0) {
-			throw new Exception("División por cero");
+			throw new Exception("DivisiÃ³n por cero");
 		}
 		return dividendo / divisor;
 	}

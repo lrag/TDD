@@ -12,6 +12,16 @@
 System.out.println(session.getId()+" (cesta.jsp)");
 %>
 
+<script type="text/javascript">
+
+function mensaje(){
+	console.log("Mensaje")
+}
+
+window.onload = mensaje
+
+</script>
+
 <body>
 
 	<h2 align="center">

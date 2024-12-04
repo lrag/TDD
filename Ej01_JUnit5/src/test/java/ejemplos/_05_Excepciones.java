@@ -51,15 +51,27 @@ public class _05_Excepciones {
 		} catch (CalculadoraException e) {
 			//OK, Esto es lo que esperabamos!
 			System.out.println("OK");
+			return;
 		} catch(Exception e) {
 			Assertions.fail("Pues ha lanzado OTRA excepción!");			
 		}
+		Assertions.fail("Pues no ha lanzado excepción :( ");			
 		*/
 		
 		/*
+		//Ni hablar de esto
+		ComprobadorExcepcionDivisionPorCero c = new ComprobadorExcepcionDivisionPorCero();
+		c.calculadora = calculadora;
+		c.dividendo = dividendo;
+		c.divisor = divisor;
+		
+		Assertions.assertThrows(CalculadoraException.class , c);
+		*/
+		
+		
 		//Con clase interna anónima
+		/*
 		Executable exe = new Executable() {
-			@Override
 			public void execute() throws Throwable {
 				calculadora.dividir(dividendo, divisor);
 			}
@@ -67,8 +79,9 @@ public class _05_Excepciones {
 		Assertions.assertThrows(CalculadoraException.class, exe);
 		*/
 		
-		/*
+		
 		//ïdem, sin declarar primero la variable 'exe'
+		/*
 		Assertions.assertThrows(CalculadoraException.class, new Executable() {
 			@Override
 			public void execute() throws Throwable {
@@ -82,7 +95,7 @@ public class _05_Excepciones {
 				CalculadoraException.class,  
 				() -> calculadora.dividir(dividendo, divisor)
 			);	
-		*/	
+		*/					
 		
 		//Nos entregan la excepción que se ha lanzado por si nos hace falta
 		CalculadoraException e = 
@@ -97,7 +110,19 @@ public class _05_Excepciones {
 }
 
 
+class ComprobadorExcepcionDivisionPorCero implements Executable {
 
+	public Calculadora calculadora;
+	public double dividendo;
+	public double divisor;
+	
+	@Override
+	public void execute() throws Throwable {
+		// TODO Auto-generated method stub
+		calculadora.dividir(dividendo, divisor);
+	}
+	
+}
 
 
 

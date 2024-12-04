@@ -9,6 +9,7 @@ public class HibernateUtil {
 
 	private static SessionFactory sf;
 	
+	@SuppressWarnings("deprecation")
 	public static SessionFactory getSF(){
 		
 		if(sf == null){

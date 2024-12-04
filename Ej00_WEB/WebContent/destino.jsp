@@ -27,7 +27,11 @@ System.out.println(request.getParameter("mail"));
 			</tr>
 			<tr>
 				<th align="right">El mail enviado es:</th>
-				<td align="left"><div id="mail"><%=request.getParameter("mail")%></div></td>
+				<td align="left">
+					<div id="mail">
+						<%=request.getParameter("mail")%>
+					</div>
+				</td>
 			</tr>
 			<tr>
 				<td align="right"><a href="index.html">inicio</a></td>

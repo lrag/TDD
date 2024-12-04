@@ -1,15 +1,13 @@
 package com.curso.pruebas;
 
+import org.htmlunit.WebClient;
+import org.htmlunit.html.HtmlDivision;
+import org.htmlunit.html.HtmlForm;
+import org.htmlunit.html.HtmlPage;
+import org.htmlunit.html.HtmlSubmitInput;
+import org.htmlunit.html.HtmlTextInput;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import com.gargoylesoftware.htmlunit.WebClient;
-import com.gargoylesoftware.htmlunit.html.HtmlDivision;
-import com.gargoylesoftware.htmlunit.html.HtmlForm;
-import com.gargoylesoftware.htmlunit.html.HtmlPage;
-import com.gargoylesoftware.htmlunit.html.HtmlSubmitInput;
-import com.gargoylesoftware.htmlunit.html.HtmlTableCell;
-import com.gargoylesoftware.htmlunit.html.HtmlTextInput;
 
 public class _02_FormularioTest {
 
@@ -34,9 +32,11 @@ public class _02_FormularioTest {
 			HtmlPage paginaDestino = btnSubmit.click();
 		
 	        HtmlDivision divNombre = (HtmlDivision) paginaDestino.getElementById("nombre");	        
-	        HtmlDivision divMail   = (HtmlDivision) paginaDestino.getElementById("mail");	        
-	        Assertions.assertEquals(nombre, divNombre.getTextContent());
-	        Assertions.assertEquals(mail  , divMail.getTextContent());
+	        HtmlDivision divMail   = (HtmlDivision) paginaDestino.getElementById("mail");
+	        
+	        //Los asertos ya son asertos normales de JUnit (o lo que hayamos puesto)
+	        Assertions.assertEquals(nombre, divNombre.getTextContent().trim());
+	        Assertions.assertEquals(mail  , divMail.getTextContent().trim());
 
 		}
 	

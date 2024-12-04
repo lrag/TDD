@@ -15,7 +15,7 @@ public class GestorComerciales {
 	
 	public List<Comercial> encontrarComerciales(){
 		//
-		//Lógica de negocio para encontrar comerciales
+		//LÃ³gica de negocio para encontrar comerciales
 		//
 		return null;
 	}

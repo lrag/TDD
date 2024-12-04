@@ -17,7 +17,7 @@ public class Calculadora {
 	
 	public Double dividir(Double dividendo, Double divisor) throws Exception {
 		if( divisor == 0) {
-			throw new CalculadoraException("División por cero patatero");
+			throw new CalculadoraException("División por cero");
 		}
 		return dividendo / divisor;
 	}

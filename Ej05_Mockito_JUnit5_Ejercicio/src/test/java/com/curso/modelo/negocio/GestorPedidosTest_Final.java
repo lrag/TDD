@@ -4,6 +4,8 @@ import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.times;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -14,10 +16,9 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
-
-import static org.mockito.Mockito.*;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import com.curso.modelo.entidad.Cliente;
@@ -31,15 +32,16 @@ import com.curso.modelo.persistencia.PedidoDao;
 @ExtendWith(MockitoExtension.class)
 public class GestorPedidosTest_Final {
 	
-	//Este será el objeto real que vamos a probar
-	private GestorPedidos gestorPedidos;
-
 	//MOCKS. Ya tenemos dummies aqui:
 	@Mock private PedidoDao pedidoDao; //Null
 	@Mock private GestorBancos gestorBancos; 
 	@Mock private GestorAlmacen gestorAlmacen; 
 	@Mock private GestorTransportes gestorTransportes; 
 	@Mock private GestorOfertas gestorOfertas; 	
+
+	//Este será el objeto real que vamos a probar
+	@InjectMocks
+	private GestorPedidos gestorPedidos = new GestorPedidos();
 	
 	//Este pedido se usará para las diferentes pruebas:
 	private Pedido pedido;
@@ -64,16 +66,7 @@ public class GestorPedidosTest_Final {
 	@BeforeEach
 	public void inicializar() {
 		crearPedido();
-		gestorPedidos = new GestorPedidos(); //Este es el objeto real que vamos a probar	
-		
-		//Le asignamos los dummies
-		gestorPedidos.setPedidoDao(pedidoDao);
-		gestorPedidos.setGestorBancos(gestorBancos);
-		gestorPedidos.setGestorOfertas(gestorOfertas);
-		gestorPedidos.setGestorTransportes(gestorTransportes);
-		gestorPedidos.setGestorAlmacen(gestorAlmacen);
-	}
-	
+	}	
 		
 	@Test
 	@DisplayName("GestorPedidos.aceptar funciona cuando el pedido es correcto")

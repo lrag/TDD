@@ -16,7 +16,7 @@ import com.curso.modelo.persistencia.util.HibernateUtil;
 //
 //Open Session In View Filter
 //
-//Esto es un antipatrón, pero buscamos aquí la simplicidad
+//Esto es un antipatrÃ³n, pero buscamos aquÃ­ la simplicidad
 //
 @WebFilter("/*")
 public class FiltroTransacciones implements Filter {
@@ -29,7 +29,7 @@ public class FiltroTransacciones implements Filter {
 
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
 
-		//Solo inicializaremos una transacción si la petición va dirigida a un controlador
+		//Solo inicializaremos una transacciÃ³n si la peticiÃ³n va dirigida a un controlador
 		HttpServletRequest rq = (HttpServletRequest) request;
 		String uri = rq.getRequestURI();
 		if( uri.endsWith(".css") || uri.endsWith(".html") || uri.endsWith(".js") ) {

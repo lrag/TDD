@@ -2,15 +2,15 @@ package com.curso.pruebas;
 
 import java.util.List;
 
+import org.htmlunit.WebClient;
+import org.htmlunit.html.HtmlForm;
+import org.htmlunit.html.HtmlPage;
+import org.htmlunit.html.HtmlSubmitInput;
+import org.htmlunit.html.HtmlTable;
+import org.htmlunit.html.HtmlTableRow;
+import org.htmlunit.html.HtmlTextInput;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import com.gargoylesoftware.htmlunit.WebClient;
-import com.gargoylesoftware.htmlunit.html.HtmlForm;
-import com.gargoylesoftware.htmlunit.html.HtmlPage;
-import com.gargoylesoftware.htmlunit.html.HtmlSubmitInput;
-import com.gargoylesoftware.htmlunit.html.HtmlTable;
-import com.gargoylesoftware.htmlunit.html.HtmlTableRow;
-import com.gargoylesoftware.htmlunit.html.HtmlTextInput;
 
 public class _03_CestaTest {
 

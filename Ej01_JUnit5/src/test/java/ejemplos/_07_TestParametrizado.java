@@ -1,5 +1,6 @@
 package ejemplos;
 
+
 import java.util.stream.Stream;
 
 import org.junit.jupiter.api.Assertions;
@@ -13,20 +14,23 @@ import org.junit.jupiter.params.provider.ValueSource;
 import com.curso.modelo.entidad.Cliente;
 import com.curso.modelo.negocio.Calculadora;
 import com.curso.modelo.negocio.CalculadoraImpuestos;
-import com.curso.modelo.negocio.GestorClientes;
+import com.curso.modelo.negocio.ServicioClientes;
 import com.curso.modelo.negocio.InvalidIngresoException;
+
 
 public class _07_TestParametrizado {
 
+	//En esta test probamos tres metodos diferentes de tres clases distintas
+	//Esto está mal
 	private CalculadoraImpuestos calculadoraImpuestos;
 	private Calculadora calculadora;
-	private GestorClientes gestorClientes;
+	private ServicioClientes gestorClientes;
 	
 	@BeforeEach
 	void inicializar() {
 		calculadoraImpuestos = new CalculadoraImpuestos();
 		calculadora = new Calculadora();
-		gestorClientes = new GestorClientes();
+		gestorClientes = new ServicioClientes();
 	}
 
 	public _07_TestParametrizado() {
@@ -52,20 +56,9 @@ public class _07_TestParametrizado {
 		//Cuando 
 		double resultado = calculadora.cuadrado(numero);
 		//Entonces
-		Assertions.assertTrue(resultado == numero*numero);	
+		Assertions.assertTrue(resultado == numero*numero); //Trampa
 		//Lo mismo, con equals
 		Assertions.assertEquals(resultado, numero*numero);	
-	}
-	
-	@ParameterizedTest
-	@MethodSource("datosParaProbarInsertarCliente")
-	void pruebaInsertarClientes(Cliente cliente) {
-		//Dado el cliente recibido
-		System.out.println(cliente);
-		//Cuando
-		Cliente cAux = gestorClientes.insertarCliente(cliente);
-		//Entonces
-		Assertions.assertNotNull(cAux.getId());		
 	}
 	
 	@ParameterizedTest(name = "CalculadoraImpuestos {index}: El impuesto de {0} debe ser {1}")
@@ -78,16 +71,16 @@ public class _07_TestParametrizado {
 	    //Entonces
 		Assertions.assertEquals(impuestoEsperado, resultado);
 	}
-
-	//Es obligatorio que sea estático
-	static Stream<Arguments> datosParaProbarInsertarCliente() {
-		return Stream.of(
-	        Arguments.arguments(new Cliente(null,"N1","D1","T1")),
-	        Arguments.arguments(new Cliente(null,"N2","D2","T2")),
-	        Arguments.arguments(new Cliente(null,"N3","D3","T3")),
-	        Arguments.arguments(new Cliente(null,"N4","D4","T4")),
-	        Arguments.arguments(new Cliente(null,"N5","D5","T5"))
-	    );	 
+	
+	@ParameterizedTest
+	@MethodSource("datosParaProbarInsertarCliente")
+	void pruebaInsertarClientes(Cliente cliente) {
+		//Dado el cliente recibido
+		System.out.println(cliente);
+		//Cuando
+		Cliente cAux = gestorClientes.insertarCliente(cliente);
+		//Entonces
+		Assertions.assertNotNull(cAux.getId());		
 	}	
 
 	//Es obligatorio que sea estático
@@ -99,6 +92,17 @@ public class _07_TestParametrizado {
 	        Arguments.arguments(22000d,3300d),
 	        Arguments.arguments(35000d,6825d)
 	    );	 
+	}	
+	
+	//Es obligatorio que sea estático
+	static Stream<Arguments> datosParaProbarInsertarCliente() {
+		return Stream.of(
+			Arguments.arguments(new Cliente(null,"N1","D1","T1")),
+			Arguments.arguments(new Cliente(null,"N2","D2","T2")),
+			Arguments.arguments(new Cliente(null,"N3","D3","T3")),
+			Arguments.arguments(new Cliente(null,"N4","D4","T4")),
+			Arguments.arguments(new Cliente(null,"N5","D5","T5"))
+		);	 
 	}	
 
 }

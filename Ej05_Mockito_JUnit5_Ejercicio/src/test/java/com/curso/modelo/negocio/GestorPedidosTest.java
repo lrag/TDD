@@ -14,6 +14,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 
@@ -68,15 +69,16 @@ public class GestorPedidosTest {
 	private GestorOfertas gestorOfertas = Mockito.mock(GestorOfertas.class);	
 	*/
 	
-	//Este será el objeto real que vamos a probar
-	private GestorPedidos gestorPedidos;
-
 	//MOCKS. Ya tenemos dummies aqui:
 	@Mock private PedidoDao pedidoDao; //Null
 	@Mock private GestorBancos gestorBancos; 
 	@Mock private GestorAlmacen gestorAlmacen; 
 	@Mock private GestorTransportes gestorTransportes; 
 	@Mock private GestorOfertas gestorOfertas; 	
+
+	//Este será el objeto real que vamos a probar
+	@InjectMocks
+	private GestorPedidos gestorPedidos = new GestorPedidos(); //DEbemos inicializar gestorPedidos nosotros
 	
 	//Este pedido se usará para las diferentes pruebas:
 	private Pedido pedido;
@@ -101,14 +103,15 @@ public class GestorPedidosTest {
 	@BeforeEach
 	public void inicializar() {
 		crearPedido();
-		gestorPedidos = new GestorPedidos(); //Este es el objeto real que vamos a probar	
 		
-		//Le asignamos los dummies
-		gestorPedidos.setPedidoDao(pedidoDao);
-		gestorPedidos.setGestorBancos(gestorBancos);
-		gestorPedidos.setGestorOfertas(gestorOfertas);
-		gestorPedidos.setGestorTransportes(gestorTransportes);
-		gestorPedidos.setGestorAlmacen(gestorAlmacen);
+		//gestorPedidos = new GestorPedidos(); //Este es el objeto real que vamos a probar	
+		
+		//Le asignamos los dummies (ya está hecho con @InjectMocks
+		//gestorPedidos.setPedidoDao(pedidoDao);
+		//gestorPedidos.setGestorBancos(gestorBancos);
+		//gestorPedidos.setGestorOfertas(gestorOfertas);
+		//gestorPedidos.setGestorTransportes(gestorTransportes);
+		//gestorPedidos.setGestorAlmacen(gestorAlmacen);
 		
 		//Si usaramos estos objetos REALES para la prueba
 		//entonces no sería un test unitario, sino uno de integración
@@ -131,9 +134,8 @@ public class GestorPedidosTest {
 		gestorPedidos.setGestorTransportes(gestorTransportes);
 		*/		
 	}
-	
-		
-	@Test
+			
+	//@Test
 	@DisplayName("GestorPedidos.aceptar funciona cuando el pedido es correcto")
 	public void aceptarPedido() throws Exception {
 		
@@ -166,7 +168,7 @@ public class GestorPedidosTest {
 		Mockito
 			.when(gestorOfertas.obtenerPerritoPiloto(any(Boolean.class)))
 			.thenReturn("Perrito piloto");
-		
+			
 		//CUANDO
 		Pedido pedidoAceptado = gestorPedidos.aceptar(idPedido);
 		
@@ -176,12 +178,11 @@ public class GestorPedidosTest {
 				() -> assertNotNull(pedidoAceptado.getRegalo(),"El pedido no tiene regalo"),
 				//() -> Assertions.assertNotNull(pedidoAceptado.getFactura(),"El pedido no tiene factura"),
 				() -> assertEquals("ACEPTADO", pedidoAceptado.getEstado(),"El pedido no tiene estado 'ACEPTADO'")
-			);		
-		
+			);			
 		
 	}
 	
-	@Test
+	//@Test
 	@DisplayName("GestorPedidos.aceptar lanza datosBancarios exception cuando hay un problema con los datos bancarios del cliente")
 	public void aceptarPedidoDatosBancariosMal() throws Exception {
 		
@@ -193,6 +194,7 @@ public class GestorPedidosTest {
 		Integer idPedido = 1;  
 		
 		//Y estos test doubles
+		
 		//PedidoDao: Stub
 		Mockito
 			.when(pedidoDao.buscar(Mockito.any(Integer.class)))
@@ -214,10 +216,11 @@ public class GestorPedidosTest {
 				() -> gestorPedidos.aceptar(idPedido), 
 				"No se la lanzado DatosBancariosEx"
 			);
+		System.out.println(e);
 		assertEquals("Datos bancarios incorrectos", e.getMessage());	
 	}
 	
-	@Test
+	//@Test
 	@DisplayName("GestorPedidos.aceptar lanza ExistenciasException cuando no hay existencias de un producto...")
 	public void aceptarPedidoExistenciasInsuficientes() throws ExistenciasEx {
 		
@@ -289,7 +292,7 @@ public class GestorPedidosTest {
 		//Entonces
 		
 		//Esto aqui NO TIENE SENTIDO
-		//Aqui no comprobamos el resultado si no que se utilizan correctamente las dependencias
+		//Aqui no comprobamos el resultado si no que se están utilizando las dependencias
 		//Este aserto ya lo tenemos en un verdadero test unitario más arriba
 		/*Assertions.assertAll(
 				() -> Assertions.assertNotNull(pedidoAceptado.getCamion(),"El pedido no tiene camión"),

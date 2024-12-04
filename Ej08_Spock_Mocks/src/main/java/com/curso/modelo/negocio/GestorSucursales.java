@@ -22,7 +22,7 @@ public class GestorSucursales {
 		
 		gestorDirecciones.comprobarDireccion(direccion);
 		//
-		//Lógica de negocio...
+		//LÃ³gica de negocio...
 		//
 		return new Sucursal();
 	}

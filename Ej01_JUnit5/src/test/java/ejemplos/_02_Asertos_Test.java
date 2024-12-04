@@ -1,16 +1,6 @@
 package ejemplos;
 
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertIterableEquals;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertNotSame;
-import static org.junit.jupiter.api.Assertions.assertNull;
-import static org.junit.jupiter.api.Assertions.assertSame;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.junit.jupiter.api.Assertions.fail;
+import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.Arrays;
 import java.util.List;
@@ -36,10 +26,14 @@ public class _02_Asertos_Test {
 		//cuando
 		int n3 = n1 + n2;
 
-		//entonces		
-
+		//entonces
+		
+		//Si no existieran los asertos:
+		//if(n3 != 300) {
+		//	throw new RuntimeException("La suma no es correcta");
+		//}
+			
 		//Utiliza equals, no el '=='
-		//Assertions.assertEquals(301, n3);
 		
 		//Con import estático
 		assertEquals(300, n3);
@@ -111,6 +105,7 @@ public class _02_Asertos_Test {
 		assertSame(c1, c2);	
 	}
 	
+	
 	@Test
 	public void test8() {
 		System.out.println("Test 8");	
@@ -121,8 +116,7 @@ public class _02_Asertos_Test {
 		Calculadora c2 = new Calculadora();		
 		
 		assertNotSame(i1, i2);	
-		assertNotSame(c1, c2);	
-		
+		assertNotSame(c1, c2);			
 	}
 	
 	@Test
@@ -138,7 +132,6 @@ public class _02_Asertos_Test {
 			}
 		}
 		*/
-		
 		assertArrayEquals(palabras2, palabras1);	
 	}
 
@@ -167,7 +160,7 @@ public class _02_Asertos_Test {
 	}
 	
 	@Test
-	@DisplayName("Prueba de assertAll")
+	@DisplayName("Prueba de assertAll (test12)")
 	void test12() {
 		
 		System.out.println("Test 12");		
@@ -178,7 +171,8 @@ public class _02_Asertos_Test {
 		double s2 = 4d;
 			
 		//Cuando
-		Double sumResult = calculadora.sumar(s1, s2);
+		final Double sumResult = calculadora.sumar(s1, s2);
+
 		
 		//Podríamos hacer esto, pero al primer aserto que falle se sale del método por la excepción que se lanza
 		//System.out.println("I");
@@ -196,10 +190,9 @@ public class _02_Asertos_Test {
 		//Comprobador3 c3 = new Comprobador3();
 		//c3.sumResult = sumResult;
 		//
-		//Assertions.assertAll(c1, c2, c3);		
+		//assertAll(c1, c2, c3);		
 		
 		//Con clases internas anónimas
-		/*
 		Assertions.assertAll( 
 				new Executable() {
 					public void execute() throws Throwable {
@@ -219,8 +212,6 @@ public class _02_Asertos_Test {
 						assertTrue(sumResult < 10, "No es menor que 10");
 					}
 				});		
-		*/
-		
 		
 		//Con expresiones lambda
 		/*
@@ -237,6 +228,7 @@ public class _02_Asertos_Test {
 			() -> { System.out.println("-III"); assertTrue(sumResult > 10, "La suma es menor que 10!"); }
 		);
 	}
+	
 }
 
 /*
@@ -270,8 +262,6 @@ class Comprobador3 implements Executable {
 	}
 }
 */
-
-
 
 
 

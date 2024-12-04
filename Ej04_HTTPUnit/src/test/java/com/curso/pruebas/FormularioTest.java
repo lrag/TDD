@@ -1,12 +1,12 @@
 package com.curso.pruebas;
 
-import java.io.IOException;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.fail;
 
-import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
-import org.xml.sax.SAXException;
 
-import com.meterware.httpunit.AuthorizationRequiredException;
 import com.meterware.httpunit.HTMLElement;
 import com.meterware.httpunit.WebConversation;
 import com.meterware.httpunit.WebForm;
@@ -17,8 +17,7 @@ import com.meterware.httpunit.WebTable;
 public class FormularioTest {
 
 	@Test
-	public void test() throws IOException, SAXException {
-		
+	public void test() throws Exception {
 		WebConversation webconversation = new WebConversation();
 		WebResponse response = webconversation.getResponse("http://localhost:8080/Ej00_WEB/index.html");
 		
@@ -28,18 +27,13 @@ public class FormularioTest {
 		assertEquals(200, response.getResponseCode());
 		WebForm[] formularios = response.getForms();
 		assertTrue(formularios.length == 1);
-				
-		//JUnit 4
-		//assertNotNull("El formulario debe tener un campo 'nombre'",response.getForms()[0].getParameter("nombre"));
-		//assertNotNull("El formulario debe tener un campo 'mail'",response.getForms()[0].getParameter("mail"));
 		
-		//assertNotNull(response.getForms()[0].getParameter("nombre"),"El formulario debe tener un campo 'nombre'");
-		//assertNotNull(response.getForms()[0].getParameter("mail"),"El formulario debe tener un campo 'mail'");
-	
+		assertNotNull(response.getForms()[0].getParameter("nombre"),"El formulario debe tener un campo 'nombre'");
+		assertNotNull(response.getForms()[0].getParameter("mail"),"El formulario debe tener un campo 'mail'");
 	}
 	
 	@Test
-	public void testSimpleForm() throws AuthorizationRequiredException, IOException, SAXException {
+	public void testSimpleForm() throws Exception {
         
 		//
 		//Accedemos a index.html

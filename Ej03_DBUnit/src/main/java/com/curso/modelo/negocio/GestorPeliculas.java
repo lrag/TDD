@@ -10,8 +10,7 @@ public class GestorPeliculas {
 
 	//Creamos aqui el dao por simplificar
 	private PeliculaDao peliculaDao = new PeliculaDaoJDBCImplementation();
-	
-	
+		
 	public void insertar(Pelicula pelicula) {
 		//LN
 		//...

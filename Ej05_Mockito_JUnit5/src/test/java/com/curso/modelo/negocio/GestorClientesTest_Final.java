@@ -2,6 +2,7 @@ package com.curso.modelo.negocio;
 
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.mock;
@@ -76,6 +77,7 @@ public class GestorClientesTest_Final {
 		System.out.println(clienteInsertado);
 		assertAll( () -> assertEquals(2, clienteInsertado.getComerciales().size(),"El cliente no tiene comerciales!"),
 				   () -> assertNotNull(clienteInsertado.getSucursal(),"El cliente no tiene sucursal!"),
+				   () -> assertNotEquals(clienteInsertado.getSucursal().getNombre() ,"Sucursal virtual", "Al cliente no se le debe asignar la sucursal virtual"),
 				   () -> assertNotNull(clienteInsertado.getId(),"El cliente no tiene id!"));	
 	}	
 	

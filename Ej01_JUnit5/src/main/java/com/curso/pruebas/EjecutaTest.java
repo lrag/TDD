@@ -2,6 +2,7 @@ package com.curso.pruebas;
 
 import java.io.File;
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Enumeration;
@@ -9,14 +10,14 @@ import java.util.List;
 
 public class EjecutaTest {
 
-	public static void main(String[] args) throws ClassNotFoundException, IOException, InstantiationException, IllegalAccessException {
+	public static void main(String[] args) throws ClassNotFoundException, IOException, InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException {
 
 		System.out.println("=========================================");
 		System.out.println("Ejecutando tests...");
 		for(Class c: getClasses("com.curso.pruebas")) {
 			for(Class interfaz: c.getInterfaces()) {
 				if(interfaz.getName().equals("com.curso.pruebas.Prueba")) {
-					Prueba prueba = (Prueba) c.newInstance();
+					Prueba prueba = (Prueba) c.getDeclaredConstructor().newInstance();
 					prueba.test();					
 				}
 			}

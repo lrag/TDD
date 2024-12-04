@@ -32,10 +32,10 @@ public class SVLogin extends HttpServlet {
 		//Simplificando...
 		if(login.equals("harry") && pw.equals("callahan")){
 			Usuario usuario = new Usuario(1, "Harry Callahan", "harry", null, "ADMIN");
-			iniciarSesión(usuario, request);
+			iniciarSesion(usuario, request);
 		} else if(login.equals("bud") && pw.equals("spencer")){
 			Usuario usuario = new Usuario(1, "Bud Spencer", "aaa", null, "USR");
-			iniciarSesión(usuario, request);
+			iniciarSesion(usuario, request);
 		} else {
 			redirect = "login.html";
 		}
@@ -43,9 +43,12 @@ public class SVLogin extends HttpServlet {
 		response.sendRedirect(redirect);	
 	}
 
-	private void iniciarSesión(Usuario usuario, HttpServletRequest request) {
-		HttpSession sesion = request.getSession(true);
-		request.changeSessionId();
+	private void iniciarSesion(Usuario usuario, HttpServletRequest request) {
+		HttpSession sesion = request.getSession(false);
+		if(sesion != null) {
+			sesion.invalidate();
+		}
+		sesion = request.getSession(true);
 		sesion.setAttribute("usuario", usuario);
 	}
 	

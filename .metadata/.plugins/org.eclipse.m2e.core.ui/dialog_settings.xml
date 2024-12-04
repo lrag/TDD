@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.m2e.core.pom.overview">
-		<list key="ciManagementUrl">
-		</list>
-		<list key="ciManagementSystem">
-		</list>
-		<list key="issueManagementSystem">
-		</list>
-		<list key="issueManagementUrl">
-		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
-			<item value="D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej07_Jasmine"/>
+			<item value="D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_2024\Ej08_Spock"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -59,9 +51,10 @@
 			<item value="com.curso"/>
 		</list>
 		<list key="name">
+			<item value="Ej08_Spock_"/>
 		</list>
 		<list key="artifactId">
-			<item value="Ej010_TestNG"/>
+			<item value="Ej08_Spock_"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

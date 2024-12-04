@@ -10,9 +10,9 @@ import java.util.List;
 
 import com.curso.modelo.entidad.Pelicula;
 
-/////////////////////////////////////////
-//Ejemplo de como no implementar un DAO//
-/////////////////////////////////////////
+///////////////////////////////////////////////////////////
+//Ejemplo del antipatrón 'una conexión para cada consulta//
+///////////////////////////////////////////////////////////
 public class PeliculaDaoJDBCImplementation implements PeliculaDao {
 
 	public void insertar(Pelicula pelicula) {

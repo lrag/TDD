@@ -68,20 +68,20 @@ public class SVClientes extends HttpServlet {
 			//e.printStackTrace();
 		}
 				
-		//HabrÌa que impedir inyecciones (XSS, HTML, etc)
+		//Habr√≠a que impedir inyecciones (XSS, HTML, etc)
 		String nombre = request.getParameter("nombre");
 		String direccion = request.getParameter("direccion");
 		String telefono = request.getParameter("telefono");
 		
-		//Construir objetos del modelo con los parametros recibidos
+		//Construir objetos del modelo con los par√°metros recibidos
 		Cliente p = new Cliente(id, nombre, direccion, telefono);
 		
 		//Validar los objetos
 		//...
 		
-		//Averiguar que nos est·n pidiendo
+		//Averiguar que nos estÔøΩn pidiendo
 		String accion = request.getParameter("accion");
-		//Llamar al mÈtodo de negocio adecuado segun la accion
+		//Llamar al m√©todo de negocio adecuado segun la acci√≥n
 		if("insertar".equals(accion)){
 			gestorClientes.insertar(p);
 		} else if("modificar".equals(accion)){
@@ -90,8 +90,8 @@ public class SVClientes extends HttpServlet {
 			gestorClientes.borrar(p);
 		}
 		
-		//Despues de una peticiÛn post se hace un redirect.
-		//Si se est· usando MVC no se puede hacer un redirect a una vista
+		//Despues de una petici√≥n post se hace un redirect.
+		//Si se est√° usando MVC no se puede hacer un redirect a una vista
 		//Se hace un redirect al controlador que muestre la vista que nos 
 		//interesa
 		//GET SVClientes

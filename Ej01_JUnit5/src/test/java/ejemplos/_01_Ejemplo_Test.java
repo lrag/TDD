@@ -11,6 +11,7 @@ import org.junit.jupiter.api.Test;
 public class _01_Ejemplo_Test {
 
 	//Tiene que tener constuctor por defecto
+	//public _01_Ejemplo_Test(int x) {}
 	
 	//Los métodos marcados con @Test son invocados por jUnit
 	//En orden albabético

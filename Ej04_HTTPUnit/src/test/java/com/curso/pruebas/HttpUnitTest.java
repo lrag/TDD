@@ -2,9 +2,9 @@ package com.curso.pruebas;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-import java.io.IOException;
+
 import org.junit.jupiter.api.Test;
-import org.xml.sax.SAXException;
+
 import com.meterware.httpunit.WebConversation;
 import com.meterware.httpunit.WebForm;
 import com.meterware.httpunit.WebResponse;
@@ -12,7 +12,7 @@ import com.meterware.httpunit.WebResponse;
 public class HttpUnitTest {
 
 	@Test
-	public void test() throws IOException, SAXException {
+	public void test() throws Exception {
 		WebConversation webconversation = new WebConversation();
 		WebResponse response = null;
 		try {

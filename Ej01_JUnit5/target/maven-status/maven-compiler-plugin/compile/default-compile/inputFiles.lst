@@ -1,5 +1,6 @@
 D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej01_JUnit5\src\main\java\com\curso\pruebas\EjecutaTest.java
 D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej01_JUnit5\src\main\java\com\curso\pruebas\PruebaMain1.java
+D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej01_JUnit5\src\main\java\com\curso\modelo\negocio\ServicioClientes.java
 D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej01_JUnit5\src\main\java\com\curso\pruebas\Prueba.java
 D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej01_JUnit5\src\main\java\com\curso\modelo\negocio\CalculadoraImpuestos.java
 D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej01_JUnit5\src\main\java\com\curso\pruebas\Prueba1.java
@@ -7,7 +8,6 @@ D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej01_JUnit5\src\main\java\com\cur
 D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej01_JUnit5\src\main\java\com\curso\modelo\negocio\CalculadoraException.java
 D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej01_JUnit5\src\main\java\com\curso\modelo\negocio\Calculadora.java
 D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej01_JUnit5\src\main\java\com\curso\pruebas\Prueba2.java
-D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej01_JUnit5\src\main\java\com\curso\modelo\negocio\GestorClientes.java
 D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej01_JUnit5\src\main\java\com\curso\pruebas\PruebaMain3.java
 D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej01_JUnit5\src\main\java\com\curso\lambda\Aplicacion.java
 D:\JAVA\workspaces\HERRAMIENTAS\ws_TDD_Mejoras\Ej01_JUnit5\src\main\java\com\curso\modelo\entidad\Cliente.java

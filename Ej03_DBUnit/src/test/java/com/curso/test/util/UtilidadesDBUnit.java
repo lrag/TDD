@@ -2,6 +2,9 @@
 package com.curso.test.util;
 
 import java.io.FileOutputStream;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -17,7 +20,7 @@ import org.dbunit.dataset.xml.FlatXmlWriter;
 
 public class UtilidadesDBUnit {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		
 		crearEsquema();
 		crearDatos();		
@@ -30,13 +33,14 @@ public class UtilidadesDBUnit {
 		}
 	}
 	
-	public static void crearEsquema() {		
+	public static void crearEsquema() throws IOException {		
 		System.out.println("=============================================");
 		System.out.println("CREANDO EL ESQUEMA");
 		Connection cx = null;
 		try {
 			cx = DriverManager.getConnection("jdbc:h2:file:c:/h2/tdd", "sa", "");
-			PreparedStatement pst = cx.prepareStatement("DROP TABLE IF EXISTS PELICULA; CREATE TABLE IF NOT EXISTS PELICULA(ID INT AUTO_INCREMENT PRIMARY KEY, TITULO VARCHAR(255), DIRECTOR VARCHAR(255), GENERO VARCHAR(255), YEAR INT)");
+			String sql = new String(ClassLoader.getSystemClassLoader().getResourceAsStream("db/tabla.sql").readAllBytes());
+			PreparedStatement pst = cx.prepareStatement(sql); 
 			int rs = pst.executeUpdate();
 			System.out.println("Resultado:"+rs);
 		} catch (SQLException e) {
@@ -50,18 +54,11 @@ public class UtilidadesDBUnit {
 		}	
 	}	
 	
-	public static void crearDatos() {		
+	public static void crearDatos() throws IOException {		
 		System.out.println("=============================================");
 		System.out.println("INSERTANDO LOS DATOS");
 
-		String consultas = 
-			"delete from pelicula;"+
-			"insert into pelicula (titulo, director, genero, year) values ('T1','D1','G1',1);"+
-			"insert into pelicula (titulo, director, genero, year) values ('T2','D2','G2',2);"+
-			"insert into pelicula (titulo, director, genero, year) values ('T3','D3','G3',3);"+
-			"insert into pelicula (titulo, director, genero, year) values ('T4','D4','G4',4);"+
-			"insert into pelicula (titulo, director, genero, year) values ('T5','D5','G5',5);";
-		
+		String consultas = new String(ClassLoader.getSystemClassLoader().getResourceAsStream("db/datos.sql").readAllBytes());
 		Connection cx = null;
 		try {
 			cx = DriverManager.getConnection("jdbc:h2:file:c:/h2/tdd", "sa", "");
@@ -148,47 +145,5 @@ public class UtilidadesDBUnit {
 			conn.close();
 		}
 	}
-
-	/*public static void createData(String driverName, String urlDB,
-			String userDB, String passworDB, String nameXML)
-			throws SQLException {
-
-		Connection conn = null;
-		try {
-			// Connect to the database
-			DriverManager.registerDriver((Driver) Class.forName(driverName)
-					.newInstance());
-			conn = DriverManager.getConnection(urlDB, userDB, passworDB);
-			IDatabaseConnection connection = new DatabaseConnection(conn);
-
-			DatabaseOperation.INSERT.execute(connection, new FlatXmlDataSet(
-					new FileInputStream("db/" + nameXML + ".xml")));
-
-		} catch (Exception exc) {
-			exc.printStackTrace();
-		} finally {
-			conn.close();
-		}
-	}
-
-	public static void deleteData(String driverName, String urlDB,
-			String userDB, String passworDB, String nameXML)
-			throws SQLException {
-		Connection conn = null;
-		try {
-			// Connect to the database
-			DriverManager.registerDriver((Driver) Class.forName(driverName)
-					.newInstance());
-			conn = DriverManager.getConnection(urlDB, userDB, passworDB);
-			IDatabaseConnection connection = new DatabaseConnection(conn);
-			DatabaseOperation.DELETE.execute(connection, new FlatXmlDataSet(
-					new FileInputStream("db/" + nameXML + ".xml")));
-
-		} catch (Exception exc) {
-			exc.printStackTrace();
-		} finally {
-			conn.close();
-		}
-	}*/
-
+	
 }

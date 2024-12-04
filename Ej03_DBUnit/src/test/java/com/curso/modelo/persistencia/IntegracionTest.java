@@ -1,13 +1,7 @@
 package com.curso.modelo.persistencia;
 
-import org.dbunit.Assertion;
-import org.dbunit.database.QueryDataSet;
-import org.dbunit.dataset.IDataSet;
-import org.dbunit.dataset.xml.FlatXmlDataSet;
-import org.dbunit.dataset.xml.FlatXmlProducer;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.xml.sax.InputSource;
 
 import com.curso.modelo.entidad.Pelicula;
 import com.curso.modelo.negocio.GestorPeliculas;
@@ -24,9 +18,9 @@ import com.github.database.rider.junit5.DBUnitExtension;
 public class IntegracionTest {
 		
 	/*
-	Para una clase que solo tenga un @Test: 
+	Para una clase que no tiene @ExtendsWith: 
 	 
-	crear una instancia de PeliculaDaoTest
+	crear una instancia de IntegracionTest
 	invocar el método que esté marcado con @BeforeAll
 	incovar el método que esté marcado con @BeforeEach
 	invocar el método marcado que @Test 
@@ -35,21 +29,19 @@ public class IntegracionTest {
 	
 	Con el @ExtendsWith(DBUnitExtension.class):
 
-	crear una instancia de PeliculaDaoTest
+	crear una instancia de IntegracionTest
 	invocar el método que esté marcado con @BeforeAll
 	incovar el método que esté marcado con @BeforeEach
 	cargar en la base de datos el dataset indicado con @DataSet
-	invocar el método marcado que @Test 
+	invocar el método marcado con @Test 
 	comparar el estado de la base de datos con el dataset indicado en @ExpectedDataSet
 	incovar el método que esté marcado con @AfterEach
-	invocar el método que esté marcado con @AfterAll	
-	
-	
+	invocar el método que esté marcado con @AfterAll
 	*/
 	
 	@Test
 	@DataSet("db/input.xml")
-	@ExpectedDataSet(value="db/expected.xml",ignoreCols = "id")
+	@ExpectedDataSet(value="db/expected.xml" /*,ignoreCols = "id"*/)
 	public void integracionPeliculaDao() throws Exception
 	{
 		//Este es el objeto que queremos probar
@@ -78,9 +70,9 @@ public class IntegracionTest {
 		//No hacen falta asertos porque ya hemos puesto @ExpectedDataSet	
 	}
 		
-	//@Test
+	@Test
 	@DataSet("db/input.xml")
-	@ExpectedDataSet(value="db/expected.xml",ignoreCols = "id")	
+	@ExpectedDataSet(value="db/expected.xml" /*,ignoreCols = "id"*/)	
 	public void integeracionGestorPeliculas() throws Exception
 	{
 		//Aqui vamos a probar GestorPeliculas

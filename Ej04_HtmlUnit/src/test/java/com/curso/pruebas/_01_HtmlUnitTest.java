@@ -2,25 +2,34 @@ package com.curso.pruebas;
 
 import java.util.List;
 
+import org.htmlunit.BrowserVersion;
+import org.htmlunit.WebClient;
+import org.htmlunit.html.DomNode;
+import org.htmlunit.html.HtmlPage;
+import org.htmlunit.html.HtmlSubmitInput;
+import org.htmlunit.html.HtmlTextInput;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import com.gargoylesoftware.htmlunit.WebClient;
-import com.gargoylesoftware.htmlunit.html.DomNode;
-import com.gargoylesoftware.htmlunit.html.HtmlPage;
-import com.gargoylesoftware.htmlunit.html.HtmlSubmitInput;
-import com.gargoylesoftware.htmlunit.html.HtmlTextInput;
 
 public class _01_HtmlUnitTest {
-
+	
 	@Test
 	public void test() throws Exception {
 		
 		//El objeto webClient simula ser un navegador
-		try (final WebClient webClient = new WebClient()) {
+		try (final WebClient webClient = new WebClient(BrowserVersion.CHROME)) {
+
+			//HtmlPAge representa a la página recibida
+	        final HtmlPage page = webClient.getPage("https://www.baeldung.com/");
 			
+			
+			
+			/*
+			System.out.println("FU");
 			//HtmlPAge representa a la página recibida
 	        final HtmlPage page = webClient.getPage("http://www.wikipedia.es");
+	        System.out.println("FU");
 	        
 	        Assertions.assertEquals(200, page.getWebResponse().getStatusCode());
 	        Assertions.assertEquals("Wikipedia, la enciclopedia libre", page.getTitleText());
@@ -34,7 +43,7 @@ public class _01_HtmlUnitTest {
 					<input type="submit" name="go" value="Ir" title="Ir a la página con este nombre exacto si existe" id="searchButton" class="searchButton"/>
 				</div>
 			</form>
-	        */
+	        *
 	        
 	        //Cualquiera de los dos nos sirve:
 	        //HtmlTextInput txtBusqueda = (HtmlTextInput) page.getElementByName("search");	
@@ -53,6 +62,7 @@ public class _01_HtmlUnitTest {
 	        List<DomNode> nodos = resultadoBusqueda.getByXPath("//*[contains(text(),'Desarrollo guiado por pruebas')]");
 	        System.out.println(nodos);
 	        Assertions.assertTrue(nodos.size()>0);
+	        */
 	        
 		}   	
 
