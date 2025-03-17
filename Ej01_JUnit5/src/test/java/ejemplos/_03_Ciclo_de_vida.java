@@ -11,12 +11,12 @@ import com.curso.modelo.negocio.Calculadora;
 //@Disabled("No")
 public class _03_Ciclo_de_vida {
 
-	//Se creará una instancia de la case por cada test
-	//Se creará tambien un objeto de la clase calculadora por cada test
+	//Se crearÃ¡ una instancia de la case por cada test
+	//Se crearÃ¡ tambien un objeto de la clase calculadora por cada test
 	private Calculadora calculadora = new Calculadora();
 
-	//Si declaramos estático el atributo que guarda el objeto a probar
-	//no se creará uno por cada test, pero hay que estar muy seguro de 
+	//Si declaramos estï¿½tico el atributo que guarda el objeto a probar
+	//no se crearï¿½ uno por cada test, pero hay que estar muy seguro de 
 	//que es imposible que los test se acoplen entre si al reutilizar la calculadora
 	//No es recomendable
 	//private static Calculadora calculadora = new Calculadora();

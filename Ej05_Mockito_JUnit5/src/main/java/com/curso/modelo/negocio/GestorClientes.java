@@ -63,7 +63,7 @@ public class GestorClientes {
 	}
 
 	// Recibimos una lista de clientes e intentamos insertarlos
-	// Si hay algún cliente que no se puede insertar el proceso NO se detiene
+	// Si hay algï¿½n cliente que no se puede insertar el proceso NO se detiene
 	public void altaClientes(List<Cliente> clientes) {
 		for (Cliente c : clientes) {
 			try {
@@ -75,9 +75,9 @@ public class GestorClientes {
 		}
 	}
 
-	// En los test doubles solo aparecen los métodos PUBLICOS
+	// En los test doubles solo aparecen los mï¿½todos PUBLICOS
 	private void metodo() {
-		// código
+		// cï¿½digo
 	}
 
 }

@@ -4,7 +4,7 @@ import com.curso.modelo.negocio.Calculadora;
 
 public class Prueba3 implements Prueba {
 
-	//TODO: Este tendría que probar 'dividir'
+	//TODO: Este tendrÃ­a que probar 'dividir'
 	public void test() {
 		
 		Calculadora c = new Calculadora();

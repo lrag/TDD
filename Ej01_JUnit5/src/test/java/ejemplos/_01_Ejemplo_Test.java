@@ -13,14 +13,14 @@ public class _01_Ejemplo_Test {
 	//Tiene que tener constuctor por defecto
 	//public _01_Ejemplo_Test(int x) {}
 	
-	//Los mÈtodos marcados con @Test son invocados por jUnit
-	//En orden albabÈtico
+	//Los m√©todos marcados con @Test son invocados por jUnit
+	//En orden albab√©tico
 	@Test
 	//DisplayName es opcional
-	//El nombre del mÈtodo debe ser descriptivo
+	//El nombre del m√©todo debe ser descriptivo
 	//Si queda un nombre horrible podemos utilizar la anotacion displayName
 	@DisplayName("Primer test")
-	//Estos mÈtodos no reciben par·metros
+	//Estos m√©todos no reciben par√°metros
 	//Son void
 	public void primerTest() { 
 		System.out.println("Ejecutando un test que no hace nada");
