@@ -6,6 +6,7 @@ import com.curso.modelo.entidad.Cliente;
 import com.curso.modelo.entidad.Comercial;
 import com.curso.modelo.entidad.Sucursal;
 import com.curso.modelo.persistencia.ClienteDao;
+import com.curso.modelo.util.EmisorCorreosElectronicos;
 
 public class GestorClientes {
 
@@ -13,6 +14,7 @@ public class GestorClientes {
 	private GestorSucursales gestorSucursales;
 	private GestorComerciales gestorComerciales;
 	private GestorDirecciones gestorDirecciones;
+	private EmisorCorreosElectronicos emisorCorreos;
 
 	public void setClienteDao(ClienteDao clienteDao) {
 		this.clienteDao = clienteDao;
@@ -28,6 +30,10 @@ public class GestorClientes {
 
 	public void setGestorDirecciones(GestorDirecciones gestorDirecciones) {
 		this.gestorDirecciones = gestorDirecciones;
+	}
+	
+	public void setEmisorCorreos(EmisorCorreosElectronicos emisorCorreos) {
+		this.emisorCorreos = emisorCorreos;
 	}
 
 	// Recibe el cliente por referencia, lo modifica y lo devuelve
@@ -58,12 +64,14 @@ public class GestorClientes {
 		cliente = clienteDao.insertar(cliente);
 
 		// ...
+		
+		emisorCorreos.enviarCorreo("", "");
 
 		return cliente;
 	}
 
 	// Recibimos una lista de clientes e intentamos insertarlos
-	// Si hay alg�n cliente que no se puede insertar el proceso NO se detiene
+	// Si hay algún cliente que no se puede insertar el proceso NO se detiene
 	public void altaClientes(List<Cliente> clientes) {
 		for (Cliente c : clientes) {
 			try {
@@ -75,7 +83,7 @@ public class GestorClientes {
 		}
 	}
 
-	// En los test doubles solo aparecen los m�todos PUBLICOS
+	// En los test doubles solo aparecen los métodos PUBLICOS
 	private void metodo() {
 		// c�digo
 	}

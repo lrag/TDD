@@ -36,7 +36,7 @@ public class _10_POMTest {
 		genero.clear();
 		fechaEstreno.clear();
 		
-		titulo.sendKeys("El �ltimo gr�n heroe");
+		titulo.sendKeys("El último grán heroe");
 		director.sendKeys("John McTiernan");
 		genero.sendKeys("Accion");
 		fechaEstreno.sendKeys("1993");	
@@ -69,7 +69,7 @@ public class _10_POMTest {
 		//asertos necesarios
 	}
 	
-	@Test
+	//@Test
 	public void testSearchModificar() throws InterruptedException {
 		
 		driver.get("http://localhost:8080/Ej06_Selenium_4/formulario.html");

@@ -10,15 +10,15 @@ public class GestorDirecciones {
 	public void comprobarDireccion(String direccion) throws DireccionException {
 		
 		if(direccion==null) {
-			throw new DireccionException("Dirección nula");
+			throw new DireccionException("DirecciÃ³n nula");
 		}
 		
-		//Simulamos una conexión a una base de datos de direcciones 
+		//Simulamos una conexiÃ³n a una base de datos de direcciones 
 		if(direccion.toUpperCase().contains("FALSA")) {
 			throw new DireccionException("Esta direccion es falsa");
 		}
 		
-		//Y si llegamos hasta aqui la dirección es correcta.
+		//Y si llegamos hasta aqui la direcciÃ³n es correcta.
 	}
 
 }

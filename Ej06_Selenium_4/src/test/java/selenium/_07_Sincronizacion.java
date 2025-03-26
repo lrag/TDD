@@ -1,8 +1,6 @@
 package selenium;
 
 import java.time.Duration;
-import java.util.Date;
-import java.util.concurrent.TimeUnit;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
@@ -23,7 +21,6 @@ import com.google.common.base.Function;
 public class _07_Sincronizacion {
 	private static WebDriver driver;
 	
-	
 	@BeforeAll
 	public static void setUp() {
 		System.setProperty("webdriver.gecko.driver", "src/test/resources/drivers/geckodriver/geckodriver.exe");
@@ -31,7 +28,7 @@ public class _07_Sincronizacion {
 	}
 	
 	//WAIT IMPLICITO
-	//Se indica al driver y este lo aplica a todas las búsquedas
+	//Se indica al driver y este lo aplica a todas las bÃºsquedas
 	//@Test
 	public void testSincronoImplicito() throws InterruptedException {
 		driver.get(Constantes.URL);
@@ -40,8 +37,8 @@ public class _07_Sincronizacion {
 		//Thread.sleep(8000);		
 		//WebElement button2 = driver.findElement(By.cssSelector("#btn-1"));
 		
-		//Le indicamos al driver que si le pedimos un webElement y no está que espere
-		//un tiempo antes de lanzar la excepción por si aparece
+		//Le indicamos al driver que si le pedimos un webElement y no estÃ¡ que espere
+		//un tiempo antes de lanzar la excepciÃ³n por si aparece
 		//podemos ir cambiando el tiempo, el boton aparece en 4000 milisegundos
 		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(8000));
 
@@ -49,17 +46,17 @@ public class _07_Sincronizacion {
 		System.out.println("========================");
 		System.out.println("Antes del findElement");
 		long inicio = System.currentTimeMillis();
-		//El driver esperará un máximo de ocho segundos si el botón no está
+		//El driver esperarÃ¡ un mÃ¡ximo de ocho segundos si el botÃ³n no estÃ¡
 		WebElement button = driver.findElement(By.cssSelector("#btn-1"));
 		long fin = System.currentTimeMillis();
 		System.out.println("Despues del findElement: " + (fin-inicio));
-		//Al pulsar el botón aparecerá un mensaje EN LA CONSOLA
+		//Al pulsar el botÃ³n aparecerÃ¡ un mensaje EN LA CONSOLA
 		button.click();
-		System.out.println("Saliendo del método:");
+		System.out.println("Saliendo del test:");
 	}
 	
 	//WAIT EXPLICITO
-	//Detiene el test hasta que esté disponible un elemento
+	//Detiene el test hasta que estÃ© disponible un elemento
 	//@Test
 	public void testWebDriverWait() {
 		System.out.println("DOS");
@@ -69,26 +66,26 @@ public class _07_Sincronizacion {
 		System.out.println("========================");
 		long inicio = System.currentTimeMillis();
 		
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(8));
-		
-		//No pasará de esta línea hasta que esté disponible el elemento
-		System.out.println("Esperando al botón...");		
+		System.out.println("Esperando al botÃ³n...");		
+		//Creamos un wait, pero aÃºn no lo estamos utilizando
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(8));		
+		//No pasarÃ¡ de esta lÃ­nea hasta que estÃ© disponible el elemento
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#btn-1")));
 
 		long fin = System.currentTimeMillis();
 		System.out.println("Despues del wait.until: " + (fin-inicio));//aqui no se para, se para en el findElement
 		WebElement button = driver.findElement(By.cssSelector("#btn-1"));
 
-		//Al pulsar el botón aparecerá un mensaje EN LA CONSOLA
+		//Al pulsar el botÃ³n aparecerÃ¡ un mensaje EN LA CONSOLA
 		button.click();
 		
-		System.out.println("Saliendo del método");
+		System.out.println("Saliendo del test");
 	}
 	
-	/* FLUENT WAIT
+	/* FLUENT WAIT (tambiÃ©n es explÃ­cito)
 	 * Nos permite indicar al sistema una cantidad de tiempo a esperar y la 
-	 * frecuencia con la que va a buscar un elemento en el DOM de la página web. 
-	 * También podemos indicarle que ignore cierto tipo de excepciones como 
+	 * frecuencia con la que va a buscar un elemento en el DOM de la pÃ¡gina web. 
+	 * TambiÃ©n podemos indicarle que ignore cierto tipo de excepciones como 
 	 * NoSuchElementException.
 	 */
 
@@ -110,7 +107,7 @@ public class _07_Sincronizacion {
 		*/
 		
 		//Con una expresion lambda
-		System.out.println("Está ya el botón?");
+		System.out.println("EstÃ¡ ya el botÃ³n?");
 		WebElement button = wait.until(driver -> {
 				System.out.println("y ahora?");
 				return driver.findElement(By.id("btn-1"));
@@ -124,3 +121,4 @@ public class _07_Sincronizacion {
 	}
 
 }
+

@@ -1,6 +1,12 @@
 package com.curso.modelo.negocio;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertAll;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertSame;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.mock;
 
 import java.util.ArrayList;
@@ -20,12 +26,13 @@ import com.curso.modelo.entidad.Sucursal;
 import com.curso.modelo.negocio.excepcion.DireccionException;
 import com.curso.modelo.persistencia.ClienteDao;
 import com.curso.modelo.persistencia.ClienteDaoImpl;
+import com.curso.modelo.util.EmisorCorreosElectronicos;
 
 
 public class GestorClientesTest {
 	
 	//ESTO NO ES UNA PRUEBA UNITARIA PORQUE UTILIZA LAS DEPENDENCIAS REALES DE LA CLASE GESTOR_CLIENTES
-	//Es un test de integración
+	//Es un test de integraciÃ³n
 	//@Test
 	public void pruebaAltaCliente() throws Exception {
 		
@@ -39,9 +46,9 @@ public class GestorClientesTest {
 		gc.setGestorComerciales(gcom);
 		GestorSucursales gs = new GestorSucursales();
 		gc.setGestorSucursales(gs);
-		//Aqui todavía nos faltaría todo lo relacionado con las conexiones a la bb.dd!
+		//Aqui todavÃ­a nos faltarÃ­a todo lo relacionado con las conexiones a la bb.dd!
 		ClienteDao cDao = new ClienteDaoImpl();
-		gc.setClienteDao(cDao);			
+		gc.setClienteDao(cDao);	
 				
 		//Cuando
 		Cliente cAux = gc.altaCliente(c);
@@ -58,23 +65,23 @@ public class GestorClientesTest {
 	//
 	//dummies: un objeto que en los metodos void no hace nada
 	//         y para los que devuelven algo devuelve:
-	//      	  -cero si es número
+	//      	  -cero si es nÃºmero
 	//        	  -false si es boolean
 	//        	  -null si es referencia
-	//         En los métodos que lanzen excepción nunca la lanzará
-	//stubs: un objeto que cuenta con una serie de respuestas enlatadas para determinados métodos
+	//         En los mÃ©todos que lanzen excepciÃ³n nunca la lanzarÃ¡
+	//stubs: un objeto que cuenta con una serie de respuestas enlatadas para determinados mÃ©todos
 	//fakes: un objeto programado por nosostros y que reproduce el comportamiento del objeto real
 	//       un fake se programa de verdad!
-	//mocks: un objeto que recuerda las llamadas que ha recibido, el orden de las mismas y el número de veces	
-	//       es un test double contra el que se harán asertos
+	//mocks: un objeto que recuerda las llamadas que ha recibido, el orden de las mismas y el nÃºmero de veces	
+	//       es un test double contra el que se harÃ¡n asertos
 	
-	//@Test
-	@DisplayName("GestorClientes.altaCliente: Un cliente con datos correctos se insertará correctamente")
+	@Test
+	@DisplayName("GestorClientes.altaCliente: Un cliente con datos correctos se insertarÃ¡ correctamente")
 	public void altaClienteDatosCorrectos() throws Exception {
 	
 		//Dados
 		Cliente cliente = new Cliente(null,"Bender Bending Rodriguez","NNY","555666"); //Premisa: estos datos SON CORRECTOS
-		GestorClientes gestorClientes = new GestorClientes(); //Este es el objeto real que vamos a probar		
+		GestorClientes gestorClientes = new GestorClientes(); //Este es el objeto REAL que vamos a probar		
 		
 		//Y estos test doubles
 		
@@ -83,9 +90,10 @@ public class GestorClientesTest {
 		
 		//Stub:
 		GestorSucursales gestorSucursales = Mockito.mock(GestorSucursales.class); //Inicialmente es un dummie
+		
 		Mockito
 			.when(gestorSucursales.encontrarSucursalCercana(Mockito.any(String.class)))
-			.thenReturn(new Sucursal(1,"Sucursal 1","C/Tocotó"));
+			.thenReturn(new Sucursal(1,"Sucursal 1","C/TocotÃ³"));
 		
 		//Stub:
 		GestorComerciales gestorComerciales = Mockito.mock(GestorComerciales.class);
@@ -101,32 +109,33 @@ public class GestorClientesTest {
 		//ClienteDao clienteDao = Mockito.mock(ClienteDaoImpl.class); 
 		ClienteDao clienteDao = Mockito.mock(ClienteDao.class); //Mockito tambien hace test doubles a partir de interfaces
 
-		//No nos basta con unn dummy porque devolvería null en la llamada a insertar
+		//No nos basta con un dummy porque devolverÃ­a null en la llamada a insertar
 		
-		//No nos sirve porque tiene que devolver exactamente el mismo cliente que recibió:
+		//No nos sirve porque tiene que devolver exactamente el mismo cliente que recibiÃ³:
 		//Mockito
 		//	.when(clienteDao.insertar(Mockito.any(Cliente.class)))
 		//	.thenReturn( new Cliente(1,"N","D","T") );		
 		
-		//Tampoco nos sirve: aunque devuelva el mismo objeto que recibió no le coloca
+		//Tampoco nos sirve: aunque devuelva el mismo objeto que recibiÃ³ no le coloca
 		//un valor en el id :(
 		//Mockito
 		//	.when(clienteDao.insertar(Mockito.any(Cliente.class)))
 		//	.thenReturn( (Cliente) AdditionalAnswers.returnsFirstArg() );
 		
-		//Los 'when' solo se pueden utilizar en métodos que no son void
-		//Los 'do' se pueden utilizar en cualquier método
-		//thenReturn, doReturn: cuando sabemos qué vamos a devolver
-		//thenAnswer, doAnswer: cuando necesitamos cierto código para crear el valor a devolver
-		//thenThrow,  doThrow: cuando queremos que se lance una excepción		
+		//Los 'when' solo se pueden utilizar en mÃ©todos que no son void
+		//Los 'do' se pueden utilizar en cualquier mÃ©todo
+		//thenReturn, doReturn: cuando sabemos quÃ© vamos a devolver
+		//thenAnswer, doAnswer: cuando necesitamos cierto cï¿½digo para crear el valor a devolver
+		//thenThrow,  doThrow: cuando queremos que se lance una excepciÃ³n		
 		
 		//Derochando recursos...
 		//Mockito
 		//.when(clienteDao.insertar(Mockito.any(Cliente.class)))
 		//.thenAnswer(new ClienteDaoInsertarAnswer());		
 		
+		
+		//Con clase interna anÃ³nima
 		/*
-		//Con clase interna anónima
 		Mockito
 			.when(clienteDao.insertar(Mockito.any(Cliente.class)))
 			.thenAnswer(new Answer<Cliente>() {
@@ -137,7 +146,7 @@ public class GestorClientesTest {
 					return c;
 				}
 			});
-		*/		
+		*/
 
 		//Con expresion lambda:
 		Mockito
@@ -148,29 +157,35 @@ public class GestorClientesTest {
 					return cAux;
 				});
 		
+		//Dummie:
+		EmisorCorreosElectronicos emisorCorreos = Mockito.mock(EmisorCorreosElectronicos.class); 
+		
 		//Le proporcionamos los test doubles a gestorClientes
 		gestorClientes.setGestorDirecciones(gestorDirecciones);
 		gestorClientes.setGestorSucursales(gestorSucursales);		
 		gestorClientes.setGestorComerciales(gestorComerciales);
 		gestorClientes.setClienteDao(clienteDao);
+		gestorClientes.setEmisorCorreos(emisorCorreos);
 		
 		//CUANDO:
 		Cliente clienteInsertado = gestorClientes.altaCliente(cliente);		
 		
 		//ENTONCES:
 		System.out.println(clienteInsertado);
+		
 		assertAll( () -> assertEquals(2, clienteInsertado.getComerciales().size(),"El cliente no tiene comerciales!"),
 				   () -> assertNotNull(clienteInsertado.getSucursal(),"El cliente no tiene sucursal!"),
 				   () -> assertNotEquals(clienteInsertado.getSucursal().getNombre() ,"Sucursal virtual", "Al cliente no se le debe asignar la sucursal virtual"),
+				   //() -> assertSame(clienteInsertado, cliente),
 				   () -> assertNotNull(clienteInsertado.getId(),"El cliente no tiene id!"));	
 	}	
 
-	//@Test
-	@DisplayName("GestorClientes.altaCliente: al cliente cuya direccion esté alejada de cualquier sucursal se le asignará la sucursal virtual")
+	@Test
+	@DisplayName("GestorClientes.altaCliente: al cliente cuya direccion estÃ© alejada de cualquier sucursal se le asignarÃ¡ la sucursal virtual")
 	public void altaClienteConDireccionAlejadaDeCualquierSucursal() throws Exception {
 		
 		//Dados
-		Cliente cliente = new Cliente(null,"Bender Bending Rodriguez","El quinto pino","555666"); //Premisa: esta dirección no está cerca de ninguna sucursal
+		Cliente cliente = new Cliente(null,"Ringo Starr","El quinto pino","555666"); //Premisa: esta direcciÃ³n no estÃ¡ cerca de ninguna sucursal
 		GestorClientes gestorClientes = new GestorClientes(); //Este es el objeto real que vamos a probar		
 		
 		//Y estos test doubles
@@ -201,11 +216,15 @@ public class GestorClientesTest {
 					return cAux;
 				});
 		
+		//Dummie:
+		EmisorCorreosElectronicos emisorCorreos = Mockito.mock(EmisorCorreosElectronicos.class); 
+		
 		//Le proporcionamos los test doubles a gestorClientes
 		gestorClientes.setGestorDirecciones(gestorDirecciones);
 		gestorClientes.setGestorSucursales(gestorSucursales);		
 		gestorClientes.setGestorComerciales(gestorComerciales);
 		gestorClientes.setClienteDao(clienteDao);		
+		gestorClientes.setEmisorCorreos(emisorCorreos);
 		
 		//CUANDO:
 		Cliente clienteInsertado = gestorClientes.altaCliente(cliente);		
@@ -220,8 +239,8 @@ public class GestorClientesTest {
 		);				
 	}
 	
-	//@Test
-	@DisplayName("GestorClientes.altaCliente: un cliente con la direccion falsa lanzará una DireccionException")
+	@Test
+	@DisplayName("GestorClientes.altaCliente: un cliente con la direcciÃ³n falsa lanzarÃ¡ una DireccionException")
 	public void altaClienteTestDireccionFalsa() throws Exception {
 		
 		//Dados
@@ -230,11 +249,11 @@ public class GestorClientesTest {
 		
 		//Y estos test doubles
 		
-		//Los 'when' solo se pueden utilizar en métodos que no son void
-		//Los 'do' se pueden utilizar en cualquier método
-		//thenReturn, doReturn: cuando sabemos qué vamos a devolver
-		//thenAnswer, doAnswer: cuando necesitamos cierto código para crear el valor a devolver
-		//thenThrow,  doThrow: cuando queremos que se lance una excepción		
+		//Los 'when' solo se pueden utilizar en mÃ©todos que no son void
+		//Los 'do' se pueden utilizar en cualquier mÃ©todo
+		//thenReturn, doReturn: cuando sabemos quÃ© vamos a devolver
+		//thenAnswer, doAnswer: cuando necesitamos cierto cÃ³digo para crear el valor a devolver
+		//thenThrow,  doThrow: cuando queremos que se lance una excepciÃ³n		
 
 		//Stub:
 		GestorDirecciones gestorDirecciones = Mockito.mock(GestorDirecciones.class); 
@@ -243,6 +262,8 @@ public class GestorClientesTest {
 			.when(gestorDirecciones)
 			.comprobarDireccion(Mockito.any(String.class));
 			
+		//PodrÃ­amos dejar los demÃ¡s doubles a nulo porque ni se van a utilizar!
+		
 		//Dummie:
 		GestorSucursales gestorSucursales = Mockito.mock(GestorSucursales.class); 
 
@@ -252,11 +273,15 @@ public class GestorClientesTest {
 		//Dummie:
 		ClienteDao clienteDao = Mockito.mock(ClienteDao.class); 
 		
+		//Dummie:
+		EmisorCorreosElectronicos emisorCorreos = Mockito.mock(EmisorCorreosElectronicos.class); 
+						
 		//Le proporcionamos los test doubles a gestorClientes
 		gestorClientes.setGestorDirecciones(gestorDirecciones);
 		gestorClientes.setGestorSucursales(gestorSucursales);		
 		gestorClientes.setGestorComerciales(gestorComerciales);
-		gestorClientes.setClienteDao(clienteDao);		
+		gestorClientes.setClienteDao(clienteDao);	
+		gestorClientes.setEmisorCorreos(emisorCorreos);		
 		
 		//CUANDO - ENTONCES:
 		Exception e = assertThrows(DireccionException.class, () -> gestorClientes.altaCliente(cliente));
@@ -279,23 +304,27 @@ public class GestorClientesTest {
 		//Este es el objeto real que vamos a probar
 		GestorClientes gestorClientes = new GestorClientes();
 		
+		// dir = null                -> DirecciÃ³n nula exception
+		// dir = C/Falsa, 123        -> DirecciÃ³n falsa exception
+		// dir = cualquier otra cosa -> nada
+		
 		//TestDoubles;
 		GestorDirecciones gestorDirecciones = Mockito.mock(GestorDirecciones.class);		
 		Mockito
 			//.lenient()
-			.doThrow(new DireccionException("Dirección nula"))
+			.doThrow(new DireccionException("DirecciÃ³n nula"))
 			.when(gestorDirecciones)
 			.comprobarDireccion(null);
 		Mockito
 			//.lenient()
-			.doThrow(new DireccionException("La dirección es falsa"))
+			.doThrow(new DireccionException("La direcciÃ³n es falsa"))
 			.when(gestorDirecciones)
 			.comprobarDireccion("C/Falsa, 123");
 		
 		GestorSucursales gestorSucursales = Mockito.mock(GestorSucursales.class);	
 		Mockito
 			.when(gestorSucursales.encontrarSucursalCercana(Mockito.any(String.class)))
-			.thenReturn(new Sucursal(1,"Sucursal 1","C/Tocotó"));
+			.thenReturn(new Sucursal(1,"Sucursal 1","C/TocotÃ³"));
 		
 		GestorComerciales gestorComerciales = mock(GestorComerciales.class);
 		List<Comercial> comerciales = new ArrayList<Comercial>();
@@ -316,10 +345,15 @@ public class GestorClientesTest {
 				return cli;
 			});
 		
+		//Dummie:
+		EmisorCorreosElectronicos emisorCorreos = Mockito.mock(EmisorCorreosElectronicos.class); 
+				
+		
 		gestorClientes.setClienteDao(clienteDao);
 		gestorClientes.setGestorComerciales(gestorComerciales);
 		gestorClientes.setGestorDirecciones(gestorDirecciones);
 		gestorClientes.setGestorSucursales(gestorSucursales);
+		gestorClientes.setEmisorCorreos(emisorCorreos);
 		
 		//Cuando:
 		gestorClientes.altaClientes(clientes);
@@ -327,16 +361,17 @@ public class GestorClientesTest {
 		//Entonces:
 		
 		//Los test doubles de Mockito guardan como estado las llamadas que han 
-		//recibido, el número y el orden de las mismas
+		//recibido, el nÃºmero y el orden de las mismas
 		//
-		//Si usamos esta característica de mockito en un test este deje de ser un test unitario como tal
-		//y se convierte en una especia de test de integración
+		//Si usamos esta caracterÃ­stica de mockito en un test este deja de ser un test unitario como tal
+		//y se convierte en una especie de test de integraciÃ³n
 		//
+		//Y tambiÃ©n se convierte en una especie de test de caja blanca
 		//
 		//En un test de este tipo no tienen cabida asertos como los de los test unitarios
 		//			
 		
-		//Verificamos que gestorClientes ha llamado a los métodos adecuados de sus dependecias
+		//Verificamos que gestorClientes ha llamado a los mÃ©todos adecuados de sus dependecias
 		//Esto es posible porque los mocks recuerdan las llamadas recibidas
 				
 		/*
@@ -344,20 +379,22 @@ public class GestorClientesTest {
 		Mockito.verify(gestorDirecciones, Mockito.times(5)).comprobarDireccion(Mockito.any());			
 		Mockito.verify(gestorComerciales, Mockito.times(3)).encontrarComerciales();
 		Mockito.verify(gestorSucursales, Mockito.times(1)).encontrarSucursalCercana("D5"); 
-		//Cuando queremos verificar que se ha llamado una única vez podemos escribirlo así
+		//Cuando queremos verificar que se ha llamado una Ãºnica vez podemos escribirlo asÃ­
 		Mockito.verify(gestorSucursales).encontrarSucursalCercana("D5"); //Verifica que se ha llamado UNA vez
-		*/
+		 */
 		
 		
+		/*
+		 */
 		//Podemos verificar el orden de las llamadas
-		//Este ejemplo no funciona si en la lista de clientes tenemos más de uno
-		InOrder ordered = Mockito.inOrder(gestorDirecciones, gestorSucursales, clienteDao, gestorComerciales); 
+		//Este ejemplo no funciona si en la lista de clientes tenemos mÃ¡s de uno
+		InOrder ordered = Mockito.inOrder(gestorDirecciones, gestorSucursales, clienteDao, gestorComerciales, emisorCorreos); 
 		
 		ordered.verify(gestorDirecciones).comprobarDireccion(Mockito.any(String.class));
 	    ordered.verify(gestorSucursales).encontrarSucursalCercana(Mockito.any(String.class));
 	    ordered.verify(gestorComerciales).encontrarComerciales();
 	    ordered.verify(clienteDao).insertar(Mockito.any(Cliente.class));
-		
+	    ordered.verify(emisorCorreos).enviarCorreo(Mockito.any(String.class),Mockito.any(String.class));
 		
 	}	
 	

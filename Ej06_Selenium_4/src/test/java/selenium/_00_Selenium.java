@@ -11,7 +11,7 @@ public class _00_Selenium {
 
 		//Navegadores soportados:
 		//Firefox
-		//Internet Explorer (11, se requiere configuración extra)
+		//Internet Explorer (11, se requiere configuraciÃ³n extra)
 		//Safari
 		//Opera
 		//Chrome
@@ -30,7 +30,7 @@ public class _00_Selenium {
 		
 		driver.get("http://www.google.com");
 		
-		//Para que de tiempo a quitar el popup con la aceptación de términos
+		//Para que de tiempo a quitar el popup con la aceptaciÃ³n de tÃ©rminos
 		try {
 			Thread.sleep(10000);
 		} catch (InterruptedException e) {

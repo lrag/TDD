@@ -2,9 +2,12 @@ package ejemplos;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.junit.jupiter.api.Disabled;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.junit.jupiter.api.Test;
 
+import com.curso.modelo.entidad.Cliente;
 import com.curso.modelo.negocio.Calculadora;
 
 
@@ -15,8 +18,8 @@ public class _03_Ciclo_de_vida {
 	//Se creará tambien un objeto de la clase calculadora por cada test
 	private Calculadora calculadora = new Calculadora();
 
-	//Si declaramos est�tico el atributo que guarda el objeto a probar
-	//no se crear� uno por cada test, pero hay que estar muy seguro de 
+	//Si declaramos estático el atributo que guarda el objeto a probar
+	//no se creará uno por cada test, pero hay que estar muy seguro de 
 	//que es imposible que los test se acoplen entre si al reutilizar la calculadora
 	//No es recomendable
 	//private static Calculadora calculadora = new Calculadora();
@@ -44,6 +47,7 @@ public class _03_Ciclo_de_vida {
 	//@Disabled("Este no")
 	public void segundoTest() {
 		double n1 = 5;
+		
 		double n2 = calculadora.cuadrado(n1);
 		assertEquals(25, n2);
 	}
@@ -53,8 +57,56 @@ public class _03_Ciclo_de_vida {
 	public void tercerTest() throws Exception {
 		double n1 = 30;
 		double n2 = 2;
+		
 		double n3 = calculadora.dividir(n1, n2);
 		assertEquals(15, n3);
 	}
+	
+
+	/*
+	@Test
+	public void insertarCliente() throws Exception {
+
+		Cliente c = new Cliente(1l,"N","D","T");
+		RepositorioClientes rc = new RepositorioClientes();
+		
+		rc.addCliente(c);
+		
+		//entonces...
+	}	
+	
+	@Test
+	public void listarClientes() throws Exception {
+
+		RepositorioClientes rc = new RepositorioClientes();
+		
+		rc.listar();
+		
+		//entonces...
+	}
+	*/
+	
+	
 		
 }
+
+/*
+class RepositorioClientes {
+	
+	List<Cliente> clientes = new ArrayList<>();
+	
+	public void addCliente(Cliente c) {
+		clientes.add(c);
+	}
+	
+	public List<Cliente> listar() {
+		return clientes;
+	}	
+	
+}
+*/
+
+
+
+
+

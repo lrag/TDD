@@ -18,12 +18,10 @@ public class GestorSucursales {
 
 	public Sucursal encontrarSucursalCercana(String direccion) throws SucursalException {
 		//
-		// Lógica de negocio para encontrar la sucursal más cercana. Si no se encuentra devuelve null (por ejemplo)
+		// Lï¿½gica de negocio para encontrar la sucursal mï¿½s cercana. Si no se encuentra devuelve null (por ejemplo)
 		//
 		return new Sucursal();
 	}
-	
-	
 
 }
 

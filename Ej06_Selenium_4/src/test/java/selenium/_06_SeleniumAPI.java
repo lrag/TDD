@@ -8,6 +8,7 @@ import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.parallel.Execution;
@@ -40,11 +41,11 @@ public class _06_SeleniumAPI {
 	//@Test
 	public void testDoubleClick() throws InterruptedException {
 		//driver.get("http://cookbook.seleniumacademy.com/DoubleClickDemo.html");
-		driver.get("http://localhost:8080/Ej06_Selenium/DoubleClickDemo.html");
+		driver.get("http://localhost:8080/Ej06_Selenium_4/DoubleClickDemo.html");
 		WebElement mensaje = driver.findElement(By.id("message"));
 		
 		Thread.sleep(5000);
-		//La clase Actions realizar acciones m·s complejas
+		//La clase Actions realizar acciones m√°s complejas
 		Actions actions = new Actions(driver);
 		actions.doubleClick(mensaje).perform();
 		assertEquals("rgba(255, 255, 0, 1)", mensaje.getCssValue("background-color"));
@@ -55,7 +56,7 @@ public class _06_SeleniumAPI {
 	//@Test
 	public void testDragAndDrop() throws InterruptedException {
 		//driver.get("http://cookbook.seleniumacademy.com/DragDropDemo.html");
-		driver.get("http://localhost:8080/Ej06_Selenium/DragAndDropDemo.html");
+		driver.get("http://localhost:8080/Ej06_Selenium_4/DragAndDropDemo.html");
 		
 		WebElement source = driver.findElement(By.id("draggable"));
 		WebElement target = driver.findElement(By.id("droppable"));
@@ -96,7 +97,7 @@ public class _06_SeleniumAPI {
 	//@Test
 	public void testScreenshots() throws IOException {
 		//driver.get("http://cookbook.seleniumacademy.com/DragDropDemo.html");
-		driver.get("http://localhost:8080/Ej06_Selenium/DragAndDropDemo.html");
+		driver.get("http://localhost:8080/Ej06_Selenium_4/DragAndDropDemo.html");
 		WebElement source = driver.findElement(By.id("draggable"));
 		WebElement target = driver.findElement(By.id("droppable"));
 		
@@ -122,8 +123,8 @@ public class _06_SeleniumAPI {
 	@Test
 	public void testEventosWebDriver() {
 		
-		//Esta clase la hemos creado nosostros y ser· la que reciba los eventos
-		//Esta clase guarda los mÈtodos de retro llamada o callback		
+		//Esta clase la hemos creado nosostros y ser√° la que reciba los eventos
+		//Esta clase guarda los m√©todos de retro llamada o callback		
 		WebDriverListener oyente = new _06_WebDriverListener(driver);
 		
 		//Con esta clase se nos permite escuchar eventos lanzados por el driver
@@ -146,7 +147,7 @@ public class _06_SeleniumAPI {
 			e.printStackTrace();
 		}
 		
-		//Buscamos algo que no existe para que se produzca una excepciÛn y se
+		//Buscamos algo que no existe para que se produzca una excepci√≥n y se
 		//lance el evento 'onError'
 		WebElement input2 = decorated.findElement(By.id("searchInput_TROLOLO"));
 		input2.sendKeys("Selenium");
@@ -167,7 +168,7 @@ public class _06_SeleniumAPI {
 		Cookie cookie = new Cookie("cookie_selenium", "Cookie creada por nosostros");
 		driver.manage().addCookie(cookie);
 		
-		//Comprobamos que la cookie creada por nososotros est·
+		//Comprobamos que la cookie creada por nososotros est√°
 		Cookie cookie2 = driver.manage().getCookieNamed("cookie_selenium");
 		assertEquals("Cookie creada por nosostros", cookie2.getValue());
 		

@@ -37,7 +37,7 @@ public class _09_DataDrivenCSV {
 	@CsvFileSource(resources = "/datadriven/registerData.csv")
 	public void testSignUp(String username, String password, String confirmPassword, String email,	String captcha) throws InterruptedException { 
 
-		//Cargamos la p·gina de alta de usuarios de www.wikipedia.org
+		//Cargamos la p√°gina de alta de usuarios de www.wikipedia.org
 		driver.get("https://es.wikipedia.org/w/index.php?title=Especial:Crear_una_cuenta");
 		
 		WebElement usernameElement = driver.findElement(By.cssSelector("#wpName2"));
@@ -81,7 +81,7 @@ public class _09_DataDrivenCSV {
 				}	
 			}
 		});
-		//deberÌa llegar el error
+		//deber√≠a llegar el error
 		assertNotNull(error);
 		
 		Thread.sleep(2000);

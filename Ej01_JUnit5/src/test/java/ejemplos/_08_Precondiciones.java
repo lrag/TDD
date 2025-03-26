@@ -18,15 +18,27 @@ public class _08_Precondiciones {
 		
 		//Assumptions.assumeFalse(System.getProperty("os.name").contains("Linux"));
 
-		//Precondición
+		//PrecondiciÃ³n
 		System.out.println("Antes");
 		Assumptions.assumeTrue(System.getProperty("os.name").contains("Linux"), "No se ha ejecutado porque no es linux");
 		System.out.println("Despues");
 		
 		assertNotNull(null);
 
-		// Idéntico al anterior
-		//Assumptions.assumingThat(System.getProperty("os.name").contains("Linux"), () -> assertNotNull(null));
+		//ASSUMING THAT
+		
+		//DADO: esto esto y esto otro
+		//CUANDO: hacemos la movida
+		//Entonces
+		
+		//aserto 1
+		//aserto 2 (solo en linux)
+		Assumptions.assumingThat(
+				System.getProperty("os.name").contains("Linux"), 
+				() -> assertNotNull(null)
+				);
+		//aserto 3
+		
 	}
 
 }

@@ -78,7 +78,7 @@ public class _05_Interactions {
 	}
 	
 	@Test
-	public void testDropdown() {
+	public void testDropdown() throws InterruptedException {
 		driver.get(Constantes.URL);
 		//para trabajar con los atributos especificos de los select
 		//creamos un objeto Select a partir de su web element
@@ -89,19 +89,27 @@ public class _05_Interactions {
 		//el numero de opciones es 4
 		assertEquals(coches.getOptions().size(), 4);
 		
+		Thread.sleep(1000);
+		
 		//seleccionamos por texto visible al coche
 		coches.selectByVisibleText("Tesla");
 		//podemos comprobar la opcion seleccionada, por el paso anterior
 		assertEquals(coches.getFirstSelectedOption().getText(), "Tesla");
 		
+		Thread.sleep(1000);
+
 		//ahora seleccionamos por value
 		coches.selectByValue("ford");
 		//ahora la opcion seleccionada su atributo value es 'ford'
 		assertEquals(coches.getFirstSelectedOption().getDomAttribute("value"), "ford");
 		
-		//ahora seleccionamos la opci�n 0
+		Thread.sleep(1000);
+		
+		//ahora seleccionamos la opción 0
 		coches.selectByIndex(0);
 		assertEquals(coches.getFirstSelectedOption().getText(), "BMW");
+		
+		Thread.sleep(1000);
 	}
 	
 	@Test
@@ -138,7 +146,7 @@ public class _05_Interactions {
 		colores.deselectAll();
 		assertEquals(colores.getAllSelectedOptions().size(), 0);
 	}
-	
+
 	@Test
 	public void testCorrectOptions() {
 		driver.get(Constantes.URL);
@@ -171,13 +179,15 @@ public class _05_Interactions {
 		if (!radioButton.isSelected()) {
 			radioButton.click();
 		}
-		//ahora si deber�a de estar seleccionado
+		//ahora si debería de estar seleccionado
 		assertTrue(radioButton.isSelected());
 	}
-	
+
 	@Test
-	public void testCheckBoxes() {
+	public void testCheckBoxes() throws InterruptedException {
 		driver.get(Constantes.URL);
+		
+		Thread.sleep(5000);
 		
 		//Seleccionamos el checkbox con id musica
 		WebElement checkMusica = driver.findElement(By.xpath("//input[@id='musica']"));

@@ -9,6 +9,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class _02_TestChrome {
 	
+	//PARA DESCARGAR EL CHROME DRIVER:
+	//
 	//https://googlechromelabs.github.io/chrome-for-testing/#stable
 	
 	private static WebDriver driver;
@@ -16,7 +18,7 @@ public class _02_TestChrome {
 	//Crear el driver y abrir el navegador consume mucho tiempo
 	//Es conveniente crearlo antes de todos los test (o usar selenium grid)
 	//
-	//En este ejemplo hay dos test y los dos usar·n la misma instancia del navegador
+	//En este ejemplo hay dos test y los dos usar√°n la misma instancia del navegador
 	//
 	@BeforeAll
 	public static void setUp() {

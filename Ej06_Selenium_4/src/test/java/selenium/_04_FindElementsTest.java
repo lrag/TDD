@@ -30,7 +30,7 @@ public class _04_FindElementsTest {
 	
 	@Test
 	public void byId() {
-		//Cargamos la página
+		//Cargamos la pÃ¡gina
 		driver.get(Constantes.URL);
 		//Buscamos elementos por id
 		WebElement username = driver.findElement(By.id("user"));
@@ -58,7 +58,7 @@ public class _04_FindElementsTest {
 		WebElement password = driver.findElement(By.className("in-pass"));
 	}
 	
-	//podemos concretar más la busqueda, las className que estan dentro
+	//podemos concretar mï¿½s la busqueda, las className que estan dentro
 	//del loginForm. La clase WebDriver y WebElement comparten la misma interfaz
 	@Test
 	public void byClassName2() {
@@ -67,9 +67,9 @@ public class _04_FindElementsTest {
 		
 		WebElement formulario = driver.findElement(By.id("loginForm"));
 		
-		//Esto busca en toda la página
+		//Esto busca en toda la pÃ¡gina
 		//driver.findElement(By.className("in-user"));
-		//Y esta es un búsqueda a partir del elemento 'formulario'		
+		//Y esta es un bÃºsqueda a partir del elemento 'formulario'		
 		WebElement username = formulario.findElement(By.className("in-user"));
 
 		//Rebuscado, pero sirve de ejemplo (mejor con una consulta xpath)
@@ -77,6 +77,7 @@ public class _04_FindElementsTest {
 			.findElement(By.id("loginForm"))
 			.findElement(By.className("in-pass"));
 	}
+	
 	
 	@Test
 	public void byTagName() {
@@ -95,7 +96,7 @@ public class _04_FindElementsTest {
 		driver.get(Constantes.URL);
 		//Obtenermos un elemento <a> a traves de su texto
 		//f12 con chrome y podemos inspeccionar los elementos
-		WebElement enlace = driver.findElement(By.linkText("Página"));
+		WebElement enlace = driver.findElement(By.linkText("PÃ¡gina"));
 		//System.out.println("=================================");
 		//System.out.println("HREF:"+enlace.getAttribute("href"));
 		assertTrue(enlace.getDomAttribute("href").endsWith("index.html"));
@@ -105,7 +106,7 @@ public class _04_FindElementsTest {
 	public void byPartialLinkText() {
 		driver.get(Constantes.URL);
 		//Si no sabemos el texto completo de un link
-		WebElement enlace = driver.findElement(By.partialLinkText("Pág"));
+		WebElement enlace = driver.findElement(By.partialLinkText("PÃ¡g"));
 		assertTrue(enlace.getDomAttribute("href").endsWith("index.html"));
 	}
 	
@@ -215,7 +216,7 @@ public class _04_FindElementsTest {
 		assertEquals(img.getDomAttribute("name"), "img1");
 	}
 	
-	//Búsqueda de hijos
+	//Bï¿½squeda de hijos
 	@Test
 	public void byCssSelector5() {
 		driver.get(Constantes.URL);

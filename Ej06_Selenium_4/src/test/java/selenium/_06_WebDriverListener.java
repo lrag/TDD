@@ -75,10 +75,6 @@ public class _06_WebDriverListener implements WebDriverListener  {
 		}	
 	}
 	
-	
-	
-	
-	
 }
 
 

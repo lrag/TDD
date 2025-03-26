@@ -49,8 +49,8 @@ public class ServicioAvionesTest {
 	void despuesDeInsertarElAvionTendraId() throws Exception {		
 		
 		Avion a = new Avion(null, "Messerschmitt", "BF 109", 1936);
-		//ESTE TRY HACE QUE EL TEST ESTÉ MAL DISEÑADO:
-		//No esperamos que falle con ese avión
+		//ESTE TRY HACE QUE EL TEST ESTÃ‰ MAL DISEÃ‘ADO:
+		//No esperamos que falle con ese aviÃ³n
 		//try {
 			gestorAviones.insertar(a);
 		//} catch (Exception e) {
@@ -91,12 +91,12 @@ public class ServicioAvionesTest {
 		
 		Avion a1 = new Avion(null, FABRICANTE, MODELO, YEAR);
 		try {
-			gestorAviones.insertar(a1); //Este no es el método que estamos probando
+			gestorAviones.insertar(a1); //Este no es el mï¿½todo que estamos probando
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		
-		Avion a2 = gestorAviones.buscar(a1.getId()); //Este si es el método que estamos probando
+		Avion a2 = gestorAviones.buscar(a1.getId()); //Este si es el mï¿½todo que estamos probando
 		
 		//JUnit 5
 		assertAll( () -> assertEquals(a2.getId(), a1.getId()),

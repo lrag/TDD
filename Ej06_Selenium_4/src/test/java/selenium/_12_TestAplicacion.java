@@ -61,9 +61,13 @@ public class _12_TestAplicacion {
 	@Test
 	@DisplayName("Prueba funcional: insertar cliente")
 	public void insertarCliente() throws InterruptedException {
+
+		//Podemos pedir la pantalla del listado y pulsar nuevo
+		driver.get("http://localhost:8080/Ej06_Selenium_4/seguro/SVClientes");
+		driver.findElement(By.id("btnNuevo")).click();
 		
-		//Pedimos la pantalla del formulario de clientes
-		driver.get("http://localhost:8080/Ej06_Selenium_4/seguro/SVClientes?accion=verFormulario");
+		//Podemos pedir la pantalla del formulario directamente
+		//driver.get("http://localhost:8080/Ej06_Selenium_4/seguro/SVClientes?accion=verFormulario");
 		
 		//Esperamos el formulario como respuesta
 		WebElement h1 = driver.findElement(By.xpath("//h1[@class='titulo']"));
@@ -100,7 +104,7 @@ public class _12_TestAplicacion {
 		Thread.sleep(1500);
 		
 		//Pulsamos el botón
-		//Al pulsarlo se hace un submit del formulario y el navegador pide otra p�gina
+		//Al pulsarlo se hace un submit del formulario y el navegador pide otra página
 		btnInsertar.click();
 		
 		//No hace falta colocar ningun retardo ni espera para estar seguros de que se
@@ -123,9 +127,14 @@ public class _12_TestAplicacion {
 		String tdTelefono  = columnas.get(2).getText();	
 		
 		//Comprobamos que los valores coinciden con los insertados:
-		assertEquals(nombre, tdNombre);
-		assertEquals(direccion, tdDireccion);
-		assertEquals(telefono, tdTelefono);
+		Assertions.assertAll(
+					() -> assertEquals(nombre, tdNombre),
+					() -> assertEquals(direccion, tdDireccion),
+					() -> assertEquals(telefono, tdTelefono)
+				);
+		//assertEquals(nombre, tdNombre);
+		//assertEquals(direccion, tdDireccion);
+		//assertEquals(telefono, tdTelefono);
 		
 		System.out.println("YEPA");
 		Thread.sleep(10_000);
@@ -148,9 +157,11 @@ public class _12_TestAplicacion {
 		List<WebElement> filas = tablaClientes.findElements(By.tagName("tr")); //Todos los tr que 'cuelguen' de 'tablaClientes'
 		WebElement primeraFila = filas.get(0);
 		
-		List<WebElement> columnas = primeraFila.findElements(By.tagName("td")); //Los td del �ltimo tr
+		List<WebElement> columnas = primeraFila.findElements(By.tagName("td")); //Los td del último tr
 		columnas.get(0).findElement(By.tagName("a")).click();
-			
+		
+		//Comprobar que en el formulario efectivamente están los datos de la fila seleccionada...
+		
 		//Definimos unos valores
 		String nombre    = "Félix Selenium";
 		String direccion = "C/nueva direccion";
@@ -202,9 +213,11 @@ public class _12_TestAplicacion {
 		String tdTelefono  = columnas.get(2).getText();	
 		
 		//Comprobamos que los valores coinciden con los insertados:
-		assertEquals(nombre, tdNombre);
-		assertEquals(direccion, tdDireccion);
-		assertEquals(telefono, tdTelefono);		
+		Assertions.assertAll(
+				() -> assertEquals(nombre, tdNombre),
+				() -> assertEquals(direccion, tdDireccion),
+				() -> assertEquals(telefono, tdTelefono)	
+			);
 	}
 	
 	

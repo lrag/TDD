@@ -42,21 +42,21 @@ public class _05_Excepciones {
 		double dividendo = 100;
 		double divisor   = 0;
 		
-		//Podr韆mos controlarlo nosotros:
+		//Podr铆amos controlarlo nosotros:
 		/*
 		try {
 			calculadora.dividir(dividendo, divisor);
 			//MAL
-			Assertions.fail("Pues no ha lanzado la excepci髇!");
+			Assertions.fail("Pues no ha lanzado la excepci贸n!");
 		} catch (CalculadoraException e) {
 			//OK, Esto es lo que esperabamos!
 			System.out.println("OK");
 			return;
 		} catch(Exception e) {
-			Assertions.fail("Pues ha lanzado OTRA excepci髇!");			
+			Assertions.fail("Pues ha lanzado OTRA excepci贸n!");			
 		}
-		Assertions.fail("Pues no ha lanzado excepci髇 :( ");			
 		*/
+		//Assertions.fail("Pues no ha lanzado excepci锟絥 :( ");			
 		
 		/*
 		//Ni hablar de esto
@@ -69,7 +69,7 @@ public class _05_Excepciones {
 		*/
 		
 		
-		//Con clase interna an髇ima
+		//Con clase interna an锟絥ima
 		/*
 		Executable exe = new Executable() {
 			public void execute() throws Throwable {
@@ -80,7 +80,7 @@ public class _05_Excepciones {
 		*/
 		
 		
-		//飀em, sin declarar primero la variable 'exe'
+		//脥dem, sin declarar primero la variable 'exe'
 		/*
 		Assertions.assertThrows(CalculadoraException.class, new Executable() {
 			@Override
@@ -88,22 +88,21 @@ public class _05_Excepciones {
 				calculadora.dividir(dividendo, divisor);
 			}
 		});
-		*/
+		*/		
 
 		/*
 		Assertions.assertThrows(
 				CalculadoraException.class,  
 				() -> calculadora.dividir(dividendo, divisor)
-			);	
-		*/					
+			);
+		*/	
 		
-		//Nos entregan la excepci髇 que se ha lanzado por si nos hace falta
-		CalculadoraException e = 
-			Assertions.assertThrows(
+		//Nos entregan la excepci贸n que se ha lanzado por si nos hace falta
+		CalculadoraException e = Assertions.assertThrows(
 				CalculadoraException.class,  
                 () -> calculadora.dividir(dividendo, divisor)
             );	
-		assertEquals("Divisi髇 por cero", e.getMessage());
+		assertEquals("Divisi贸n por cero", e.getMessage());
 		
 	}	
 	

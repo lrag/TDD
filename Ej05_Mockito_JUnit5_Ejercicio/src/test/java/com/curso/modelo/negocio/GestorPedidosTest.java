@@ -78,7 +78,7 @@ public class GestorPedidosTest {
 
 	//Este será el objeto real que vamos a probar
 	@InjectMocks
-	private GestorPedidos gestorPedidos = new GestorPedidos(); //DEbemos inicializar gestorPedidos nosotros
+	private GestorPedidos gestorPedidos = new GestorPedidos(); //Debemos inicializar gestorPedidos nosotros
 	
 	//Este pedido se usará para las diferentes pruebas:
 	private Pedido pedido;

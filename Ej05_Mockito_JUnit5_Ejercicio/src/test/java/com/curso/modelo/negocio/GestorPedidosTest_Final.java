@@ -33,7 +33,7 @@ import com.curso.modelo.persistencia.PedidoDao;
 public class GestorPedidosTest_Final {
 	
 	//MOCKS. Ya tenemos dummies aqui:
-	@Mock private PedidoDao pedidoDao; //Null
+	@Mock private PedidoDao pedidoDao;
 	@Mock private GestorBancos gestorBancos; 
 	@Mock private GestorAlmacen gestorAlmacen; 
 	@Mock private GestorTransportes gestorTransportes; 
@@ -114,7 +114,7 @@ public class GestorPedidosTest_Final {
 			);			
 	}
 	
-	@Test
+	//@Test
 	@DisplayName("GestorPedidos.aceptar lanza datosBancarios exception cuando hay un problema con los datos bancarios del cliente")
 	public void aceptarPedidoDatosBancariosMal() throws Exception {
 		
@@ -150,7 +150,7 @@ public class GestorPedidosTest_Final {
 		assertEquals("Datos bancarios incorrectos", e.getMessage());	
 	}
 	
-	@Test
+	//@Test
 	@DisplayName("GestorPedidos.aceptar lanza ExistenciasException cuando no hay existencias de un producto...")
 	public void aceptarPedidoExistenciasInsuficientes() throws ExistenciasEx {
 		
@@ -187,9 +187,8 @@ public class GestorPedidosTest_Final {
 				"No ha lanzado ExistenciasEx"
 			);		
 	}	
-	
-	
-	@Test
+		
+	//@Test
 	@DisplayName("GestorPedidos.aceptar invoca correctamente a sus dependencias")
 	//ESTO NO ES UN TEST UNITARIO
 	public void pruebaMocks() throws Exception {

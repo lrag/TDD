@@ -21,7 +21,7 @@ import com.curso.modelo.negocio.InvalidIngresoException;
 public class _07_TestParametrizado {
 
 	//En esta test probamos tres metodos diferentes de tres clases distintas
-	//Esto est· mal
+	//Esto est√° mal
 	private CalculadoraImpuestos calculadoraImpuestos;
 	private Calculadora calculadora;
 	private ServicioClientes gestorClientes;
@@ -51,17 +51,19 @@ public class _07_TestParametrizado {
 	@ValueSource(doubles = { 5, 25, 50, 75 })
 	@DisplayName("Prueba de test parametrizado")
 	public void ejemplo(Double numero) {
-		//Dado este n˙mero
-		System.out.println("Par·metro:"+numero);
+		//Dado este n√∫mero
+		System.out.println("Par√°metro:"+numero);
 		//Cuando 
 		double resultado = calculadora.cuadrado(numero);
+		
 		//Entonces
 		Assertions.assertTrue(resultado == numero*numero); //Trampa
-		//Lo mismo, con equals
+		//Lo mismo pero con equals
 		Assertions.assertEquals(resultado, numero*numero);	
 	}
 	
 	@ParameterizedTest(name = "CalculadoraImpuestos {index}: El impuesto de {0} debe ser {1}")
+	@DisplayName("Calculo de impuestos por ingreso")
 	@MethodSource("datosParaProbarCalculadoraImpuestos")
 	void testWithMultiArgMethodSource(Double ingreso, Double impuestoEsperado) throws InvalidIngresoException {
 		//Dado
@@ -83,7 +85,7 @@ public class _07_TestParametrizado {
 		Assertions.assertNotNull(cAux.getId());		
 	}	
 
-	//Es obligatorio que sea est·tico
+	//Es obligatorio que sea est√°tico
 	static Stream<Arguments> datosParaProbarCalculadoraImpuestos() {
 		return Stream.of(
 	        Arguments.arguments(5000d,0d),
@@ -94,7 +96,7 @@ public class _07_TestParametrizado {
 	    );	 
 	}	
 	
-	//Es obligatorio que sea est·tico
+	//Es obligatorio que sea est√°tico
 	static Stream<Arguments> datosParaProbarInsertarCliente() {
 		return Stream.of(
 			Arguments.arguments(new Cliente(null,"N1","D1","T1")),

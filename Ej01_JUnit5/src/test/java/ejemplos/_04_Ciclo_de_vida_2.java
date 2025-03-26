@@ -14,7 +14,7 @@ public class _04_Ciclo_de_vida_2 {
 
 	private Calculadora calculadora;
 
-	//CalculadoraTest se instanciará por cada método marcado con @Test
+	//CalculadoraTest se instanciarÃ¡ por cada mÃ©todo marcado con @Test
 	public _04_Ciclo_de_vida_2() {
 		super();
 		System.out.println("Instanciando 04_Ciclo_de_vida_2");
@@ -23,8 +23,8 @@ public class _04_Ciclo_de_vida_2 {
 	@BeforeAll
 	public static void beforeAll() {
 		System.out.println("Before all");
-		//Si calculadora es estático se utilizará la misma instancia para todas las pruebas
-		//No es recomendable puesto que debemos asegurarnos de que ningún test está acoplado a otro
+		//Si calculadora es estï¿½tico se utilizarï¿½ la misma instancia para todas las pruebas
+		//No es recomendable puesto que debemos asegurarnos de que ningÃºn test estÃ¡ acoplado a otro
 		//calculadora = new Calculadora();
 	}
 
@@ -36,8 +36,8 @@ public class _04_Ciclo_de_vida_2 {
 	@BeforeEach
 	public void beforeEach() {
 		System.out.println("Before each");
-		//Es más ortodoxo inicializar todo antes de cada test
-		//si hicieramos esto 'calculadora' no sería estática
+		//Es mÃ¡s ortodoxo inicializar todo antes de cada test
+		//si hicieramos esto 'calculadora' no serÃ­a estÃ¡tica
 		calculadora = new Calculadora();
 	}
 

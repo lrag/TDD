@@ -7,15 +7,18 @@ import org.openqa.selenium.support.PageFactory;
 
 //Page Object Model
 /*
- * Selenium nos permite agrupar todos los elementos de una página web en una misma clase
-PageFactory. De esta manera podemos reutilizar el código sin preocuparnos de localizar los
+Selenium nos permite agrupar todos los elementos de una pÃ¡gina web en una misma clase
+PageFactory. De esta manera podemos reutilizar el cï¿½digo sin preocuparnos de localizar los
 elementos dentro de la web.
- */
+
+Es un POJO
+*/
 public class _10_FormularioPeliculaPOM {
 
+	//Referencia al driver con el que se buscarÃ¡n los elementos
 	private WebDriver driver;
 
-	@FindBy(id = "btnInsertar")    private WebElement btnInsertar;
+	@FindBy(id = "btnInsertar")    private WebElement btnInsertar; //Se declara a nulo, Selenium inyectarÃ¡ el valor
 	@FindBy(id = "btnModificar")   private WebElement btnModificar;
 	@FindBy(id = "btnBorrar")	   private WebElement btnBorrar;
 	@FindBy(name = "idPelicula")   private WebElement idPelicula;

@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class _01_FirefoxTest {
+	
 	private static WebDriver driver;
 	
 	//Crear el driver y abrir el navegador consume mucho tiempo
@@ -20,15 +21,18 @@ public class _01_FirefoxTest {
 	
 	@Test
 	public void goToGoogle() {
+		System.setProperty("webdriver.gecko.driver", 
+				"src/test/resources/drivers/geckodriver/geckodriver.exe");
+		
 		driver.get("http://www.google.com");	
 		//driver.get("http://localhost:8080/Ej06_Selenium/pagina.html");	
 	}
 	
 	@AfterAll
 	public static void tearDown() {
-		//Comentamos esta línea para que no se cierre el navegador 
+		//Comentamos esta lï¿½nea para que no se cierre el navegador 
 		//despues del test, pero es necesaria:		
-		//driver.quit();
+		driver.quit();
 	}
 	
 }
