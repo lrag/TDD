@@ -69,7 +69,7 @@ public class _10_POMTest {
 		//asertos necesarios
 	}
 	
-	//@Test
+	@Test
 	public void testSearchModificar() throws InterruptedException {
 		
 		driver.get("http://localhost:8080/Ej06_Selenium_4/formulario.html");

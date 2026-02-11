@@ -35,8 +35,17 @@ public class ServicioDiscos {
 		repositorioDiscos.delete(disco);
 	}
 	
-	public Disco buscar(Integer id) {
-		return repositorioDiscos.findById(id).orElse(null);
+	public Optional<Disco> buscar(Integer id) {
+		//return repositorioDiscos
+		//	.findById(id)
+		//	.orElse(null);
+		return repositorioDiscos.findById(id);
+	}
+	
+	public Optional<String> buscarTitulo(Integer id) {
+		return repositorioDiscos
+			.findById(id)
+			.map( d -> d.getTitulo() );
 	}
 	
 }

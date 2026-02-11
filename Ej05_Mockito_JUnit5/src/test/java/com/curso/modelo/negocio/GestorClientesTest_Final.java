@@ -28,26 +28,26 @@ import com.curso.modelo.util.EmisorCorreosElectronicos;
 public class GestorClientesTest_Final {
 	
 	@Test
-	@DisplayName("GestorClientes.altaCliente: Un cliente con datos correctos se insertar� correctamente")
+	@DisplayName("GestorClientes.altaCliente: Un cliente con datos correctos se insertará correctamente")
 	public void altaClienteDatosCorrectos() throws Exception {
 	
 		//Dados
 		Cliente cliente = new Cliente(null,"Bender Bending Rodriguez","NNY","555666"); //Premisa: estos datos SON CORRECTOS
-		GestorClientes gestorClientes = new GestorClientes(); //Este es el objeto real que vamos a probar		
+		ServicioClientes gestorClientes = new ServicioClientes(); //Este es el objeto real que vamos a probar		
 		
 		//Y estos test doubles
 
 		//Dummie:
-		GestorDirecciones gestorDirecciones = Mockito.mock(GestorDirecciones.class); 
+		ServicioDirecciones gestorDirecciones = Mockito.mock(ServicioDirecciones.class); 
 		
 		//Stub:
-		GestorSucursales gestorSucursales = Mockito.mock(GestorSucursales.class); //Inicialmente es un dummie
+		ServicioSucursales gestorSucursales = Mockito.mock(ServicioSucursales.class); //Inicialmente es un dummie
 		Mockito
 			.when(gestorSucursales.encontrarSucursalCercana(Mockito.any(String.class)))
 			.thenReturn(new Sucursal(1,"Sucursal 1","C/Tocotó"));
 
 		//Stub:
-		GestorComerciales gestorComerciales = Mockito.mock(GestorComerciales.class);
+		ServicioComerciales gestorComerciales = Mockito.mock(ServicioComerciales.class);
 		List<Comercial> comerciales = new ArrayList<Comercial>();
 		comerciales.add(new Comercial(1,"EMP-1","Comercial1"));
 		comerciales.add(new Comercial(2,"EMP-2","Comercial2"));	
@@ -94,18 +94,18 @@ public class GestorClientesTest_Final {
 		
 		//Dados
 		Cliente cliente = new Cliente(null,"Bender Bending Rodriguez","El quinto pino","555666"); //Premisa: esta direcci�n no est� cerca de ninguna sucursal
-		GestorClientes gestorClientes = new GestorClientes(); //Este es el objeto real que vamos a probar		
+		ServicioClientes gestorClientes = new ServicioClientes(); //Este es el objeto real que vamos a probar		
 		
 		//Y estos test doubles
 		
 		//Dummie:
-		GestorDirecciones gestorDirecciones = Mockito.mock(GestorDirecciones.class); 
+		ServicioDirecciones gestorDirecciones = Mockito.mock(ServicioDirecciones.class); 
 		
 		//Dummie:
-		GestorSucursales gestorSucursales = Mockito.mock(GestorSucursales.class); //Inicialmente es un dummie
+		ServicioSucursales gestorSucursales = Mockito.mock(ServicioSucursales.class); //Inicialmente es un dummie
 
 		//Stub:
-		GestorComerciales gestorComerciales = Mockito.mock(GestorComerciales.class);
+		ServicioComerciales gestorComerciales = Mockito.mock(ServicioComerciales.class);
 		List<Comercial> comerciales = new ArrayList<Comercial>();
 		comerciales.add(new Comercial(1,"EMP-1","Comercial1"));
 		comerciales.add(new Comercial(2,"EMP-2","Comercial2"));	
@@ -154,20 +154,20 @@ public class GestorClientesTest_Final {
 		
 		//Dados
 		Cliente cliente = new Cliente(null,"Bender Bending Rodriguez","C/Falsa, 123","555666"); //Premisa: esta direccion es falsa
-		GestorClientes gestorClientes = new GestorClientes(); //Este es el objeto real que vamos a probar		
+		ServicioClientes gestorClientes = new ServicioClientes(); //Este es el objeto real que vamos a probar		
 
 		//Stub:
-		GestorDirecciones gestorDirecciones = Mockito.mock(GestorDirecciones.class); 
+		ServicioDirecciones gestorDirecciones = Mockito.mock(ServicioDirecciones.class); 
 		Mockito
 			.doThrow(new DireccionException("Esta direccion es falsa"))
 			.when(gestorDirecciones)
 			.comprobarDireccion(Mockito.any(String.class));
 			
 		//Dummie:
-		GestorSucursales gestorSucursales = Mockito.mock(GestorSucursales.class); 
+		ServicioSucursales gestorSucursales = Mockito.mock(ServicioSucursales.class); 
 
 		//Dummie:
-		GestorComerciales gestorComerciales = Mockito.mock(GestorComerciales.class);
+		ServicioComerciales gestorComerciales = Mockito.mock(ServicioComerciales.class);
 		
 		//Dummie:
 		ClienteDao clienteDao = Mockito.mock(ClienteDao.class); 
@@ -201,13 +201,13 @@ public class GestorClientesTest_Final {
 		//clientes.add(new Cliente(null,"N5","C/Falsa, 123","T5")); //Y este no
 						
 		//Este es el objeto real que vamos a probar
-		GestorClientes gestorClientes = new GestorClientes();
+		ServicioClientes gestorClientes = new ServicioClientes();
 		
 		//TestDoubles;
-		GestorDirecciones gestorDirecciones = Mockito.mock(GestorDirecciones.class);		
+		ServicioDirecciones gestorDirecciones = Mockito.mock(ServicioDirecciones.class);		
 		Mockito
 			//.lenient()
-			.doThrow(new DireccionException("Direcci�n nula"))
+			.doThrow(new DireccionException("Dirección nula"))
 			.when(gestorDirecciones)
 			.comprobarDireccion(null);
 		Mockito
@@ -216,7 +216,7 @@ public class GestorClientesTest_Final {
 			.when(gestorDirecciones)
 			.comprobarDireccion("C/Falsa, 123");
 		
-		GestorSucursales gestorSucursales = Mockito.mock(GestorSucursales.class);	
+		ServicioSucursales gestorSucursales = Mockito.mock(ServicioSucursales.class);	
 		try {
 			Mockito
 				.when(gestorSucursales.encontrarSucursalCercana(Mockito.any(String.class)))
@@ -225,7 +225,7 @@ public class GestorClientesTest_Final {
 			e.printStackTrace();
 		}
 		
-		GestorComerciales gestorComerciales = mock(GestorComerciales.class);
+		ServicioComerciales gestorComerciales = mock(ServicioComerciales.class);
 		List<Comercial> comerciales = new ArrayList<Comercial>();
 		comerciales.add(new Comercial(1,"EMP-1","Comercial1"));
 		comerciales.add(new Comercial(2,"EMP-2","Comercial2"));	

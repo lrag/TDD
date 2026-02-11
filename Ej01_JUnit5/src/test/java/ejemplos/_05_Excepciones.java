@@ -56,7 +56,8 @@ public class _05_Excepciones {
 			Assertions.fail("Pues ha lanzado OTRA excepción!");			
 		}
 		*/
-		//Assertions.fail("Pues no ha lanzado excepci�n :( ");			
+		
+				
 		
 		/*
 		//Ni hablar de esto
@@ -95,8 +96,9 @@ public class _05_Excepciones {
 				CalculadoraException.class,  
 				() -> calculadora.dividir(dividendo, divisor)
 			);
-		*/	
+		*/
 		
+
 		//Nos entregan la excepción que se ha lanzado por si nos hace falta
 		CalculadoraException e = Assertions.assertThrows(
 				CalculadoraException.class,  

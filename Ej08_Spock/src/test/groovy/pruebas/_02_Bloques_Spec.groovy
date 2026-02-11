@@ -8,13 +8,14 @@ import spock.lang.Specification
 class _02_Bloques_Spec extends Specification {
 	
 	/*
-	Setup/Given – Se ejecuta cualquier inicialización previa al test. 
-	              Es un bloque implícito, cualquier código no incluido en un bloque se supondrá en él.
-	When        – Bloque en el que invocamos el código a probar
-	Then        – Aserto. Colocamos en el una expresión que se evaluará como un boolean
-	Expect      – Suma de when y Then, su uso es opcional
-	Cleanup     – Código que elimina cualquier resto de la ejecución del test
+	Setup/Given ï¿½ Se ejecuta cualquier inicializaciï¿½n previa al test. 
+	              Es un bloque implï¿½cito, cualquier cï¿½digo no incluido en un bloque se supondrï¿½ en ï¿½l.
+	When        ï¿½ Bloque en el que invocamos el cï¿½digo a probar
+	Then        ï¿½ Aserto. Colocamos en el una expresiï¿½n que se evaluarï¿½ como un boolean
+	Expect      ï¿½ Suma de when y Then, su uso es opcional
+	Cleanup     ï¿½ Cï¿½digo que elimina cualquier resto de la ejecuciï¿½n del test
 	*/
+	
 	
 	//given - when - then 
 	def "cuatro y dos son seis"() {
@@ -43,6 +44,7 @@ class _02_Bloques_Spec extends Specification {
 			s1 + s2 == 8					
 	}
 	
+	
 	//Cada bloque puede expresarse en varias partes utilizando 'and'
 	def "y ocho dieciseis"() {
 		
@@ -58,8 +60,9 @@ class _02_Bloques_Spec extends Specification {
 			(s1 + s2) % 2 == 0
 	}
 	
+	
 	//Salvo given/setup y clean up el resto de bloques puede repetirse
-	//Esto en realidad es juntar dos test en uno, utilizar con precaución
+	//Esto en realidad es juntar dos test en uno, utilizar con precauciï¿½n
 	def "probando varias cosas que realmente esten relacionadas"() {
 		
 		given: "dada esta calculadora"

@@ -8,7 +8,7 @@ class _03_CicloDeVida_II_Spec extends Specification {
 
 	def calculadora
 	
-	//Si necesitamos hacer las mismas tareas como preparación o limpieza de cualquier test
+	//Si necesitamos hacer las mismas tareas como preparaciÃ³n o limpieza de cualquier test
 	//podemos usar callbacks, aqui llamados 'fixtures'
 	def setupSpec() {
 		//System.out.println("Antes de los test")

@@ -29,9 +29,9 @@ public class _08_DataDrivenJUnit {
 		driver.get(Constantes.URL);
 	}
 
-	//Test que prueba la funcionalidad 'sumar' con un par de números
-	//Si necesitamos probar con más datos no nos sirve
-	//@Test
+	//Test que prueba la funcionalidad 'sumar' con un par de nï¿½meros
+	//Si necesitamos probar con mï¿½s datos no nos sirve
+	@Test
 	public void pruebaSuma() throws InterruptedException {
 		
 		//Cargamos index.html

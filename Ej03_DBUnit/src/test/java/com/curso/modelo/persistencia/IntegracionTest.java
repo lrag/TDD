@@ -21,22 +21,22 @@ public class IntegracionTest {
 	Para una clase que no tiene @ExtendsWith: 
 	 
 	crear una instancia de IntegracionTest
-	invocar el mÈtodo que estÈ marcado con @BeforeAll
-	incovar el mÈtodo que estÈ marcado con @BeforeEach
-	invocar el mÈtodo marcado que @Test 
-	incovar el mÈtodo que estÈ marcado con @AfterEach
-	invocar el mÈtodo que estÈ marcado con @AfterAll
+	invocar el m√©todo que est√° marcado con @BeforeAll
+	incovar el m√©todo que est√° marcado con @BeforeEach
+	invocar el m√©todo marcado que @Test 
+	incovar el m√©todo que est√° marcado con @AfterEach
+	invocar el m√©todo que est√° marcado con @AfterAll
 	
 	Con el @ExtendsWith(DBUnitExtension.class):
 
 	crear una instancia de IntegracionTest
-	invocar el mÈtodo que estÈ marcado con @BeforeAll
-	incovar el mÈtodo que estÈ marcado con @BeforeEach
+	invocar el m√©todo que est√° marcado con @BeforeAll
+	incovar el m√©todo que est√° marcado con @BeforeEach
 	cargar en la base de datos el dataset indicado con @DataSet
-	invocar el mÈtodo marcado con @Test 
+	invocar el m√©todo marcado con @Test 
 	comparar el estado de la base de datos con el dataset indicado en @ExpectedDataSet
-	incovar el mÈtodo que estÈ marcado con @AfterEach
-	invocar el mÈtodo que estÈ marcado con @AfterAll
+	incovar el m√©todo que est√° marcado con @AfterEach
+	invocar el m√©todo que est√° marcado con @AfterAll
 	*/
 	
 	@Test
@@ -76,16 +76,16 @@ public class IntegracionTest {
 	public void integeracionGestorPeliculas() throws Exception
 	{
 		//Aqui vamos a probar GestorPeliculas
-		//Como se van a usar un gestorPelÌculas, un PeliculaDao de verdad y una base de datos esto no es un test
-		//unitario si no de integraciÛn		
+		//Como se van a usar un gestorPel√≠culas, un PeliculaDao de verdad y una base de datos esto no es un test
+		//unitario sino de integraci√≥n		
 		//
-		//Esta prueba tiene mucho m·s sentido que la anterior. No hace falta que probemos los DAOs/repositorios
+		//Esta prueba tiene mucho m√°s sentido que la anterior. No hace falta que probemos los DAOs/repositorios
 		GestorPeliculas gp = new GestorPeliculas();
 		
 		System.out.println("=====================================");
 		gp.listar().forEach(p -> System.out.println(p));
 		
-		//Podemos crear program·ticamente los datasets:
+		//Podemos crear program√°ticamente los datasets:
 		//IDataSet expectedDataSet = new FlatXmlDataSet(new FlatXmlProducer(new InputSource("src/test/resources/db/expected.xml")));
 		
 		//Realizar las modificaciones que lleven al real al estado esperado

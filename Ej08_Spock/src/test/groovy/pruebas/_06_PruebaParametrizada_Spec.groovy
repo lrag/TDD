@@ -9,7 +9,8 @@ import spock.lang.Unroll
 
 class _06_PruebaParametrizada_Spec extends Specification {
 	
-	//Si necesitamos repetir un test con distintos datos podemos hacer esta aproximación:
+	
+	//Si necesitamos repetir un test con distintos datos podemos hacer esta aproximaciÃ³n:
 	def "calculadora.sumar debe sumar correctamente, pero esto es un poco trapero"(){
 		
 		given:
@@ -18,7 +19,7 @@ class _06_PruebaParametrizada_Spec extends Specification {
 		expect:
 			//Con varios asertos seguidos funciona, pero en el informe no los vemos individualmente
 			//
-			//Es más dificil extraer los datos para las pruebas de otros orígenes. Por ejemplo: un fichero
+			//Es mÃ¡s dificil extraer los datos para las pruebas de otros orÃ­genes. Por ejemplo: un fichero
 			//
 			//Estamos infringiendo la norma 'crear un objeto a probar nuevo para cada test'
 			calculadora.sumar(1,2) == 3 
@@ -27,21 +28,21 @@ class _06_PruebaParametrizada_Spec extends Specification {
 	}
 	
 	
-	//Es posible añadir los datos con los que realizar un test en  
+	//Es posible aÃ±adir los datos con los que realizar un test en  
 	//el bloque 'where'
 	//
-	//El test se ejecutará una vez por cada juego de datos
+	//El test se ejecutarï¿½ una vez por cada juego de datos
 	//
-	//Unroll indica a spock que necesitamos que en el informe cada ejecución del 
+	//Unroll indica a spock que necesitamos que en el informe cada ejecuciï¿½n del 
 	//test aparezca por separado:	
 	@Unroll
-	//Incluso podemos utilizar los parámetros en el nombre del test
+	//Incluso podemos utilizar los parï¿½metros en el nombre del test
 	//
 	//Disponemos de dos formatos para aportar la informacion:
 	// -Data tables
 	// -Data pipes
 	def "calculadora.sumar debe sumar correctamente  #s1 + #s2 = #suma "() {
-		
+
 		given:
 			def calculadora = new Calculadora()
 	 
@@ -59,13 +60,14 @@ class _06_PruebaParametrizada_Spec extends Specification {
 			10  | 20  | 30
 			100 | 200 | 300
 			
-			/*Las tablas han de tener mínimo dos columnas. 
+			//Las tablas han de tener mÃ­nimo dos columnas. 
 			//Si solo necesitamos una debemos usar esta sintaxis:
-			dato | _
-			a    | _
-			b    | _
-			c    | _
-			*/		
+			//dato | _
+			//a    | _
+			//b    | _
+			//c    | _			
+			
+
 	}
 	
 	@Unroll
@@ -103,6 +105,7 @@ class _06_PruebaParametrizada_Spec extends Specification {
 		
 	}
 	
+	//Sacando los valores de una lista en vez de un tabla
 	@Unroll
 	def "test parametrizado con objetos. #persona.nombre"(){
 		given:
@@ -118,11 +121,33 @@ class _06_PruebaParametrizada_Spec extends Specification {
 			persona   << [ new Persona("Philip Marlowe","C/Tal","123"),
 				           new Persona("Lew Archer","C/Pascual","456"),
 				           new Persona("Columbo","C/Pascual","456"),
-						   new Persona("Jules Maigret","C/Pascualè","789") ]		
+						   new Persona("Jules Maigret","C/Pascual","789") ]		
 	}
 	
+	//Esta prueba es anÃ¡loga a la anterior pero con una tabla en lugar de una lista
 	@Unroll
-	def "test parametrizado que obtiene los datos de un método. #persona.nombre"(){
+	def "(II) test parametrizado con objetos. #persona.nombre"(){
+		
+		given:
+			def gestorPersonas = new GestorPersonas()
+	 
+		when:
+			gestorPersonas.insertar(persona)
+	 
+		then:
+			noExceptionThrown()
+			
+		where:		
+			persona                                            | _
+			new Persona("(2) Philip Marlowe","C/Tal","123")    | _
+            new Persona("(2) Lew Archer","C/Pascual","456")    | _
+            new Persona("(2) Columbo","C/Pascual","456")       | _
+		    new Persona("(2) Jules Maigret","C/Pascual","789") | _		
+	}	
+
+		
+	@Unroll
+	def "test parametrizado que obtiene los datos de un mï¿½todo. #persona.nombre"(){
 		given:
 			def gestorPersonas = new GestorPersonas()
 	 
@@ -137,11 +162,11 @@ class _06_PruebaParametrizada_Spec extends Specification {
 	}
 	
 	public getPersonas() {
-		//El return va implícito
+		//El return va implï¿½cito
 		[ new Persona("Sam Spade","C/Tal","123"),
 		  new Persona("David Addison","C/Pascual","456"),
 		  new Persona("Mike Hammer","C/Pascual","456"),
-		  new Persona("Pepe Carvalho","C/Pascualè","789") ]
+		  new Persona("Pepe Carvalho","C/Pascualï¿½","789") ]
 	}
 
 }

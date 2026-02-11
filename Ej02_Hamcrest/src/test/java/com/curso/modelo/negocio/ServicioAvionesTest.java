@@ -59,7 +59,7 @@ public class ServicioAvionesTest {
 	
 		//JUnit                 
 		Assertions.assertNotNull(a.getId());		
-		
+		//Hamcrest
 		assertThat(a.getId(), is(not(nullValue())));		                        
 	}
 

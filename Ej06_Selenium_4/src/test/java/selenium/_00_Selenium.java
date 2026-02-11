@@ -22,6 +22,8 @@ public class _00_Selenium {
 		//El objeto driver representa al navegador
 		WebDriver driver = new FirefoxDriver();
 
+		
+		
 		/*
 		System.setProperty("webdriver.chrome.driver", 
 				           "src/test/resources/drivers/chromedriver/chromedriver.exe");

@@ -45,7 +45,6 @@ public class _06_Timeouts {
 			    () -> calculadora.calculoExtremadamenteComplejo()
 			);
 		*/
-
 		
 		//Detiene la prueba si se excede el tiempo
 		Assertions.assertTimeoutPreemptively(

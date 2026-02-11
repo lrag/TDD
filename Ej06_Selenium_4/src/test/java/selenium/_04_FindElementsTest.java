@@ -58,7 +58,7 @@ public class _04_FindElementsTest {
 		WebElement password = driver.findElement(By.className("in-pass"));
 	}
 	
-	//podemos concretar m�s la busqueda, las className que estan dentro
+	//podemos concretar más la busqueda, las className que estan dentro
 	//del loginForm. La clase WebDriver y WebElement comparten la misma interfaz
 	@Test
 	public void byClassName2() {

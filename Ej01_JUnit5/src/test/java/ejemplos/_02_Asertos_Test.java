@@ -134,7 +134,7 @@ public class _02_Asertos_Test {
 		//	}
 		//}
 		
-		//assertArrayEquals(palabras2, palabras1);	
+		assertArrayEquals(palabras2, palabras1);	
 	}
 
 	@Test
@@ -235,6 +235,7 @@ public class _02_Asertos_Test {
 	
 	
 }
+
 
 /*
 class Comprobador1 implements Executable {

@@ -23,6 +23,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.events.EventFiringDecorator;
 import org.openqa.selenium.support.events.WebDriverListener;
@@ -31,12 +32,20 @@ import org.openqa.selenium.support.events.WebDriverListener;
 public class _06_SeleniumAPI {
 	private static WebDriver driver;
 	
+	/*
 	@BeforeAll
 	public static void setUp() {
 		System.setProperty("webdriver.chrome.driver", 
 				"src/test/resources/drivers/chromedriver/chromedriver.exe");
 		driver = new ChromeDriver();
 	}
+	*/
+	
+	@BeforeAll
+	public static void setUp() {
+		System.setProperty("webdriver.gecko.driver", "src/test/resources/drivers/geckodriver/geckodriver.exe");
+		driver = new FirefoxDriver();
+	}	
 	
 	//@Test
 	public void testDoubleClick() throws InterruptedException {
@@ -48,7 +57,7 @@ public class _06_SeleniumAPI {
 		//La clase Actions realizar acciones más complejas
 		Actions actions = new Actions(driver);
 		actions.doubleClick(mensaje).perform();
-		assertEquals("rgba(255, 255, 0, 1)", mensaje.getCssValue("background-color"));
+		assertEquals("rgb(255, 255, 0)", mensaje.getCssValue("background-color"));
 
 		Thread.sleep(2000);
 	}
@@ -94,7 +103,7 @@ public class _06_SeleniumAPI {
 	//Este no tiene que fallar, generamos las capturas
 	//beforeDragAndDrop.png
 	//afterDragAndDrop.png
-	//@Test
+	@Test
 	public void testScreenshots() throws IOException {
 		//driver.get("http://cookbook.seleniumacademy.com/DragDropDemo.html");
 		driver.get("http://localhost:8080/Ej06_Selenium_4/DragAndDropDemo.html");

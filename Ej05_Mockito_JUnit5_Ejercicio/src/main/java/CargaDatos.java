@@ -56,7 +56,7 @@ public class CargaDatos {
 		detalles3.add(new DetallePedido(null, pedido3, p1, 25d, 25));
 		detalles3.add(new DetallePedido(null, pedido3, p3, 75d, 25));
 		detalles3.add(new DetallePedido(null, pedido3, p5, 125d, 1025));
-		pedido2.setDetalles(detalles3);
+		pedido3.setDetalles(detalles3);
 
 		em.persist(c1);
 		em.persist(c2);

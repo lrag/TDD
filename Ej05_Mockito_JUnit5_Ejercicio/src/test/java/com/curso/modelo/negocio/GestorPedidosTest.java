@@ -68,9 +68,9 @@ public class GestorPedidosTest {
 	private GestorTransportes gestorTransportes = Mockito.mock(GestorTransportes.class);
 	private GestorOfertas gestorOfertas = Mockito.mock(GestorOfertas.class);	
 	*/
-	
+
 	//MOCKS. Ya tenemos dummies aqui:
-	@Mock private PedidoDao pedidoDao; //Null
+	@Mock private PedidoDao pedidoDao;
 	@Mock private GestorBancos gestorBancos; 
 	@Mock private GestorAlmacen gestorAlmacen; 
 	@Mock private GestorTransportes gestorTransportes; 
@@ -135,13 +135,13 @@ public class GestorPedidosTest {
 		*/		
 	}
 			
-	//@Test
+	@Test
 	@DisplayName("GestorPedidos.aceptar funciona cuando el pedido es correcto")
 	public void aceptarPedido() throws Exception {
 		
 		//DADOS
 		//Premisa: 
-		//El pedido cuyo id es 1:
+		//El pedido cuyo id es 1 EXISTE y
 		//-tiene un cliente con los datos bancarios correctos
 		//-tiene unos detalles cuyas cantidades se pueden satisfacer en el almacén
 		//Y
@@ -182,7 +182,7 @@ public class GestorPedidosTest {
 		
 	}
 	
-	//@Test
+	@Test
 	@DisplayName("GestorPedidos.aceptar lanza datosBancarios exception cuando hay un problema con los datos bancarios del cliente")
 	public void aceptarPedidoDatosBancariosMal() throws Exception {
 		
@@ -220,7 +220,7 @@ public class GestorPedidosTest {
 		assertEquals("Datos bancarios incorrectos", e.getMessage());	
 	}
 	
-	//@Test
+	@Test
 	@DisplayName("GestorPedidos.aceptar lanza ExistenciasException cuando no hay existencias de un producto...")
 	public void aceptarPedidoExistenciasInsuficientes() throws ExistenciasEx {
 		
@@ -257,11 +257,10 @@ public class GestorPedidosTest {
 				"No ha lanzado ExistenciasEx"
 			);		
 	}	
-	
-	
+		
 	@Test
 	@DisplayName("GestorPedidos.aceptar invoca correctamente a sus dependencias")
-	//ESTO NO ES UN TEST UNITARIO
+	//MOCK/SPY ESTO NO ES UN TEST UNITARIO
 	public void pruebaMocks() throws Exception {
 		
 		//Dados

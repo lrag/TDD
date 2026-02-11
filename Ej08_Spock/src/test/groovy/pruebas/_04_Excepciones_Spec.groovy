@@ -12,6 +12,12 @@ class _04_Excepciones_Spec extends Specification {
 	def "haciendo algo malo esperamos una excepción"() {
 		
 		given:
+			//List<Integer> datos = new ArrayList<>()
+			//datos.add(1)
+			//datos.add(2)
+			//datos.add(3)
+			//datos.add(4)		
+		
 			def datos = [ 1, 2, 3, 4 ] //Parece un array pero es un List<Integer>
 	 
 		when:
@@ -19,7 +25,7 @@ class _04_Excepciones_Spec extends Specification {
 	 
 		then:
 			thrown(IndexOutOfBoundsException)
-			//La ejecuci�n del test continúa pese a la excepci�n
+			//La ejecución del test continúa pese a la excepción
 			datos.size() == 4		
 	}
 
@@ -56,7 +62,7 @@ class _04_Excepciones_Spec extends Specification {
 			noExceptionThrown()
 			//otras cosas que sin duda habría que comprobar...
 			
-	}	
+	}
 	
 }
 

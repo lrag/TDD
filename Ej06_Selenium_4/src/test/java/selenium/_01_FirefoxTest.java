@@ -30,7 +30,7 @@ public class _01_FirefoxTest {
 	
 	@AfterAll
 	public static void tearDown() {
-		//Comentamos esta l�nea para que no se cierre el navegador 
+		//Comentamos esta lí�nea para que no se cierre el navegador 
 		//despues del test, pero es necesaria:		
 		driver.quit();
 	}

@@ -8,6 +8,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.Arguments.ArgumentSet;
 import org.junit.jupiter.params.provider.MethodSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
@@ -26,6 +27,11 @@ public class _07_TestParametrizado {
 	private Calculadora calculadora;
 	private ServicioClientes gestorClientes;
 	
+	public _07_TestParametrizado() {
+		super();
+		System.out.println("Instanciando TestParametrizado");
+	}
+	
 	@BeforeEach
 	void inicializar() {
 		calculadoraImpuestos = new CalculadoraImpuestos();
@@ -33,10 +39,6 @@ public class _07_TestParametrizado {
 		gestorClientes = new ServicioClientes();
 	}
 
-	public _07_TestParametrizado() {
-		super();
-		System.out.println("Instanciando TestParametrizado");
-	}
 	
 	/*
 	<dependency>
@@ -108,8 +110,6 @@ public class _07_TestParametrizado {
 	}	
 
 }
-
-
 
 
 

@@ -5,7 +5,7 @@ import com.curso.modelo.negocio.Calculadora;
 public class PruebaMain1 {
 
 	public static void main(String[] args) {
-		
+	
 		//DADO
 		Calculadora c = new Calculadora();
 		

@@ -99,11 +99,11 @@ public class UtilidadesDBUnit {
 			String[] listTableNames = filter.getTableNames(datasetAll);
 			for (int i = 0; i < listTableNames.length; i++) {
 				final String tableName = listTableNames[i];
-				// Añadir las tablas al DataSet, en este caso se añaden todas
+				// Aï¿½adir las tablas al DataSet, en este caso se aï¿½aden todas
 				dataSet.addTable(tableName);
 			}
 
-			// Especificar la ubicación del fichero a generar
+			// Especificar la ubicaciï¿½n del fichero a generar
 			FlatXmlWriter datasetWriter = new FlatXmlWriter(
 					new FileOutputStream("src/test/resources/db/" + nameXML + ".xml"));
 
@@ -132,7 +132,7 @@ public class UtilidadesDBUnit {
 			// Especificar que tablas formaran parte del Dataset
 			partialDataSet.addTable("pelicula");
 
-			// Especificar la ubicación del fichero a generar
+			// Especificar la ubicaciÃ³n del fichero a generar
 			FlatXmlWriter datasetWriter = new FlatXmlWriter(
 					new FileOutputStream("src/test/resources/db/" + nameXML + ".xml"));
 

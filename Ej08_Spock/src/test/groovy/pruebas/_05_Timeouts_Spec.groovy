@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 //@Timeout(value = 20000, unit = TimeUnit.MILLISECONDS)
 class _05_Timeouts_Spec extends Specification {
 	
-	
+	/*
 	@Timeout(value = 200, unit = TimeUnit.MILLISECONDS)
 	def "Esta prueba debe ejecutarse en el tiempo estipulado"() {
 
@@ -25,5 +25,6 @@ class _05_Timeouts_Spec extends Specification {
 			noExceptionThrown()	
 				
 	}
+	*/
 
 }

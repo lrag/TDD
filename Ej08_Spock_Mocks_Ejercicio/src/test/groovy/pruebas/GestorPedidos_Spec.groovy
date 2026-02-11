@@ -42,10 +42,10 @@ class GestorPedidos_Spec extends Specification {
 		def p4 = new Producto(null, "P4", "F4", 100d, 1000)
 		def p5 = new Producto(null, "P5", "F5", 125d, 1000)
 		
-		//Este cliente tiene la tarjeta de cr�dito falsa
+		//Este cliente tiene la tarjeta de crédito falsa
 		def c1 = new Cliente(1, "Harpo", "Su casa", "123", 1)
-		//Este cliente tiene la tarjeta de cr�dito bien
-		def c2 = new Cliente(2, "Mongomery Burns", "Su mansi�n", "123", 9999)
+		//Este cliente tiene la tarjeta de crédito bien
+		def c2 = new Cliente(2, "Mongomery Burns", "Su mansión", "123", 9999)
 		
 		//Pedido correcto
 		pedidoOk = new Pedido(1, "PED-0", LocalDate.now(), "PENDIENTE", c2, null)

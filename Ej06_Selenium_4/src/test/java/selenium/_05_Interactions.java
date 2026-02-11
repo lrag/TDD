@@ -30,7 +30,7 @@ public class _05_Interactions {
 	}
 	
 	//Escribimos algo en google y hacemos submit
-	//@Test
+	@Test
 	public void textBoxSubmit() throws InterruptedException {
 		driver.get("http://www.google.es");
 
@@ -48,8 +48,9 @@ public class _05_Interactions {
 		input.submit();
 	}
 	
+	
 	//Escribimos algo en wikipedia y hacemos click en el boton
-	//@Test
+	@Test
 	public void buttonClick() {
 		driver.get("https://es.wikipedia.org");
 		WebElement input = driver.findElement(By.id("searchInput"));
@@ -61,6 +62,7 @@ public class _05_Interactions {
 		button.click();
 	}
 
+	
 	//Obtener texto
 	@Test
 	public void getTextFromElement() {

@@ -11,7 +11,7 @@ import java.util.List;
 import com.curso.modelo.entidad.Pelicula;
 
 ///////////////////////////////////////////////////////////
-//Ejemplo del antipatrón 'una conexión para cada consulta//
+//Ejemplo del antipatrÃ³n 'una conexiÃ³n para cada consulta//
 ///////////////////////////////////////////////////////////
 public class PeliculaDaoJDBCImplementation implements PeliculaDao {
 

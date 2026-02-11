@@ -13,12 +13,14 @@ import org.junit.jupiter.api.extension.InvocationInterceptor;
 import org.junit.jupiter.api.extension.ReflectiveInvocationContext;
 import org.junit.jupiter.api.extension.TestInstanceFactory;
 import org.junit.jupiter.api.extension.TestInstanceFactoryContext;
+import org.junit.jupiter.api.extension.TestInstancePostProcessor;
 import org.junit.jupiter.api.extension.TestInstantiationException;
 
 public class _10_CustomExtension implements
 					InvocationInterceptor,
 					ExecutionCondition,
 					TestInstanceFactory,
+					TestInstancePostProcessor,
 					BeforeAllCallback,
 					BeforeEachCallback,
 					AfterEachCallback,
@@ -68,9 +70,16 @@ public class _10_CustomExtension implements
 	}
 
 	@Override
+	public void postProcessTestInstance(Object testInstance, ExtensionContext context) throws Exception {
+		System.out.println("Extension postProcessTestInstance");
+		System.out.println(testInstance);
+	}
+	
+	@Override
 	public ConditionEvaluationResult evaluateExecutionCondition(ExtensionContext context) {
 		System.out.println("Extension evaluateExecutionCondition");		
 		return ConditionEvaluationResult.enabled("Decidiendo si hay que ejecutar el test o no...true");
 	}
+
 
 }

@@ -14,12 +14,12 @@ import com.curso.modelo.persistencia.ClienteDao
 import spock.lang.Specification
 
 //
-//En este ejemplo definimos los mocks en mÈtodos independientes
+//En este ejemplo definimos los mocks en m√©todos independientes
 //Cada mock tiene definido su comportamiento completo
 //Esto implica que no se usan todos los metodos de los mocks 
 //en cada prueba individual
-//Tambien implica que no podemos hacer el verify de los mÈtodos
-//invocados, ni el n˙mero de veces ni el orden
+//Tambien implica que no podemos hacer el verify de los m√©todos
+//invocados, ni el n√∫mero de veces ni el orden
 //
 class _01_Mocks_Spec extends Specification {
 
@@ -27,13 +27,13 @@ class _01_Mocks_Spec extends Specification {
 	//
 	//dummies: un objeto que para los metodos void no hace nada
 	//         y para los que devuelven algo devuelve:
-	//      	  -cero si es n˙mero
+	//      	  -cero si es nÔøΩmero
 	//        	  -false si es boolean
 	//        	  -null si es referencia
-	//stubs: un objeto que cuenta con una serie de respuestas enlatadas para determinados mÈtodos
+	//stubs: un objeto que cuenta con una serie de respuestas enlatadas para determinados mÔøΩtodos
 	//fakes: un objeto programado por nosotros y que reproduce el comportamiento del objeto real
 	//       un fake se programa de verdad!
-	//mocks: un objeto que recuerda las llamadas que ha recibido, el orden de las mismas y el n˙mero de veces
+	//mocks: un objeto que recuerda las llamadas que ha recibido, el orden de las mismas y el nÔøΩmero de veces
 
 	//Esta es la clase que vamos a probar:
 	GestorClientes gestorClientes
@@ -81,12 +81,12 @@ class _01_Mocks_Spec extends Specification {
 				
 			//Stub
 			//Pasando al mock un valor variable del tipo adecuado
-			//AÒadiendo un closure como cuerpo del mÈtodo para aÒadir el comportamiento 'devuelve el
+			//A√±adiendo un closure como cuerpo del m√©todo para a√±adir el comportamiento 'devuelve el
 			//cliente recibido pero con un valor en el id'
 			clienteDao.insertar(_) >> {
 						Cliente cli ->
 							cli.id = 1
-							cli //return implÌcito, para disfrutar
+							cli //return impl√≠cito, para disfrutar
 					}
 
 		when:			
@@ -107,10 +107,10 @@ class _01_Mocks_Spec extends Specification {
 			//Stub
 			gestorSucursales
 				.encontrarSucursalCercana(null) >>
-					{ throw new DireccionException("DirecciÛn nula") }
+					{ throw new DireccionException("Direcci√≥n nula") }
 					
 			//Para gestorComerciales nos basta el dummie porque no esperamos que llegue a utilizarse
-			//al estar la direcciÛn a null
+			//al estar la direcci√≥n a null
 
 			//Para clienteDao nos basta el dummie
 		
@@ -119,7 +119,7 @@ class _01_Mocks_Spec extends Specification {
 		
 		then:
 			Exception e = thrown(Exception) 
-			e.message == "DirecciÛn nula"
+			e.message == "Direcci√≥n nula"
 			clienteInsertado == null		
 		
 	}
@@ -131,13 +131,14 @@ class _01_Mocks_Spec extends Specification {
 			
 		and:		
 			//Para gestorComerciales nos basta el dummie porque no esperamos que llegue a utilizarse
-			//al estar la direcciÛn a null		
+			//al estar la direcci√≥n a null		
 			gestorSucursales
 				.encontrarSucursalCercana(_) >>
-					//Si en el cuerpo del closure no se usan los par·metros no hace falta ponerlos:
+					//Si en el cuerpo del closure no se usan los parÔøΩmetros no hace falta ponerlos:
 					//{ direccion -> throw new DireccionException("Esta direccion es falsa") }
-					{ throw new DireccionException("Esta direccion es falsa") }
+					{ throw new DireccionException("Esta direcci√≥n es falsa") }
 		
+			//Para gestorComerciales nos basta el dummie porque no esperamos que llegue a utilizarse
 			//Para clienteDao nos basta el dummie
 		
 		when:
@@ -146,7 +147,7 @@ class _01_Mocks_Spec extends Specification {
 			
 		then:
 			Exception e = thrown(Exception)
-			e.message == "Esta direccion es falsa"
+			e.message == "Esta direcci√≥n es falsa"
 			clienteInsertado == null
 			
 	}
