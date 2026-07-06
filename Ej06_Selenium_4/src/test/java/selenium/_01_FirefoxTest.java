@@ -21,16 +21,13 @@ public class _01_FirefoxTest {
 	
 	@Test
 	public void goToGoogle() {
-		System.setProperty("webdriver.gecko.driver", 
-				"src/test/resources/drivers/geckodriver/geckodriver.exe");
-		
 		driver.get("http://www.google.com");	
 		//driver.get("http://localhost:8080/Ej06_Selenium/pagina.html");	
 	}
 	
 	@AfterAll
 	public static void tearDown() {
-		//Comentamos esta lí�nea para que no se cierre el navegador 
+		//Comentamos esta línea para que no se cierre el navegador 
 		//despues del test, pero es necesaria:		
 		driver.quit();
 	}

@@ -216,7 +216,7 @@ public class _04_FindElementsTest {
 		assertEquals(img.getDomAttribute("name"), "img1");
 	}
 	
-	//B�squeda de hijos
+	//Búsqueda de hijos
 	@Test
 	public void byCssSelector5() {
 		driver.get(Constantes.URL);

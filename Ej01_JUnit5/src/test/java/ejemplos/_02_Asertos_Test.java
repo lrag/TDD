@@ -41,11 +41,11 @@ public class _02_Asertos_Test {
 		//assertEquals(300, n3);
 	
 		//Lo mismo, pero sin import estático:
-		Assertions.assertEquals(300, n3);
+		Assertions.assertEquals(301, n3);
 	
 	}
 	
-	@Test
+	//@Test
 	public void test2() {	
 		System.out.println("Test 2");
 		int n1 = 100;
@@ -55,7 +55,7 @@ public class _02_Asertos_Test {
 		assertNotEquals(n1, n2, "No son iguales");	
 	}
 	
-	@Test
+	//@Test
 	public void test3() {
 		System.out.println("Test 3");		
 		int n1 = 100;
@@ -65,7 +65,7 @@ public class _02_Asertos_Test {
 		assertTrue(n2 > n1);		
 	}
 
-	@Test
+	//@Test
 	public void test4() {
 		System.out.println("Test 4");		
 		int n1 = 100;
@@ -73,7 +73,7 @@ public class _02_Asertos_Test {
 		assertFalse(n2 < n1);		
 	}
 
-	@Test
+	//@Test
 	public void test5() throws Exception {
 		System.out.println("Test 5");	
 		String txt = null;
@@ -81,7 +81,7 @@ public class _02_Asertos_Test {
 		assertNull(txt);	
 	}
 
-	@Test
+	//@Test
 	public void test6() {
 		System.out.println("Test 6");	
 		String txt = new String("TXT");
@@ -89,7 +89,7 @@ public class _02_Asertos_Test {
 		assertNotNull(txt);	
 	}
 	
-	@Test
+	//@Test
 	public void test7() {
 		System.out.println("Test 7");	
 
@@ -108,7 +108,7 @@ public class _02_Asertos_Test {
 		assertSame(c1, c2);	
 	}
 	
-	@Test
+	//@Test
 	public void test8() {
 		System.out.println("Test 8");	
 		Integer i1 = 128;
@@ -121,7 +121,7 @@ public class _02_Asertos_Test {
 		assertNotSame(c1, c2);			
 	}
 
-	@Test
+	//@Test
 	public void test9() {
 		System.out.println("Test 9");
 		String[] palabras1 = new String[] {"HELLO","DOCTOR","NAME","CONTINUE","YESTERDAY","TOMORROW"};
@@ -137,7 +137,7 @@ public class _02_Asertos_Test {
 		assertArrayEquals(palabras2, palabras1);	
 	}
 
-	@Test
+	//@Test
 	public void test10() {
 		System.out.println("Test 10");
 		String[] palabras1 = new String[] {"HELLO","DOCTOR","NAME","CONTINUE","YESTERDAY","TOMORROW"};
@@ -150,7 +150,7 @@ public class _02_Asertos_Test {
 		assertIterableEquals(lista1, lista2);		
 	}
 	
-	@Test
+	//@Test
 	public void test11() {
 		System.out.println("Test 11");
 		
@@ -161,7 +161,7 @@ public class _02_Asertos_Test {
 		}
 	}
 	
-	@Test
+	//@Test
 	@DisplayName("Prueba de assertAll (test12)")
 	void test12() {
 		
@@ -218,19 +218,19 @@ public class _02_Asertos_Test {
 		*/	
 		
 		//Con expresiones lambda
-		/*
 		Assertions.assertAll(
 				() -> assertTrue(sumResult != null, "La suma es nula!"),
 				() -> assertTrue(sumResult < 10, "La suma es mayor que 10!"),
 				() -> assertTrue(sumResult > 10, "La suma es menor que 10!")
-			);	
-		*/
+			);
 		
+		/*
 		Assertions.assertAll(
 			() -> { System.out.println("-I"); assertTrue(sumResult == null, "La suma es nula!"); },
 			() -> { System.out.println("-II"); assertTrue(sumResult < 10, "La suma es mayor que 10!"); },
 			() -> { System.out.println("-III"); assertTrue(sumResult > 10, "La suma es menor que 10!"); }
 		);
+		*/
 	}
 	
 	

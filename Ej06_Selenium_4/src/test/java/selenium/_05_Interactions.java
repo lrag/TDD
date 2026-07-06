@@ -166,7 +166,7 @@ public class _05_Interactions {
 		for (WebElement option : meses.getOptions()) {
 			valoresSelect.add(option.getText());
 		}
-		//mismos elementos y en la misma posici�n
+		//mismos elementos y en la misma posición
 		assertArrayEquals(listaMeses.toArray(), valoresSelect.toArray());
 	}
 	

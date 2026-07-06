@@ -25,10 +25,8 @@ public class ServicioDirecciones {
 
 /*
 package com.curso.modelo.negocio;
-
 import com.curso.modelo.negocio.excepcion.DireccionException;
-
-public class GestorDirecciones_Dummie extends GestorDirecciones {
+public class ServicioDirecciones_Dummie extends ServicioDirecciones {
 	
 	public void comprobarDireccion(String direccion) throws DireccionException {
 	}

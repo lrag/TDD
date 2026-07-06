@@ -23,7 +23,7 @@ public class _04_Ciclo_de_vida_2 {
 	@BeforeAll
 	public static void beforeAll() {
 		System.out.println("Before all");
-		//Si calculadora es est�tico se utilizará la misma instancia para todas las pruebas
+		//Si calculadora es estático se utilizará la misma instancia para todas las pruebas
 		//No es recomendable puesto que debemos asegurarnos de que ningún test está acoplado a otro
 		//calculadora = new Calculadora();
 	}

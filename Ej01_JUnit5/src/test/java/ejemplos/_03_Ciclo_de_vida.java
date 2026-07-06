@@ -2,19 +2,18 @@ package ejemplos;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInstance;
 
-import com.curso.modelo.entidad.Cliente;
 import com.curso.modelo.negocio.Calculadora;
 
 
 //@Disabled("No")
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)	
 public class _03_Ciclo_de_vida {
 
-	//Se creará una instancia de la case por cada test
+	//Se creará una instancia de la clase por cada @Test
+	//A no ser que marquemos cla clase con @TestInstance, que entonces reutilizará una instancia por clase!
 	//Se creará tambien un objeto de la clase calculadora por cada test
 	private Calculadora calculadora = new Calculadora();
 
@@ -31,7 +30,8 @@ public class _03_Ciclo_de_vida {
 	}
 
 	@Test
-	public void primerTest() {		
+	public void primerTest() {	
+
 		//Dados
 		double n1 = 5;
 		double n2 = 10;
@@ -46,6 +46,7 @@ public class _03_Ciclo_de_vida {
 	@Test
 	//@Disabled("Este no")
 	public void segundoTest() {
+
 		double n1 = 5;
 		
 		double n2 = calculadora.cuadrado(n1);

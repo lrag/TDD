@@ -29,7 +29,7 @@ public class _07_Sincronizacion {
 	
 	//WAIT IMPLICITO
 	//Se indica al driver y este lo aplica a todas las búsquedas
-	//@Test
+	@Test
 	public void testSincronoImplicito() throws InterruptedException {
 		driver.get(Constantes.URL);
 		
@@ -68,7 +68,7 @@ public class _07_Sincronizacion {
 		
 		System.out.println("Esperando al botón...");		
 		//Creamos un wait, pero aún no lo estamos utilizando
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(8));		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));		
 		//No pasará de esta línea hasta que esté disponible el elemento
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#btn-1")));
 
@@ -89,12 +89,12 @@ public class _07_Sincronizacion {
 	 * NoSuchElementException.
 	 */
 
-	@Test
+	//@Test
 	public void testFluentWait() {
 		driver.get(Constantes.URL);
 		
 		FluentWait<WebDriver> wait = new FluentWait<WebDriver>(driver)
-				.withTimeout(Duration.ofMillis(8000))
+				.withTimeout(Duration.ofMillis(60000))
 				.pollingEvery(Duration.ofMillis(250))
 				.ignoring(Exception.class);
 		

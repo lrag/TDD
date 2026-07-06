@@ -45,6 +45,7 @@ public class _06_SeleniumAPI {
 	public static void setUp() {
 		System.setProperty("webdriver.gecko.driver", "src/test/resources/drivers/geckodriver/geckodriver.exe");
 		driver = new FirefoxDriver();
+		
 	}	
 	
 	//@Test
@@ -89,6 +90,7 @@ public class _06_SeleniumAPI {
 		js.executeScript("saludar()");
 		//Podemos enviar a ejecutar cualquier JS
 		//js.executeScript("alert('HABER KE PASA')");
+		
 		
 		//seleccionamos el alert que se nos muestra en pantalla
 		//con switchTo indicamos el elemento al que queremos acceder

@@ -46,7 +46,6 @@ public class _05_Excepciones {
 		/*
 		try {
 			calculadora.dividir(dividendo, divisor);
-			//MAL
 			Assertions.fail("Pues no ha lanzado la excepción!");
 		} catch (CalculadoraException e) {
 			//OK, Esto es lo que esperabamos!
@@ -56,6 +55,7 @@ public class _05_Excepciones {
 			Assertions.fail("Pues ha lanzado OTRA excepción!");			
 		}
 		*/
+		
 		
 				
 		

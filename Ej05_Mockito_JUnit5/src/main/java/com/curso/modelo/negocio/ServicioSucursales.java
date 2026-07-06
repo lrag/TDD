@@ -18,7 +18,7 @@ public class ServicioSucursales {
 
 	public Sucursal encontrarSucursalCercana(String direccion) throws SucursalException {
 		//
-		// L�gica de negocio para encontrar la sucursal m�s cercana. Si no se encuentra devuelve null (por ejemplo)
+		// Lógica de negocio para encontrar la sucursal más cercana. Si no se encuentra devuelve null (por ejemplo)
 		//
 		return new Sucursal();
 	}

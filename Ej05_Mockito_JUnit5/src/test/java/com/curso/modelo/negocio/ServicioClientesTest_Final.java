@@ -25,7 +25,7 @@ import com.curso.modelo.persistencia.ClienteDao;
 import com.curso.modelo.util.EmisorCorreosElectronicos;
 
 
-public class GestorClientesTest_Final {
+public class ServicioClientesTest_Final {
 	
 	@Test
 	@DisplayName("GestorClientes.altaCliente: Un cliente con datos correctos se insertará correctamente")
@@ -188,6 +188,7 @@ public class GestorClientesTest_Final {
 	
 	}
 	
+
 	@Test
 	@DisplayName("Comprobamos que gestorClientes.altaCliente realiza las llamadas correctas a sus dependecias")
 	public void pruebaMOCKS() throws Exception {
@@ -197,11 +198,15 @@ public class GestorClientesTest_Final {
 		clientes.add(new Cliente(null,"N1","D1","T1")); //Este es correcto
 		//clientes.add(new Cliente(null,"N2",null,"T2")); //Este no
 		//clientes.add(new Cliente(null,"N3","D3","T3")); //Este si
-		//clientes.add(new Cliente(null,"N4","D4","T4")); //Este tambien
-		//clientes.add(new Cliente(null,"N5","C/Falsa, 123","T5")); //Y este no
+		//clientes.add(new Cliente(null,"N4","C/Falsa, 123","T4")); //Y este no
+		//clientes.add(new Cliente(null,"N5","D5","T5")); //Y este si
 						
 		//Este es el objeto real que vamos a probar
 		ServicioClientes gestorClientes = new ServicioClientes();
+		
+		// dir = null                -> Dirección nula exception
+		// dir = C/Falsa, 123        -> Dirección falsa exception
+		// dir = cualquier otra cosa -> nada
 		
 		//TestDoubles;
 		ServicioDirecciones gestorDirecciones = Mockito.mock(ServicioDirecciones.class);		
@@ -212,18 +217,14 @@ public class GestorClientesTest_Final {
 			.comprobarDireccion(null);
 		Mockito
 			//.lenient()
-			.doThrow(new DireccionException("La direcci�n es falsa"))
+			.doThrow(new DireccionException("La dirección es falsa"))
 			.when(gestorDirecciones)
 			.comprobarDireccion("C/Falsa, 123");
 		
 		ServicioSucursales gestorSucursales = Mockito.mock(ServicioSucursales.class);	
-		try {
-			Mockito
-				.when(gestorSucursales.encontrarSucursalCercana(Mockito.any(String.class)))
-				.thenReturn(new Sucursal(1,"Sucursal 1","C/Tocot�"));
-		} catch (SucursalException e) {
-			e.printStackTrace();
-		}
+		Mockito
+			.when(gestorSucursales.encontrarSucursalCercana(Mockito.any(String.class)))
+			.thenReturn(new Sucursal(1,"Sucursal 1","C/Tocotó"));
 		
 		ServicioComerciales gestorComerciales = mock(ServicioComerciales.class);
 		List<Comercial> comerciales = new ArrayList<Comercial>();
@@ -247,12 +248,11 @@ public class GestorClientesTest_Final {
 		//Dummie:
 		EmisorCorreosElectronicos emisorCorreos = Mockito.mock(EmisorCorreosElectronicos.class); 
 		
-		//Le proporcionamos los test doubles a gestorClientes
-		gestorClientes.setGestorDirecciones(gestorDirecciones);
-		gestorClientes.setGestorSucursales(gestorSucursales);		
+		gestorClientes.setClienteDao(clienteDao);
 		gestorClientes.setGestorComerciales(gestorComerciales);
-		gestorClientes.setClienteDao(clienteDao);		
-		gestorClientes.setEmisorCorreos(emisorCorreos);		
+		gestorClientes.setGestorDirecciones(gestorDirecciones);
+		gestorClientes.setGestorSucursales(gestorSucursales);
+		gestorClientes.setEmisorCorreos(emisorCorreos);
 		
 		//Cuando:
 		gestorClientes.altaClientes(clientes);
@@ -260,36 +260,41 @@ public class GestorClientesTest_Final {
 		//Entonces:
 		
 		//Los test doubles de Mockito guardan como estado las llamadas que han 
-		//recibido, el n�mero y el orden de las mismas
+		//recibido, el número y el orden de las mismas
 		//
-		//Si usamos esta caracter�stica de mockito estamos dando por sentado que el test conoce 
-		//el funcionamiento interno del metodo 'altaCliente'. La prueba deja de ser de tipo 'caja negra'
-		//y pasa a ser algo m�s parecido a un test de integraci�n que a uno unitario (en realidad ya no es un test unitario)
+		//Si usamos esta característica de mockito en un test este deja de ser un test unitario como tal
+		//y se convierte en una especie de test de integración
 		//
-		//Conclusi�n: mucho cuidado con esto
+		//Y también se convierte en una especie de test de caja blanca
+		//
+		//En un test de este tipo no tienen cabida asertos como los de los test unitarios
 		//			
-
-		/*
-		//Verificamos que gestorClientes ha llamado a los m�todos adecuados de sus dependecias
+		
+		//Verificamos que gestorClientes ha llamado a los métodos adecuados de sus dependecias
 		//Esto es posible porque los mocks recuerdan las llamadas recibidas
+				
+		/*
 		Mockito.verify(clienteDao, Mockito.times(3)).insertar(Mockito.any(Cliente.class));
 		Mockito.verify(gestorDirecciones, Mockito.times(5)).comprobarDireccion(Mockito.any());			
 		Mockito.verify(gestorComerciales, Mockito.times(3)).encontrarComerciales();
-		//Cuando queremos verificar que se ha llamado una �nica vez podemos escribirlo as�
-		Mockito.verify(gestorSucursales, Mockito.times(1)).encontrarSucursalCercana("D4"); 
-		Mockito.verify(gestorSucursales).encontrarSucursalCercana("D4"); //Verifica que se ha llamado UNA vez
+		Mockito.verify(gestorSucursales, Mockito.times(1)).encontrarSucursalCercana("D5"); 
+		//Cuando queremos verificar que se ha llamado una única vez podemos escribirlo así
+		Mockito.verify(gestorSucursales).encontrarSucursalCercana("D5"); //Verifica que se ha llamado UNA vez
 		*/
 		
+		
 		//Podemos verificar el orden de las llamadas
-		//No funciona si en la lista de clientes tenemos m�s de uno
-	    
-		InOrder ordered = Mockito.inOrder(gestorDirecciones, gestorSucursales, clienteDao, gestorComerciales);	
-	    ordered.verify(gestorDirecciones).comprobarDireccion(Mockito.any(String.class));
+		//Este ejemplo no funciona si en la lista de clientes tenemos más de uno
+		//El orden en el que se añaden los doubles da igual
+		InOrder ordered = Mockito.inOrder(gestorDirecciones, gestorSucursales, clienteDao, gestorComerciales, emisorCorreos); 
+		
+		ordered.verify(gestorDirecciones).comprobarDireccion(Mockito.any(String.class));
 	    ordered.verify(gestorSucursales).encontrarSucursalCercana(Mockito.any(String.class));
 	    ordered.verify(gestorComerciales).encontrarComerciales();
 	    ordered.verify(clienteDao).insertar(Mockito.any(Cliente.class));
-		
-	}
+	    ordered.verify(emisorCorreos).enviarCorreo(Mockito.any(String.class),Mockito.any(String.class));
+	
+	}		
 	
 	
 }
