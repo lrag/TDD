@@ -1,5 +1,6 @@
 
 Feature: Cesta de la compra
+
   Scenario: Comprar un teclado
     Given el precio de un teclado es 100.0
     When Compro 1 teclados

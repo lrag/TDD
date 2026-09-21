@@ -16,3 +16,5 @@ Feature: Abuso de la cesta de la compra
     And Compro 1 teclados
     When intento añadir un producto con el mismo id y precio 1.0
     Then el total sigue siendo 100.0
+
+    

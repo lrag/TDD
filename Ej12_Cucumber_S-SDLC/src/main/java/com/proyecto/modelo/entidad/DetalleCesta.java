@@ -3,6 +3,8 @@ package com.proyecto.modelo.entidad;
 public class DetalleCesta {
 
 	private int cantidad;
+	//private double precio;
+	//private double descuento;
 	private Producto producto;
 
 	public DetalleCesta() {

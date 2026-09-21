@@ -12,7 +12,7 @@ import io.cucumber.java.en.When;
 public class Ejemplo01 {
 	
 	//Cesta cesta = new Cesta();
-	private Double precioTeclado;
+	private Double precioTeclado; //100
 	private Double precioRaton;
 	
 	public Ejemplo01() {

@@ -1,6 +1,11 @@
 
 Feature: Cesta de la compra 2
-  Scenario: Comprar un teclado
+  
+  Como comprador de la tienda online
+  Quiero añadir varios productos distintos a la cesta en una sola operación
+  Para agilizar una compra con muchos artículos sin repetir pasos uno a uno
+  
+  Scenario: Comprar varios productos
     Given los siguientes productos
       | nombre producto | precio | cantidad |
       | Chintáfono      | 20     | 1        |
@@ -9,3 +14,4 @@ Feature: Cesta de la compra 2
     
     When Compro la cesta
     Then el total es 200.0
+    

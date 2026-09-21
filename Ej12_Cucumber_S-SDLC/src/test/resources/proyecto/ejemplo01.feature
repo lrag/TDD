@@ -1,6 +1,10 @@
 
 Feature: Cesta de la compra
 
+  Como comprador de la tienda online
+  Quiero añadir productos a mi cesta y ver el importe total
+  Para saber cuánto voy a pagar antes de confirmar la compra
+
   Scenario: Comprar un teclado
     Given el precio de un teclado es 100.0
     When Compro 1 teclados
