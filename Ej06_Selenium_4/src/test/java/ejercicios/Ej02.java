@@ -17,7 +17,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
  * Ejercicio 2
  * Navegar a 'http://es.wikipedia.org
  * Obtener los enlaces que hay dentro del elemento con id 'p-navigation'
- * Comprobar que se obtiene el número correcto de enlaces
+ * Comprobar que se obtiene el nÃºmero correcto de enlaces
  * 
  * Basicamente contar el numero de enlaces (etiquetas li) dentro de ese id
  */

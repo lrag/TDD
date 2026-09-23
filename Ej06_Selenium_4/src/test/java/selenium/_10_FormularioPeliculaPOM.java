@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 //Page Object Model
 /*
 Selenium nos permite agrupar todos los elementos de una página web en una misma clase
-PageFactory. De esta manera podemos reutilizar el c�digo sin preocuparnos de localizar los
+PageFactory. De esta manera podemos reutilizar el código sin preocuparnos de localizar los
 elementos dentro de la web.
 
 Es un POJO

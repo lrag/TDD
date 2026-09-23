@@ -13,8 +13,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 /*
  * Navegar a 'http://es.wikipedia.org
- * Encuentra los títulos de todos los 'mw-panel' usando un XPATH absoluto
- * Encuentra los títulos de todos los 'mw-panel' usando un XPATH relativo
+ * Encuentra los tÃ­tulos de todos los 'mw-panel' usando un XPATH absoluto
+ * Encuentra los tÃ­tulos de todos los 'mw-panel' usando un XPATH relativo
  */
 public class Ej04 {
 	private static WebDriver driver;

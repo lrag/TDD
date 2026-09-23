@@ -17,9 +17,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
  * Navegar a 'http://es.wikipedia.org/wiki/Wikipedia:Portada'
  * Encuentra el elemento input
  * Comprobar que el placeholder del input es correcto
- * Comprobar que el tamaÒo de la letra del input es la correcta
+ * Comprobar que el tama√±o de la letra del input es la correcta
  * Buscar 'Selenium' en la Wikipedia
- * Comprobar que vamos a la p·gina correcta
+ * Comprobar que vamos a la p√°gina correcta
  */
 public class Ej08 {
 	private static WebDriver driver;

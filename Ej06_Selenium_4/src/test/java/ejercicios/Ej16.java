@@ -31,7 +31,7 @@ import org.openqa.selenium.support.ui.FluentWait;
  * Obtener el campo de repetir password y rellenarlo
  * Obtener el campo de email y rellenarlo
  * Obtener el campo de captcha y rellenarlo
- * Obtener el botÛn y enviar el formulario
+ * Obtener el bot√≥n y enviar el formulario
  * Esperar hasta que el elemento de error se muestre
  */
 
@@ -49,7 +49,7 @@ public class Ej16 {
 
 	//Estos van a ser los parametros que van a entrar por el 
 	//constructor. Como tiene 4 filas, se ejecutara 4 veces y cada
-	//vez entrar· por el constructor todas las columnas
+	//vez entrar√° por el constructor todas las columnas
 	static Stream<Arguments> datosParaElTest() {
 	    return Stream.of(
 	        Arguments.arguments("robb", "1234", "1234", "robb.st@gmail.com", "yuasd"),

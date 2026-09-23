@@ -17,10 +17,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
  * Ejercicio 11 NO FUNCIONA TODO
  * Navegar a 'http://es.wikipedia.org/w/index.php?title=Especial:Buscar&search=&fulltext=Buscar&profile=advanced'
  * Obtener el primer checkbox seleccionado
- * Comprobar que el est· seleccionado
+ * Comprobar que el est√° seleccionado
  * Obtener todos los checkboxes
  * Seleccionar todos los checkboxes que no lo esten
- * Comprobar que todos los checkboxes est·n seleccionados
+ * Comprobar que todos los checkboxes est√°n seleccionados
  */
 public class Ej11 {
 	private static WebDriver driver;

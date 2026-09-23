@@ -15,7 +15,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.events.WebDriverListener;
 
 //Para capturar enventos en Selenium
-public class _06_WebDriverListener implements WebDriverListener  {
+public class _06_WebDriverListener implements WebDriverListener {
 	
 	private WebDriver webDriver;
 	

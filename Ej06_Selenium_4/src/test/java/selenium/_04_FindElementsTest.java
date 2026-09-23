@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import java.util.List;
 
 import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.parallel.Execution;
@@ -50,12 +51,16 @@ public class _04_FindElementsTest {
 		WebElement password = driver.findElement(By.name("password"));
 	}
 	
-	@Test
+	//@Test
 	public void byClassName() {
 		driver.get(Constantes.URL);
-		//buscamos elemento por class
+		//En una página pueden existir muchos elementos qon el mismo class name
+		List<WebElement> elementos =driver.findElements(By.className("in-user"));
+		
+		//Si sabemos que solo hay uno o solo nos interesa el primero podemos utilizar findElement
 		WebElement username = driver.findElement(By.className("in-user"));
 		WebElement password = driver.findElement(By.className("in-pass"));
+		
 	}
 	
 	//podemos concretar más la busqueda, las className que estan dentro
@@ -68,7 +73,7 @@ public class _04_FindElementsTest {
 		WebElement formulario = driver.findElement(By.id("loginForm"));
 		
 		//Esto busca en toda la página
-		//driver.findElement(By.className("in-user"));
+		//WebElement username = driver.findElement(By.className("in-user"));
 		//Y esta es un búsqueda a partir del elemento 'formulario'		
 		WebElement username = formulario.findElement(By.className("in-user"));
 
@@ -78,16 +83,15 @@ public class _04_FindElementsTest {
 			.findElement(By.className("in-pass"));
 	}
 	
-	
 	@Test
 	public void byTagName() {
 		driver.get(Constantes.URL);
 		//busqueda por tagName, pueden ser varios, notese el findElements (plural)
 		List<WebElement> labels = driver.findElements(By.tagName("label"));
-		//System.out.println("=================================");
-		//for (WebElement label : labels) {
-		//	System.out.println(label.getText());			
-		//}
+		System.out.println("=================================");
+		for (WebElement label : labels) {
+			System.out.println(label.getText());			
+		}
 		assertEquals(labels.size(), 8);
 	}
 	
@@ -97,8 +101,8 @@ public class _04_FindElementsTest {
 		//Obtenermos un elemento <a> a traves de su texto
 		//f12 con chrome y podemos inspeccionar los elementos
 		WebElement enlace = driver.findElement(By.linkText("Página"));
-		//System.out.println("=================================");
-		//System.out.println("HREF:"+enlace.getAttribute("href"));
+		System.out.println("=================================");
+		System.out.println("HREF:"+enlace.getDomAttribute("href"));
 		assertTrue(enlace.getDomAttribute("href").endsWith("index.html"));
 	}
 	
@@ -136,7 +140,7 @@ public class _04_FindElementsTest {
 		assertEquals(input.getDomAttribute("placeholder"), "Un ejemplo...");
 	}
 	
-	//@Test
+	@Test
 	public void byXPath4() {
 		driver.get(Constantes.URL);
 		//cualquier input cuyo atributo type sea submit Y su atributo value sea login
@@ -181,6 +185,7 @@ public class _04_FindElementsTest {
 		//Seleccionamos teoricamente todas las label, pero como es findElement solo devuelve el primero
 		//que encuentra
 		WebElement username = driver.findElement(By.cssSelector("label"));
+		
 		assertEquals(username.getText(), "Username:");
 		//ahora si buscamos todos los label
 		List<WebElement> labels = driver.findElements(By.cssSelector("label"));

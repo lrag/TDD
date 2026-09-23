@@ -16,9 +16,9 @@ import org.openqa.selenium.support.ui.Select;
  * Navegar a 'http://es.wikipedia.org/wiki/Especial:Contribuciones' 
  * Encuentra el desplegable
  * Comprobar si permite seleccionar varias opciones o no
- * Seleccionar del desplegable la opciÛn de 'Usuario' y comprobar que est· seleccionada
- * Seleccionar del desplegable la opciÛn de 'MediaWiki' y comprobar que est· seleccionada
- * Seleccionar del desplegable la opciÛn de 'Ayuda' y comprobar que est· seleccionada
+ * Seleccionar del desplegable la opci√≥n de 'Usuario' y comprobar que est√° seleccionada
+ * Seleccionar del desplegable la opci√≥n de 'MediaWiki' y comprobar que est√° seleccionada
+ * Seleccionar del desplegable la opci√≥n de 'Ayuda' y comprobar que est√° seleccionada
  */
 public class Ej09 {
 	private static WebDriver driver;

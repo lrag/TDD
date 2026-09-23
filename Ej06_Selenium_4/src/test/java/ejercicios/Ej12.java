@@ -15,10 +15,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 /*
  *  Ejercicio 12
  * Navegar a 'http://es.wikipedia.org/w/index.php?title=Especial:Crear_una_cuenta'
- * Comprobamos que un elemento no est· presente y mostramos un mensaje
- * Comprobar que un elemento no est· presente y mostramos una excepciÛn con error
+ * Comprobamos que un elemento no est√° presente y mostramos un mensaje
+ * Comprobar que un elemento no est√° presente y mostramos una excepci√≥n con error
 	personalizado
- *Comprobamos que un elemento est· presente y se est· mostrando
+ *Comprobamos que un elemento est√° presente y se est√° mostrando
  */
 public class Ej12 {
 	private static WebDriver driver;
@@ -42,7 +42,7 @@ public class Ej12 {
 		}
 		
 		if (!isElementPresent(By.id("noExist"))) {
-			fail("El elemento #userLoginForm no se encuentra en la p·gina");
+			fail("El elemento #userLoginForm no se encuentra en la p√°gina");
 		}
 	}
 	

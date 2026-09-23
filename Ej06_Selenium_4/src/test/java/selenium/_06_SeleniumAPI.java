@@ -35,8 +35,7 @@ public class _06_SeleniumAPI {
 	/*
 	@BeforeAll
 	public static void setUp() {
-		System.setProperty("webdriver.chrome.driver", 
-				"src/test/resources/drivers/chromedriver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver/chromedriver.exe");
 		driver = new ChromeDriver();
 	}
 	*/
@@ -44,8 +43,7 @@ public class _06_SeleniumAPI {
 	@BeforeAll
 	public static void setUp() {
 		System.setProperty("webdriver.gecko.driver", "src/test/resources/drivers/geckodriver/geckodriver.exe");
-		driver = new FirefoxDriver();
-		
+		driver = new FirefoxDriver();		
 	}	
 	
 	//@Test
@@ -55,8 +53,9 @@ public class _06_SeleniumAPI {
 		WebElement mensaje = driver.findElement(By.id("message"));
 		
 		Thread.sleep(5000);
-		//La clase Actions realizar acciones más complejas
+		//La clase Actions realiza acciones más complejas
 		Actions actions = new Actions(driver);
+		
 		actions.doubleClick(mensaje).perform();
 		assertEquals("rgb(255, 255, 0)", mensaje.getCssValue("background-color"));
 
@@ -70,7 +69,7 @@ public class _06_SeleniumAPI {
 		
 		WebElement source = driver.findElement(By.id("draggable"));
 		WebElement target = driver.findElement(By.id("droppable"));
-		
+
 		Thread.sleep(5000);
 		
 		Actions actions = new Actions(driver);
@@ -95,7 +94,7 @@ public class _06_SeleniumAPI {
 		//seleccionamos el alert que se nos muestra en pantalla
 		//con switchTo indicamos el elemento al que queremos acceder
 		Alert alert = driver.switchTo().alert();
-		assertEquals(alert.getText(), "Hola mundo!!!");
+		//assertEquals(alert.getText(), "Hola mundo!!!");
 		
 		Thread.sleep(2000);
 		
@@ -105,7 +104,7 @@ public class _06_SeleniumAPI {
 	//Este no tiene que fallar, generamos las capturas
 	//beforeDragAndDrop.png
 	//afterDragAndDrop.png
-	@Test
+	//@Test
 	public void testScreenshots() throws IOException {
 		//driver.get("http://cookbook.seleniumacademy.com/DragDropDemo.html");
 		driver.get("http://localhost:8080/Ej06_Selenium_4/DragAndDropDemo.html");

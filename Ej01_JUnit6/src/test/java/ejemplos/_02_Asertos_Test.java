@@ -1,6 +1,7 @@
 package ejemplos;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertIterableEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
@@ -22,7 +23,7 @@ import com.curso.modelo.negocio.Calculadora;
 
 public class _02_Asertos_Test {
 	
-	@Test
+	//@Test
 	public void test1() {			
 
 		System.out.println("Test 1");
@@ -37,12 +38,10 @@ public class _02_Asertos_Test {
 		//entonces
 		
 		//Si no existieran los asertos:
-		/*
-		if(n3 != 301) {
-			System.out.println("Vamos listos porque el + de java no funciona");
-			throw new RuntimeException("La suma no es correcta");
-		}
-		*/
+		//if(n3 != 301) {
+		//	System.out.println("Vamos listos porque el + de java no funciona");
+		//	throw new RuntimeException("La suma no es correcta");
+		//}
 			
 		//Utiliza equals, no el '=='
 		
@@ -54,35 +53,36 @@ public class _02_Asertos_Test {
 	
 	}
 	
-	@Test
+	//@Test
 	public void test2() {	
 		System.out.println("Test 2");
 		int n1 = 100;
 		int n2 = 200;
 		
 		//Utiliza equals, no el '=='
+		//assertNotEquals(n1, n2);	
 		assertNotEquals(n1, n2, "Son iguales y no tendrían que serlo!");	
 	}
 	
-	@Test
+	//@Test
 	public void test3() {
 		System.out.println("Test 3");		
 		int n1 = 100;
 		int n2 = 200;	
 		//Recibe una expresión que se resuelve en un boolean
 		//Con assertTrue podríamos hacer cualquier comprobación
-		assertTrue(n2 > n1);		
+		assertTrue(n2 >  n1);		
 	}
 
-	@Test
+	//@Test
 	public void test4() {
 		System.out.println("Test 4");		
 		int n1 = 100;
 		int n2 = 200;		
-		assertFalse(n2 < n1);		
+		assertTrue(n2 < n1);		
 	}
 
-	@Test
+	//@Test
 	public void test5() throws Exception {
 		System.out.println("Test 5");	
 		String txt = null;
@@ -90,7 +90,7 @@ public class _02_Asertos_Test {
 		assertNull(txt);	
 	}
 
-	@Test
+	//@Test
 	public void test6() {
 		System.out.println("Test 6");	
 		String txt = new String("TXT");
@@ -98,7 +98,7 @@ public class _02_Asertos_Test {
 		assertNotNull(txt);	
 	}
 	
-	@Test
+	//@Test
 	public void test7() {
 		System.out.println("Test 7");	
 
@@ -117,7 +117,7 @@ public class _02_Asertos_Test {
 		assertSame(c1, c2);	
 	}
 	
-	@Test
+	//@Test
 	public void test8() {
 		System.out.println("Test 8");	
 		Integer i1 = 128;
@@ -130,7 +130,7 @@ public class _02_Asertos_Test {
 		assertNotSame(c1, c2);			
 	}
 
-	@Test
+	//@Test
 	public void test9() {
 		System.out.println("Test 9");
 		String[] palabras1 = new String[] {"HELLO","DOCTOR","NAME","CONTINUE","YESTERDAY","TOMORROW"};
@@ -142,12 +142,12 @@ public class _02_Asertos_Test {
 				throw new RuntimeException("No son iguales!!!!");
 			}
 		}
-		*/
+		*/		
 		
 		assertArrayEquals(palabras2, palabras1);	
 	}
 
-	@Test
+	//@Test
 	public void test10() {
 		System.out.println("Test 10");
 		String[] palabras1 = new String[] {"HELLO","DOCTOR","NAME","CONTINUE","YESTERDAY","TOMORROW"};
@@ -162,16 +162,19 @@ public class _02_Asertos_Test {
 	
 	@Test
 	public void test11() {
+		
 		System.out.println("Test 11");
 		
 		boolean condicionDificilDeExpresarConUnAserto = false;
+		
 		if(!condicionDificilDeExpresarConUnAserto) {
 			//throw new RuntimeException("La liamos parda"); //Ñapa
 			Assertions.fail("Test fallido");
 		}
+		
 	}
 	
-	@Test
+	//@Test
 	@DisplayName("Prueba de assertAll (test12)")
 	void test12() {
 		
@@ -187,12 +190,12 @@ public class _02_Asertos_Test {
 
 		
 		//Podríamos hacer esto, pero al primer aserto que falle se sale del método por la excepción que se lanza
-		//System.out.println("I");
-		//assertNotNull(sumResult, "El resultado no es nulo");
-		//System.out.println("II");
-		//assertTrue(sumResult > 10, "El resultado es mayor que 10"); //A partir de aqui no se ejecuta (se lanza una excepción)
-		//System.out.println("III");
-		//assertTrue(sumResult < 10, "El resultado es menor que 10");
+		System.out.println("I");
+		assertNotNull(sumResult, "El resultado no es nulo");
+		System.out.println("II");
+		assertTrue(sumResult > 10, "El resultado es mayor que 10"); //A partir de aqui no se ejecuta (se lanza una excepción)
+		System.out.println("III");
+		assertTrue(sumResult < 10, "El resultado es menor que 10");
 		
 		//Esto exige un trabajo inasumible:
 		//Comprobador1 c1 = new Comprobador1();
@@ -244,7 +247,6 @@ public class _02_Asertos_Test {
 	
 	
 }
-
 
 
 class Comprobador1 implements Executable {

@@ -16,11 +16,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 /* NO FUNCIONA TODO
  * Navegar a
 	'http://es.wikipedia.org/w/index.php?title=Especial:Buscar&search=&fulltext=Buscar&profile=advanced'
- * Encuentra los checkboxes de la página
+ * Encuentra los checkboxes de la pÃ¡gina
  * Comprueba que hay 28 checkboxes
- * Encuentra el campo de texto para realizar búsquedas y el botón de buscar
- * Comprueba que existen tanto el campo de búsqueda como el botón
- * Selectores CSS para búsquedas de hijos
+ * Encuentra el campo de texto para realizar bÃºsquedas y el botÃ³n de buscar
+ * Comprueba que existen tanto el campo de bÃºsqueda como el botÃ³n
+ * Selectores CSS para bÃºsquedas de hijos
  */
 public class Ej06 {
 	private static WebDriver driver;

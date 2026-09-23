@@ -21,14 +21,14 @@ import com.google.common.base.Function;
 /*
  *  Ejercicio 15 NO FUNCIONA TODO
  * Navegar a 'http://es.wikipedia.org/wiki/Wikipedia:Portada'
- * Pulsar el botÛn de buscar
- * Espera esplÌcita hasta que el title de la p·gina contenga 'Buscar'
+ * Pulsar el bot√≥n de buscar
+ * Espera espl√≠cita hasta que el title de la p√°gina contenga 'Buscar'
  * Obtener el input y buscar 'Selenium'
- * Crea una espera con timeout de 10s y que realice la b˙squeda del elemento cada 200ms,
+ * Crea una espera con timeout de 10s y que realice la b√∫squeda del elemento cada 200ms,
    ignorando las excepciones
  * Espera hasta que el elemento buscado se haya mostrado
  * Pulsar en el primer resultado
- * Comprobar que el title de la p·gina acaba en '- Wikipedia, la enciclopedia libre'
+ * Comprobar que el title de la p√°gina acaba en '- Wikipedia, la enciclopedia libre'
  */
 public class Ej15 {
 	private static WebDriver driver;

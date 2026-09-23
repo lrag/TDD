@@ -14,7 +14,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
  *  Ejercicio 3
  * Navegar a 'http://es.wikipedia.org
  * Encuentra todos los links que hay en el div con id 'p-personal' y comprueba que existen
- * Encuentra algún link que contenga texto dinámico y comprueba que existe
+ * Encuentra algÃºn link que contenga texto dinÃ¡mico y comprueba que existe
  */
 public class Ej03 {
 	private static WebDriver driver;
@@ -29,7 +29,7 @@ public class Ej03 {
 	@Test
 	public void testEjercicio3() {
 		//El div con id p-personal
-		WebElement discussion = driver.findElement(By.linkText("Discusión"));
+		WebElement discussion = driver.findElement(By.linkText("DiscusiÃ³n"));
 		WebElement contributions = driver.findElement(By.linkText("Contribuciones"));
 		WebElement account = driver.findElement(By.linkText("Crear una cuenta"));
 		WebElement access = driver.findElement(By.linkText("Acceder"));

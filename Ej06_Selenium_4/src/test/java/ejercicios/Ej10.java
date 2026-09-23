@@ -15,9 +15,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
  * Ejercicio 10
  * Navegar a 'http://es.wikipedia.org/wiki/Especial:Contribuciones'
  * Obtener los radio buttons
- * Comprobar que uno est· seleccionado y el otro no
- * Seleccionar el que no est· seleccionado
- * Comprobar que el que no estaba seleccionado ahora lo est·, y el otro no lo est·
+ * Comprobar que uno est√° seleccionado y el otro no
+ * Seleccionar el que no est√° seleccionado
+ * Comprobar que el que no estaba seleccionado ahora lo est√°, y el otro no lo est√°
  */
 public class Ej10 {
 	private static WebDriver driver;

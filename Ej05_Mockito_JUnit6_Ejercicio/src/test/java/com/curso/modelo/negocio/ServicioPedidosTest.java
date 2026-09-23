@@ -4,6 +4,8 @@ import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.times;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -17,8 +19,6 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
-
-import static org.mockito.Mockito.*;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import com.curso.modelo.entidad.Cliente;
@@ -135,7 +135,47 @@ public class ServicioPedidosTest {
 		gestorPedidos.setGestorTransportes(gestorTransportes);
 		*/		
 	}
-			
+
+	
+	//@Test
+	//@DisplayName("GestorPedidos.aceptar funciona cuando el pedido es correcto")
+	public void aceptarPedido_INTEGRACION() throws Exception {
+		
+		//DADOS
+		//Premisa: 
+		//El pedido cuyo id es 1 EXISTE y
+		//-tiene un cliente con los datos bancarios correctos
+		//-tiene unos detalles cuyas cantidades se pueden satisfacer en el almacén
+		//Y
+		//-hay camiones disponibles
+		//-hay perritos pilotos para parar un tren
+		Integer idPedido = 1;
+		
+		ServicioPedidos servicioPedidos = new ServicioPedidos();
+		
+		PedidoDao pedidoDao = null; //new PedidoDao();
+		GestorBancos gestorBancos = new GestorBancos();
+		GestorAlmacen gestorAlmacen = new GestorAlmacen();
+		GestorTransportes gestorTransportes = new GestorTransportes();
+		GestorOfertas gestorOfertas = new GestorOfertas();	
+		
+		servicioPedidos.setGestorAlmacen(gestorAlmacen);
+		servicioPedidos.setGestorBancos(gestorBancos);
+		servicioPedidos.setGestorTransportes(gestorTransportes);
+		servicioPedidos.setGestorOfertas(gestorOfertas);
+		
+		Pedido pedidoAceptado = servicioPedidos.aceptar(idPedido);
+		
+		//ENTONCES
+		assertAll(
+				() -> assertNotNull(pedidoAceptado.getCamion(),"El pedido no tiene camión"),
+				() -> assertNotNull(pedidoAceptado.getRegalo(),"El pedido no tiene regalo"),
+				//() -> Assertions.assertNotNull(pedidoAceptado.getFactura(),"El pedido no tiene factura"),
+				() -> assertEquals("ACEPTADO", pedidoAceptado.getEstado(),"El pedido no tiene estado 'ACEPTADO'")
+			);		
+		
+	}	
+
 	@Test
 	@DisplayName("GestorPedidos.aceptar funciona cuando el pedido es correcto")
 	public void aceptarPedido() throws Exception {

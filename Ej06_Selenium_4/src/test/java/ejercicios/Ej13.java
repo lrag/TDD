@@ -22,10 +22,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 /*
  * Ejercicio 13 NO FUNCIONA TODO
  * Navegar a 'http://es.wikipedia.org/w/index.php?title=Especial:Buscar&search=&fulltext=Buscar&profile=advanced'
- * Obtener el checkbox principal y comprobar que est· seleccionado
+ * Obtener el checkbox principal y comprobar que est√° seleccionado
  * Obtener todos los checkboxes
  * Capturar pantalla y guardar la imagen
- * Seleccionar todos los checkboxes que no lo estÈn
+ * Seleccionar todos los checkboxes que no lo est√©n
  * Capturar pantalla y guardar la imagen
  */
 public class Ej13 {

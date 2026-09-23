@@ -190,7 +190,7 @@ public class _12_TestAplicacion {
 		Thread.sleep(1500);
 		
 		//Pulsamos el botón
-		//Al pulsarlo se hace un submit del formulario y el navegador pide otra p�gina
+		//Al pulsarlo se hace un submit del formulario y el navegador pide otra página
 		btnModificar.click();
 		
 		//No hace falta colocar ningun retardo ni espera para estar seguros de que se
@@ -203,7 +203,7 @@ public class _12_TestAplicacion {
 		//Esperamos que la primera fila de la tabla contenga los nuevos datos del cñiente
 		//reutilizar variables es mi pasión
 		tablaClientes = driver.findElement(By.id("tablaClientes"));
-		//driver.findElements(By.tagName("tr")); //Todos los tr de la p�gina
+		//driver.findElements(By.tagName("tr")); //Todos los tr de la página
 		filas = tablaClientes.findElements(By.tagName("tr")); //Todos los tr que 'cuelguen' de 'tablaClientes'
 		primeraFila = filas.get(0);
 		

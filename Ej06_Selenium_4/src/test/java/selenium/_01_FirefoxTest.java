@@ -25,11 +25,17 @@ public class _01_FirefoxTest {
 		//driver.get("http://localhost:8080/Ej06_Selenium/pagina.html");	
 	}
 	
+	@Test
+	public void goToWikipedia() {
+		driver.get("http://www.wikipedia.com");	
+		//driver.get("http://localhost:8080/Ej06_Selenium/pagina.html");	
+	}	
+	
 	@AfterAll
 	public static void tearDown() {
 		//Comentamos esta línea para que no se cierre el navegador 
 		//despues del test, pero es necesaria:		
-		driver.quit();
+		//driver.quit();
 	}
 	
 }

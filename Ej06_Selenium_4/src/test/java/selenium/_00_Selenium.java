@@ -29,6 +29,7 @@ public class _00_Selenium {
 		*/	
 		
 		driver.get("http://www.google.com");
+	
 		
 		//Para que de tiempo a quitar el popup con la aceptación de términos
 		try {
@@ -36,6 +37,18 @@ public class _00_Selenium {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
+		
+		/*
+		<html>
+			<head></head>
+			<body>
+				<h1 align="center">
+					Aplicación web
+				</h1>
+				<input type="text" name="q"/>
+			</body>
+		</html>
+		*/
 
 		WebElement element = driver.findElement(By.name("q"));
 
@@ -44,7 +57,10 @@ public class _00_Selenium {
 		element.submit();
 
 
-		//driver.quit();
+		driver.quit();
 	}
 
 }
+
+
+

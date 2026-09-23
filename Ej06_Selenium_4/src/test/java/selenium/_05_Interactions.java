@@ -30,14 +30,14 @@ public class _05_Interactions {
 	}
 	
 	//Escribimos algo en google y hacemos submit
-	@Test
+	//@Test
 	public void textBoxSubmit() throws InterruptedException {
 		driver.get("http://www.google.es");
 
 		//Para aceptar los términos 
 		WebElement button = driver.findElement(By.id("L2AGLb"));
-		button.click();		
-		
+		button.click();
+			
 		WebElement input = driver.findElement(By.name("q"));
 		input.sendKeys("React");
 		Thread.sleep(1000);
@@ -50,7 +50,7 @@ public class _05_Interactions {
 	
 	
 	//Escribimos algo en wikipedia y hacemos click en el boton
-	@Test
+	//@Test
 	public void buttonClick() {
 		driver.get("https://es.wikipedia.org");
 		WebElement input = driver.findElement(By.id("searchInput"));
@@ -63,11 +63,13 @@ public class _05_Interactions {
 	}
 
 	
-	//Obtener texto
+	//Obtener nodo de texto hijo de una etiqueta
 	@Test
 	public void getTextFromElement() {
 		driver.get(Constantes.URL);
 		WebElement label = driver.findElement(By.id("lb-mensaje"));
+		System.out.println("=======================================");
+		System.out.println(label.getText());
 		assertEquals(label.getText(), "Mensaje:");
 	}
 	
@@ -172,12 +174,19 @@ public class _05_Interactions {
 	
 	@Test
 	public void testRadioButtons() {
+		
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
 		driver.get(Constantes.URL);
 		WebElement radioButton = driver.findElement(By.xpath("//input[@type='radio' and @value='Yes']"));
 		//comprobamos que no esta seleccionado
 		assertFalse(radioButton.isSelected());
 		
-		//si no esta seleccionamos lo clickeamos
+		//si no esta seleccionamos lo pulsamos
 		if (!radioButton.isSelected()) {
 			radioButton.click();
 		}

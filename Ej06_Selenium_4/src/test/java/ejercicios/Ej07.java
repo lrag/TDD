@@ -14,9 +14,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
  * Ejercicio 7
  * Navegar a 'http://es.wikipedia.org/wiki/Wikipedia:Portada'
  * Encuentra el elemento input
- * VacÌa su contenido y busca 'Selenium'
- * Envia el formulario y pulsa el botÛn
- * Comprobar que vamos a la p·gina correcta
+ * Vac√≠a su contenido y busca 'Selenium'
+ * Envia el formulario y pulsa el bot√≥n
+ * Comprobar que vamos a la p√°gina correcta
  */
 public class Ej07 {
 	private static WebDriver driver;

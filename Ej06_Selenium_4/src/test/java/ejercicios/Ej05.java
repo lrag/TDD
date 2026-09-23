@@ -17,11 +17,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 /*
  * Ejercicio 5
  * Navegar a 'http://www.w3schools.com/html/html_tables.asp'
- * Encontrar la primera tabla de la página
+ * Encontrar la primera tabla de la pÃ¡gina
  * Comprueba que la tabla existe
- * Comprueba que tiene el número de filas correcto
- * Comprueba que la última fila tiene el número de celdas correcto
- * Comprueba que después de la quinta fila, hay dos filas más
+ * Comprueba que tiene el nÃºmero de filas correcto
+ * Comprueba que la Ãºltima fila tiene el nÃºmero de celdas correcto
+ * Comprueba que despuÃ©s de la quinta fila, hay dos filas mÃ¡s
  * Comprueba que todas las celdas tienen contenido
  */
 public class Ej05 {
@@ -36,12 +36,12 @@ public class Ej05 {
 	
 	@Test
 	public void testEjercicio5() {
-		//Encontrar la primera tabla de la página
+		//Encontrar la primera tabla de la pÃ¡gina
 		WebElement table = driver.findElement(By.xpath("//*[@id='customers']"));
 		//la tabla existe
 		assertNotNull(table);
 		
-		//comprbar que tiene el número de filas correcto
+		//comprbar que tiene el nÃºmero de filas correcto
 		List<WebElement> rows = table.findElements(By.tagName("tr"));
 		assertEquals(rows.size(), 7);
 		
@@ -51,7 +51,7 @@ public class Ej05 {
 		assertEquals(lastRowCells.size(), 3);
 		
 //		List<WebElement> last2Rows = driver.findElements(By.xpath("//*[@id='customers']/tbody/tr[position()>5]"));
-		//Comprobar que despues de la quinta fila hay dos filas más
+		//Comprobar que despues de la quinta fila hay dos filas mÃ¡s
 		List<WebElement> last2Rows = table.findElements(By.xpath("./tbody/tr[position()>5]"));
 		assertEquals(last2Rows.size(), 2);
 

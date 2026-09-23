@@ -25,17 +25,20 @@ public class _07_Sincronizacion {
 	public static void setUp() {
 		System.setProperty("webdriver.gecko.driver", "src/test/resources/drivers/geckodriver/geckodriver.exe");
 		driver = new FirefoxDriver();
+		//driver.manage().timeouts().implicitlyWait(Duration.ofMillis(8000));
 	}
 	
 	//WAIT IMPLICITO
 	//Se indica al driver y este lo aplica a todas las búsquedas
-	@Test
+	//@Test
 	public void testSincronoImplicito() throws InterruptedException {
+		
 		driver.get(Constantes.URL);
 		
 		//Podemos hacer una ineficiente espera activa (MAL):
 		//Thread.sleep(8000);		
 		//WebElement button2 = driver.findElement(By.cssSelector("#btn-1"));
+		
 		
 		//Le indicamos al driver que si le pedimos un webElement y no está que espere
 		//un tiempo antes de lanzar la excepción por si aparece
@@ -53,6 +56,7 @@ public class _07_Sincronizacion {
 		//Al pulsar el botón aparecerá un mensaje EN LA CONSOLA
 		button.click();
 		System.out.println("Saliendo del test:");
+
 	}
 	
 	//WAIT EXPLICITO
@@ -89,7 +93,7 @@ public class _07_Sincronizacion {
 	 * NoSuchElementException.
 	 */
 
-	//@Test
+	@Test
 	public void testFluentWait() {
 		driver.get(Constantes.URL);
 		
