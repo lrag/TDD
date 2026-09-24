@@ -16,21 +16,23 @@ Es un POJO
 public class _10_FormularioPeliculaPOM {
 
 	//Referencia al driver con el que se buscarán los elementos
-	private WebDriver driver;
+	//private WebDriver driver;
 
 	@FindBy(id = "btnInsertar")    private WebElement btnInsertar; //Se declara a nulo, Selenium inyectará el valor
 	@FindBy(id = "btnModificar")   private WebElement btnModificar;
 	@FindBy(id = "btnBorrar")	   private WebElement btnBorrar;
-	@FindBy(name = "idPelicula")   private WebElement idPelicula;
-	@FindBy(name = "titulo")	   private WebElement titulo;
-	@FindBy(name = "director")     private WebElement director;
-	@FindBy(name = "genero")	   private WebElement genero;
-	@FindBy(name = "fechaEstreno") private WebElement fechaEstreno;
+	@FindBy(name = "idPelicula")   private WebElement tfIdPelicula;
+	@FindBy(name = "titulo")	   private WebElement tfTitulo;
+	@FindBy(name = "director")     private WebElement tfDirector;
+	@FindBy(name = "genero")	   private WebElement tfGenero;
+	@FindBy(name = "fechaEstreno") private WebElement tfFechaEstreno;
 
-	// Inicializamos los atributos
+	//Inicializamos los atributos
 	public _10_FormularioPeliculaPOM(WebDriver driver) {
-		this.driver = driver;
-		PageFactory.initElements(this.driver, this);
+		//this.driver = driver;
+		//PageFactory.initElements(this.driver, this);
+		
+		PageFactory.initElements(driver, this);
 	}
 
 	public WebElement getBtnInsertar() {
@@ -45,24 +47,24 @@ public class _10_FormularioPeliculaPOM {
 		return btnBorrar;
 	}
 
-	public WebElement getIdPelicula() {
-		return idPelicula;
+	public WebElement getTfIdPelicula() {
+		return tfIdPelicula;
 	}
 
-	public WebElement getTitulo() {
-		return titulo;
+	public WebElement getTfTitulo() {
+		return tfTitulo;
 	}
 
-	public WebElement getDirector() {
-		return director;
+	public WebElement getTfDirector() {
+		return tfDirector;
 	}
 
-	public WebElement getGenero() {
-		return genero;
+	public WebElement getTfGenero() {
+		return tfGenero;
 	}
 
-	public WebElement getFechaEstreno() {
-		return fechaEstreno;
+	public WebElement getTfFechaEstreno() {
+		return tfFechaEstreno;
 	}
 
 }

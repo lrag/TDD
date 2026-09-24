@@ -1,11 +1,13 @@
 package ejemplos;
 
 import java.time.Duration;
+import java.util.concurrent.TimeUnit;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
 
 import com.curso.modelo.negocio.Calculadora;
 
@@ -49,10 +51,16 @@ public class _06_Timeouts {
 
 		//Detiene la prueba si se excede el tiempo
 		Assertions.assertTimeoutPreemptively(
-				Duration.ofMillis(2000), 
+				Duration.ofMillis(2000),
 				() -> calculadora.calculoExtremadamenteComplejo()
 			);
-		
+
+	}
+
+	@Test
+	@Timeout(value = 2, unit = TimeUnit.SECONDS, threadMode = Timeout.ThreadMode.SEPARATE_THREAD)
+	public void calculoExtremadamenteComplejoDebeRealizarseRapidoConAnotacion() {
+		calculadora.calculoExtremadamenteComplejo();
 	}
 
 }

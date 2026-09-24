@@ -47,16 +47,17 @@
 				</dependencies>
 				-->
 				
-				<!-- 
+				<!--
+					Los ficheros de ejemplo de "ejemplos" no siguen el convenio de nombres
+					de Surefire (**/*Test.java, **/Test*.java...), así que por defecto
+					solo se ejecutarían _01_Ejemplo_Test y _02_Asertos_Test. Con este
+					include se recogen todos los de esa carpeta.
+				-->
 				<configuration>
-					<excludes>
-						<exclude>**/*IT.java</exclude>
-					</excludes>
 					<includes>
-						<include>**/*UT.java</include>
+						<include>**/ejemplos/**</include>
 					</includes>
 				</configuration>
-				-->				
 			</plugin>
 		</plugins>
 	</build>

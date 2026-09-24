@@ -17,7 +17,9 @@
 <body>
 
     <div class="page-header text-center">
-        <h1 class="titulo">Listado de clientes</h1> 
+        <h1 class="titulo">
+        	Listado de clientes
+        </h1> 
     </div>
 	
 	<form action="SVClientes" method="get">

@@ -112,6 +112,11 @@ public class _07_Sincronizacion {
 		
 		//Con una expresion lambda
 		System.out.println("Está ya el botón?");
+		
+		//WebElement button_ = wait.until(
+		//		driver -> driver.findElement(By.id("btn-1"))				
+		//	);
+		
 		WebElement button = wait.until(driver -> {
 				System.out.println("y ahora?");
 				return driver.findElement(By.id("btn-1"));

@@ -18,7 +18,7 @@ public class ClienteDaoArrayList implements ClienteDao {
 		clientes.add(new Cliente(1,"Félix","C/Tal","555123"));
 		clientes.add(new Cliente(2,"LRA","C/Pascual","555444"));
 		clientes.add(new Cliente(3,"Ángel","C/Tal y pascual","555333"));
-		clientes.add(new Cliente(3,"Borja","C/Pascualillo","555555"));
+		clientes.add(new Cliente(3,"Borja","C/Pascualete","555555"));
 		contador = clientes.size();
 	}
 	

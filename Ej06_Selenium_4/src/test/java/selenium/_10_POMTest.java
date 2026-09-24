@@ -20,26 +20,30 @@ public class _10_POMTest {
 	}
 
 	//@Test
-	public void testSinObjetoPom() {
+	public void testSinObjetoPom() throws InterruptedException {
 		
 		driver.get("http://localhost:8080/Ej06_Selenium_4/formulario.html");
 		
-		WebElement titulo       = driver.findElement(By.name("titulo"));
-		WebElement director     = driver.findElement(By.name("director"));
-		WebElement genero       = driver.findElement(By.name("genero"));
-		WebElement fechaEstreno = driver.findElement(By.name("fechaEstreno"));
+		WebElement tfTtitulo       = driver.findElement(By.name("titulo"));
+		WebElement tfDirector     = driver.findElement(By.name("director"));
+		WebElement tfGenero       = driver.findElement(By.name("genero"));
+		WebElement tfFechaEstreno = driver.findElement(By.name("fechaEstreno"));
 		
 		WebElement btnInsertar  = driver.findElement(By.id("btnInsertar"));
 
-		titulo.clear();
-		director.clear();
-		genero.clear();
-		fechaEstreno.clear();
+		tfTtitulo.clear();
+		tfDirector.clear();
+		tfGenero.clear();
+		tfFechaEstreno.clear();
 		
-		titulo.sendKeys("El último grán heroe");
-		director.sendKeys("John McTiernan");
-		genero.sendKeys("Accion");
-		fechaEstreno.sendKeys("1993");	
+		Thread.sleep(750);
+		tfTtitulo.sendKeys("El último grán heroe");
+		Thread.sleep(750);
+		tfDirector.sendKeys("John McTiernan");
+		Thread.sleep(750);
+		tfGenero.sendKeys("Accion");
+		Thread.sleep(750);
+		tfFechaEstreno.sendKeys("1993");	
 		
 		btnInsertar.click();
 		
@@ -48,24 +52,29 @@ public class _10_POMTest {
 	}
 	
 	@Test
-	public void testSearchInsertar() throws InterruptedException {
+	public void testInsertar() throws InterruptedException {
 
 		driver.get("http://localhost:8080/Ej06_Selenium_4/formulario.html");
 		
 		_10_FormularioPeliculaPOM page = new _10_FormularioPeliculaPOM(driver);
+
+		page.getTfTitulo().clear();
+		page.getTfDirector().clear();
+		page.getTfGenero().clear();
+		page.getTfFechaEstreno().clear();		
 		
 		Thread.sleep(750);
-		page.getTitulo().sendKeys("El último grán heroe");
+		page.getTfTitulo().sendKeys("El último grán heroe");
 		Thread.sleep(750);
-		page.getDirector().sendKeys("John McTiernan");
+		page.getTfDirector().sendKeys("John McTiernan");
 		Thread.sleep(750);
-		page.getGenero().sendKeys("Accion");
+		page.getTfGenero().sendKeys("Accion");
 		Thread.sleep(750);
-		page.getFechaEstreno().sendKeys("1993");
+		page.getTfFechaEstreno().sendKeys("1993");
 		Thread.sleep(1000);
 		
 		page.getBtnInsertar().click();
-		
+//		
 		//asertos necesarios
 	}
 	
@@ -77,13 +86,13 @@ public class _10_POMTest {
 		_10_FormularioPeliculaPOM page = new _10_FormularioPeliculaPOM(driver);
 		
 		Thread.sleep(750);
-		page.getTitulo().sendKeys("El último grán heroe");
+		page.getTfTitulo().sendKeys("El último grán heroe");
 		Thread.sleep(750);
-		page.getDirector().sendKeys("John McTiernan");
+		page.getTfDirector().sendKeys("John McTiernan");
 		Thread.sleep(750);
-		page.getGenero().sendKeys("Accion");
+		page.getTfGenero().sendKeys("Accion");
 		Thread.sleep(750);
-		page.getFechaEstreno().sendKeys("1993");
+		page.getTfFechaEstreno().sendKeys("1993");
 		Thread.sleep(1000);
 		
 		page.getBtnModificar().click();

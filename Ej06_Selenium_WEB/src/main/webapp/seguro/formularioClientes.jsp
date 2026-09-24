@@ -50,7 +50,7 @@
 	            <div class="form-group">
 	                <label class="control-label col-xs-2" for="director">Dirección</label>
 	                <div class="col-xs-8">
-	                    <input type="text" id="director" name="direccion" class="form-control" value="${clienteSel.direccion}"/>
+	                    <input type="text" id="direccion" name="direccion" class="form-control" value="${clienteSel.direccion}"/>
 	                </div>
 	            </div>  
 	            <div class="form-group">

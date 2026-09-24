@@ -14,10 +14,10 @@ import org.springframework.context.annotation.Bean;
 // .war en un Tomcat externo. Aquí la app se arranca directamente desde este main().
 @SpringBootApplication
 @ServletComponentScan
-public class Ej06SeleniumWebApplication {
+public class AplicacionWeb {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Ej06SeleniumWebApplication.class, args);
+		SpringApplication.run(AplicacionWeb.class, args);
 	}
 
 	// Al no usar spring-boot-starter-web (sin Spring MVC) Spring Boot no registra
