@@ -17,3 +17,15 @@ Feature: Autenticación de usuarios
     And pulso el botón entrar 
     Then se crea mi sesión
     And veo la página de inicio
+    
+  Scenario: Login incorrecto
+    Given estoy en la página de login
+    When introduzco unas credenciales incorrectas
+    And pulso el botón entrar 
+    And estoy en la página de login
+    #And veo el mensaje "Credenciales incorrectas"    
+    
+    
+    
+    
+    
