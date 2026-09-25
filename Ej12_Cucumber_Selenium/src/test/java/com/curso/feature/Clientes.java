@@ -5,8 +5,10 @@ import org.openqa.selenium.WebDriver;
 
 import com.curso.pom.ListadoClientesPOM;
 import com.curso.util.Constantes;
-import com.curso.util.DriverManager;
+import com.curso.util.LoginUtil;
+import com.curso.util.WebDriverUtil;
 
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
@@ -14,11 +16,29 @@ public class Clientes {
 	
 	private WebDriver driver;
 	
-	public Clientes(DriverManager driverManager) {
+	public Clientes(WebDriverUtil webDriverUtil) {
 		super();
 		System.out.println("Instanciando Clientes");
-		this.driver = driverManager.getDriver();
+		this.driver = webDriverUtil.getDriver();
 	}
+	
+	//
+	//Este método se invocará desde los escenarios más variopintos
+	//Su lugar no está en esta clase proque aqui se habla de clientes
+	//
+	//En nuestro ejemplo esto no se invoda: se utiliza el decorador "@Autenticado"
+	//
+	@Given("un usuario autenticado")
+	public void un_usuario_autenticado() {
+		LoginUtil.login(driver, "aaa", "bbb");
+	}
+	
+	@Given("hay clientes dados de alta")
+	public void hay_clientes_dados_de_alta() {
+	    //Si necesitamos asegurarnos de que la tabla de clientes
+		//no está vacía insertamos aqui lo que necesitaramos
+		//clientesUtil.crearClientes(driver);
+	}	
 	
 	@When("accedo al listado de clientes")
 	public void accedo_al_listado_de_clientes() {

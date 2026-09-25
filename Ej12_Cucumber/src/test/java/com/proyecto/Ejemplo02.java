@@ -28,13 +28,14 @@ public class Ejemplo02 {
 	@Given("los siguientes productos")
 	public void los_siguientes_productos(DataTable dataTable) {
 		
+	
 		// Obtenemos una lista de mapas: cada mapa es una fila
 	    List<Map<String, String>> filas = dataTable.asMaps(String.class, String.class);
 
-	    for (Map<String, String> columna : filas) {
-	        String nombre = columna.get("nombre producto");
-	        String precio = columna.get("precio");
-	        String cantidad = columna.get("cantidad");
+	    for (Map<String, String> fila : filas) {
+	        String nombre = fila.get("nombre producto");
+	        String precio = fila.get("precio");
+	        String cantidad = fila.get("cantidad");
 	        
 	        Producto producto = new Producto((int) Math.round(Math.random()*1_000_000), nombre, Double.valueOf(precio));
 	        productos.add(producto);
@@ -54,11 +55,23 @@ public class Ejemplo02 {
 		}
 	}
 
-	/*
-	@Then("el total de la cesta es {double}")
-	public void el_total_de_la_cesta_es(Double double1) {
-		Assertions.assertEquals(double1, EstadoCesta.getCesta().getTotal());
+	@Then("el total es {double} y el numero de detalles es {int}")
+	public void el_total_y_el_num_detalles_es(Double total, Integer numDetalles) {
+		Assertions.assertEquals(total, EstadoCesta.getCesta().getTotal());
+		EstadoCesta.eliminarCesta();
+	} 
+	
+
+	@When("Quiero imprimir por consola {string} y {string}")
+	public void quiero_imprimir_por_consola(String numero, String mensaje) {
+	    System.out.println("Número :"+numero+", "+mensaje);
 	}
-	*/
+	
+	@Then("Todo fue estupendamente")
+	public void todo_fue_estupendamente() {
+		System.out.println("Todo es fabuloso.");
+	}
+	
+	
 	
 }

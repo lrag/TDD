@@ -1,4 +1,3 @@
-
 Feature: Cesta de la compra
 
   Scenario: Comprar un teclado

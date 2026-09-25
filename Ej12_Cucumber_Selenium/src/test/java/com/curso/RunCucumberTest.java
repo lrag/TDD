@@ -9,3 +9,4 @@ import org.junit.platform.suite.api.Suite;
 @SelectPackages("features")
 public class RunCucumberTest {
 }
+
