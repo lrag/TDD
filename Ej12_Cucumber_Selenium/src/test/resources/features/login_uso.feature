@@ -4,6 +4,11 @@ Feature: Autenticación de usuarios
   Quiero identificarme con mis credenciales
   Para poder acceder al área de gestión de clientes
 
+  #Los dos escenarios de abajo empiezan por "estoy en la página de login".
+  #Eso es justo lo que iría en un Background, para no repetirlo:
+  #Background:
+  #  Given estoy en la página de login
+
   #Scenario: DEMASIADO ESPECÍFICO Login correcto
   #  Given estoy en la página de login
   #  When introduzco el login "aaa" y la contraseña "bbb"

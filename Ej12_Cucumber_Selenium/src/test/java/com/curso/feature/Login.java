@@ -2,21 +2,16 @@ package com.curso.feature;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.curso.pom.ListadoClientesPOM;
 import com.curso.util.Constantes;
-import com.curso.util.LoginUtil;
+import com.curso.util.DriverManager;
 
-import io.cucumber.java.After;
-import io.cucumber.java.AfterAll;
-import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -24,17 +19,11 @@ import io.cucumber.java.en.When;
 public class Login {
 	
 	private WebDriver driver;
-
-	@Before
-	public void beforeEach() {
-		System.setProperty("webdriver.gecko.driver", 
-				"src/test/resources/drivers/geckodriver/geckodriver.exe");
-		driver = new FirefoxDriver();
-	}	
 	
-	@After
-	public void afterEach() {
-		//driver.close();
+	public Login(DriverManager driverManager) {
+		super();
+		System.out.println("Instanciando Login");
+		this.driver = driverManager.getDriver();
 	}
 
 	@Given("estoy en la página de login")
@@ -47,8 +36,7 @@ public class Login {
 	@Given("intento acceder directamente a página de inicio")
 	public void intento_acceder_directamente_a_inicio() {
 		driver.get(Constantes.URL_APLICACION+"/seguro/SVClientes");
-	}	
-		
+	}		
 
 	@When("introduzco mis credenciales")
 	public void introduzco_mis_credenciales() {

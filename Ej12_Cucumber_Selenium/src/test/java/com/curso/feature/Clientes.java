@@ -2,32 +2,22 @@ package com.curso.feature;
 
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.curso.pom.ListadoClientesPOM;
 import com.curso.util.Constantes;
-import com.curso.util.LoginUtil;
+import com.curso.util.DriverManager;
 
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class Clientes {
 	
 	private WebDriver driver;
-
-	@Before
-	public void beforeEach() {
-		System.setProperty("webdriver.gecko.driver", 
-				"src/test/resources/drivers/geckodriver/geckodriver.exe");
-		driver = new FirefoxDriver();
-		LoginUtil.login(driver, "aaa", "bbb");		
-	}	
 	
-	@After
-	public void afterEach() {
-		//driver.close();
+	public Clientes(DriverManager driverManager) {
+		super();
+		System.out.println("Instanciando Clientes");
+		this.driver = driverManager.getDriver();
 	}
 	
 	@When("accedo al listado de clientes")

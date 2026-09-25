@@ -18,7 +18,7 @@
 
     <div class="page-header text-center" style="border-bottom: none;">
         <h1 class="titulo">
-        	Listado de clientes
+        	Inicio
         </h1>
     </div>
 
@@ -45,53 +45,6 @@
             document.getElementById('formSalir').submit();
         });
     </script>
-
-	<form action="SVClientes" method="get">
-	
-		<input type="hidden" name="accion" value="verFormulario"/>
-
-	    <div class="row">
-	        <div class="col-xs-1"></div>  
-	        <div class="text-center col-xs-10">  
-	            <input type="submit" class="btn btn-primary" id="btnNuevo" value="Nuevo"/>
-	        </div>
-	        <div class="col-xs-1"></div>  
-	    </div>
-	
-	    <br/>
-		
-	    <div class="row">
-	        <div class="col-xs-2"></div>  
-	        <div class="col-xs-8">  
-	            <table class="table table-hover table-striped">
-	                <thead>
-	                	<tr>
-		                    <th>Nombre</th>
-		                    <th>Dirección</th>
-		                    <th>Teléfono</th>
-	                    </tr>
-	                </thead>
-	                <tbody id="tablaClientes">
-						<c:forEach var="c" items="${listadoClientes}">
-							<tr>
-								<td>
-									<c:url var="enlace" value="SVClientes">
-										<c:param name="accion" value="seleccionar"/>							
-										<c:param name="idCliente" value="${c.id}"/>
-									</c:url>
-									<a href="${enlace}">${c.nombre}</a>
-								</td>
-								<td>${c.direccion}</td>
-								<td>${c.telefono}</td>
-							</tr>			
-						</c:forEach>		
-	                </tbody>
-	            </table>
-	        </div>
-	        <div class="col-xs-2"></div>  
-	    </div>	
-	
-	</form>
 
 </body>
 </html>

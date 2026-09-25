@@ -1,4 +1,4 @@
-
+@Autenticado
 Feature: Listado de clientes
 
   Como usuario autenticado

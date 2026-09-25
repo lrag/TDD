@@ -24,11 +24,28 @@ public class SVLogin extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+		String accion = request.getParameter("accion");
+		if("login".equals(accion)) {
+			login(request, response);
+		} else {
+			logout(request, response);
+		}
+	}	
+	
+	private void logout(HttpServletRequest request, HttpServletResponse response) throws IOException {
+		HttpSession sesion = request.getSession(false);
+		if(sesion!=null) {
+			sesion.invalidate();
+		}
+		response.sendRedirect("login.html");
+	}
+	
+	
+	private void login(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		String login = request.getParameter("login");
 		String pw    = request.getParameter("pw");
 		
-		String redirect = "login.html";
+		String redirect = "login.html?error";
 		//Simplificando...
 		if(login.equals("aaa") && pw.equals("bbb")){
 			
@@ -38,14 +55,13 @@ public class SVLogin extends HttpServlet {
 			}
 			sesion = request.getSession(true);
 			
-			Usuario usuario = new Usuario(1, "Bud Spencer", "aaa", null, "ADMIN");
+			Usuario usuario = new Usuario(1, "Fistro Pecador", "aaa", null, "ADMIN");
 			sesion.setAttribute("usuario", usuario);
 			
-			redirect = "seguro/SVClientes";
+			redirect = "seguro/inicio.jsp";
 		} 
 
-		response.sendRedirect(redirect);
-	
+		response.sendRedirect(redirect);	
 	}
 
 }

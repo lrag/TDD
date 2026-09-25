@@ -95,10 +95,11 @@ public void compro_teclados(Integer cantidad) {
     
   Scenario: Comprar dos productos diferentes
     Given el precio de un teclado es 20.0
-    and el precio de un raton es 15.0
+    And el precio de un raton es 15.0
     When Compro 1 teclados
-    and Compro 1 raton
-    Then el total es 35.0    
+    And Compro 1 raton
+    Then el total es 35.0
+    And el numero de detalles de la cesta es 2     
     
     
 @Given("el precio de un raton es {double}")

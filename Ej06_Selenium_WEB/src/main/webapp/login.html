@@ -5,12 +5,25 @@
 <title>Selenium</title>
 <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
+
+<script type="text/javascript">
+
+	window.onload = function(){
+		var parametros = new URLSearchParams(window.location.search);
+		if (parametros.has('error')) {
+			document.getElementById('mensaje').style.display = 'block';
+		}
+	}
+	
+</script>
+
 <body>
 	<div class="text-center page-header">
 		<h1 class="titulo">Login</h1>
 	</div>
 
 	<form action="SVLogin" method="POST">
+		<input type="hidden" name="accion" value="login"/>
 		<div class="row">
 			<div class="col-xs-1 col-sm-4"></div>
 			<div class="col-xs-10 col-sm-4">
@@ -50,7 +63,6 @@
 			<div class="col-xs-1 col-sm-4"></div>
 		</div>
 	</form>
-	
 
 </body>
 </html>
