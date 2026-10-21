@@ -46,16 +46,21 @@ public class _06_SeleniumAPI {
 		driver = new FirefoxDriver();		
 	}	
 	
+	@AfterAll
+	public static void tearDown() {
+		//driver.quit();
+	}	
+	
 	//@Test
 	public void testDoubleClick() throws InterruptedException {
 		//driver.get("http://cookbook.seleniumacademy.com/DoubleClickDemo.html");
 		driver.get("http://localhost:8080/Ej06_Selenium_4/DoubleClickDemo.html");
 		WebElement mensaje = driver.findElement(By.id("message"));
-		
 		Thread.sleep(5000);
+
 		//La clase Actions realiza acciones más complejas
 		Actions actions = new Actions(driver);
-		
+
 		actions.doubleClick(mensaje).perform();
 		assertEquals("rgb(255, 255, 0)", mensaje.getCssValue("background-color"));
 
@@ -74,7 +79,7 @@ public class _06_SeleniumAPI {
 		
 		Actions actions = new Actions(driver);
 		actions.dragAndDrop(source, target).perform();
-		assertEquals(target.getText(), "Dropped!");
+		assertEquals("Dropped!", target.getText());
 	
 		Thread.sleep(2000);
 	}
@@ -86,15 +91,17 @@ public class _06_SeleniumAPI {
 		Thread.sleep(2000);
 		
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("saludar()");
+		//js.executeScript("saludar()");
 		//Podemos enviar a ejecutar cualquier JS
 		//js.executeScript("alert('HABER KE PASA')");
+		
+		js.executeScript("function tocoto(){ alert('ARSA') }; tocoto()");
 		
 		
 		//seleccionamos el alert que se nos muestra en pantalla
 		//con switchTo indicamos el elemento al que queremos acceder
 		Alert alert = driver.switchTo().alert();
-		//assertEquals(alert.getText(), "Hola mundo!!!");
+		assertEquals(alert.getText(), "ARSA");
 		
 		Thread.sleep(2000);
 		
@@ -104,33 +111,33 @@ public class _06_SeleniumAPI {
 	//Este no tiene que fallar, generamos las capturas
 	//beforeDragAndDrop.png
 	//afterDragAndDrop.png
-	//@Test
+	@Test
 	public void testScreenshots() throws IOException {
 		//driver.get("http://cookbook.seleniumacademy.com/DragDropDemo.html");
 		driver.get("http://localhost:8080/Ej06_Selenium_4/DragAndDropDemo.html");
 		WebElement source = driver.findElement(By.id("draggable"));
 		WebElement target = driver.findElement(By.id("droppable"));
-		
+
 		//Le hacemos cast al driver a 'TakeScreenshot'
 		TakesScreenshot ts = (TakesScreenshot) driver;
-		
+
 		//Tomamos una captura de la pantalla
 		File srcFile = ts.getScreenshotAs(OutputType.FILE);
 		//Copiamos la captura de pantalla de la memoria a un directorio fisico
 		FileUtils.copyFile(srcFile, new File("src/test/resources/screenshots/beforeDragAndDrop.png"));
-		
+
 		Actions actions = new Actions(driver);
 		actions.dragAndDrop(source, target).perform();
-		assertEquals(target.getText(), "Dropped!");
-		
+		assertEquals("Dropped!", target.getText());
+
 		srcFile = ts.getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(srcFile, new File("src/test/resources/screenshots/afterDragAndDrop.png"));
-	}
-
+	}	
+	
 	//Eventos
 	//Este SI tiene que fallar para que cree una captura de pantalla, en la carpeta de resources
 	//onException.png
-	@Test
+	//@Test
 	public void testEventosWebDriver() {
 		
 		//Esta clase la hemos creado nosostros y será la que reciba los eventos
@@ -187,9 +194,5 @@ public class _06_SeleniumAPI {
 		cookie2 = driver.manage().getCookieNamed("cookie_selenium");
 		assertNull(cookie2);
 	}	
-	
-	@AfterAll
-	public static void tearDown() {
-		//driver.quit();
-	}
+
 }

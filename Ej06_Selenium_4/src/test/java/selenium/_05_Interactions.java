@@ -3,6 +3,7 @@ package selenium;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertIterableEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.ArrayList;
@@ -29,6 +30,11 @@ public class _05_Interactions {
 		driver = new FirefoxDriver();
 	}
 	
+	@AfterAll
+	public static void tearDown() {
+		//driver.quit();
+	}
+	
 	//Escribimos algo en google y hacemos submit
 	//@Test
 	public void textBoxSubmit() throws InterruptedException {
@@ -45,12 +51,12 @@ public class _05_Interactions {
 		Thread.sleep(1000);
 		input.sendKeys("Angular");
 		Thread.sleep(1000);
-		input.submit();
+		input.submit(); //Aquí ya salta el catcha
 	}
 	
 	
 	//Escribimos algo en wikipedia y hacemos click en el boton
-	//@Test
+	@Test
 	public void buttonClick() {
 		driver.get("https://es.wikipedia.org");
 		WebElement input = driver.findElement(By.id("searchInput"));
@@ -58,10 +64,9 @@ public class _05_Interactions {
 		input.clear();
 		input.sendKeys("Angular");
 		
-		WebElement button = driver.findElement(By.id("searchButton"));
+		WebElement button = driver.findElement(By.name("Buscar"));
 		button.click();
 	}
-
 	
 	//Obtener nodo de texto hijo de una etiqueta
 	@Test
@@ -78,10 +83,19 @@ public class _05_Interactions {
 		driver.get(Constantes.URL);
 		WebElement mensaje = driver.findElement(By.id("mensaje"));
 		assertEquals(mensaje.getDomAttribute("value"), "Hola Mundo!!!");
+		//assertEquals(mensaje.getDomAttribute("style"), "width:200px;");
+		
 		assertEquals(mensaje.getCssValue("width"), "200px");
 	}
 	
-	@Test
+	/*	
+	<select id="ciudad">
+		<option value="1">Salamanca</option>
+		<option value="2">Santa Pola</option>
+		<option value="3">Madrid</option>
+	</select>	
+	*/
+	//@Test
 	public void testDropdown() throws InterruptedException {
 		driver.get(Constantes.URL);
 		//para trabajar con los atributos especificos de los select
@@ -89,7 +103,7 @@ public class _05_Interactions {
 		WebElement select = driver.findElement(By.id("carOptions"));
 		Select coches = new Select(select);
 		//comprobamos que no se puede seleccionar multiples
-		assertFalse(coches.isMultiple());
+		assertFalse(coches.isMultiple(), "Se esperaba que el desplegable de coches no fuera múltiple");
 		//el numero de opciones es 4
 		assertEquals(coches.getOptions().size(), 4);
 		
@@ -119,6 +133,7 @@ public class _05_Interactions {
 	@Test
 	public void testDropdownMultiple() {
 		driver.get(Constantes.URL);
+
 		Select colores = new Select(driver.findElement(By.id("colorOptions")));
 		
 		assertTrue(colores.isMultiple());
@@ -155,12 +170,12 @@ public class _05_Interactions {
 	public void testCorrectOptions() {
 		driver.get(Constantes.URL);
 		
-		ArrayList<String> listaMeses = new ArrayList<String>();
-		listaMeses.add("Enero");
-		listaMeses.add("Febrero");
-		listaMeses.add("Marzo");
-		listaMeses.add("Abril");
-		listaMeses.add("Mayo");
+		ArrayList<String> listaMesesEsperados = new ArrayList<String>();
+		listaMesesEsperados.add("Enero");
+		listaMesesEsperados.add("Febrero");
+		listaMesesEsperados.add("Marzo");
+		listaMesesEsperados.add("Abril");
+		listaMesesEsperados.add("Mayo");
 		
 		//seleccionamos 
 		Select meses = new Select(driver.findElement(By.id("meses")));
@@ -169,7 +184,7 @@ public class _05_Interactions {
 			valoresSelect.add(option.getText());
 		}
 		//mismos elementos y en la misma posición
-		assertArrayEquals(listaMeses.toArray(), valoresSelect.toArray());
+		assertIterableEquals(listaMesesEsperados, valoresSelect);
 	}
 	
 	@Test
@@ -209,10 +224,5 @@ public class _05_Interactions {
 		}
 		assertTrue(checkMusica.isSelected());
 	}
-	
-	@AfterAll
-	public static void tearDown() {
-		//driver.quit();
-	}
-	
+
 }

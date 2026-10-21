@@ -55,13 +55,15 @@ public class Cliente {
 
 	@Override
 	public String toString() {
-		return "Cliente [id=" + id + ", nombre=" + nombre + ", direccion=" + direccion + ", telefono=" + telefono + "]";
+		return super.toString()+"Cliente [id=" + id + ", nombre=" + nombre + ", direccion=" + direccion + ", telefono=" + telefono + "]";
 	}
 
+	/*
 	@Override
 	public int hashCode() {
 		return Objects.hash(direccion, id, nombre, telefono);
 	}
+	*/
 
 	@Override
 	public boolean equals(Object obj) {

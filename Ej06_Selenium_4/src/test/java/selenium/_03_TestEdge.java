@@ -10,10 +10,14 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 public class _03_TestEdge {
 	private static WebDriver driver;
 	
+	//
+	//https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver
+	//
+	
 	@BeforeAll
 	public static void setUp() {
-		System.setProperty("webdriver.ie.driver", 
-				"src/test/resources/drivers/IEDriverServer/msedgedriver.exe");
+		//System.setProperty("webdriver.edge.driver", 
+		//		"src/test/resources/drivers/IEDriverServer/msedgedriver.exe");
 		driver = new EdgeDriver(); 
 	}
 	

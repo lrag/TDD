@@ -22,8 +22,8 @@ public class _02_TestChrome {
 	//
 	@BeforeAll
 	public static void setUp() {
-		System.setProperty("webdriver.chrome.driver", 
-				"src/test/resources/drivers/chromedriver/chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", 
+		//		"src/test/resources/drivers/chromedriver/chromedriver.exe");
 		driver = new ChromeDriver();
 	}
 	

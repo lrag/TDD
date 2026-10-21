@@ -57,7 +57,7 @@ public class _00_Selenium {
 		element.submit();
 
 
-		driver.quit();
+		//driver.quit();
 	}
 
 }

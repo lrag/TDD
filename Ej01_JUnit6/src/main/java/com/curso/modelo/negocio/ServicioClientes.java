@@ -4,7 +4,7 @@ import com.curso.modelo.entidad.Cliente;
 
 public class ServicioClientes {
 
-	public Cliente insertarCliente(Cliente cliente) {
+	public Cliente altaCliente(Cliente cliente) {
 		//LN para insertar el cliente
 		//...
 		

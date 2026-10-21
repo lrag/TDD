@@ -82,7 +82,7 @@ public class _07_TestParametrizado {
 		//Dado el cliente recibido
 		System.out.println(cliente);
 		//Cuando
-		Cliente cAux = gestorClientes.insertarCliente(cliente);
+		Cliente cAux = gestorClientes.altaCliente(cliente);
 		//Entonces
 		Assertions.assertNotNull(cAux.getId());		
 	}	

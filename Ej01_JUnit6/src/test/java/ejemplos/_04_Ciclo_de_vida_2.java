@@ -32,7 +32,7 @@ public class _04_Ciclo_de_vida_2 {
 	public static void afterAll() {
 		System.out.println("After all");
 	}
-
+	
 	@BeforeEach
 	public void beforeEach() {
 		System.out.println("Before each");

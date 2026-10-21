@@ -7,11 +7,11 @@ import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 
-// @ServletComponentScan registra los @WebServlet/@WebFilter de com.curso.controlador
-// tal cual estaban en Ej06_Selenium_4, sin tocar una línea de esas clases.
 //
-// No extiende SpringBootServletInitializer: eso solo hace falta para desplegar el
-// .war en un Tomcat externo. Aquí la app se arranca directamente desde este main().
+//http://localhost:8080/Ej06_Selenium_4/index.html
+//
+
+
 @SpringBootApplication
 @ServletComponentScan
 public class AplicacionWeb {

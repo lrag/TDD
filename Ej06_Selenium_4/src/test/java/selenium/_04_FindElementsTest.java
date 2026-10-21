@@ -51,7 +51,7 @@ public class _04_FindElementsTest {
 		WebElement password = driver.findElement(By.name("password"));
 	}
 	
-	//@Test
+	@Test
 	public void byClassName() {
 		driver.get(Constantes.URL);
 		//En una página pueden existir muchos elementos qon el mismo class name
@@ -63,10 +63,25 @@ public class _04_FindElementsTest {
 		
 	}
 	
+	
+	/*
+	
+	<html>
+		<body>
+			<div id="conyuge1">
+				<input type="text" id="nombre"/>
+			</div>
+			<div id="conyuge2">
+				<input type="text" id="nombre"/>
+			</div>		
+		</body>
+	</tml>
+	*/
+	
 	//podemos concretar más la busqueda, las className que estan dentro
 	//del loginForm. La clase WebDriver y WebElement comparten la misma interfaz
 	@Test
-	public void byClassName2() {
+	public void concretarLaBusqueda() {
 		driver.get(Constantes.URL);
 		//el primer findElement nos devuelve un WebElement
 		
@@ -83,6 +98,21 @@ public class _04_FindElementsTest {
 			.findElement(By.className("in-pass"));
 	}
 	
+	/*
+	<html>
+		<body>
+		
+			<h1 class="titulo">Listado de clientes</h1>
+			
+			<div>
+				Nombre:	<input type="text" id="nombre">
+				<br/>
+				Dirección:<input type="text" id="direccion">
+			</div>
+		
+		</body>	
+	</html>
+	*/
 	@Test
 	public void byTagName() {
 		driver.get(Constantes.URL);
@@ -101,18 +131,108 @@ public class _04_FindElementsTest {
 		//Obtenermos un elemento <a> a traves de su texto
 		//f12 con chrome y podemos inspeccionar los elementos
 		WebElement enlace = driver.findElement(By.linkText("Página"));
+	}
+	
+	@Test
+	public void buscarAtributos() {
+		driver.get(Constantes.URL);
 		System.out.println("=================================");
-		System.out.println("HREF:"+enlace.getDomAttribute("href"));
-		assertTrue(enlace.getDomAttribute("href").endsWith("index.html"));
+		WebElement enlace = driver.findElement(By.linkText("Página"));
+		//Podemos acceder a los atributos de un webElement con getDomAttribute
+		String href = enlace.getDomAttribute("href");
+		System.out.println("HREF:"+href);
+		assertEquals("index.html", href);
+		
+		String clase = enlace.getDomAttribute("class");
+		System.out.println("Class:"+clase);
 	}
 	
 	@Test
 	public void byPartialLinkText() {
+		System.out.println("=================================");
 		driver.get(Constantes.URL);
-		//Si no sabemos el texto completo de un link
-		WebElement enlace = driver.findElement(By.partialLinkText("Pág"));
-		assertTrue(enlace.getDomAttribute("href").endsWith("index.html"));
+		//Si no sabemos el texto completo de un link pero sabemos por qué empieza
+		List<WebElement> enlaces = driver.findElements(By.partialLinkText("Página"));
+		for(WebElement enlace: enlaces) {
+			System.out.println(enlace.getDomAttribute("href"));
+		}
 	}
+	
+	// Consultas XPath
+	/*
+	Expression	Description
+	nodename	Selects all nodes with the name "nodename", hijos directos desde donde estemos
+	/			Selects from the root node
+	//			Selects nodes in the document from the current node that match the selection no matter where they are
+	.			Selects the current node
+	..			Selects the parent of the current node
+	@			Selects attributes of a node
+
+
+	<bookstores>
+		<bookstore>
+			<book></book>
+		</bookstore>
+		<bookstore>
+			<book></book>
+		</bookstore>
+		<bookstore>
+			<book></book>
+		</bookstore>
+		
+		<movida>
+			<bookstore>
+				<book></book>
+			</bookstore>		
+		</movida>
+		
+	</bookstores>
+
+
+	Path Expression	Result
+	bookstore		Selects all nodes with the name "bookstore", hijos directos desde donde estemos
+	/bookstores		Selects the root element bookstore
+					Note: If the path starts with a slash ( / ) 
+					it always represents an absolute path to an element!
+
+	bookstore/book	Selects all book elements that are children of bookstore
+	//book			Selects all book elements no matter where they are in the document
+	bookstore//book	Selects all book elements that are descendant of the bookstore 
+					element, no matter where they are under the bookstore element
+	//@lang			Selects all attributes that are named lang
+
+
+	Path Expression						Result
+	/bookstore/book[1]					Selects the first book element that is the child of the bookstore element.
+										Note: In IE 5,6,7,8,9 first node is[0], but according to W3C, it is [1]. To solve this 
+										problem in IE, set the SelectionLanguage to XPath:
+										In JavaScript: xml.setProperty("SelectionLanguage","XPath");
+	/bookstore/book[last()]				Selects the last book element that is the child of the bookstore element
+	/bookstore/book[last()-1]			Selects the last but one book element that is the child of the bookstore element
+	/bookstore/book[position() < 3]		Selects the first two book elements that are children of the bookstore element
+	//title[@lang]						Selects all the title elements that have an attribute named lang
+	//title[@lang='en']					Selects all the title elements that have an attribute named lang with a value of 'en'
+	/bookstore/book[price>35.00]		Selects all the book elements of the bookstore element that have a price element with 
+	 									a value greater than 35.00
+	/bookstore/book[price>35.00]/title	Selects all the title elements of the book elements of the bookstore element that have 
+	 									a price element with a value greater than 35.00
+				
+	Wildcard	Description
+	*			Matches any element node
+	@*			Matches any attribute node
+	node()		Matches any node of any kind
+
+	Path Expression	Result
+	/bookstore/*	Selects all the child nodes of the bookstore element
+	//*				Selects all elements in the document
+	//title[@*]		Selects all title elements which have any attribute
+
+	Path Expression	Result
+	//book/title | //book/price		Selects all the title AND price elements of all book elements
+	//title | //price				Selects all the title AND price elements in the document
+	/bookstore/book/title | //price	Selects all the title elements of the book element of the bookstore element AND all the price elements in the document
+
+	*/	
 	
 	@Test
 	public void byXPath1() {

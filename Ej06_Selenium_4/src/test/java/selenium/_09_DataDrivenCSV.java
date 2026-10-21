@@ -56,21 +56,23 @@ public class _09_DataDrivenCSV {
 		emailElement.clear();
 		emailElement.sendKeys(email);
 
-		WebElement captchaElement = driver.findElement(By.cssSelector("#mw-input-captchaWord"));
-		captchaElement.clear();
-		captchaElement.sendKeys(captcha);
+		//WebElement captchaElement = driver.findElement(By.cssSelector("#mw-input-captchaWord"));
+		//captchaElement.clear();
+		//captchaElement.sendKeys(captcha);
 
 		WebElement submitBtn = driver.findElement(By.cssSelector("#wpCreateaccount"));
-		submitBtn.click();
+		//Si hacemos submitr salta el captcha
+		//submitBtn.click();
 
-		//Usamos un fluent wait para experar la respuesta, experaremos max 10 seg
+		//Usamos un fluent wait para esperar la respuesta, esperaremos max 10 seg
 		//y comprobaremos que ha llegado la respuesta cada 2 seg
-		FluentWait<WebDriver> fluentWait = new FluentWait<WebDriver>(driver)
-				.withTimeout(Duration.ofSeconds(10))
-				.pollingEvery(Duration.ofSeconds(2));
+		//FluentWait<WebDriver> fluentWait = new FluentWait<WebDriver>(driver)
+		//		.withTimeout(Duration.ofSeconds(10))
+		//		.pollingEvery(Duration.ofSeconds(2));
 
 		//Esperaremos hasta que aparezca el mesaje de error, ya que los captcha son 
 		//inventados
+		/*
 		WebElement error = fluentWait.until(new Function<WebDriver, WebElement>() {
 			public WebElement apply(WebDriver arg0) {
 				WebElement elem = arg0.findElement(By.cssSelector(".errorbox"));
@@ -83,6 +85,7 @@ public class _09_DataDrivenCSV {
 		});
 		//debería llegar el error
 		assertNotNull(error);
+		*/
 		
 		Thread.sleep(2000);
 	}
