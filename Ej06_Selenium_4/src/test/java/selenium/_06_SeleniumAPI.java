@@ -8,7 +8,6 @@ import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.parallel.Execution;
@@ -22,7 +21,6 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.events.EventFiringDecorator;
@@ -30,15 +28,8 @@ import org.openqa.selenium.support.events.WebDriverListener;
 
 @Execution(ExecutionMode.SAME_THREAD)
 public class _06_SeleniumAPI {
-	private static WebDriver driver;
 	
-	/*
-	@BeforeAll
-	public static void setUp() {
-		System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver/chromedriver.exe");
-		driver = new ChromeDriver();
-	}
-	*/
+	private static WebDriver driver;
 	
 	@BeforeAll
 	public static void setUp() {
@@ -111,7 +102,7 @@ public class _06_SeleniumAPI {
 	//Este no tiene que fallar, generamos las capturas
 	//beforeDragAndDrop.png
 	//afterDragAndDrop.png
-	@Test
+	//@Test
 	public void testScreenshots() throws IOException {
 		//driver.get("http://cookbook.seleniumacademy.com/DragDropDemo.html");
 		driver.get("http://localhost:8080/Ej06_Selenium_4/DragAndDropDemo.html");
@@ -137,9 +128,9 @@ public class _06_SeleniumAPI {
 	//Eventos
 	//Este SI tiene que fallar para que cree una captura de pantalla, en la carpeta de resources
 	//onException.png
-	//@Test
+	@Test
 	public void testEventosWebDriver() {
-		
+
 		//Esta clase la hemos creado nosostros y será la que reciba los eventos
 		//Esta clase guarda los métodos de retro llamada o callback		
 		WebDriverListener oyente = new _06_WebDriverListener(driver);

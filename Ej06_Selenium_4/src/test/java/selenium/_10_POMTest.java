@@ -2,7 +2,9 @@ package selenium;
 
 
 import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -11,12 +13,34 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 //Esta clase utilizará _12_POM para hacer las pruebas
 public class _10_POMTest {
+	
+	/*
+	//Mismo navegador para todados los test de esta clase	
 	private static WebDriver driver;
 	
 	@BeforeAll
 	public static void setUp() {
-		System.setProperty("webdriver.gecko.driver", "src/test/resources/drivers/geckodriver/geckodriver.exe");
+		//System.setProperty("webdriver.gecko.driver", "src/test/resources/drivers/geckodriver/geckodriver.exe");
 		driver = new FirefoxDriver();
+	}
+	
+	@AfterAll
+	public static void tearDown() {
+		//driver.quit();
+	}
+	*/
+	
+	//Un navegador para cada test de esta clase
+	private WebDriver driver;
+	
+	@BeforeEach
+	public void setUp() {
+		//System.setProperty("webdriver.gecko.driver", "src/test/resources/drivers/geckodriver/geckodriver.exe");
+		driver = new FirefoxDriver();
+	}	
+	@AfterEach
+	public void afterEach() {
+		//driver.quit();
 	}
 
 	//@Test
@@ -24,17 +48,18 @@ public class _10_POMTest {
 		
 		driver.get("http://localhost:8080/Ej06_Selenium_4/formulario.html");
 		
-		WebElement tfTtitulo       = driver.findElement(By.name("titulo"));
+		WebElement tfTtitulo      = driver.findElement(By.name("titulo"));
 		WebElement tfDirector     = driver.findElement(By.name("director"));
 		WebElement tfGenero       = driver.findElement(By.name("genero"));
 		WebElement tfFechaEstreno = driver.findElement(By.name("fechaEstreno"));
 		
 		WebElement btnInsertar  = driver.findElement(By.id("btnInsertar"));
 
-		tfTtitulo.clear();
-		tfDirector.clear();
-		tfGenero.clear();
-		tfFechaEstreno.clear();
+		//Comprobamos que las cajas de texto están vacías
+		Assertions.assertEquals("", tfTtitulo.getDomAttribute("value"));
+		Assertions.assertEquals("", tfDirector.getDomAttribute("value"));
+		Assertions.assertEquals("", tfGenero.getDomAttribute("value"));
+		Assertions.assertEquals("", tfFechaEstreno.getDomAttribute("value"));
 		
 		Thread.sleep(750);
 		tfTtitulo.sendKeys("El último grán heroe");
@@ -58,10 +83,11 @@ public class _10_POMTest {
 		
 		_10_FormularioPeliculaPOM page = new _10_FormularioPeliculaPOM(driver);
 
-		page.getTfTitulo().clear();
-		page.getTfDirector().clear();
-		page.getTfGenero().clear();
-		page.getTfFechaEstreno().clear();		
+		//Comprobamos que las cajas de texto están vacías
+		Assertions.assertEquals("", page.getTfTitulo().getDomAttribute("value"));
+		Assertions.assertEquals("", page.getTfDirector().getDomAttribute("value"));
+		Assertions.assertEquals("", page.getTfGenero().getDomAttribute("value"));
+		Assertions.assertEquals("", page.getTfFechaEstreno().getDomAttribute("value"));	
 		
 		Thread.sleep(750);
 		page.getTfTitulo().sendKeys("El último grán heroe");
@@ -74,12 +100,12 @@ public class _10_POMTest {
 		Thread.sleep(1000);
 		
 		page.getBtnInsertar().click();
-//		
+		//		
 		//asertos necesarios
 	}
 	
 	@Test
-	public void testSearchModificar() throws InterruptedException {
+	public void testModificar() throws InterruptedException {
 		
 		driver.get("http://localhost:8080/Ej06_Selenium_4/formulario.html");
 		
@@ -100,9 +126,4 @@ public class _10_POMTest {
 		//asertos necesarios
 	}
 
-	
-	@AfterAll
-	public static void tearDown() {
-		//driver.quit();
-	}
 }

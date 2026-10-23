@@ -1,0 +1,37 @@
+@Tocoto
+Feature: Autenticación de usuarios
+
+  Como usuario de la aplicación
+  Quiero identificarme con mis credenciales
+  Para poder acceder al área de gestión de clientes
+
+  #Los dos escenarios de abajo empiezan por "entro en la página de login".
+  #Eso es justo lo que iría en un Background, para no repetirlo:
+  #Background:
+  #  Given entro en la página de login
+
+  #Scenario: DEMASIADO ESPECÍFICO Login correcto
+  #  Given estoy en la página de login
+  #  When introduzco el login "aaa" y la contraseña "bbb"
+  # And pulso "Entrar"
+  #  Then se crea mi sesión
+  # And veo la página de inicio
+    
+  Scenario: Login correcto
+    Given entro en la página de login
+    When introduzco mis credenciales
+    And pulso el botón entrar 
+    Then se crea mi sesión
+    And veo la página de inicio
+    
+  Scenario: Login incorrecto
+    Given entro en la página de login
+    When introduzco unas credenciales incorrectas
+    And pulso el botón entrar 
+    And estoy en la página de login
+    #And veo el mensaje "Credenciales incorrectas"    
+    
+    
+    
+    
+    

@@ -85,7 +85,7 @@ public class _05_Interactions {
 		assertEquals(mensaje.getDomAttribute("value"), "Hola Mundo!!!");
 		//assertEquals(mensaje.getDomAttribute("style"), "width:200px;");
 		
-		assertEquals(mensaje.getCssValue("width"), "200px");
+		assertEquals( "200px", mensaje.getCssValue("width"));
 	}
 	
 	/*	

@@ -31,10 +31,11 @@ public class _10_FormularioPeliculaPOM {
 	public _10_FormularioPeliculaPOM(WebDriver driver) {
 		//this.driver = driver;
 		//PageFactory.initElements(this.driver, this);
-		
 		PageFactory.initElements(driver, this);
 	}
 
+	//Solo los get.
+	
 	public WebElement getBtnInsertar() {
 		return btnInsertar;
 	}

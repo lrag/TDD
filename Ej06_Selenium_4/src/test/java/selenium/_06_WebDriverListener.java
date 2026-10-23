@@ -4,9 +4,9 @@ import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.time.Instant;
 
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -69,7 +69,7 @@ public class _06_WebDriverListener implements WebDriverListener {
 		System.out.println("ZASCA");
 		File srcFile = ((TakesScreenshot) webDriver).getScreenshotAs(OutputType.FILE);
 		try {
-			FileUtils.copyFile(srcFile, new File("src/test/resources/screenshots/onError.png"));
+			FileUtils.copyFile(srcFile, new File("src/test/resources/screenshots/onError"+Instant.now().toEpochMilli()+".png"));
 		} catch (IOException ex) {
 			ex.printStackTrace();
 		}	

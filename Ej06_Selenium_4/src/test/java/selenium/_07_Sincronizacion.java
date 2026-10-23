@@ -28,6 +28,18 @@ public class _07_Sincronizacion {
 		//driver.manage().timeouts().implicitlyWait(Duration.ofMillis(8000));
 	}
 	
+	@AfterAll
+	public static void tearDown() {
+		//driver.quit();
+	}
+	
+	//@Test
+	public void testCatapun() throws InterruptedException {
+		driver.get(Constantes.URL);
+		WebElement button = driver.findElement(By.cssSelector("#btn-1"));
+		button.click();
+	}	
+	
 	//WAIT IMPLICITO
 	//Se indica al driver y este lo aplica a todas las búsquedas
 	//@Test
@@ -35,7 +47,7 @@ public class _07_Sincronizacion {
 		
 		driver.get(Constantes.URL);
 		
-		//Podemos hacer una ineficiente espera activa (MAL):
+		//Podemos hacer una ineficiente espera activa (funciona pero está MUY MAL):
 		//Thread.sleep(8000);		
 		//WebElement button2 = driver.findElement(By.cssSelector("#btn-1"));
 		
@@ -49,8 +61,10 @@ public class _07_Sincronizacion {
 		System.out.println("========================");
 		System.out.println("Antes del findElement");
 		long inicio = System.currentTimeMillis();
+		
 		//El driver esperará un máximo de ocho segundos si el botón no está
 		WebElement button = driver.findElement(By.cssSelector("#btn-1"));
+		
 		long fin = System.currentTimeMillis();
 		System.out.println("Despues del findElement: " + (fin-inicio));
 		//Al pulsar el botón aparecerá un mensaje EN LA CONSOLA
@@ -113,6 +127,13 @@ public class _07_Sincronizacion {
 		//Con una expresion lambda
 		System.out.println("Está ya el botón?");
 		
+		/*
+		driver -> driver.findElement(By.id("boton"));
+	
+		public WebElement buscar(WebDriver driver) {
+			return driver.findElement(By.id("boton"));
+		}
+		*/
 		//WebElement button_ = wait.until(
 		//		driver -> driver.findElement(By.id("btn-1"))				
 		//	);
@@ -123,11 +144,7 @@ public class _07_Sincronizacion {
 			});		
 		button.click();
 	}
-
-	@AfterAll
-	public static void tearDown() {
-		//driver.quit();
-	}
+	
 
 }
 

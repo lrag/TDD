@@ -31,7 +31,7 @@ public class _08_DataDrivenJUnit {
 
 	//Test que prueba la funcionalidad 'sumar' con un par de números
 	//Si necesitamos probar con más datos no nos sirve
-	@Test
+	//@Test
 	public void pruebaSuma() throws InterruptedException {
 		
 		//Cargamos index.html
@@ -66,7 +66,8 @@ public class _08_DataDrivenJUnit {
 	        Arguments.arguments(2,2,4),
 	        Arguments.arguments(4,2,6),
 	        Arguments.arguments(6,2,8),
-	        Arguments.arguments(8,8,16));
+	        Arguments.arguments(8,8,16)
+	    );
 	}	
 
 	@ParameterizedTest

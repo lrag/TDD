@@ -3,7 +3,7 @@ Feature: Cesta de la compra
 
   Como comprador de la tienda online
   Quiero añadir productos a mi cesta y conocer el importe a pagar
-  Para decidir si confirmo la compra antes de pagar
+  Para decidir si confirmo la compra 
 
   Scenario: El comprador conoce el importe de su cesta antes de pagar
     Given un comprador con productos añadidos a su cesta
